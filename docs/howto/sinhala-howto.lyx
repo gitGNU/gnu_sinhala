@@ -30,18 +30,6 @@ Sinhala Support in GNU/Linux HOWTO
 \layout Author
 
 Harshula, hash@jayasolutions.cjb.net
-\layout Revision
-
-v0.1
-\layout RevisionRemark
-
-2004-06-05
-\layout Revision
-
-v0.2
-\layout RevisionRemark
-
-2004-10-07
 \layout Section
 
 About This Guide
@@ -49,6 +37,15 @@ About This Guide
 
 This guide describes the level of Sinhala support available on GNU/Linux.
  It also describes tasks that still require attention.
+\layout Subsubsection
+
+Revisions
+\layout Itemize
+
+v0.1 - 2004-06-05
+\layout Itemize
+
+v0.2 - 2004-10-07
 \layout Section
 
 Introduction
@@ -552,7 +549,7 @@ xkb/symbols.dir
 To test a loaded keymap:
 \layout Itemize
 
-setxkbmap -print | xkbcomp -w 10 -xkb - <file>
+setxkbmap -print | xkbcomp -w 10 -xkb - <outfile>
 \layout Subsection
 
 Resources/Info
@@ -585,25 +582,34 @@ Resources/Info
 TODO
 \layout Itemize
 
-submit xkb keymap
-\layout Itemize
-
-submit vim keymap
-\layout Itemize
-
-Vim and A-space and S-space
-\layout Itemize
-
-develop phonetic Sinhala keymap with justification
+develop Sinhala IPA transliteration for documents
 \layout Itemize
 
 develop Sinhala literary transliteration for documents
 \layout Itemize
 
+See if xkb can be extended to allow multiple codepoints per keycode
+\layout Itemize
+
 add Sinhala to /usr/include/X11/keysymdef.h
 \layout Itemize
 
+write up explanation and justificiation for the phonetic Sinhala keymap
+\layout Itemize
+
 LyX - /usr/share/lyx/kbd
+\layout Section
+
+DONE
+\layout Itemize
+
+submit xkb keymap to X Keyboard Configuration Database
+\layout Itemize
+
+submit vim keymap to Bram
+\layout Itemize
+
+submit xkb keymap to xorg and xfree86
 \layout Section
 
 Conclusion
