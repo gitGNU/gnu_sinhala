@@ -2,10 +2,10 @@
 ! Maintainer  : Harshula Jayasuriya <hash@jayasolutions.cjb.net>
 ! Last Updated: 2004-09-05
 ! This is a static phonetic mapping for a standard US-English keyboard
-! (101 qwerty)
+! (qwerty)
 ! http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
 
-! xmodmap sin.xmm
+! xmodmap sin.xmodmap
 ! U+0d8d = 0x01000d8d
 ! xmodmap is a dead end for the Sinhala keymap because there doesn't
 ! seem to be mechanism to switch with the Latin keymap, use xkb instead.
