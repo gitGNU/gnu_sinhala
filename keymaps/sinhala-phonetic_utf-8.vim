@@ -10,7 +10,7 @@
 " Need to disable the menu so that you can use the 'alt' key.
 "   set guioptions-=m
 " Select the new keymap
-"   set keymap=sinhalap_utf-8
+"   set keymap=sinhala-phonetic_utf-8
 
 
 loadkeymap
@@ -100,5 +100,5 @@ Y	<char-0x0dca><char-0x200d><char-0x0dba>	"  ්‍ය - yansaya
 <A-r>	<char-0x0dbb><char-0x0dca><char-0x200d>	"  ර්‍ - repaya
 <A-\>	<char-0x200c>	" - ZWNJ
 <A-|>	<char-0x200d>	" - ZWJ
-<S-space>	<char-0x00A0>	" - no-break space
+<C-space>	<char-0x00A0>	" - no-break space. <S-space> didn't work.
 "	<char-0DCA><char-200D>	" - join - conjunct letters cons 0DCA 200D cons
