@@ -32,7 +32,16 @@ Sinhala Support in GNU/Linux HOWTO
 Harshula, hash@jayasolutions.cjb.net
 \layout Revision
 
-v0.1, 2004-06-05
+v0.1
+\layout RevisionRemark
+
+2004-06-05
+\layout Revision
+
+v0.2
+\layout RevisionRemark
+
+2004-10-07
 \layout Section
 
 About This Guide
@@ -138,14 +147,6 @@ Install a unicode font.
 \end_inset 
 
 
-\layout Itemize
-
-
-\begin_inset LatexCommand \htmlurl[sinhala-fonts.zip]{http://www.metta.lk/fonts/sinhala-fonts.zip}
-
-\end_inset 
-
-
 \layout Standard
 
 Immediately you'll be able to read Unicode Sinhala in these programs:
@@ -197,10 +198,103 @@ gucharmap
 Keymaps
 \layout Subsubsection
 
-gvim
+X Keyboard Extension
+\layout Standard
+
+You should have at least XFree86 4.3 or Xorg 6.7.
+ To familiarise yourself with this keymap, read:
+\layout Itemize
+
+
+\begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
+
+\end_inset 
+
+
 \layout Enumerate
 
 Download the keymap from:
+\begin_deeper 
+\layout Itemize
+
+
+\begin_inset LatexCommand \htmlurl[sin]{http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/sinhala/sinhala/keymaps/sin?rev=HEAD&content-type=text/plain}
+
+\end_inset 
+
+
+\end_deeper 
+\layout Enumerate
+
+Copy the keymap to:
+\begin_deeper 
+\layout Code
+
+/etc/X11/xkb/symbols/pc/
+\end_deeper 
+\layout Enumerate
+
+There are two options:
+\begin_deeper 
+\layout Enumerate
+
+In an xterm do:
+\begin_deeper 
+\layout Code
+
+setxkbmap -layout "sin,us" -option "grp:caps_toggle,grp_led:caps"
+\end_deeper 
+\layout Enumerate
+
+Or alternately, edit the /etc/X11/XF86Config or /etc/X11/xorg.conf file.
+ 
+\begin_deeper 
+\layout Standard
+
+In order to add the new 'sin' keymap, look for this line:
+\layout Code
+
+Section "InputDevice"
+\layout Standard
+
+There will probably be two such lines, one for the keyboard and another
+ for the mouse.
+ Go to the keyboard related line.
+ Then add/modify this line:
+\layout Code
+
+Option "XkbLayout" "sin,us"
+\layout Standard
+
+Also add key to switch between 'us' and 'sin' and indicate which LED should
+ be used:
+\layout Code
+
+Option "XkbOptions" "grp:caps_toggle,grp_led:caps"
+\layout Standard
+
+Then, use your window manager's keyboard layout program to reset to the
+ X defaults.
+\end_deeper 
+\end_deeper 
+\layout Subsubsection
+
+gvim
+\layout Standard
+
+To familiarise yourself with this keymap, read:
+\layout Itemize
+
+
+\begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
+
+\end_inset 
+
+
+\layout Enumerate
+
+Download the keymap from:
+\begin_deeper 
 \begin_deeper 
 \layout Itemize
 
@@ -210,6 +304,7 @@ Download the keymap from:
 \end_inset 
 
 
+\end_deeper 
 \end_deeper 
 \layout Enumerate
 
@@ -235,61 +330,20 @@ set keymap=sinhala-phonetic_utf-8
 \end_deeper 
 \layout Subsubsection
 
-X Keyboard Extension
-\layout Enumerate
+xmodmap
+\layout Standard
 
-Download the keymap from:
-\begin_deeper 
+We recommend you use the X Keyboard Extension keymap instead of the xmodmap
+ keymap.
+ To familiarise yourself with this keymap, read:
 \layout Itemize
 
 
-\begin_inset ERT
-status Open
+\begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
 
-\layout Standard
-<!-- http://savannah.nongnu.org/cgi-bin/viewcvs/sinhala/sinhala/keymaps/si
-\layout Standard
--->
 \end_inset 
 
 
-\end_deeper 
-\layout Enumerate
-
-Copy the keymap to /usr/X11R6/lib/X11/xkb/symbols/
-\layout Enumerate
-
-Edit the /etc/X11/XF86Config file.
- In order to add the new 'si' keymap, look for this line:
-\begin_deeper 
-\layout Code
-
-Option "XkbLayout"
-\layout Standard
-
-Here's an example of what I've changed mine to:
-\layout Code
-
-Option "XkbLayout" "us,si"
-\layout Standard
-
-Also add key to switch between 'us' and 'si':
-\layout Code
-
-Option "XkbOptions" "grp:caps_toggle,grp_led:scroll"
-\end_deeper 
-\layout Enumerate
-
-Or alternately, in an xterm do:
-\begin_deeper 
-\layout Code
-
-setxkbmap -rules xfree86 -model pc105 -layout "us,si" -option grp:caps_toggle
- -option "lv3:switch" 
-\end_deeper 
-\layout Subsubsection
-
-xmodmap
 \layout Enumerate
 
 Download the keymap from:
@@ -297,13 +351,8 @@ Download the keymap from:
 \layout Itemize
 
 
-\begin_inset ERT
-status Open
+\begin_inset LatexCommand \htmlurl[sin.xmodmap]{http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/sinhala/sinhala/keymaps/sin.xmodmap?rev=HEAD&content-type=text/plain}
 
-\layout Standard
-<!-- http://savannah.nongnu.org/cgi-bin/viewcvs/sinhala/sinhala/keymaps/si.xmm
-\layout Standard
--->
 \end_inset 
 
 
@@ -314,7 +363,7 @@ Then run xmodmap:
 \begin_deeper 
 \layout Code
 
-xmodmap si.xmm 
+xmodmap sin.xmodmap
 \end_deeper 
 \layout Section
 
@@ -418,6 +467,84 @@ Phonetic (Dynamic)
 A Sinhala Unicode Font has to be installed in order to read the Keyboard
  Maps.
  
+\layout Standard
+
+You can use 
+\emph on 
+showkey
+\emph default 
+ in linux to display the scancode.
+\layout Itemize
+
+57 - space
+\layout Itemize
+
+56 - left alt
+\layout Itemize
+
+100 - right alt
+\layout Itemize
+
+29 - left ctrl
+\layout Itemize
+
+97 - right ctrl
+\layout Itemize
+
+42 - left shift
+\layout Itemize
+
+54 - right shift
+\layout Itemize
+
+drivers/char/keyboard.c
+\begin_deeper 
+\layout Itemize
+
+getkeycode()
+\end_deeper 
+\layout Subsubsection
+
+XKB - adding a new keymap
+\layout Standard
+
+All you need to do is just copy the keymap file into the correct directory:
+\layout Code
+
+/etc/X11/xkb/symbols/pc/
+\layout Standard
+
+However, for completeness some files in these directories:
+\layout Code
+
+/etc/X11/
+\layout Standard
+
+or
+\layout Code
+
+/usr/X11R6/lib/X11/
+\layout Standard
+
+need to be modified, namely these files:
+\layout Code
+
+xkb/rules/{xorg,xfree86}
+\layout Code
+
+xkb/rules/{xorg,xfree86}.lst
+\layout Code
+
+xkb/rules/{xorg,xfree86}.xml
+\layout Code
+
+xkb/symbols.dir
+\layout Standard
+
+To test a loaded keymap:
+\layout Itemize
+
+setxkbmap -print | xkbcomp -w 10 -xkb - <file>
 \layout Subsection
 
 Resources/Info
@@ -450,19 +577,22 @@ Resources/Info
 TODO
 \layout Itemize
 
-submit Sri Lankan locales
-\layout Itemize
-
-develop phonetic Sinhala keymap with justification
+submit xkb keymap
 \layout Itemize
 
 submit vim keymap
 \layout Itemize
 
-add Sinhala to /usr/include/X11/keysymdef.h
+Vim and A-space and S-space
 \layout Itemize
 
-si Vs sl - Why are the Slovenians using 'si'?!
+develop phonetic Sinhala keymap with justification
+\layout Itemize
+
+develop Sinhala literary transliteration for documents
+\layout Itemize
+
+add Sinhala to /usr/include/X11/keysymdef.h
 \layout Itemize
 
 LyX - /usr/share/lyx/kbd
