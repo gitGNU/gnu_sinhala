@@ -12,6 +12,7 @@
 " Select the new keymap
 "   set keymap=sinhala-phonetic_utf-8
 
+let b:keymap_name = "sinhala"
 
 loadkeymap
 V	<char-0x0d82>	"  ං - anusvaraya (anusvara)
