@@ -137,15 +137,7 @@ Install a unicode font:
 \layout Itemize
 
 
-\begin_inset LatexCommand \htmlurl[http://www.fonts.lk/download/Malithi%20Web.html]{http://www.fonts.lk/download/Malithi%20Web.html}
-
-\end_inset 
-
-
-\layout Itemize
-
-
-\begin_inset LatexCommand \htmlurl[www.nongnu.org/freefont/]{http://www.nongnu.org/freefont/}
+\begin_inset LatexCommand \htmlurl[http://sinhala.linux.lk/pub/fonts/lklug.otf]{http://sinhala.linux.lk/pub/fonts/lklug.otf}
 
 \end_inset 
 
