@@ -1,6 +1,6 @@
 // X Keyboard Extension file for Sinhala (Sri Lanka) (2004-04-22)
 // Maintainer  : Harshula Jayasuriya <hash@jayasolutions.cjb.net>
-// Last Updated: 2004-11-14
+// Last Updated: 2004-12-22
 // This is a static phonetic mapping for a standard US-English keyboard
 // (qwerty)
 // http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
@@ -13,11 +13,14 @@
 // manually construct the glyph by typing each of the 3 codepoints.
 // Alt-backslash represents the 'join' key, this requires
 // two codepoints, hence it also has to be manually constructed.
+// Similarly, Alt-Shift-backslash representing the 'touch' key requires
+// two codepoints.
 
 // Repaya = rayanna,AL,ZWJ
 // Rakaransaya = AL,ZWJ,rayanna
 // Yansaya = AL,ZWJ,yayanna
 // join = AL,ZWJ
+// touch = ZWJ,AL
 
 // Where,
 // AL = Al Lakuna = Alt-a
