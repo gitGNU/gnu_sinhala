@@ -1,7 +1,8 @@
 " Vim Keymap file for Sinhala (Sri Lanka) (2003-11-02)
 " Maintainer  : Harshula Jayasuriya <hash@jayasolutions.cjb.net>
 " Last Updated: 2004-04-21
-" This is a phonetic mapping for a standard US-English keyboard (101 qwerty)
+" This is a static phonetic mapping for a standard US-English keyboard
+" (101 qwerty)
 " http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
 
 " You will need to use gvim and disable the menu by doing :set guioptions-=m
@@ -91,4 +92,4 @@ q	<char-0x0dca>	" ් - al-lakuna
 
 R	<char-0x200d><char-0x0dca><char-0x0dbb>	" ‍්ර - rakaransaya
 Y	<char-0x200d><char-0x0dca><char-0x0dba>	" ‍්ය - yansaya
-"	<char-0x0dbb><char-0x0dca><char-0x200d>	" repaya - TODO
+<A-r>	<char-0x0dbb><char-0x0dca><char-0x200d>	" repaya
