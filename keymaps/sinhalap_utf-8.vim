@@ -28,9 +28,9 @@ F	<char-0x0d93>	" ඓ - aiyanna (ai)
 o	<char-0x0d94>	" ඔ - oyanna (o)
 O	<char-0x0d95>	" ඕ - ooyanna (oo)
 H	<char-0x0d96>	" ඖ - auyanna (au)
-k	<char-0x0d9a>	" ක - kayanna (ka)
+k	<char-0x0d9a>	" ක - alpapraana kayanna (ka)
 K	<char-0x0d9b>	" ඛ - mahaapraana kayanna (kha)
-g	<char-0x0d9c>	" ග - gayanna (ga)
+g	<char-0x0d9c>	" ග - alpapraana gayanna (ga)
 G	<char-0x0d9d>	" ඝ - mahaapraana gayanna (gha)
 <A-n>	<char-0x0d9e>	" ඞ - kantaja naasikyaya (nga)
 <A-g>	<char-0x0d9f>	" ඟ - sanyaka gayana (nnga)
@@ -38,21 +38,21 @@ c	<char-0x0da0>	" ච - alpapraana cayanna (ca) - shouldn't it be cha?
 C	<char-0x0da1>	" ඡ - mahaapraana cayanna (cha) - shouldn't it be chha?
 j	<char-0x0da2>	" ජ - alpapraana jayanna (ja)
 J	<char-0x0da3>	" ඣ - mahaapraana jhayanna (jha)
-"J	<char-0x0da4>	" ඤ - taaluja naasikyaya (nya) - TODO
-"J	<char-0x0da5>	" ඥ - taaluja sanyooga naasikyaya (jnya) - TODO
+<A-N>	<char-0x0da4>	" ඤ - taaluja naasikyaya (nya)
+<A-J>	<char-0x0da5>	" ඥ - taaluja sanyooga naasikyaya (jnya)
 <A-j>	<char-0x0da6>	" ඦ - sanyaka jayanna (nyja)
 t	<char-0x0da7>	" ට - alpapraana ttayanna (tta) - shouldn't it be ta?
 T	<char-0x0da8>	" ඨ - mahaapraana jhayanna (ttha)
 d	<char-0x0da9>	" ඩ - alpapraana ddayanna (dda) - shouldn't it be da?
-D	<char-0x0daa>	" ඪ - mahaapraana ddhayanna (ddha)
+D	<char-0x0daa>	" ඪ - mahaapraana ddayanna (ddha)
 N	<char-0x0dab>	" ණ - muurdhaja nayanna (nna)
-"D	<char-0x0dac>	" ඬ - sanyaka ddayanna (nndda) - TODO
+<A-v>	<char-0x0dac>	" ඬ - sanyaka ddayanna (nndda)
 <A-t>	<char-0x0dad>	" ත - alpapraana ttayanna (ta)
 <A-T>	<char-0x0dae>	" ථ - mahaapraana ttayanna (tha)
-<A-d>	<char-0x0daf>	" ද - alpapraana ddayanna (da)
-<A-D>	<char-0x0db0>	" ධ - mahaapraana ddayanna (dha)
+<A-d>	<char-0x0daf>	" ද - alpapraana dayanna (da)
+<A-D>	<char-0x0db0>	" ධ - mahaapraana dayanna (dha)
 n	<char-0x0db1>	" න - dantaja nayanna (na)
-"n	<char-0x0db3>	" ඳ - sanyaka dayanna (nda) - TODO
+V	<char-0x0db3>	" ඳ - sanyaka dayanna (nda)
 p	<char-0x0db4>	" ප - alpapraana payanna (pa)
 P	<char-0x0db5>	" ඵ - mahaapraana payanna (pha)
 b	<char-0x0db6>	" බ - alpapraana bayanna (ba)
