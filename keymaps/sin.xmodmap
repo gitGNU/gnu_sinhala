@@ -1,6 +1,6 @@
 ! Xmodmap Keymap file for Sinhala (Sri Lanka) (2004-04-25)
 ! Maintainer  : Harshula Jayasuriya <hash@jayasolutions.cjb.net>
-! Last Updated: 2004-11-14
+! Last Updated: 2004-12-22
 ! This is a static phonetic mapping for a standard US-English keyboard
 ! (qwerty)
 ! http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
@@ -54,5 +54,5 @@ keysym m = 0x01000db8 0x01000db9
 
 keysym period = period greater 0x01000df4
 
-keysym backslash = backslash bar 0x0100200d 0x0100200d 
+keysym backslash = backslash bar 0x01000dca 0x0100200d 
 keysym space = space nobreakspace 0x0100200c
