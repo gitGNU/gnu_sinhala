@@ -46,12 +46,15 @@ v0.1 - 2004-06-05
 \layout Itemize
 
 v0.2 - 2004-10-07
+\layout Itemize
+
+v0.3 - 2005-03-06 - in progress.
 \layout Section
 
 Introduction
 \layout Standard
 
-The Sinhala support on GNU/Linux is still quite basic.
+The Sinhala support in GNU/Linux distributions is still quite basic.
  Since Sinhala support is based on Unicode, there is already some level
  of support.
 \layout Standard
@@ -281,7 +284,7 @@ There will probably be two such lines, one for the keyboard and another
 Option "XkbLayout" "sin,us"
 \layout Standard
 
-Also add key to switch between 'us' and 'sin' and indicate which LED should
+Also add a key to switch between 'us' and 'sin' and indicate which LED should
  be used:
 \layout Code
 
@@ -411,25 +414,18 @@ are
 \series medium 
 gtk-im
 \series default 
- and 
-\series medium 
-XIM
-\series default 
-
+, XIM and IIIMF
 \begin_inset Foot
 collapsed false
 
 \layout Standard
 
-
-\begin_inset LatexCommand \htmlurl[Pango Input Resources]{http://www.pango.org/input-resources.shtml}
-
-\end_inset 
-
-
+http://www.pango.org/input-resources.shtml
 \end_inset 
 
 .
+ The recommended infrastructures are xkb, for simple one-to-one keymaps
+ and IIIMF for complex keymaps.
 \layout Subsubsection
 
 Keymaps
@@ -576,6 +572,34 @@ To test a loaded keymap:
 setxkbmap -print | xkbcomp -w 10 -xkb - <outfile>
 \layout Subsection
 
+Renderer
+\layout Subsubsection
+
+Pango
+\layout Standard
+
+The Pango code for Sinhala and Indic rendering is common and can be found
+ in the pango source at:
+\layout Code
+
+modules/indic/
+\layout Standard
+
+One of the most important files to understand is:
+\layout Code
+
+modules/indic/indic-ot-class-tables.c
+\layout Standard
+
+Particularly how the function:
+\layout Code
+
+indic_ot_find_syllable
+\layout Standard
+
+works.
+\layout Subsection
+
 Resources/Info
 \layout Itemize
 
@@ -606,16 +630,16 @@ Resources/Info
 TODO
 \layout Itemize
 
-add Sinhala to /usr/include/X11/keysymdef.h
+Add Sinhala to /usr/include/X11/keysymdef.h
 \layout Itemize
 
-ZWJ issue with Pango
+Touching letters in Pango
 \layout Itemize
 
-develop Sinhala IPA transliteration for documents
+Develop Sinhala IPA transliteration for documents
 \layout Itemize
 
-develop Sinhala literary transliteration for documents
+Develop Sinhala literary transliteration for documents
 \layout Itemize
 
 Wijesekera IIIMF keymap
@@ -624,7 +648,10 @@ Wijesekera IIIMF keymap
 See if xkb can be extended to allow multiple codepoints per keycode
 \layout Itemize
 
-write up explanation and justificiation for the phonetic Sinhala keymap
+English Locale for Sri Lanka
+\layout Itemize
+
+Write up explanation and justificiation for the phonetic Sinhala keymap
 \layout Itemize
 
 LyX - /usr/share/lyx/kbd
@@ -633,16 +660,43 @@ LyX - /usr/share/lyx/kbd
 DONE
 \layout Itemize
 
-submit xkb keymap to X Keyboard Configuration Database
+Submit xkb keymap to X Keyboard Configuration Database
 \layout Itemize
 
-submit vim keymap to Bram
+Submit vim keymap to Bram
 \layout Itemize
 
-submit xkb keymap to xorg and xfree86
+Submit xkb keymap to xorg
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+https://bugs.freedesktop.org/show_bug.cgi?id=1850
+\end_inset 
+
+ and xfree86
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://bugs.xfree86.org/show_bug.cgi?id=1509
+\end_inset 
+
+
 \layout Itemize
 
-Pango patch - don't implicitly create conjuncts
+Submit Pango patch - don't implicitly create conjuncts
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://bugzilla.gnome.org/show_bug.cgi?id=161981
+\end_inset 
+
+
 \layout Section
 
 Conclusion
