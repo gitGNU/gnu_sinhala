@@ -1,0 +1,157 @@
+#LyX 1.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 221
+\textclass docbook
+\language english
+\inputencoding auto
+\fontscheme default
+\graphics default
+\paperfontsize default
+\spacing single 
+\papersize a4paper
+\paperpackage a4
+\use_geometry 0
+\use_amsmath 0
+\use_natbib 0
+\use_numerical_citations 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Title
+
+Sinhala Support in GNU/Linux HOWTO
+\layout Author
+
+Harshula Jayasuriya
+\layout Section
+
+About This Guide
+\layout Standard
+
+This guide describes what level of Sinhala support on GNU/Linux.
+ It also describes tasks that still require attention.
+\layout Section
+
+Introduction
+\layout Standard
+
+The Sinhala support on GNU/Linux is still quite basic.
+\layout Section
+
+Fonts
+\layout Standard
+
+Install a unicode font.
+ eg.
+ freefont
+\layout Itemize
+
+http://www.nongnu.org/freefont/
+\layout Itemize
+
+http://metta.lk/fonts/sinhala-fonts.zip
+\layout Standard
+
+Immediately you'll be able to read Sinhala in these programs:
+\layout Itemize
+
+Anything gtk2 based
+\begin_deeper 
+\layout Itemize
+
+evolution
+\layout Itemize
+
+gedit
+\layout Itemize
+
+gucharmap
+\layout Itemize
+
+gvim
+\layout Itemize
+
+mozilla
+\end_deeper 
+\layout Section
+
+Keymaps
+\layout Enumerate
+
+Wijesekera Compatible
+\begin_deeper 
+\layout Itemize
+
+http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_1.html
+\end_deeper 
+\layout Enumerate
+
+ASCII Compatible Wijesekera
+\begin_deeper 
+\layout Itemize
+
+http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_2.html
+\end_deeper 
+\layout Enumerate
+
+Phonetic (Static)
+\begin_deeper 
+\layout Itemize
+
+http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
+\end_deeper 
+\layout Enumerate
+
+Phonetic (Dynamic)
+\begin_deeper 
+\layout Itemize
+
+http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html
+\end_deeper 
+\layout Subsection
+
+Applications
+\layout Subsubsection
+
+gvim
+\layout Enumerate
+
+download the keymap from:
+\begin_deeper 
+\layout Itemize
+
+http://savannah.nongnu.org/cgi-bin/viewcvs/sinhala/sinhala/keymaps/sinhalap_utf-8.v
+im
+\end_deeper 
+\layout Enumerate
+
+copy the keymap to ~/.vim/keymap/
+\layout Enumerate
+
+start gvim
+\layout Enumerate
+
+set guioptions-=m
+\layout Enumerate
+
+set keymap=sinhalap_utf-8
+\layout Section
+
+Locales
+\layout Section
+
+Conclusion
+\layout Standard
+
+Obviously, there's still quite a bit to do.
+\layout Section
+
+Links
+\the_end
