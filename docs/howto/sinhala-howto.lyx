@@ -293,7 +293,7 @@ To familiarise yourself with this keymap, read:
 
 \layout Enumerate
 
-Download the keymap from:
+Download the keymaps from:
 \begin_deeper 
 \begin_deeper 
 \layout Itemize
@@ -304,11 +304,19 @@ Download the keymap from:
 \end_inset 
 
 
+\layout Itemize
+
+
+\begin_inset LatexCommand \htmlurl[sinhala.vim]{http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/sinhala/sinhala/keymaps/sinhala.vim?rev=HEAD&content-type=text/plain}
+
+\end_inset 
+
+
 \end_deeper 
 \end_deeper 
 \layout Enumerate
 
-Copy the keymap to ~/.vim/keymap/
+Copy the keymaps to ~/.vim/keymap/
 \layout Enumerate
 
 Start gvim
