@@ -146,6 +146,20 @@ Install a unicode font.
 
 \layout Standard
 
+If you are using a modern GNU/Linux version and it has fontconfig installed,
+ all you have to do is make a directory ~/.fonts:
+\layout Code
+
+mkdir ~/.fonts
+\layout Standard
+
+and copy the True/Open Type font into that directory.
+ Then run:
+\layout Code
+
+fc-cache -fv
+\layout Standard
+
 Immediately you'll be able to read Unicode Sinhala in these programs:
 \layout Itemize
 
@@ -514,6 +528,12 @@ XKB - adding a new keymap
 \layout Standard
 
 All you need to do is just copy the keymap file into the correct directory:
+\layout Code
+
+/etc/X11/xkb/symbols/
+\layout Standard
+
+and
 \layout Code
 
 /etc/X11/xkb/symbols/pc/
