@@ -133,9 +133,15 @@ Learning about Unicode
 Fonts
 \layout Standard
 
-Install a unicode font.
- eg.
- freefont
+Install a unicode font:
+\layout Itemize
+
+
+\begin_inset LatexCommand \htmlurl[http://www.fonts.lk/download/Malithi%20Web.html]{http://www.fonts.lk/download/Malithi%20Web.html}
+
+\end_inset 
+
+
 \layout Itemize
 
 
