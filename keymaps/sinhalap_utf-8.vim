@@ -1,6 +1,6 @@
 " Vim Keymap file for Sinhala (Sri Lanka) (2003-11-02)
 " Maintainer  : Harshula Jayasuriya <hash@jayasolutions.cjb.net>
-" Last Updated: 2004-05-16
+" Last Updated: 2004-06-05
 " This is a static phonetic mapping for a standard US-English keyboard
 " (101 qwerty)
 " http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
@@ -75,8 +75,8 @@ s	<char-0x0dc3>	" ස - dantaja sayanna (sa)
 h	<char-0x0dc4>	" හ - hayanna (ha)
 L	<char-0x0dc5>	" ළ - muurdhaja layanna (lla)
 f	<char-0x0dc6>	" ෆ - fayanna (fa)
-<A-;>	<char-0x0dca>	" ් - al-lakuna
-<A-a>	<char-0x0dcf>	"  ා - aela-pilla (aa)
+<A-a>	<char-0x0dca>	" ් - al-lakuna
+<A-A>	<char-0x0dcf>	"  ා - aela-pilla (aa)
 <A-w>	<char-0x0dd0>	"  ැ - ketti aeda-pilla (ae)
 <A-W>	<char-0x0dd1>	"  ෑ - diga aeda-pilla (aae)
 <A-i>	<char-0x0dd2>	"  ි - ketti is-pilla (i)
@@ -100,6 +100,5 @@ Y	<char-0x0dca><char-0x200d><char-0x0dba>	"  ්‍ය - yansaya
 <A-r>	<char-0x0dbb><char-0x0dca><char-0x200d>	"  ර්‍ - repaya
 <A-\>	<char-0x200c>	" - ZWNJ
 <A-|>	<char-0x200d>	" - ZWJ
+<S-space>	<char-0x00A0>	" - no-break space
 "	<char-0DCA><char-200D>	" - join - conjunct letters cons 0DCA 200D cons
-" - muurdhaja lu
-" - 00A0 non-breaking space
