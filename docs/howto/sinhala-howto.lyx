@@ -29,7 +29,7 @@
 Sinhala Support in GNU/Linux HOWTO
 \layout Author
 
-Harshula, hash@jayasolutions.cjb.net
+Harshula Jayasuriya <hash at jayasolutions dot cjb dot net>
 \layout Section
 
 About This Guide
@@ -133,7 +133,7 @@ Learning about Unicode
 Fonts
 \layout Standard
 
-Install a unicode font:
+Download a unicode Sinhala font:
 \layout Itemize
 
 
@@ -220,6 +220,12 @@ You should have at least XFree86 4.3 or Xorg 6.7.
 \end_inset 
 
 
+\layout Standard
+
+NOTE: The Caps Lock key is used to switch between the Sinhala Phonetic keymap
+ and the Latin QWERTY keymap.
+ However, if you wish to use the Caps Lock for its original purpose, simply
+ use SHIFT + Caps Lock.
 \layout Enumerate
 
 Download the keymap from:
@@ -600,16 +606,22 @@ Resources/Info
 TODO
 \layout Itemize
 
+add Sinhala to /usr/include/X11/keysymdef.h
+\layout Itemize
+
+ZWJ issue with Pango
+\layout Itemize
+
 develop Sinhala IPA transliteration for documents
 \layout Itemize
 
 develop Sinhala literary transliteration for documents
 \layout Itemize
 
-See if xkb can be extended to allow multiple codepoints per keycode
+Wijesekera IIIMF keymap
 \layout Itemize
 
-add Sinhala to /usr/include/X11/keysymdef.h
+See if xkb can be extended to allow multiple codepoints per keycode
 \layout Itemize
 
 write up explanation and justificiation for the phonetic Sinhala keymap
@@ -628,6 +640,9 @@ submit vim keymap to Bram
 \layout Itemize
 
 submit xkb keymap to xorg and xfree86
+\layout Itemize
+
+Pango patch - don't implicitly create conjuncts
 \layout Section
 
 Conclusion
