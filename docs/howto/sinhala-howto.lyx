@@ -16,7 +16,7 @@
 \paperorientation portrait
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
+\paragraph_separation skip
 \defskip medskip
 \quotes_language english
 \quotes_times 2
@@ -29,13 +29,16 @@
 Sinhala Support in GNU/Linux HOWTO
 \layout Author
 
-Harshula Jayasuriya
+Harshula, hash@jayasolutions.cjb.net
+\layout Revision
+
+v0.1, 2004-05-16
 \layout Section
 
 About This Guide
 \layout Standard
 
-This guide describes what level of Sinhala support on GNU/Linux.
+This guide describes the level of Sinhala support available on GNU/Linux.
  It also describes tasks that still require attention.
 \layout Section
 
@@ -43,6 +46,57 @@ Introduction
 \layout Standard
 
 The Sinhala support on GNU/Linux is still quite basic.
+ Since Sinhala support is based on Unicode, there is already some level
+ of support.
+\layout Standard
+
+There are a number of patches to support Sinhala floating around for many
+ key parts of GNU/Linux.
+ Unfortunately the patches still need to be integrated/submitted upstream.
+ Then these updated packages need to be included in the latest versions
+ of distributions.
+ Hence there will be a significant latency between when the developer's
+ work is finished and when an average user is able to benefit.
+\layout Standard
+
+During this period a user can, hopefully, use this HOWTO to check the current
+ status of Sinhala support in GNU/Linux and how to enable better support.
+\layout Subsection
+
+Learning about Sinhala
+\layout Itemize
+
+www.speaksinhala.com
+\layout Itemize
+
+www.sinhalapage.com
+\layout Itemize
+
+www.ceylon-online.com
+\layout Itemize
+
+Silva, A.W.L.
+ (2003).
+ 
+\emph on 
+SINHALESE for Beginners
+\emph default 
+.
+ Sri Lanka: Pubudu Printers Kandana
+\begin_deeper 
+\layout Itemize
+
+The first chapter has excellent coverage of the Sinhala letters.
+\end_deeper 
+\layout Subsection
+
+Learning about Unicode
+\layout Itemize
+
+unicode.org
+\layout Itemize
+
+www.cl.cam.ac.uk/~mgk25/unicode.html
 \layout Section
 
 Fonts
@@ -53,13 +107,13 @@ Install a unicode font.
  freefont
 \layout Itemize
 
-http://www.nongnu.org/freefont/
+www.nongnu.org/freefont/
 \layout Itemize
 
-http://metta.lk/fonts/sinhala-fonts.zip
+metta.lk/fonts/sinhala-fonts.zip
 \layout Standard
 
-Immediately you'll be able to read Sinhala in these programs:
+Immediately you'll be able to read Unicode Sinhala in these programs:
 \layout Itemize
 
 Anything gtk2 based
@@ -78,9 +132,181 @@ gucharmap
 gvim
 \layout Itemize
 
-mozilla
+mozilla (built with gtk2 and FreeType2)
 \end_deeper 
 \layout Section
+
+Input Methods
+\layout Standard
+
+
+\series medium 
+To test multi-lingual input methods in gtk2 based programs, run 
+\emph on 
+testtext,
+\emph default 
+ which comes with gtk2.
+\layout Subsection
+
+Character Maps
+\layout Standard
+
+You can use a Unicode Character Map program to copy 'n' paste Sinhala characters
+ into your program/document.
+ Available programs are:
+\layout Itemize
+
+gucharmap
+\layout Subsection
+
+Keymaps
+\layout Subsubsection
+
+gvim
+\layout Enumerate
+
+Download the keymap from:
+\begin_deeper 
+\layout Itemize
+
+http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/sinhala/sinhala/keymaps/sinh
+alap_utf-8.vim?rev=HEAD&content-type=text/plain
+\end_deeper 
+\layout Enumerate
+
+Copy the keymap to ~/.vim/keymap/
+\layout Enumerate
+
+Start gvim
+\layout Enumerate
+
+Need to disable the menu so that you can use the 'alt' key.
+\begin_deeper 
+\layout Code
+
+set guioptions-=m
+\end_deeper 
+\layout Enumerate
+
+Select the new keymap
+\begin_deeper 
+\layout Code
+
+set keymap=sinhalap_utf-8
+\end_deeper 
+\layout Subsubsection
+
+X Keyboard Extension
+\layout Enumerate
+
+Download the keymap from:
+\begin_deeper 
+\layout Itemize
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+<!-- http://savannah.nongnu.org/cgi-bin/viewcvs/sinhala/sinhala/keymaps/si
+\layout Standard
+-->
+\end_inset 
+
+
+\end_deeper 
+\layout Enumerate
+
+Copy the keymap to /usr/X11R6/lib/X11/xkb/symbols/
+\layout Enumerate
+
+Edit the /etc/X11/XF86Config file.
+ In order to add the new 'si' keymap, look for this line:
+\begin_deeper 
+\layout Code
+
+Option "XkbLayout"
+\layout Standard
+
+Here's an example of what I've changed mine to:
+\layout Code
+
+Option "XkbLayout" "us,si"
+\layout Standard
+
+Also add key to switch between 'us' and 'si':
+\layout Code
+
+Option "XkbOptions" "grp:caps_toggle,grp_led:scroll"
+\end_deeper 
+\layout Enumerate
+
+Or alternately, in an xterm do:
+\begin_deeper 
+\layout Code
+
+setxkbmap -rules xfree86 -model pc105 -layout "us,si" -option grp:caps_toggle
+ -option "lv3:switch" 
+\end_deeper 
+\layout Subsubsection
+
+xmodmap
+\layout Enumerate
+
+Download the keymap from:
+\begin_deeper 
+\layout Itemize
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+<!-- http://savannah.nongnu.org/cgi-bin/viewcvs/sinhala/sinhala/keymaps/si.xmm
+\layout Standard
+-->
+\end_inset 
+
+
+\end_deeper 
+\layout Enumerate
+
+Then run xmodmap:
+\begin_deeper 
+\layout Code
+
+xmodmap si.xmm 
+\end_deeper 
+\layout Section
+
+Locales
+\layout Section
+
+Developers
+\layout Subsection
+
+Input Methods
+\layout Standard
+
+
+\series medium 
+The usable infrastructure for keymaps 
+\series default 
+are
+\series medium 
+ xkb
+\series default 
+, 
+\series medium 
+gtk-im
+\series default 
+ and 
+\series medium 
+XIM.
+\layout Itemize
+
+http://www.pango.org/input-resources.shtml
+\layout Subsubsection
 
 Keymaps
 \layout Enumerate
@@ -89,7 +315,7 @@ Wijesekera Compatible
 \begin_deeper 
 \layout Itemize
 
-http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_1.html
+www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_1.html
 \end_deeper 
 \layout Enumerate
 
@@ -97,7 +323,7 @@ ASCII Compatible Wijesekera
 \begin_deeper 
 \layout Itemize
 
-http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_2.html
+www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_2.html
 \end_deeper 
 \layout Enumerate
 
@@ -105,7 +331,7 @@ Phonetic (Static)
 \begin_deeper 
 \layout Itemize
 
-http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
+www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
 \end_deeper 
 \layout Enumerate
 
@@ -113,45 +339,47 @@ Phonetic (Dynamic)
 \begin_deeper 
 \layout Itemize
 
-http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html
+www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html
 \end_deeper 
+\layout Standard
+
+A Sinhala Unicode Font has to be installed in order to read the Keyboard
+ Maps.
+ 
 \layout Subsection
 
-Applications
-\layout Subsubsection
-
-gvim
-\layout Enumerate
-
-download the keymap from:
-\begin_deeper 
+Resources/Info
 \layout Itemize
 
-http://savannah.nongnu.org/cgi-bin/viewcvs/sinhala/sinhala/keymaps/sinhalap_utf-8.v
-im
-\end_deeper 
-\layout Enumerate
+sinhala.linux.lk
+\layout Itemize
 
-copy the keymap to ~/.vim/keymap/
-\layout Enumerate
+www.nongnu.org/sinhala/
+\layout Itemize
 
-start gvim
-\layout Enumerate
-
-set guioptions-=m
-\layout Enumerate
-
-set keymap=sinhalap_utf-8
+www.jayasolutions.cjb.net/06fonts.html
 \layout Section
 
-Locales
+TODO
+\layout Itemize
+
+submit Sri Lankan locales
+\layout Itemize
+
+submit vim keymaps
+\layout Itemize
+
+add Sinhala to /usr/include/X11/keysymdef.h
+\layout Itemize
+
+si Vs sl - Why are the Slovenians using 'si'?!
+\layout Itemize
+
+LyX - /usr/share/lyx/kbd
 \layout Section
 
 Conclusion
 \layout Standard
 
-Obviously, there's still quite a bit to do.
-\layout Section
-
-Links
+Obviously there's still quite a bit to do.
 \the_end
