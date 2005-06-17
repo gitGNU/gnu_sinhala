@@ -42,13 +42,13 @@ This guide describes the level of Sinhala support available on GNU/Linux.
 Revisions
 \layout Itemize
 
-v0.1 - 2004-06-05
+v0.1 - 2004/06/05
 \layout Itemize
 
-v0.2 - 2004-10-07
+v0.2 - 2004/10/07
 \layout Itemize
 
-v0.3 - 2005-03-06 - in progress.
+v0.3 - 2005/03/06 - in progress.
 \layout Section
 
 Introduction
@@ -359,8 +359,8 @@ set keymap=sinhala-phonetic_utf-8
 xmodmap
 \layout Standard
 
-We recommend you use the X Keyboard Extension keymap instead of the xmodmap
- keymap.
+The xmodmap keymap is not fully functional, hence it is recommend you use
+ the X Keyboard Extension keymap.
  To familiarise yourself with this keymap, read:
 \layout Itemize
 
@@ -514,14 +514,18 @@ showkey
 \layout Itemize
 
 54 - right shift
-\layout Itemize
+\layout Standard
+
+Look in the linux source:
+\layout Code
 
 drivers/char/keyboard.c
-\begin_deeper 
-\layout Itemize
+\layout Standard
+
+Look for the function:
+\layout Code
 
 getkeycode()
-\end_deeper 
 \layout Subsubsection
 
 XKB - adding a new keymap
@@ -567,7 +571,7 @@ xkb/symbols.dir
 \layout Standard
 
 To test a loaded keymap:
-\layout Itemize
+\layout Code
 
 setxkbmap -print | xkbcomp -w 10 -xkb - <outfile>
 \layout Subsection
@@ -620,7 +624,7 @@ Resources/Info
 \layout Itemize
 
 
-\begin_inset LatexCommand \htmlurl[www.jayasolutions.cjb.net/06fonts.html]{http://www.jayasolutions.cjb.net/06fonts.html}
+\begin_inset LatexCommand \htmlurl[www.jayasolutions.cjb.net/fonts.html]{http://www.jayasolutions.cjb.net/fonts.html}
 
 \end_inset 
 
@@ -633,7 +637,7 @@ TODO
 Add Sinhala to /usr/include/X11/keysymdef.h
 \layout Itemize
 
-Touching letters in Pango
+Printing problems
 \layout Itemize
 
 Develop Sinhala IPA transliteration for documents
@@ -694,6 +698,18 @@ collapsed false
 \layout Standard
 
 http://bugzilla.gnome.org/show_bug.cgi?id=161981
+\end_inset 
+
+
+\layout Itemize
+
+Submit Pango patch - Enable touching letters in Sinhala rendering
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://bugzilla.gnome.org/show_bug.cgi?id=302577
 \end_inset 
 
 
