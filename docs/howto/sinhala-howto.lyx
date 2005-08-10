@@ -140,7 +140,7 @@ Download a unicode Sinhala font:
 \layout Itemize
 
 
-\begin_inset LatexCommand \htmlurl[http://sinhala.linux.lk/pub/fonts/lklug.otf]{http://sinhala.linux.lk/pub/fonts/lklug.otf}
+\begin_inset LatexCommand \htmlurl[http://sinhala.linux.lk/pub/fonts/lklug.ttf]{http://sinhala.linux.lk/pub/fonts/lklug.ttf}
 
 \end_inset 
 
@@ -414,13 +414,23 @@ are
 \series medium 
 gtk-im
 \series default 
-, XIM and IIIMF
+, XIM
 \begin_inset Foot
 collapsed false
 
 \layout Standard
 
 http://www.pango.org/input-resources.shtml
+\end_inset 
+
+and IIIMF
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewart
+icle&artid=103&page=1
 \end_inset 
 
 .
@@ -637,9 +647,6 @@ TODO
 Add Sinhala to /usr/include/X11/keysymdef.h
 \layout Itemize
 
-Printing problems
-\layout Itemize
-
 Develop Sinhala IPA transliteration for documents
 \layout Itemize
 
@@ -713,6 +720,10 @@ http://bugzilla.gnome.org/show_bug.cgi?id=302577
 \end_inset 
 
 
+\layout Itemize
+
+The printing problem was due to the font being an OTF font.
+ Once the lklug font was changed to a TTF, the printing problem disappeared.
 \layout Section
 
 Conclusion
