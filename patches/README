@@ -2,10 +2,16 @@
 1) pango-1.6.0-sinhala2.patch:
 http://bugzilla.gnome.org/show_bug.cgi?id=161981
 
+implicit-conjunct-correct.png
+implicit-conjunct-incorrect.png
+implicit-conjunct-testcase.txt
 --------------------------------------------------------------------
 2) pango-1.8.0-sinhala3.patch:
 http://bugzilla.gnome.org/show_bug.cgi?id=161981
 
+implicit-conjunct-correct.png
+implicit-conjunct-incorrect.png
+implicit-conjunct-testcase.txt
 --------------------------------------------------------------------
 3) pango-1.8.1-sinhala4.patch:
 http://bugzilla.gnome.org/show_bug.cgi?id=302577
