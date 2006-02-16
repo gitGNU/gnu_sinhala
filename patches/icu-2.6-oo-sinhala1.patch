@@ -57,7 +57,7 @@ diff -ru icu-oo/download/icu/source/layout/IndicClassTables.cpp icu-oo-build/dow
      &teluClassTable, /* 'telu' (TELUGU) */
 diff -ru icu-oo/download/icu/source/layout/IndicReordering.cpp icu-oo-build/download/icu/source/layout/IndicReordering.cpp
 --- icu-oo/download/icu/source/layout/IndicReordering.cpp	2003-06-04 06:58:22.000000000 +1000
-+++ icu-oo-build/download/icu/source/layout/IndicReordering.cpp	2006-02-16 04:18:07.000000000 +1100
++++ icu-oo-build/download/icu/source/layout/IndicReordering.cpp	2006-02-16 23:55:13.000000000 +1100
 @@ -28,6 +28,7 @@
      LEUnicode fMabove;
      LEUnicode fMpost;
@@ -127,11 +127,12 @@ diff -ru icu-oo/download/icu/source/layout/IndicReordering.cpp icu-oo-build/down
  
  };
  
-@@ -282,12 +299,15 @@
+@@ -282,12 +299,16 @@
              break;
  
          case IndicClassTable::CC_DEPENDENT_VOWEL:
 -            output.writeMpre();
++            // A lone <U+0DDD> crashes ooffice without this workaround.
 +            if (!output.alLakunaExists()) {
 +                output.writeMpre();
 +            }
@@ -144,7 +145,7 @@ diff -ru icu-oo/download/icu/source/layout/IndicReordering.cpp icu-oo-build/down
              break;
  
          case IndicClassTable::CC_CONSONANT:
-@@ -465,6 +485,7 @@
+@@ -465,6 +486,7 @@
              }
  
              output.writeLengthMark();
