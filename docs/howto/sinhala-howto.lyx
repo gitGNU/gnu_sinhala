@@ -587,9 +587,27 @@ setxkbmap -print | xkbcomp -w 10 -xkb - <outfile>
 \layout Subsection
 
 Renderer
+\layout Standard
+
+The top of tree Pango (since 1.8.2) & ICU (since 3.4+) trees now support SLS1134.
+ 
 \layout Subsubsection
 
 Pango
+\layout Standard
+
+Pango's Indic renderer is based on ICU's Indic renderer.
+\layout Standard
+
+The original patch to add Sinhala support was created by Harsha Senanayake
+ for ICU (was lost and never made public) and later ported to Pango.
+ The Pango patch was ported to the latest version of Pango, cleaned up and
+ submitted to bugzilla by Anuradha Ratnaweera (http://bugzilla.gnome.org/show_bug.c
+gi?id=153517).
+ Harshula Jayasuriya had made some changes to the Pango state table & ZWJ
+ handling (http://bugzilla.gnome.org/show_bug.cgi?id=161981 & http://bugzilla.gnome.o
+rg/show_bug.cgi?id=302577).
+ 
 \layout Standard
 
 The Pango code for Sinhala and Indic rendering is common and can be found
@@ -608,10 +626,43 @@ modules/indic/indic-ot-class-tables.c
 Particularly how the function:
 \layout Code
 
-indic_ot_find_syllable
+indic_ot_find_syllable()
 \layout Standard
 
 works.
+\layout Standard
+
+Next have a look at the file:
+\layout Code
+
+modules/indic/indic-ot.c
+\layout Standard
+
+and the function:
+\layout Code
+
+indic_ot_reorder()
+\layout Subsubsection
+
+ICU
+\layout Standard
+
+Owen Taylor (Pango) submitted the Pango patch to the ICU project (http://dev.icu-
+project.org/cgi-bin/icu-bugs?findid=4298).
+ Last year Eric Mader (ICU) ported the Pango patch to ICU and checked-in
+ the changes to ICU 3.4+.
+ Then Eric added the state table & ZWJ changes to ICU 3.4+ (http://dev.icu-project.
+org/cgi-bin/icu-bugs/layout?id=4711 & http://dev.icu-project.org/cgi-bin/icu-bugs?
+findid=5057).
+\layout Standard
+
+Look at files:
+\layout Code
+
+source/layout/IndicReordering.cpp
+\layout Code
+
+source/layout/IndicClassTables.cpp
 \layout Subsection
 
 Resources/Info
@@ -653,7 +704,7 @@ Develop Sinhala IPA transliteration for documents
 Develop Sinhala literary transliteration for documents
 \layout Itemize
 
-Wijesekera IIIMF keymap
+Learn about OT features
 \layout Itemize
 
 See if xkb can be extended to allow multiple codepoints per keycode
@@ -698,6 +749,9 @@ http://bugs.xfree86.org/show_bug.cgi?id=1509
 
 \layout Itemize
 
+Amend ISO639 to include 'Sinhala' in the languages list alongside 'Sinhalese'.
+\layout Itemize
+
 Submit Pango patch - don't implicitly create conjuncts
 \begin_inset Foot
 collapsed false
@@ -724,6 +778,57 @@ http://bugzilla.gnome.org/show_bug.cgi?id=302577
 
 The printing problem was due to the font being an OTF font.
  Once the lklug font was changed to a TTF, the printing problem disappeared.
+\layout Itemize
+
+Convince Pango and ICU maintainers to emit ZWJ to the font lookup stage.
+\layout Itemize
+
+Provide test files and images for ICU Sinhala support 
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
+\end_inset 
+
+
+\layout Itemize
+
+ICU: ZWJ Processing in Sinhala
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4710
+\end_inset 
+
+
+\layout Itemize
+
+ICU: Implement PR 37 ZWJ/ZWNJ Behavior 
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711
+\end_inset 
+
+
+\layout Itemize
+
+ICU: Indic Reordering State Table Allows ZWJ Virama ZWJ
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057
+\end_inset 
+
+
 \layout Section
 
 Conclusion
