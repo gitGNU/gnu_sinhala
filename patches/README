@@ -1,5 +1,5 @@
 --------------------------------------------------------------------
-pango-1.6.0-sinhala1.patch:
+pango-1.6.0-sinhala1.patch
 http://bugzilla.gnome.org/show_bug.cgi?id=153517
 
 The original patch to add Sinhala support was created by Harsha Senanayake
@@ -8,24 +8,41 @@ version of Pango, cleaned up and submitted to bugzilla by Anuradha Ratnaweera.
 This is the patch that was submitted to bugzilla.
 
 --------------------------------------------------------------------
-1) pango-1.6.0-sinhala2.patch:
+1) pango-1.6.0-sinhala2.patch
 http://bugzilla.gnome.org/show_bug.cgi?id=161981
 
 implicit-conjunct-correct.png
 implicit-conjunct-incorrect.png
 implicit-conjunct-testcase.txt
 --------------------------------------------------------------------
-2) pango-1.8.0-sinhala3.patch:
+2) pango-1.8.0-sinhala3.patch
 http://bugzilla.gnome.org/show_bug.cgi?id=161981
 
 implicit-conjunct-correct.png
 implicit-conjunct-incorrect.png
 implicit-conjunct-testcase.txt
 --------------------------------------------------------------------
-3) pango-1.8.1-sinhala4.patch:
+3) pango-1.8.1-sinhala4.patch
 http://bugzilla.gnome.org/show_bug.cgi?id=302577
 
 touching-letters-correct.png
 touching-letters-incorrect.png
 touching-letters-testcase.txt
+--------------------------------------------------------------------
+4) icu-2.6-oo-sinhala1.patch
+Patch not submitted to OO bugzilla because of (5)
+
+icu-sinhala-rendering.txt
+
+This patch is based on:
+pango-1.6.0-sinhala1.patch
+pango-1.6.0-sinhala2.patch
+pango-1.8.0-sinhala3.patch
+pango-1.8.1-sinhala4.patch
+http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
+--------------------------------------------------------------------
+5) No patches yet
+Still debugging ICU 2.6 ZWJ handling issues
+
+icu-zwj-handling.txt
 --------------------------------------------------------------------

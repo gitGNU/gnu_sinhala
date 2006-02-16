@@ -1,0 +1,185 @@
+diff -ru icu-oo/download/icu/source/layout/IndicClassTables.cpp icu-oo-build/download/icu/source/layout/IndicClassTables.cpp
+--- icu-oo/download/icu/source/layout/IndicClassTables.cpp	2003-06-04 06:58:22.000000000 +1000
++++ icu-oo-build/download/icu/source/layout/IndicClassTables.cpp	2006-02-16 02:50:01.000000000 +1100
+@@ -177,6 +177,18 @@
+     _iv, _iv, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx  // 0D60 - 0D6F
+ };
+ 
++static const IndicClassTable::CharClass sinhCharClasses[] =
++{
++    _xx, _xx, _mp, _mp, _xx, _iv, _iv, _iv, _iv, _iv, _iv, _iv, _iv, _iv, _iv, _iv, // 0D80 - 0D8F
++    _iv, _iv, _iv, _iv, _iv, _iv, _iv, _xx, _xx, _xx, _ct, _ct, _ct, _ct, _ct, _ct, // 0D90 - 0D9F
++    _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, // 0DA0 - 0DAF
++    _ct, _ct, _xx, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _xx, _ct, _xx, _xx, // 0DB0 - 0DBF
++    _ct, _ct, _ct, _ct, _ct, _ct, _ct, _xx, _xx, _xx, _vr, _xx, _xx, _xx, _xx, _dr, // 0DC0 - 0DCF
++    _dr, _dr, _da, _da, _db, _xx, _db, _xx, _dr, _dl, _s1, _dl, _s2, _s3, _s4, _dr, // 0DD0 - 0DDF
++    _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, // 0DE0 - 0DEF
++    _xx, _xx, _dr, _dr, _xx                                                         // 0DF0 - 0DF4
++};
++
+ //
+ // Split matra tables
+ //
+@@ -193,6 +205,8 @@
+ 
+ static const SplitMatra mlymSplitTable[] = {{0x0D46, 0x0D3E}, {0x0D47, 0x0D3E}, {0x0D46, 0x0D57}};
+ 
++static const SplitMatra sinhSplitTable[] = {{0x0DD9, 0x0DCA}, {0x0DD9, 0x0DCF}, {0x0DD9, 0x0DCF, 0x0DCA}, {0x0DD9, 0x0DDF}};
++
+ //
+ // Script Flags
+ //
+@@ -209,6 +223,7 @@
+ #define TELU_SCRIPT_FLAGS (IndicClassTable::SF_MATRAS_AFTER_BASE | 3)
+ #define KNDA_SCRIPT_FLAGS (IndicClassTable::SF_MATRAS_AFTER_BASE | 3)
+ #define MLYM_SCRIPT_FLAGS (IndicClassTable::SF_MPRE_FIXUP | IndicClassTable::SF_NO_POST_BASE_LIMIT)
++#define SINH_SCRIPT_FLAGS (IndicClassTable::SF_MPRE_FIXUP | IndicClassTable::SF_NO_POST_BASE_LIMIT)
+ 
+ //
+ // Indic Class Tables
+@@ -231,6 +246,8 @@
+ 
+ static const IndicClassTable mlymClassTable = {0x0D00, 0x0D6F, 3, MLYM_SCRIPT_FLAGS, mlymCharClasses, mlymSplitTable};
+ 
++static const IndicClassTable sinhClassTable = {0x0D80, 0x0DF4, 3, SINH_SCRIPT_FLAGS, sinhCharClasses, sinhSplitTable};
++
+ //
+ // IndicClassTable addresses
+ //
+@@ -268,7 +285,7 @@
+     NULL,            /* 'ital' (OLD-ITALIC) */
+     &oryaClassTable, /* 'orya' (ORIYA) */
+     NULL,            /* 'runr' (RUNIC) */
+-    NULL,            /* 'sinh' (SINHALA) */
++    &sinhClassTable, /* 'sinh' (SINHALA) */
+     NULL,            /* 'syrc' (SYRIAC) */
+     &tamlClassTable, /* 'taml' (TAMIL) */
+     &teluClassTable, /* 'telu' (TELUGU) */
+diff -ru icu-oo/download/icu/source/layout/IndicReordering.cpp icu-oo-build/download/icu/source/layout/IndicReordering.cpp
+--- icu-oo/download/icu/source/layout/IndicReordering.cpp	2003-06-04 06:58:22.000000000 +1000
++++ icu-oo-build/download/icu/source/layout/IndicReordering.cpp	2006-02-16 04:18:07.000000000 +1100
+@@ -28,6 +28,7 @@
+     LEUnicode fMabove;
+     LEUnicode fMpost;
+     LEUnicode fLengthMark;
++    LEUnicode fAlLakuna; /* to handle Al-Lakuna in sinhala split matras */
+     le_int32 fMatraIndex;
+     const LETag *fMatraTags;
+     le_int32 fMPreOutIndex;
+@@ -47,13 +48,15 @@
+             fMpost = matra;
+         } else if (IndicClassTable::isLengthMark(matraClass)) {
+             fLengthMark = matra;
++        } else if (IndicClassTable::isVirama(matraClass)) {
++            fAlLakuna = matra;
+         }
+     }
+ 
+ public:
+     ReorderingOutput(LEUnicode *outChars, le_int32 *charIndices, const LETag **charTags, MPreFixups *mpreFixups)
+         : fOutIndex(0), fOutChars(outChars), fCharIndices(charIndices), fCharTags(charTags),
+-          fMpre(0), fMbelow(0), fMabove(0), fMpost(0), fLengthMark(0),
++          fMpre(0), fMbelow(0), fMabove(0), fMpost(0), fLengthMark(0), fAlLakuna(0),
+           fMatraIndex(0), fMatraTags(NULL), fMPreOutIndex(-1), fMPreFixups(mpreFixups)
+     {
+         // nothing else to do...
+@@ -64,11 +67,24 @@
+         // nothing to do here...
+     }
+ 
++    // Handles AlLakuna in Sinhala split vowels.
++    void writeAlLakuna()
++    {
++        if (fAlLakuna != 0) {
++            writeChar(fAlLakuna, fMatraIndex, fMatraTags);
++        }
++    }
++
++    int alLakunaExists()
++    {
++        return (fAlLakuna != 0);
++    }
++
+     void noteMatra(const IndicClassTable *classTable, LEUnicode matra, le_uint32 matraIndex, const LETag *matraTags)
+     {
+         IndicClassTable::CharClass matraClass = classTable->getCharClass(matra);
+ 
+-        fMpre = fMbelow = fMabove = fMpost = fLengthMark = 0;
++        fMpre = fMbelow = fMabove = fMpost = fLengthMark = fAlLakuna = 0;
+         fMPreOutIndex = -1;
+         fMatraIndex = matraIndex;
+         fMatraTags = matraTags;
+@@ -198,13 +214,14 @@
+ //   xx  ma  mp  iv  ct  cn  nu  dv  vr  zw
+     { 1,  1,  1,  5,  3,  2,  1,  1,  1,  1},
+     {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+-    {-1,  6,  1, -1, -1, -1, -1,  5,  4, -1},
+-    {-1,  6,  1, -1, -1, -1,  2,  5,  4, -1},
++    {-1,  6,  1, -1, -1, -1, -1,  5,  4,  9},
++    {-1,  6,  1, -1, -1, -1,  2,  5,  4,  9},
+     {-1, -1, -1, -1,  3,  2, -1, -1, -1,  8},
+     {-1,  6,  1, -1, -1, -1, -1, -1, -1, -1},
+     {-1,  7,  1, -1, -1, -1, -1, -1, -1, -1},
+     {-1, -1,  1, -1, -1, -1, -1, -1, -1, -1},
+-    {-1, -1, -1, -1,  3,  2, -1, -1, -1, -1}
++    {-1, -1, -1, -1,  3,  2, -1, -1, -1, -1},
++    {-1, -1, -1, -1, -1, -1, -1, -1,  8, -1}
+ 
+ };
+ 
+@@ -282,12 +299,15 @@
+             break;
+ 
+         case IndicClassTable::CC_DEPENDENT_VOWEL:
+-            output.writeMpre();
++            if (!output.alLakunaExists()) {
++                output.writeMpre();
++            }
+             output.writeChar(C_DOTTED_CIRCLE, prev, &tagArray[1]);
+             output.writeMbelow();
+             output.writeMabove();
+             output.writeMpost();
+             output.writeLengthMark();
++            output.writeAlLakuna();
+             break;
+ 
+         case IndicClassTable::CC_CONSONANT:
+@@ -465,6 +485,7 @@
+             }
+ 
+             output.writeLengthMark();
++            output.writeAlLakuna();
+ 
+             // write reph
+             if ((classTable->scriptFlags & IndicClassTable::SF_REPH_AFTER_BELOW) == 0) {
+diff -ru icu-oo/download/icu/source/layout/LayoutEngine.cpp icu-oo-build/download/icu/source/layout/LayoutEngine.cpp
+--- icu-oo/download/icu/source/layout/LayoutEngine.cpp	2006-02-12 03:56:56.000000000 +1100
++++ icu-oo-build/download/icu/source/layout/LayoutEngine.cpp	2006-02-12 21:00:01.000000000 +1100
+@@ -426,6 +426,7 @@
+         case guruScriptCode:
+         case tamlScriptCode:
+         case teluScriptCode:
++        case sinhScriptCode:
+             result = new IndicOpenTypeLayoutEngine(fontInstance, scriptCode, languageCode, gsubTable);
+             break;
+ 
+@@ -483,6 +484,7 @@
+             case guruScriptCode:
+             case tamlScriptCode:
+             case teluScriptCode:
++            case sinhScriptCode:
+             {
+                 result = new IndicOpenTypeLayoutEngine(fontInstance, scriptCode, languageCode);
+                 break;
+diff -ru icu-oo/download/icu/source/layout/LEFontInstance.cpp icu-oo-build/download/icu/source/layout/LEFontInstance.cpp
+--- icu-oo/download/icu/source/layout/LEFontInstance.cpp	2003-05-17 03:43:04.000000000 +1000
++++ icu-oo-build/download/icu/source/layout/LEFontInstance.cpp	2006-02-16 19:21:23.000000000 +1100
+@@ -74,7 +74,7 @@
+         return 0xFFFF;
+     }
+ 
+-    if (mappedChar == 0x200C || mappedChar == 0x200D) {
++    if (mappedChar == 0x200C) {
+         return 1;
+     }
+ 
