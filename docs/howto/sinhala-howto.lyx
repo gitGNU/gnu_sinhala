@@ -182,6 +182,29 @@ gvim
 
 mozilla (built with gtk2 and FreeType2)
 \end_deeper 
+\layout Subsection
+
+Mozilla/Firefox
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.h
+tml
+\end_inset 
+
+
+\layout Quotation
+
+Firefox and Mozilla can be enabled with pango rendering support, which enables
+ many text layout features, including the rendering of CTL (Complex Text
+ Layout) such as Indic languages.
+ To enable this, set the following environment variable when running Firefox
+ or Mozilla:
+\layout Quotation
+
+MOZ_ENABLE_PANGO=1
 \layout Section
 
 Input Methods
@@ -225,10 +248,10 @@ You should have at least XFree86 4.3 or Xorg 6.7.
 
 \layout Standard
 
-NOTE: The Caps Lock key is used to switch between the Sinhala Phonetic keymap
- and the Latin QWERTY keymap.
- However, if you wish to use the Caps Lock for its original purpose, simply
- use SHIFT + Caps Lock.
+NOTE: In the example below I have chosen the ALT keys to switch between
+ the Sinhala Phonetic keymap and the US QWERTY keymap.
+ Hold one of the ALT keys down and then press the other ALT key, this should
+ toggle between the keymaps.
 \layout Enumerate
 
 Download the keymap from:
@@ -260,7 +283,7 @@ In an xterm do:
 \begin_deeper 
 \layout Code
 
-setxkbmap -layout "sin,us" -option "grp:caps_toggle,grp_led:caps"
+setxkbmap -layout "sin,us" -option "grp:alts_toggle,grp_led:scroll"
 \end_deeper 
 \layout Enumerate
 
@@ -288,7 +311,7 @@ Also add a key to switch between 'us' and 'sin' and indicate which LED should
  be used:
 \layout Code
 
-Option "XkbOptions" "grp:caps_toggle,grp_led:caps"
+Option "XkbOptions" "grp:alts_toggle,grp_led:scroll"
 \layout Standard
 
 Then, use your window manager's keyboard layout program to reset to the
@@ -399,6 +422,21 @@ Locales
 Developers
 \layout Subsection
 
+Fonts
+\layout Itemize
+
+http://mail.gnu.org/archive/html/freefont-bugs/2003-03/msg00000.html
+\layout Itemize
+
+http://mail.gnu.org/archive/html/freefont-bugs/2003-04/msg00001.html
+\layout Itemize
+
+http://mail.gnu.org/archive/html/freefont-bugs/2003-05/msg00005.html
+\layout Itemize
+
+http://mail.gnu.org/archive/html/freefont-bugs/2003-08/msg00002.html
+\layout Subsection
+
 Input Methods
 \layout Standard
 
@@ -408,22 +446,13 @@ The usable infrastructure for keymaps
 \series default 
 are
 \series medium 
- xkb
+ 
 \series default 
-, 
+XKB, 
 \series medium 
 gtk-im
 \series default 
-, XIM
-\begin_inset Foot
-collapsed false
-
-\layout Standard
-
-http://www.pango.org/input-resources.shtml
-\end_inset 
-
-and IIIMF
+, XIM, IIIMF
 \begin_inset Foot
 collapsed false
 
@@ -433,9 +462,18 @@ http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=view
 icle&artid=103&page=1
 \end_inset 
 
+ and SCIM
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://www.scim-im.org/
+\end_inset 
+
 .
  The recommended infrastructures are xkb, for simple one-to-one keymaps
- and IIIMF for complex keymaps.
+ and SCIM for complex keymaps.
 \layout Subsubsection
 
 Keymaps
@@ -600,13 +638,47 @@ Pango's Indic renderer is based on ICU's Indic renderer.
 \layout Standard
 
 The original patch to add Sinhala support was created by Harsha Senanayake
- for ICU (was lost and never made public) and later ported to Pango.
+ for ICU 
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://marc.theaimsgroup.com/?t=106354110900001&r=1&w=2
+\end_inset 
+
+and later ported to Pango.
  The Pango patch was ported to the latest version of Pango, cleaned up and
- submitted to bugzilla by Anuradha Ratnaweera (http://bugzilla.gnome.org/show_bug.c
-gi?id=153517).
- Harshula Jayasuriya had made some changes to the Pango state table & ZWJ
- handling (http://bugzilla.gnome.org/show_bug.cgi?id=161981 & http://bugzilla.gnome.o
-rg/show_bug.cgi?id=302577).
+ submitted to bugzilla by Anuradha Ratnaweera
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://bugzilla.gnome.org/show_bug.cgi?id=153517
+\end_inset 
+
+.
+ Harshula Jayasuriya made some changes to the Pango state table & ZWJ handling
+ 
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://bugzilla.gnome.org/show_bug.cgi?id=161981
+\end_inset 
+
+ & 
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://bugzilla.gnome.org/show_bug.cgi?id=302577
+\end_inset 
+
+.
  
 \layout Standard
 
@@ -647,13 +719,37 @@ indic_ot_reorder()
 ICU
 \layout Standard
 
-Owen Taylor (Pango) submitted the Pango patch to the ICU project (http://dev.icu-
-project.org/cgi-bin/icu-bugs?findid=4298).
+Owen Taylor (Pango) submitted the Pango patch to the ICU project 
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
+\end_inset 
+
+.
  Last year Eric Mader (ICU) ported the Pango patch to ICU and checked-in
  the changes to ICU 3.4+.
- Then Eric added the state table & ZWJ changes to ICU 3.4+ (http://dev.icu-project.
-org/cgi-bin/icu-bugs/layout?id=4711 & http://dev.icu-project.org/cgi-bin/icu-bugs?
-findid=5057).
+ Then Eric added the state table & ZWJ changes to ICU 3.4+ 
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711
+\end_inset 
+
+ & 
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057
+\end_inset 
+
+.
 \layout Standard
 
 Look at files:
@@ -682,17 +778,12 @@ Resources/Info
 \end_inset 
 
 
-\layout Itemize
-
-
-\begin_inset LatexCommand \htmlurl[www.jayasolutions.cjb.net/fonts.html]{http://www.jayasolutions.cjb.net/fonts.html}
-
-\end_inset 
-
-
 \layout Section
 
 TODO
+\layout Itemize
+
+SLS1134 support in Open Office
 \layout Itemize
 
 Add Sinhala to /usr/include/X11/keysymdef.h
@@ -710,10 +801,13 @@ Learn about OT features
 See if xkb can be extended to allow multiple codepoints per keycode
 \layout Itemize
 
+Improve the range of the Sinhala Unicode font.
+\layout Itemize
+
 English Locale for Sri Lanka
 \layout Itemize
 
-Write up explanation and justificiation for the phonetic Sinhala keymap
+Write up explanation and justification for the phonetic Sinhala keymap
 \layout Itemize
 
 LyX - /usr/share/lyx/kbd
