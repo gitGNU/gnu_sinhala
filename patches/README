@@ -3,7 +3,8 @@ pango-1.6.0-sinhala1.patch
 http://bugzilla.gnome.org/show_bug.cgi?id=153517
 
 The original patch to add Sinhala support was created by Harsha Senanayake
-for ICU and later ported to Pango. The Pango patch was ported to the latest
+for ICU (http://marc.theaimsgroup.com/?t=106354110900001&r=1&w=2)
+and later ported to Pango. The Pango patch was ported to the latest
 version of Pango, cleaned up and submitted to bugzilla by Anuradha Ratnaweera.
 This is the patch that was submitted to bugzilla.
 
