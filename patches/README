@@ -42,8 +42,17 @@ pango-1.8.0-sinhala3.patch
 pango-1.8.1-sinhala4.patch
 http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
 --------------------------------------------------------------------
-5) No patches yet
-Still debugging ICU 2.6 ZWJ handling issues
+5) icu-3.4-sinhala1.patch
+Problems due to point (6)
+
+icu-sinhala-rendering.txt
+
+This patch is based on:
+icu-2.6-oo-sinhala1.patch
+http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057
+--------------------------------------------------------------------
+6) No patches yet
+Still debugging OO ZWJ handling issues
 
 icu-zwj-handling.txt
 --------------------------------------------------------------------

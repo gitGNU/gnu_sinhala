@@ -1,0 +1,198 @@
+diff -ru icu-3.4/source/layout/IndicClassTables.cpp icu-3.4-sinhala1/source/layout/IndicClassTables.cpp
+--- icu-3.4/source/layout/IndicClassTables.cpp	2005-07-12 08:22:06.000000000 +1000
++++ icu-3.4-sinhala1/source/layout/IndicClassTables.cpp	2006-03-30 08:15:23.000000000 +1000
+@@ -186,6 +186,18 @@
+     _iv, _iv, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx  // 0D60 - 0D6F
+ };
+ 
++static const IndicClassTable::CharClass sinhCharClasses[] =
++{
++    _xx, _xx, _mp, _mp, _xx, _iv, _iv, _iv, _iv, _iv, _iv, _iv, _iv, _iv, _iv, _iv, // 0D80 - 0D8F
++    _iv, _iv, _iv, _iv, _iv, _iv, _iv, _xx, _xx, _xx, _ct, _ct, _ct, _ct, _ct, _ct, // 0D90 - 0D9F
++    _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, // 0DA0 - 0DAF
++    _ct, _ct, _xx, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _ct, _xx, _ct, _xx, _xx, // 0DB0 - 0DBF
++    _ct, _ct, _ct, _ct, _ct, _ct, _ct, _xx, _xx, _xx, _vr, _xx, _xx, _xx, _xx, _dr, // 0DC0 - 0DCF
++    _dr, _dr, _da, _da, _db, _xx, _db, _xx, _dr, _dl, _s1, _dl, _s2, _s3, _s4, _dr, // 0DD0 - 0DDF
++    _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, _xx, // 0DE0 - 0DEF
++    _xx, _xx, _dr, _dr, _xx                                                         // 0DF0 - 0DF4
++};
++
+ //
+ // Split matra tables
+ //
+@@ -202,6 +214,8 @@
+ 
+ static const SplitMatra mlymSplitTable[] = {{0x0D46, 0x0D3E}, {0x0D47, 0x0D3E}, {0x0D46, 0x0D57}};
+ 
++static const SplitMatra sinhSplitTable[] = {{0x0DD9, 0x0DCA}, {0x0DD9, 0x0DCF}, {0x0DD9, 0x0DCF, 0x0DCA}, {0x0DD9, 0x0DDF}};
++
+ //
+ // Script Flags
+ //
+@@ -218,6 +232,7 @@
+ #define TELU_SCRIPT_FLAGS (SF_MATRAS_AFTER_BASE | 3)
+ #define KNDA_SCRIPT_FLAGS (SF_MATRAS_AFTER_BASE | 3)
+ #define MLYM_SCRIPT_FLAGS (SF_MPRE_FIXUP | SF_NO_POST_BASE_LIMIT)
++#define SINH_SCRIPT_FLAGS (SF_MPRE_FIXUP | SF_NO_POST_BASE_LIMIT)
+ 
+ //
+ // Indic Class Tables
+@@ -240,6 +255,8 @@
+ 
+ static const IndicClassTable mlymClassTable = {0x0D00, 0x0D6F, 3, MLYM_SCRIPT_FLAGS, mlymCharClasses, mlymSplitTable};
+ 
++static const IndicClassTable sinhClassTable = {0x0D80, 0x0DF4, 3, SINH_SCRIPT_FLAGS, sinhCharClasses, sinhSplitTable};
++
+ //
+ // IndicClassTable addresses
+ //
+@@ -277,7 +294,7 @@
+     NULL,            /* 'ital' (OLD-ITALIC) */
+     &oryaClassTable, /* 'orya' (ORIYA) */
+     NULL,            /* 'runr' (RUNIC) */
+-    NULL,            /* 'sinh' (SINHALA) */
++    &sinhClassTable, /* 'sinh' (SINHALA) */
+     NULL,            /* 'syrc' (SYRIAC) */
+     &tamlClassTable, /* 'taml' (TAMIL) */
+     &teluClassTable, /* 'telu' (TELUGU) */
+diff -ru icu-3.4/source/layout/IndicReordering.cpp icu-3.4-sinhala1/source/layout/IndicReordering.cpp
+--- icu-3.4/source/layout/IndicReordering.cpp	2005-06-18 05:20:44.000000000 +1000
++++ icu-3.4-sinhala1/source/layout/IndicReordering.cpp	2006-03-30 09:33:43.000000000 +1000
+@@ -35,6 +35,9 @@
+     LEUnicode fLengthMark;
+     le_int32  fLengthMarkIndex;
+ 
++    LEUnicode fAlLakuna;
++    le_int32  fAlLakunaIndex;
++
+     const LETag *fMatraTags;
+     
+     le_int32 fMPreOutIndex;
+@@ -56,6 +59,9 @@
+         if (IndicClassTable::isLengthMark(matraClass)) {
+             fLengthMark = matra;
+             fLengthMarkIndex = matraIndex;
++        } else if (IndicClassTable::isVirama(matraClass)) {
++            fAlLakuna = matra;
++            fAlLakunaIndex = matraIndex;
+         } else {
+             switch (matraClass & CF_POS_MASK) {
+             case CF_POS_BEFORE:
+@@ -89,8 +95,9 @@
+     ReorderingOutput(LEUnicode *outChars, LEGlyphStorage &glyphStorage, MPreFixups *mpreFixups)
+         : fOutIndex(0), fOutChars(outChars), fGlyphStorage(glyphStorage),
+           fMpre(0), fMpreIndex(0), fMbelow(0), fMbelowIndex(0), fMabove(0), fMaboveIndex(0),
+-          fMpost(0), fMpostIndex(0), fLengthMark(0), fLengthMarkIndex(0), fMatraTags(NULL),
+-          fMPreOutIndex(-1), fMPreFixups(mpreFixups),
++          fMpost(0), fMpostIndex(0), fLengthMark(0), fLengthMarkIndex(0),
++          fAlLakuna(0), fAlLakunaIndex(0),
++          fMatraTags(NULL), fMPreOutIndex(-1), fMPreFixups(mpreFixups),
+           fVMabove(0), fVMpost(0), fVMIndex(0), fVMTags(NULL),
+           fSMabove(0), fSMbelow(0), fSMIndex(0), fSMTags(NULL)
+     {
+@@ -104,7 +111,7 @@
+ 
+     void reset()
+     {
+-        fMpre = fMbelow = fMabove = fMpost = fLengthMark = 0;
++        fMpre = fMbelow = fMabove = fMpost = fLengthMark = fAlLakuna = 0;
+         fMPreOutIndex = -1;
+         
+         fVMabove = fVMpost  = 0;
+@@ -205,6 +212,19 @@
+         }
+     }
+ 
++    int alLakunaExists()
++    {
++        return (fAlLakuna != 0);
++    }
++
++    // Handles Al-Lakuna in Sinhala split vowels.
++    void writeAlLakuna()
++    {
++        if (fAlLakuna != 0) {
++            writeChar(fAlLakuna, fAlLakunaIndex, fMatraTags);
++        }
++    }
++
+     void writeMpre()
+     {
+         if (fMpre != 0) {
+@@ -326,14 +346,15 @@
+     { 1,  1,  1,  5,  8,  3,  2,  1,  5,  9,  5,  1,  1,  1}, //  0 - ground state
+     {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1}, //  1 - exit state
+     {-1,  6,  1, -1, -1, -1, -1, -1,  5,  9,  5,  5,  4, -1}, //  2 - consonant with nukta
+-    {-1,  6,  1, -1, -1, -1, -1,  2,  5,  9,  5,  5,  4, -1}, //  3 - consonant
++    {-1,  6,  1, -1, -1, -1, -1,  2,  5,  9,  5,  5,  4, 11}, //  3 - consonant
+     {-1, -1, -1, -1, -1,  3,  2, -1, -1, -1, -1, -1, -1,  7}, //  4 - consonant virama
+     {-1,  6,  1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1}, //  5 - dependent vowels
+     {-1, -1,  1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1}, //  6 - vowel mark
+     {-1, -1, -1, -1, -1,  3,  2, -1, -1, -1, -1, -1, -1, -1}, //  7 - ZWJ, ZWNJ
+     {-1,  6,  1, -1, -1, -1, -1, -1, -1, -1, -1, -1,  4, -1}, //  8 - independent vowels that can take a virama
+     {-1,  6,  1, -1, -1, -1, -1, -1, -1, -1, 10,  5, -1, -1}, //  9 - first part of split vowel
+-    {-1,  6,  1, -1, -1, -1, -1, -1, -1, -1, -1,  5, -1, -1}  // 10 - second part of split vowel
++    {-1,  6,  1, -1, -1, -1, -1, -1, -1, -1, -1,  5, -1, -1}, // 10 - second part of split vowel
++    {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,  7, -1}  // 11 - <ct> <zwj>
+ 
+ };
+ 
+@@ -420,7 +441,10 @@
+         case CC_SPLIT_VOWEL_PIECE_3:
+         case CC_VOWEL_MODIFIER:
+         case CC_STRESS_MARK:
+-            output.writeMpre();
++            // A lone <U+0DDD> crashes ooffice without this workaround.
++            if (!output.alLakunaExists()) {
++                output.writeMpre();
++            }
+ 
+             output.writeChar(C_DOTTED_CIRCLE, prev, &tagArray[1]);
+ 
+@@ -442,6 +466,7 @@
+             }
+ 
+             output.writeLengthMark();
++            output.writeAlLakuna();
+ 
+             if ((classTable->scriptFlags & SF_REPH_AFTER_BELOW) == 0) {
+                 output.writeVMabove();
+@@ -632,6 +657,7 @@
+             }
+ 
+             output.writeLengthMark();
++            output.writeAlLakuna();
+ 
+             // write reph
+             if ((classTable->scriptFlags & SF_REPH_AFTER_BELOW) == 0) {
+diff -ru icu-3.4/source/layout/LayoutEngine.cpp icu-3.4-sinhala1/source/layout/LayoutEngine.cpp
+--- icu-3.4/source/layout/LayoutEngine.cpp	2005-06-17 10:16:36.000000000 +1000
++++ icu-3.4-sinhala1/source/layout/LayoutEngine.cpp	2006-03-30 08:13:44.000000000 +1000
+@@ -467,6 +467,7 @@
+         case guruScriptCode:
+         case tamlScriptCode:
+         case teluScriptCode:
++        case sinhScriptCode:
+             result = new IndicOpenTypeLayoutEngine(fontInstance, scriptCode, languageCode, typoFlags, gsubTable);
+             break;
+ 
+@@ -519,6 +520,7 @@
+             case guruScriptCode:
+             case tamlScriptCode:
+             case teluScriptCode:
++            case sinhScriptCode:
+             {
+                 result = new IndicOpenTypeLayoutEngine(fontInstance, scriptCode, languageCode, typoFlags);
+                 break;
+diff -ru icu-3.4/source/layout/LEFontInstance.cpp icu-3.4-sinhala1/source/layout/LEFontInstance.cpp
+--- icu-3.4/source/layout/LEFontInstance.cpp	2004-10-19 16:25:42.000000000 +1000
++++ icu-3.4-sinhala1/source/layout/LEFontInstance.cpp	2006-03-30 09:06:28.000000000 +1000
+@@ -75,7 +75,7 @@
+         return 0xFFFF;
+     }
+ 
+-    if (mappedChar == 0x200C || mappedChar == 0x200D) {
++    if (mappedChar == 0x200C) {
+         return 1;
+     }
+ 
