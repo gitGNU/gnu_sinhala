@@ -1,0 +1,10 @@
+--- HELLO.utf8	2006-04-06 15:21:09.000000000 +0600
++++ HELLO.utf8.new	2006-04-06 15:42:29.000000000 +0600
+@@ -31,6 +31,7 @@
+ Punjabi	ਪੁਂਜਾਬਿ
+ Polish	Dzień dobry, Hej
+ Russian (Русский)	Здравствуйте!
++Sinhala (සිංහල)	ආයුබෝවන්
+ Slovak	Dobrý deň
+ Spanish (Español)	¡Hola!
+ Swedish (Svenska)	Hej, Goddag

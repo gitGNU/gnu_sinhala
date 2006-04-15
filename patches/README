@@ -56,3 +56,7 @@ Still debugging OO ZWJ handling issues
 
 icu-zwj-handling.txt
 --------------------------------------------------------------------
+7) HELLO.utf8.patch
+
+Include a line for Sinhala
+--------------------------------------------------------------------
