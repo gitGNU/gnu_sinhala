@@ -1,64 +1,78 @@
-#LyX 1.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 221
+#LyX 1.4.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 245
+\begin_document
+\begin_header
 \textclass docbook
 \language english
 \inputencoding auto
 \fontscheme default
 \graphics default
 \paperfontsize default
-\spacing single 
+\spacing single
 \papersize a4paper
-\paperpackage a4
-\use_geometry 0
-\use_amsmath 0
-\use_natbib 0
-\use_numerical_citations 0
+\use_geometry false
+\use_amsmath 1
+\cite_engine basic
+\use_bibtopic false
 \paperorientation portrait
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
 \defskip medskip
 \quotes_language english
-\quotes_times 2
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\tracking_changes false
+\output_changes true
+\end_header
 
-\layout Title
+\begin_body
 
+\begin_layout Title
 Sinhala Support in GNU/Linux HOWTO
-\layout Author
+\end_layout
 
+\begin_layout Author
 Harshula Jayasuriya <hash at jayasolutions dot cjb dot net>
-\layout Section
+\end_layout
 
+\begin_layout Section
 About This Guide
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 This guide describes the level of Sinhala support available on GNU/Linux.
  It also describes tasks that still require attention.
-\layout Subsubsection
+\end_layout
 
+\begin_layout Subsubsection
 Revisions
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 v0.1 - 2004/06/05
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 v0.2 - 2004/10/07
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 v0.3 - 2005/03/06 - in progress.
-\layout Section
+\end_layout
 
+\begin_layout Section
 Introduction
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 The Sinhala support in GNU/Linux distributions is still quite basic.
  Since Sinhala support is based on Unicode, there is already some level
  of support.
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 There are a number of patches to support Sinhala floating around for many
  key parts of GNU/Linux.
  Unfortunately the patches still need to be integrated/submitted upstream.
@@ -66,867 +80,1037 @@ There are a number of patches to support Sinhala floating around for many
  of distributions.
  Hence there will be a significant latency between when the developer's
  work is finished and when an average user is able to benefit.
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 During this period a user can, hopefully, use this HOWTO to check the current
  status of Sinhala support in GNU/Linux and how to enable better support.
-\layout Subsection
+\end_layout
 
+\begin_layout Subsection
 Learning about Sinhala
-\layout Itemize
+\end_layout
 
-
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[www.speaksinhala.com]{http://www.speaksinhala.com}
 
-\end_inset 
+\end_inset
 
 
-\layout Itemize
+\end_layout
 
-
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[www.sinhalapage.com]{http://www.sinhalapage.com}
 
-\end_inset 
+\end_inset
 
 
-\layout Itemize
+\end_layout
 
-
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[www.ceylon-online.com]{http://www.ceylon-online.com}
 
-\end_inset 
+\end_inset
 
 
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Silva, A.W.L.
  (2003).
  
-\emph on 
+\emph on
 SINHALESE for Beginners
-\emph default 
+\emph default
 .
  Sri Lanka: Pubudu Printers Kandana
-\begin_deeper 
-\layout Itemize
+\end_layout
 
+\begin_deeper
+\begin_layout Itemize
 The first chapter has excellent coverage of the Sinhala letters.
-\end_deeper 
-\layout Subsection
+\end_layout
 
+\end_deeper
+\begin_layout Subsection
 Learning about Unicode
-\layout Itemize
+\end_layout
 
-
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[www.unicode.org]{http://www.unicode.org/}
 
-\end_inset 
+\end_inset
 
 
-\layout Itemize
+\end_layout
 
-
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[UTF-8 and Unicode FAQ for Unix/Linux]{http://www.cl.cam.ac.uk/~mgk25/unicode.html}
 
-\end_inset 
+\end_inset
 
 
-\layout Section
+\end_layout
 
+\begin_layout Section
 Fonts
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 Download a unicode Sinhala font:
-\layout Itemize
+\end_layout
 
-
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[http://sinhala.linux.lk/pub/fonts/lklug.ttf]{http://sinhala.linux.lk/pub/fonts/lklug.ttf}
 
-\end_inset 
+\end_inset
 
 
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 If you are using a modern GNU/Linux version and it has fontconfig installed,
  all you have to do is make a directory ~/.fonts:
-\layout Code
+\end_layout
 
+\begin_layout Code
 mkdir ~/.fonts
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 and copy the True/Open Type font into that directory.
  Then run:
-\layout Code
+\end_layout
 
+\begin_layout Code
 fc-cache -fv
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 Immediately you'll be able to read Unicode Sinhala in these programs:
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Anything gtk2 based
-\begin_deeper 
-\layout Itemize
+\end_layout
 
+\begin_deeper
+\begin_layout Itemize
 evolution
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 gedit
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 gucharmap
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 gvim
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 mozilla (built with gtk2 and FreeType2)
-\end_deeper 
-\layout Subsection
+\end_layout
 
+\end_deeper
+\begin_layout Subsection
 Mozilla/Firefox
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.h
 tml
-\end_inset 
+\end_layout
+
+\end_inset
 
 
-\layout Quotation
+\end_layout
 
+\begin_layout Quotation
 Firefox and Mozilla can be enabled with pango rendering support, which enables
  many text layout features, including the rendering of CTL (Complex Text
  Layout) such as Indic languages.
  To enable this, set the following environment variable when running Firefox
  or Mozilla:
-\layout Quotation
+\end_layout
 
+\begin_layout Quotation
 MOZ_ENABLE_PANGO=1
-\layout Section
+\end_layout
 
+\begin_layout Section
 Input Methods
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 
-\series medium 
+\series medium
 To test multi-lingual input methods in gtk2 based programs, run 
-\emph on 
+\emph on
 testtext,
-\emph default 
+\emph default
  which comes with gtk2.
-\layout Subsection
+\end_layout
 
+\begin_layout Subsection
 Character Maps
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 You can use a Unicode Character Map program to copy 'n' paste Sinhala characters
  into your program/document.
  Available programs are:
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 gucharmap
-\layout Subsection
+\end_layout
 
+\begin_layout Subsection
 Keymaps
-\layout Subsubsection
+\end_layout
 
+\begin_layout Subsubsection
 X Keyboard Extension
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 You should have at least XFree86 4.3 or Xorg 6.7.
  To familiarise yourself with this keymap, read:
-\layout Itemize
+\end_layout
 
-
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
 
-\end_inset 
+\end_inset
 
 
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 NOTE: In the example below I have chosen the ALT keys to switch between
  the Sinhala Phonetic keymap and the US QWERTY keymap.
  Hold one of the ALT keys down and then press the other ALT key, this should
  toggle between the keymaps.
-\layout Enumerate
+\end_layout
 
+\begin_layout Enumerate
 Download the keymap from:
-\begin_deeper 
-\layout Itemize
+\end_layout
 
-
+\begin_deeper
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[sin]{http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/sinhala/sinhala/keymaps/sin?rev=HEAD&content-type=text/plain}
 
-\end_inset 
+\end_inset
 
 
-\end_deeper 
-\layout Enumerate
+\end_layout
 
+\end_deeper
+\begin_layout Enumerate
 Copy the keymap to:
-\begin_deeper 
-\layout Code
+\end_layout
 
+\begin_deeper
+\begin_layout Code
 /etc/X11/xkb/symbols/pc/
-\end_deeper 
-\layout Enumerate
+\end_layout
 
+\end_deeper
+\begin_layout Enumerate
 There are two options:
-\begin_deeper 
-\layout Enumerate
+\end_layout
 
+\begin_deeper
+\begin_layout Enumerate
 In an xterm do:
-\begin_deeper 
-\layout Code
+\end_layout
 
+\begin_deeper
+\begin_layout Code
 setxkbmap -layout "sin,us" -option "grp:alts_toggle,grp_led:scroll"
-\end_deeper 
-\layout Enumerate
+\end_layout
 
+\end_deeper
+\begin_layout Enumerate
 Or alternately, edit the /etc/X11/XF86Config or /etc/X11/xorg.conf file.
  
-\begin_deeper 
-\layout Standard
+\end_layout
 
+\begin_deeper
+\begin_layout Standard
 In order to add the new 'sin' keymap, look for this line:
-\layout Code
+\end_layout
 
+\begin_layout Code
 Section "InputDevice"
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 There will probably be two such lines, one for the keyboard and another
  for the mouse.
  Go to the keyboard related line.
  Then add/modify this line:
-\layout Code
+\end_layout
 
+\begin_layout Code
 Option "XkbLayout" "sin,us"
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 Also add a key to switch between 'us' and 'sin' and indicate which LED should
  be used:
-\layout Code
+\end_layout
 
+\begin_layout Code
 Option "XkbOptions" "grp:alts_toggle,grp_led:scroll"
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 Then, use your window manager's keyboard layout program to reset to the
  X defaults.
-\end_deeper 
-\end_deeper 
-\layout Subsubsection
+\end_layout
 
+\end_deeper
+\end_deeper
+\begin_layout Subsubsection
 gvim
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 To familiarise yourself with this keymap, read:
-\layout Itemize
+\end_layout
 
-
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
 
-\end_inset 
+\end_inset
 
 
-\layout Enumerate
+\end_layout
 
+\begin_layout Enumerate
 Download the keymaps from:
-\begin_deeper 
-\begin_deeper 
-\layout Itemize
+\end_layout
 
-
+\begin_deeper
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[sinhala-phonetic_utf-8.vim]{http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/sinhala/sinhala/keymaps/sinhala-phonetic_utf-8.vim?rev=HEAD&content-type=text/plain}
 
-\end_inset 
+\end_inset
 
 
-\layout Itemize
+\end_layout
 
-
+\begin_deeper
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[sinhala.vim]{http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/sinhala/sinhala/keymaps/sinhala.vim?rev=HEAD&content-type=text/plain}
 
-\end_inset 
+\end_inset
 
 
-\end_deeper 
-\end_deeper 
-\layout Enumerate
+\end_layout
 
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
 Copy the keymaps to ~/.vim/keymap/
-\layout Enumerate
+\end_layout
 
+\begin_layout Enumerate
 Start gvim
-\layout Enumerate
+\end_layout
 
+\begin_layout Enumerate
 Need to disable the menu so that you can use the 'alt' key.
-\begin_deeper 
-\layout Code
+\end_layout
 
+\begin_deeper
+\begin_layout Code
 set guioptions-=m
-\end_deeper 
-\layout Enumerate
+\end_layout
 
+\end_deeper
+\begin_layout Enumerate
 Select the new keymap
-\begin_deeper 
-\layout Code
+\end_layout
 
+\begin_deeper
+\begin_layout Code
 set keymap=sinhala-phonetic_utf-8
-\end_deeper 
-\layout Subsubsection
+\end_layout
 
+\end_deeper
+\begin_layout Subsubsection
 xmodmap
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 The xmodmap keymap is not fully functional, hence it is recommend you use
  the X Keyboard Extension keymap.
  To familiarise yourself with this keymap, read:
-\layout Itemize
+\end_layout
 
-
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
 
-\end_inset 
+\end_inset
 
 
-\layout Enumerate
+\end_layout
 
+\begin_layout Enumerate
 Download the keymap from:
-\begin_deeper 
-\layout Itemize
+\end_layout
 
-
+\begin_deeper
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[sin.xmodmap]{http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/sinhala/sinhala/keymaps/sin.xmodmap?rev=HEAD&content-type=text/plain}
 
-\end_inset 
+\end_inset
 
 
-\end_deeper 
-\layout Enumerate
+\end_layout
 
+\end_deeper
+\begin_layout Enumerate
 Then run xmodmap:
-\begin_deeper 
-\layout Code
+\end_layout
 
+\begin_deeper
+\begin_layout Code
 xmodmap sin.xmodmap
-\end_deeper 
-\layout Section
+\end_layout
 
+\end_deeper
+\begin_layout Section
 Locales
-\layout Section
+\end_layout
 
+\begin_layout Section
 Developers
-\layout Subsection
+\end_layout
 
+\begin_layout Subsection
 Fonts
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 http://mail.gnu.org/archive/html/freefont-bugs/2003-03/msg00000.html
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 http://mail.gnu.org/archive/html/freefont-bugs/2003-04/msg00001.html
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 http://mail.gnu.org/archive/html/freefont-bugs/2003-05/msg00005.html
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 http://mail.gnu.org/archive/html/freefont-bugs/2003-08/msg00002.html
-\layout Subsection
+\end_layout
 
+\begin_layout Subsection
 Input Methods
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 
-\series medium 
+\series medium
 The usable infrastructure for keymaps 
-\series default 
+\series default
 are
-\series medium 
+\series medium
  
-\series default 
+\series default
 XKB, 
-\series medium 
+\series medium
 gtk-im
-\series default 
+\series default
 , XIM, IIIMF
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewart
 icle&artid=103&page=1
-\end_inset 
+\end_layout
+
+\end_inset
 
  and SCIM
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://www.scim-im.org/
-\end_inset 
+\end_layout
+
+\end_inset
 
 .
  The recommended infrastructures are xkb, for simple one-to-one keymaps
  and SCIM for complex keymaps.
-\layout Subsubsection
+\end_layout
 
+\begin_layout Subsubsection
 Keymaps
-\layout Enumerate
+\end_layout
 
+\begin_layout Enumerate
 Wijesekera Compatible
-\begin_deeper 
-\layout Itemize
+\end_layout
 
-
+\begin_deeper
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_1.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_1.html}
 
-\end_inset 
+\end_inset
 
 
-\end_deeper 
-\layout Enumerate
+\end_layout
 
+\end_deeper
+\begin_layout Enumerate
 ASCII Compatible Wijesekera
-\begin_deeper 
-\layout Itemize
+\end_layout
 
-
+\begin_deeper
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_2.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_2.html}
 
-\end_inset 
+\end_inset
 
 
-\end_deeper 
-\layout Enumerate
+\end_layout
 
+\end_deeper
+\begin_layout Enumerate
 Phonetic (Static)
-\begin_deeper 
-\layout Itemize
+\end_layout
 
-
+\begin_deeper
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
 
-\end_inset 
+\end_inset
 
 
-\end_deeper 
-\layout Enumerate
+\end_layout
 
+\end_deeper
+\begin_layout Enumerate
 Phonetic (Dynamic)
-\begin_deeper 
-\layout Itemize
+\end_layout
 
-
+\begin_deeper
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html}
 
-\end_inset 
+\end_inset
 
 
-\end_deeper 
-\layout Standard
+\end_layout
 
+\end_deeper
+\begin_layout Standard
 A Sinhala Unicode Font has to be installed in order to read the Keyboard
  Maps.
  
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 You can use 
-\emph on 
+\emph on
 showkey
-\emph default 
+\emph default
  in linux to display the scancode.
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 57 - space
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 56 - left alt
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 100 - right alt
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 29 - left ctrl
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 97 - right ctrl
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 42 - left shift
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 54 - right shift
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 Look in the linux source:
-\layout Code
+\end_layout
 
+\begin_layout Code
 drivers/char/keyboard.c
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 Look for the function:
-\layout Code
+\end_layout
 
+\begin_layout Code
 getkeycode()
-\layout Subsubsection
+\end_layout
 
+\begin_layout Subsubsection
 XKB - adding a new keymap
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 All you need to do is just copy the keymap file into the correct directory:
-\layout Code
+\end_layout
 
+\begin_layout Code
 /etc/X11/xkb/symbols/
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 and
-\layout Code
+\end_layout
 
+\begin_layout Code
 /etc/X11/xkb/symbols/pc/
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 However, for completeness some files in these directories:
-\layout Code
+\end_layout
 
+\begin_layout Code
 /etc/X11/
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 or
-\layout Code
+\end_layout
 
+\begin_layout Code
 /usr/X11R6/lib/X11/
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 need to be modified, namely these files:
-\layout Code
+\end_layout
 
+\begin_layout Code
 xkb/rules/{xorg,xfree86}
-\layout Code
+\end_layout
 
+\begin_layout Code
 xkb/rules/{xorg,xfree86}.lst
-\layout Code
+\end_layout
 
+\begin_layout Code
 xkb/rules/{xorg,xfree86}.xml
-\layout Code
+\end_layout
 
+\begin_layout Code
 xkb/symbols.dir
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 To test a loaded keymap:
-\layout Code
+\end_layout
 
+\begin_layout Code
 setxkbmap -print | xkbcomp -w 10 -xkb - <outfile>
-\layout Subsection
+\end_layout
 
+\begin_layout Subsection
 Renderer
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 The top of tree Pango (since 1.8.2) & ICU (since 3.4+) trees now support SLS1134.
  
-\layout Subsubsection
+\end_layout
 
+\begin_layout Subsubsection
 Pango
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 Pango's Indic renderer is based on ICU's Indic renderer.
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 The original patch to add Sinhala support was created by Harsha Senanayake
  for ICU 
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://marc.theaimsgroup.com/?t=106354110900001&r=1&w=2
-\end_inset 
+\end_layout
+
+\end_inset
 
 and later ported to Pango.
  The Pango patch was ported to the latest version of Pango, cleaned up and
  submitted to bugzilla by Anuradha Ratnaweera
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://bugzilla.gnome.org/show_bug.cgi?id=153517
-\end_inset 
+\end_layout
+
+\end_inset
 
 .
  Harshula Jayasuriya made some changes to the Pango state table & ZWJ handling
  
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://bugzilla.gnome.org/show_bug.cgi?id=161981
-\end_inset 
+\end_layout
+
+\end_inset
 
  & 
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://bugzilla.gnome.org/show_bug.cgi?id=302577
-\end_inset 
+\end_layout
+
+\end_inset
 
 .
  
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 The Pango code for Sinhala and Indic rendering is common and can be found
  in the pango source at:
-\layout Code
+\end_layout
 
+\begin_layout Code
 modules/indic/
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 One of the most important files to understand is:
-\layout Code
+\end_layout
 
+\begin_layout Code
 modules/indic/indic-ot-class-tables.c
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 Particularly how the function:
-\layout Code
+\end_layout
 
+\begin_layout Code
 indic_ot_find_syllable()
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 works.
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 Next have a look at the file:
-\layout Code
+\end_layout
 
+\begin_layout Code
 modules/indic/indic-ot.c
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 and the function:
-\layout Code
+\end_layout
 
+\begin_layout Code
 indic_ot_reorder()
-\layout Subsubsection
+\end_layout
 
+\begin_layout Subsubsection
 ICU
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 Owen Taylor (Pango) submitted the Pango patch to the ICU project 
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
-\end_inset 
+\end_layout
+
+\end_inset
 
 .
  Last year Eric Mader (ICU) ported the Pango patch to ICU and checked-in
  the changes to ICU 3.4+.
  Then Eric added the state table & ZWJ changes to ICU 3.4+ 
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711
-\end_inset 
+\end_layout
+
+\end_inset
 
  & 
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057
-\end_inset 
+\end_layout
+
+\end_inset
 
 .
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 Look at files:
-\layout Code
+\end_layout
 
+\begin_layout Code
 source/layout/IndicReordering.cpp
-\layout Code
+\end_layout
 
+\begin_layout Code
 source/layout/IndicClassTables.cpp
-\layout Subsection
+\end_layout
 
+\begin_layout Subsection
 Resources/Info
-\layout Itemize
+\end_layout
 
-
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[sinhala.linux.lk]{http://sinhala.linux.lk}
 
-\end_inset 
+\end_inset
 
 
-\layout Itemize
+\end_layout
 
-
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/]{http://www.nongnu.org/sinhala/}
 
-\end_inset 
+\end_inset
 
 
-\layout Section
+\end_layout
 
+\begin_layout Section
 TODO
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 SLS1134 support in Open Office
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Add Sinhala to /usr/include/X11/keysymdef.h
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Develop Sinhala IPA transliteration for documents
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Develop Sinhala literary transliteration for documents
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Learn about OT features
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 See if xkb can be extended to allow multiple codepoints per keycode
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Improve the range of the Sinhala Unicode font.
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 English Locale for Sri Lanka
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Write up explanation and justification for the phonetic Sinhala keymap
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 LyX - /usr/share/lyx/kbd
-\layout Section
+\end_layout
 
+\begin_layout Section
 DONE
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Submit xkb keymap to X Keyboard Configuration Database
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Submit vim keymap to Bram
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Submit xkb keymap to xorg
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 https://bugs.freedesktop.org/show_bug.cgi?id=1850
-\end_inset 
+\end_layout
+
+\end_inset
 
  and xfree86
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://bugs.xfree86.org/show_bug.cgi?id=1509
-\end_inset 
+\end_layout
+
+\end_inset
 
 
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Amend ISO639 to include 'Sinhala' in the languages list alongside 'Sinhalese'.
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Submit Pango patch - don't implicitly create conjuncts
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://bugzilla.gnome.org/show_bug.cgi?id=161981
-\end_inset 
+\end_layout
+
+\end_inset
 
 
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Submit Pango patch - Enable touching letters in Sinhala rendering
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://bugzilla.gnome.org/show_bug.cgi?id=302577
-\end_inset 
+\end_layout
+
+\end_inset
 
 
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 The printing problem was due to the font being an OTF font.
  Once the lklug font was changed to a TTF, the printing problem disappeared.
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Convince Pango and ICU maintainers to emit ZWJ to the font lookup stage.
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 Provide test files and images for ICU Sinhala support 
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
-\end_inset 
+\end_layout
+
+\end_inset
 
 
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 ICU: ZWJ Processing in Sinhala
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4710
-\end_inset 
+\end_layout
+
+\end_inset
 
 
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 ICU: Implement PR 37 ZWJ/ZWNJ Behavior 
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711
-\end_inset 
+\end_layout
+
+\end_inset
 
 
-\layout Itemize
+\end_layout
 
+\begin_layout Itemize
 ICU: Indic Reordering State Table Allows ZWJ Virama ZWJ
 \begin_inset Foot
-collapsed false
+status open
 
-\layout Standard
-
+\begin_layout Standard
 http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057
-\end_inset 
+\end_layout
+
+\end_inset
 
 
-\layout Section
+\end_layout
 
+\begin_layout Section
 Conclusion
-\layout Standard
+\end_layout
 
+\begin_layout Standard
 Obviously there's still quite a bit to do.
-\the_end
+\end_layout
+
+\end_body
+\end_document
