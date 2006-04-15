@@ -37,16 +37,30 @@ Sinhala Support in GNU/Linux HOWTO
 Harshula Jayasuriya <hash at jayasolutions dot cjb dot net>
 \end_layout
 
+\begin_layout Author
+\begin_inset LatexCommand \tableofcontents{}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 About This Guide
 \end_layout
 
 \begin_layout Standard
-This guide describes the level of Sinhala support available on GNU/Linux.
- It also describes tasks that still require attention.
+Sinhala is the main language of Sri Lanka.
+ This guide describes the level of Sinhala support available in GNU/Linux.
+ It also describes how to enable Sinhala support and the tasks that still
+ require attention.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+This guide is Gnome and Fedora Core centric.
+\end_layout
+
+\begin_layout Subsection
 Revisions
 \end_layout
 
@@ -59,7 +73,11 @@ v0.2 - 2004/10/07
 \end_layout
 
 \begin_layout Itemize
-v0.3 - 2005/03/06 - in progress.
+v0.3 - 2005/03/06
+\end_layout
+
+\begin_layout Itemize
+v0.4 - 2006/04/03 - in progress
 \end_layout
 
 \begin_layout Section
@@ -67,24 +85,20 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-The Sinhala support in GNU/Linux distributions is still quite basic.
- Since Sinhala support is based on Unicode, there is already some level
- of support.
+The Sinhala support in GNU/Linux distributions has improved quite significantly
+ as patches have been committed upstream.
+ For example, Fedora Core 5 ships with full SLS1134 support in Pango, the
+ Gnome renderer.
+ It also ships with a phonetic Sinhala keymap in Xorg.
+ It however does not ship with a Sinhala font nor does Open Office's renderer,
+ ICU, have Sinhala support.
 \end_layout
 
 \begin_layout Standard
-There are a number of patches to support Sinhala floating around for many
- key parts of GNU/Linux.
- Unfortunately the patches still need to be integrated/submitted upstream.
- Then these updated packages need to be included in the latest versions
- of distributions.
- Hence there will be a significant latency between when the developer's
- work is finished and when an average user is able to benefit.
-\end_layout
-
-\begin_layout Standard
-During this period a user can, hopefully, use this HOWTO to check the current
- status of Sinhala support in GNU/Linux and how to enable better support.
+As Sinhala support in GNU/Linux distributions improve, this HOWTO will only
+ be of historical value.
+ However, for the time being use this HOWTO to check the current status
+ of Sinhala support in GNU/Linux and how to enable better support.
 \end_layout
 
 \begin_layout Subsection
@@ -152,6 +166,10 @@ Learning about Unicode
 
 \end_layout
 
+\begin_layout Itemize
+SLS1134 (not available online)
+\end_layout
+
 \begin_layout Section
 Fonts
 \end_layout
@@ -170,7 +188,7 @@ Download a unicode Sinhala font:
 
 \begin_layout Standard
 If you are using a modern GNU/Linux version and it has fontconfig installed,
- all you have to do is make a directory ~/.fonts:
+ all you have to do is make a .fonts directory in your home directory:
 \end_layout
 
 \begin_layout Code
@@ -212,12 +230,16 @@ gvim
 \end_layout
 
 \begin_layout Itemize
-mozilla (built with gtk2 and FreeType2)
+Firefox/Mozilla (built with gtk2, FreeType2 and Pango support)
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+If you have Pango 1.8.2 and greater, you will have full SLS1134 Sinhala support.
+\end_layout
+
 \begin_layout Subsection
-Mozilla/Firefox
+Firefox/Mozilla
 \begin_inset Foot
 status open
 
@@ -243,6 +265,54 @@ Firefox and Mozilla can be enabled with pango rendering support, which enables
 MOZ_ENABLE_PANGO=1
 \end_layout
 
+\begin_layout Subsection
+Open Office
+\end_layout
+
+\begin_layout Standard
+Open Office uses the ICU renderer.
+ ICU 3.4, which ships with Fedora Core 5, does not contain Sinhala support.
+\end_layout
+
+\begin_layout Standard
+The next major version of ICU will contain Sinhala support.
+\end_layout
+
+\begin_layout Standard
+For the time being you can download a patched libicu and libicu-devel RPM
+ packages that contain Sinhala support.
+ First check that the libicu and/or libicu-devel packages are already installed
+ on your system.
+ If one or both are installed, then download the corresponding RPM package(s)
+ from:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://sinhala.sf.net/files/libicu-3.4-6.2.hj.i386.rpm]{http://sinhala.sf.net/files/libicu-3.4-6.2.hj.i386.rpm}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://sinhala.sf.net/files/libicu-devel-3.4-6.2.hj.i386.rpm]{http://sinhala.sf.net/files/libicu-devel-3.4-6.2.hj.i386.rpm}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once you have downloaded the RPM package(s), upgrade the installed libicu
+ package(s) with the recently downloaded package(s).
+\end_layout
+
+\begin_layout Standard
+Unfortunately, rakaaranshaya, yansaya and repaya will not render at this
+ stage due to a potential problem in Open Office's handling of ZWJ.
+\end_layout
+
 \begin_layout Section
 Input Methods
 \end_layout
@@ -252,31 +322,26 @@ Input Methods
 \series medium
 To test multi-lingual input methods in gtk2 based programs, run 
 \emph on
-testtext,
+gedit
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+
+\series medium
+To check which input methods are available for gtk2 based programs, run
+ 
+\series default
+\emph on
+/usr/bin/gtk-query-immodules-2.0-32
+\series medium
 \emph default
  which comes with gtk2.
 \end_layout
 
 \begin_layout Subsection
-Character Maps
-\end_layout
-
-\begin_layout Standard
-You can use a Unicode Character Map program to copy 'n' paste Sinhala characters
- into your program/document.
- Available programs are:
-\end_layout
-
-\begin_layout Itemize
-gucharmap
-\end_layout
-
-\begin_layout Subsection
-Keymaps
-\end_layout
-
-\begin_layout Subsubsection
-X Keyboard Extension
+Keymaps: X Keyboard Extension
 \end_layout
 
 \begin_layout Standard
@@ -293,10 +358,204 @@ You should have at least XFree86 4.3 or Xorg 6.7.
 \end_layout
 
 \begin_layout Standard
-NOTE: In the example below I have chosen the ALT keys to switch between
- the Sinhala Phonetic keymap and the US QWERTY keymap.
+The X Keyboard Extension only allows one-to-one mappings between keys and
+ codepoints, therefore rakaaranshaya, yansaya and repaya, which consist
+ of multiple codepoints, have to be manually constructed.
+ See the comments in the Sinhala X Keyboard Extension layout file.
+\end_layout
+
+\begin_layout Subsubsection
+Xorg 7.0+
+\end_layout
+
+\begin_layout Standard
+The aforementioned layout is already included in Xorg 7.0 and greater.
+ It is located at:
+\end_layout
+
+\begin_layout Code
+/usr/share/X11/xkb/symbols/lk
+\end_layout
+
+\begin_layout Standard
+The window manager should come with a program which allows the user to choose
+ multiple keyboard layouts.
+\end_layout
+
+\begin_layout Standard
+In the example below I have chosen the SHIFT keys to switch between the
+ Sinhala phonetic layout and the US QWERTY layout.
+ Hold one of the SHIFT keys down and then press the other SHIFT key, this
+ should toggle between the layouts.
+\end_layout
+
+\begin_layout Standard
+In Gnome:
+\end_layout
+
+\begin_layout Enumerate
+Run:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+gnome-keyboard-properties
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Choose the 
+\begin_inset Quotes eld
+\end_inset
+
+Layout
+\begin_inset Quotes erd
+\end_inset
+
+ tab and click on the 
+\begin_inset Quotes eld
+\end_inset
+
+Add
+\begin_inset Quotes erd
+\end_inset
+
+ button.
+ This will open a new window which contains a list of layouts ordered by
+ country.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Scroll down the list till you find 
+\begin_inset Quotes eld
+\end_inset
+
+Sri Lanka
+\begin_inset Quotes erd
+\end_inset
+
+ and then highlight it by clicking on it.
+ The Sinhala layout is the default in the Sri Lanka layouts file, so you
+ do NOT need to click the expand triangle icon.
+ Then press 
+\begin_inset Quotes eld
+\end_inset
+
+OK
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Choose the 
+\begin_inset Quotes eld
+\end_inset
+
+Layout Options
+\begin_inset Quotes erd
+\end_inset
+
+ tab and click on the text 
+\begin_inset Quotes eld
+\end_inset
+
+Group Shift/Lock behavior
+\begin_inset Quotes erd
+\end_inset
+
+.
+ A list will expand below this text
+\end_layout
+
+\begin_layout Enumerate
+Scroll down the list till you find the text 
+\begin_inset Quotes eld
+\end_inset
+
+Both Shift keys together change group
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Click on the corresponding checkbox.
+\end_layout
+
+\begin_layout Enumerate
+If you wish to use an LED to indicate the toggling of keyboard layouts,
+ click on the text "Use keyboard LED to show alternative group".
+ A list will expand below this text
+\end_layout
+
+\begin_layout Enumerate
+Scroll down the list till you find the text 
+\begin_inset Quotes eld
+\end_inset
+
+ScrollLock LED shows alternative group
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Alternately, you can directly modify /etc/X11/xorg.conf:
+\end_layout
+
+\begin_layout Enumerate
+To add the new lk keymap, look for this line:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+Section "InputDevice"
+\end_layout
+
+\begin_layout Standard
+There will probably be two such lines, one for the keyboard and another
+ for the mouse.
+ Go to the keyboard related line.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Then add/modify a line that looks like:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+Option "XkbLayout" "us,lk"
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Also add a mechanism to switch between 'us' and 'lk' and indicate which
+ LED should be used:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+Option "XkbOptions" "grp:shifts_toggle,grp_led:scroll"
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If asked by the window manager, reset keyboard defaults to the X defaults.
+\end_layout
+
+\begin_layout Subsubsection
+XFree86 4.3+ or Xorg 6.7+
+\end_layout
+
+\begin_layout Standard
+In the example below I have chosen the ALT keys to switch between the Sinhala
+ phonetic layout and the US QWERTY layout.
  Hold one of the ALT keys down and then press the other ALT key, this should
- toggle between the keymaps.
+ toggle between the layouts.
 \end_layout
 
 \begin_layout Enumerate
@@ -344,10 +603,11 @@ Or alternately, edit the /etc/X11/XF86Config or /etc/X11/xorg.conf file.
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-In order to add the new 'sin' keymap, look for this line:
+\begin_layout Enumerate
+To add the new 'sin' keymap, look for this line:
 \end_layout
 
+\begin_deeper
 \begin_layout Code
 Section "InputDevice"
 \end_layout
@@ -356,31 +616,39 @@ Section "InputDevice"
 There will probably be two such lines, one for the keyboard and another
  for the mouse.
  Go to the keyboard related line.
- Then add/modify this line:
+ 
 \end_layout
 
+\end_deeper
+\begin_layout Enumerate
+Then add/modify a line that looks like:
+\end_layout
+
+\begin_deeper
 \begin_layout Code
 Option "XkbLayout" "sin,us"
 \end_layout
 
-\begin_layout Standard
-Also add a key to switch between 'us' and 'sin' and indicate which LED should
- be used:
+\end_deeper
+\begin_layout Enumerate
+Also add a mechanism to switch between 'us' and 'sin' and indicate which
+ LED should be used:
 \end_layout
 
+\begin_deeper
 \begin_layout Code
 Option "XkbOptions" "grp:alts_toggle,grp_led:scroll"
 \end_layout
 
-\begin_layout Standard
-Then, use your window manager's keyboard layout program to reset to the
- X defaults.
+\end_deeper
+\begin_layout Enumerate
+If asked by the window manager, reset keyboard defaults to the X defaults.
 \end_layout
 
 \end_deeper
 \end_deeper
-\begin_layout Subsubsection
-gvim
+\begin_layout Subsection
+Keymaps: gvim
 \end_layout
 
 \begin_layout Standard
@@ -396,7 +664,7 @@ To familiarise yourself with this keymap, read:
 \end_layout
 
 \begin_layout Enumerate
-Download the keymaps from:
+Download the keymap and redirector from:
 \end_layout
 
 \begin_deeper
@@ -408,7 +676,6 @@ Download the keymaps from:
 
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[sinhala.vim]{http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/sinhala/sinhala/keymaps/sinhala.vim?rev=HEAD&content-type=text/plain}
 
@@ -418,9 +685,8 @@ Download the keymaps from:
 \end_layout
 
 \end_deeper
-\end_deeper
 \begin_layout Enumerate
-Copy the keymaps to ~/.vim/keymap/
+Copy the keymap and redirector to ~/.vim/keymap/
 \end_layout
 
 \begin_layout Enumerate
@@ -438,22 +704,35 @@ set guioptions-=m
 
 \end_deeper
 \begin_layout Enumerate
-Select the new keymap
+Select the new keymap, using the redirector, by typing:
 \end_layout
 
 \begin_deeper
 \begin_layout Code
-set keymap=sinhala-phonetic_utf-8
-\end_layout
-
-\end_deeper
-\begin_layout Subsubsection
-xmodmap
+set keymap=sinhala
 \end_layout
 
 \begin_layout Standard
-The xmodmap keymap is not fully functional, hence it is recommend you use
- the X Keyboard Extension keymap.
+or select the new keymap directly by typing:
+\end_layout
+
+\begin_layout Code
+set keymap=sinhala-phonetic_utf-8
+\end_layout
+
+\begin_layout Standard
+To toggle between the Sinhala keymap and the standard ASCII keymap, press
+ <Ctrl> <6> whilst in insert mode.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Keymaps: xmodmap
+\end_layout
+
+\begin_layout Standard
+The xmodmap keymap is not fully functional, hence it is recommended you
+ use the X Keyboard Extension keymap.
  To familiarise yourself with this keymap, read:
 \end_layout
 
@@ -489,6 +768,20 @@ xmodmap sin.xmodmap
 \end_layout
 
 \end_deeper
+\begin_layout Subsection
+Character Maps
+\end_layout
+
+\begin_layout Standard
+You can use a Unicode Character Map program to copy 'n' paste Sinhala characters
+ into your program/document.
+ Available programs are:
+\end_layout
+
+\begin_layout Itemize
+gucharmap
+\end_layout
+
 \begin_layout Section
 Locales
 \end_layout
@@ -556,8 +849,9 @@ http://www.scim-im.org/
 \end_inset
 
 .
- The recommended infrastructures are xkb, for simple one-to-one keymaps
+ The recommended infrastructures are XKB, for simple one-to-one keymaps,
  and SCIM for complex keymaps.
+ XKB is a component of Xorg.
 \end_layout
 
 \begin_layout Subsubsection
@@ -784,8 +1078,7 @@ http://bugzilla.gnome.org/show_bug.cgi?id=153517
 \end_inset
 
 .
- Harshula Jayasuriya made some changes to the Pango state table & ZWJ handling
- 
+ Harshula Jayasuriya modified the Pango state table & ZWJ handling 
 \begin_inset Foot
 status open
 
@@ -859,7 +1152,8 @@ ICU
 \end_layout
 
 \begin_layout Standard
-Owen Taylor (Pango) submitted the Pango patch to the ICU project 
+Owen Taylor (Pango) submitted the Pango Sinhala patch to the ICU project
+ 
 \begin_inset Foot
 status open
 
@@ -870,9 +1164,10 @@ http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
 \end_inset
 
 .
- Last year Eric Mader (ICU) ported the Pango patch to ICU and checked-in
- the changes to ICU 3.4+.
- Then Eric added the state table & ZWJ changes to ICU 3.4+ 
+ Eric Mader (ICU) ported the Pango patch to ICU and checked-in the changes
+ to ICU 3.4+.
+ Then Eric added the state table & ZWJ modifications from Pango to ICU 3.4+
+ 
 \begin_inset Foot
 status open
 
@@ -907,12 +1202,25 @@ source/layout/IndicReordering.cpp
 source/layout/IndicClassTables.cpp
 \end_layout
 
+\begin_layout Standard
+There are some issues with the interaction of Open Office and ICU:
+\end_layout
+
+\begin_layout Itemize
+ZWJ characters do not appear to reach the renderer.
+\end_layout
+
+\begin_layout Itemize
+There's an issue with split vowel modifiers that can cause Open Office to
+ crash.
+\end_layout
+
 \begin_layout Subsection
 Resources/Info
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[sinhala.linux.lk]{http://sinhala.linux.lk}
+\begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/]{http://www.nongnu.org/sinhala/}
 
 \end_inset
 
@@ -920,7 +1228,7 @@ Resources/Info
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/]{http://www.nongnu.org/sinhala/}
+\begin_inset LatexCommand \htmlurl[sinhala.linux.lk]{http://sinhala.linux.lk}
 
 \end_inset
 
@@ -932,7 +1240,21 @@ TODO
 \end_layout
 
 \begin_layout Itemize
-SLS1134 support in Open Office
+SLS1134 support in Open Office - there's a ZWJ issue
+\end_layout
+
+\begin_layout Itemize
+String matching - a consonant followed by dependent vowel 'o' should not
+ match the same consonant followed by dependent vowel 'oo'.
+\end_layout
+
+\begin_layout Itemize
+see chapter 9 of TUS Unicode - apparently discusses ZWJ/ZWNJ.
+\end_layout
+
+\begin_layout Itemize
+Pango maps the ZWNJ to 25CC which is a dotted circle.
+ However the glyph for 25CC does not appear.
 \end_layout
 
 \begin_layout Itemize
@@ -953,6 +1275,10 @@ Learn about OT features
 
 \begin_layout Itemize
 See if xkb can be extended to allow multiple codepoints per keycode
+\end_layout
+
+\begin_layout Itemize
+Improve the appearance of the Sinhala Unicode font at smaller sizes.
 \end_layout
 
 \begin_layout Itemize
@@ -1109,7 +1435,9 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-Obviously there's still quite a bit to do.
+We have made significant progress in providing Sinhala support in GNU/Linux.
+ There are still areas that require attention before GNU/Linux can be deployed
+ more widely in Sri Lanka.
 \end_layout
 
 \end_body
