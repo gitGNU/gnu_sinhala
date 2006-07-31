@@ -1,7 +1,7 @@
 " Vim Keymap file for Sinhala (Sri Lanka) (2003-11-02)
 " Maintainer  : Harshula Jayasuriya <harshula@gmail.com>
 " Last Updated: 2006-06-08
-" This is a static phonetic mapping for a standard US-English keyboard
+" This is a phonetic static mapping for a standard US-English keyboard
 " (qwerty)
 " http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
 
@@ -76,7 +76,7 @@ s	<char-0x0dc3>	" ස - dantaja sayanna (sa)
 h	<char-0x0dc4>	" හ - hayanna (ha)
 L	<char-0x0dc5>	" ළ - muurdhaja layanna (lla)
 f	<char-0x0dc6>	" ෆ - fayanna (fa)
-<A-a>	<char-0x0dca>	" ් - al-lakuna
+<A-a>	<char-0x0dca>	"  ් - al-lakuna
 <A-A>	<char-0x0dcf>	"  ා - aela-pilla (aa)
 <A-w>	<char-0x0dd0>	"  ැ - ketti aeda-pilla (ae)
 <A-W>	<char-0x0dd1>	"  ෑ - diga aeda-pilla (aae)
@@ -96,7 +96,7 @@ f	<char-0x0dc6>	" ෆ - fayanna (fa)
 <A-L>	<char-0x0df3>	"  ෳ - diga gayanukitta (ll)
 <A-.>	<char-0x0df4>	" ෴ - kunddaliya (punctuation)
 
-R	<char-0x0dca><char-0x200d><char-0x0dbb>	"  ්‍ර - rakaransaya
+R	<char-0x0dca><char-0x200d><char-0x0dbb>	"  ්‍ර - rakaaranshaya
 Y	<char-0x0dca><char-0x200d><char-0x0dba>	"  ්‍ය - yansaya
 <A-r>	<char-0x0dbb><char-0x0dca><char-0x200d>	"  ර්‍ - repaya
 
