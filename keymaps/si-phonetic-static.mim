@@ -1,0 +1,120 @@
+;; si-phonetic-static.mim -- Sinhala phonetic static keymap
+;; m17n Keymap file for Sinhala (Sri Lanka) (2006-04-26)
+;; Maintainer: Harshula Jayasuriya <harshula@gmail.com>
+;; Last Updated: 2006-07-31
+;; This is a phonetic static mapping for a standard US-English keyboard
+;; (qwerty)
+;; http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
+
+
+(input-method si phonetic-static)
+
+(description "Sinhala phonetic static input method:
+  <http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html>"
+)
+
+(title "Phonetic Static")
+
+(map
+ (phon
+  ((A-n) "ං")		; 0x0d82 - anusvaraya (anusvara)
+  ("H" "ඃ")		; 0x0d83 - visargaya (visarga)
+  ("a" "අ")		; 0x0d85 - ayanna (a)
+  ("A" "ආ")		; 0x0d86 - aayanna (aa)
+  ("w" "ඇ")		; 0x0d87 - aeyanna (ae)
+  ("W" "ඈ")		; 0x0d88 - aeeyanna (aee)
+  ("i" "ඉ")		; 0x0d89 - iyanna (i)
+  ("I" "ඊ")		; 0x0d8a - iiyanna (ii)
+  ("u" "උ")		; 0x0d8b - uyanna (u)
+  ("U" "ඌ")		; 0x0d8c - uuyanna (uu)
+  ("q" "ඍ")		; 0x0d8d - iruyanna (iru)
+  ("Q" "ඎ")		; 0x0d8e - iruuyanna (iruu)
+  ((A-k) "ඏ")		; 0x0d8f - iluyanna (ilu)
+  ((A-K) "ඐ")		; 0x0d90 - iluuyanna (iluu)
+  ("e" "එ")		; 0x0d91 - eyanna (e)
+  ("E" "ඒ")		; 0x0d92 - eeyanna (ee)
+  ((A-F) "ඓ")		; 0x0d93 - aiyanna (ai)
+  ("o" "ඔ")		; 0x0d94 - oyanna (o)
+  ("O" "ඕ")		; 0x0d95 - ooyanna (oo)
+  ((A-H) "ඖ")		; 0x0d96 - auyanna (au)
+  ("k" "ක")		; 0x0d9a - alpapraana kayanna (ka)
+  ("K" "ඛ")		; 0x0d9b - mahaapraana kayanna (kha)
+  ("g" "ග")		; 0x0d9c - alpapraana gayanna (ga)
+  ("G" "ඝ")		; 0x0d9d - mahaapraana gayanna (gha)
+  ((A-N) "ඞ")		; 0x0d9e - kantaja naasikyaya (nga)
+  ((A-g) "ඟ")		; 0x0d9f - sanyaka gayanna (nnga)
+  ("c" "ච")		; 0x0da0 - alpapraana cayanna (ca)
+  ("C" "ඡ")		; 0x0da1 - mahaapraana cayanna (cha)
+  ("j" "ජ")		; 0x0da2 - alpapraana jayanna (ja)
+  ("J" "ඣ")		; 0x0da3 - mahaapraana jayanna (jha)
+  ("z" "ඤ")		; 0x0da4 - taaluja naasikyaya (nya)
+  ("Z" "ඥ")		; 0x0da5 - taaluja sanyooga naasikyaya (jnya)
+  ((A-j) "ඦ")		; 0x0da6 - sanyaka jayanna (nyja)
+  ("t" "ට")		; 0x0da7 - alpapraana ttayanna (tta)
+  ("T" "ඨ")		; 0x0da8 - mahaapraana ttayanna (ttha)
+  ("d" "ඩ")		; 0x0da9 - alpapraana ddayanna (dda)
+  ("D" "ඪ")		; 0x0daa - mahaapraana ddayanna (ddha)
+  ("N" "ණ")		; 0x0dab - muurdhaja nayanna (nna)
+  ("x" "ඬ")		; 0x0dac - sanyaka ddayanna (nndda)
+  ((A-t) "ත")		; 0x0dad - alpapraana tayanna (ta)
+  ((A-T) "ථ")		; 0x0dae - mahaapraana tayanna (tha)
+  ((A-d) "ද")		; 0x0daf - alpapraana dayanna (da)
+  ((A-D) "ධ")		; 0x0db0 - mahaapraana dayanna (dha)
+  ("n" "න")		; 0x0db1 - dantaja nayanna (na)
+  ("X" "ඳ")		; 0x0db3 - sanyaka dayanna (nda)
+  ("p" "ප")		; 0x0db4 - alpapraana payanna (pa)
+  ("P" "ඵ")		; 0x0db5 - mahaapraana payanna (pha)
+  ("b" "බ")		; 0x0db6 - alpapraana bayanna (ba)
+  ("B" "භ")		; 0x0db7 - mahaapraana bayanna (bha)
+  ("m" "ම")		; 0x0db8 - mayanna (ma)
+  ("M" "ඹ")		; 0x0db9 - amba bayanna (mba)
+  ("y" "ය")		; 0x0dba - yayanna (ya)
+  ("r" "ර")		; 0x0dbb - rayanna (ra)
+  ("l" "ල")		; 0x0dbd - dantaja layanna (la)
+  ("v" "ව")		; 0x0dc0 - vayanna (va)
+  ((A-s) "ශ")		; 0x0dc1 - taaluja sayanna (sha)
+  ("S" "ෂ")		; 0x0dc2 - muurdhaja sayanna (ssa)
+  ("s" "ස")		; 0x0dc3 - dantaja sayanna (sa)
+  ("h" "හ")		; 0x0dc4 - hayanna (ha)
+  ("L" "ළ")		; 0x0dc5 - muurdhaja layanna (lla)
+  ("f" "ෆ")		; 0x0dc6 - fayanna (fa)
+  ((A-a) "්")		; 0x0dca - al-lakuna
+  ((A-A) "ා")		; 0x0dcf - aela-pilla (aa)
+  ((A-w) "ැ")		; 0x0dd0 - ketti aeda-pilla (ae)
+  ((A-W) "ෑ")		; 0x0dd1 - diga aeda-pilla (aae)
+  ((A-i) "ි")		; 0x0dd2 - ketti is-pilla (i)
+  ((A-I) "ී")		; 0x0dd3 - diga is-pilla (ii)
+  ((A-u) "ු")		; 0x0dd4 - ketti paa-pilla (u)
+  ((A-U) "ූ")		; 0x0dd6 - diga paa-pilla (uu)
+  ((A-q) "ෘ")		; 0x0dd8 - gaetta-pilla (r)
+  ((A-e) "ෙ")		; 0x0dd9 - kombuva (e)
+  ((A-E) "ේ")		; 0x0dda - diga kombuva (ee)
+  ((A-f) "ෛ")		; 0x0ddb - kombu deka (ai)
+  ((A-o) "ො")		; 0x0ddc - kombuva haa aela-pilla (o)
+  ((A-O) "ෝ")		; 0x0ddd - kombuva haa diga aela-pilla (oo)
+  ((A-h) "ෞ")		; 0x0dde - kombuva haa gayanukitta (au)
+  ((A-l) "ෟ")		; 0x0ddf - gayanukitta (l)
+  ((A-Q) "ෲ")		; 0x0df2 - diga gaetta-pilla (rr)
+  ((A-L) "ෳ")		; 0x0df3 - diga gayanukitta (ll)
+  ((A-.) "෴")		; 0x0df4 - kunddaliya (punctuation)
+
+  ("R" "්‍ර")		;  0x0dca,0x200d,0x0dbb - rakaaranshaya
+  ("Y" "්‍ය")		;  0x0dca,0x200d,0x0dba - yansaya
+  ((A-r) "ර්‍")		;  0x0dbb,0x0dca,0x200d - repaya
+
+  ;; Need the first backslash to escape the second.
+  ((A-\\) "්‍")		; 0x0dca,0x200d - join - conjunct letters cons 0DCA ZWJ cons
+  ((A-|) "‍්")		; 0x200d,0x0dca - touch - cons ZWJ 0DCA cons
+
+;; TODO: Not sure how space is represented
+;;  (shift( ) " ")		; 0x00a0 - no-break space
+;;  ((A- ) "‌")		; 0x200c - ZWNJ
+ )
+)
+
+(state
+ (init
+  (phon)
+ )
+)
+
