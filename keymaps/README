@@ -1,0 +1,34 @@
+--------------------------------------------------------------------
+1) sinhala-phonetic_utf-8.vim & sinhala.vim
+
+Downstream
+==========
+http://vim.cvs.sourceforge.net/vim/vim7/runtime/keymap/sinhala-phonetic_utf-8.vim?view=log
+http://vim.cvs.sourceforge.net/vim/vim7/runtime/keymap/sinhala.vim?view=log
+
+
+Distros
+=======
+Fedora Core:
+/usr/share/vim/vim70/keymap/sinhala-phonetic_utf-8.vim
+/usr/share/vim/vim70/keymap/sinhala.vim
+--------------------------------------------------------------------
+2) sin.xmodmap (unmaintained)
+--------------------------------------------------------------------
+3) sin (unmaintained)
+--------------------------------------------------------------------
+4) lk
+
+Downstream
+==========
+http://webcvs.freedesktop.org/xlibs/xkbdesc/symbols/lk?view=log
+
+Distros
+=======
+Fedora Core:
+/usr/share/X11/xkb/symbols/lk (xorg-x11-xkbdata)
+Ubuntu:
+/etc/X11/xkb/symbols/lk (xkeyboard-config)
+--------------------------------------------------------------------
+5) si-phonetic-static.mim
+--------------------------------------------------------------------
