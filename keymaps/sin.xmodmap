@@ -1,7 +1,7 @@
 ! Xmodmap Keymap file for Sinhala (Sri Lanka) (2004-04-25)
-! Maintainer  : Harshula Jayasuriya <hash@jayasolutions.cjb.net>
-! Last Updated: 2004-12-22
-! This is a static phonetic mapping for a standard US-English keyboard
+! Maintainer  : Harshula Jayasuriya <harshula@gmail.com>
+! Last Updated: 2006-08-01
+! This is a phonetic static mapping for a standard US-English keyboard
 ! (qwerty)
 ! http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
 
@@ -37,9 +37,9 @@ keysym p = 0x01000db4 0x01000db5
 keysym a = 0x01000d85 0x01000d86 0x01000dca 0x01000dcf
 keysym s = 0x01000dc3 0x01000dc2 0x01000dc1
 keysym d = 0x01000da9 0x01000daa 0x01000daf 0x01000db0
-keysym f = 0x01000dc6 0x01000d93 0x01000ddb
+keysym f = 0x01000dc6 F 0x01000ddb 0x01000d93
 keysym g = 0x01000d9c 0x01000d9d 0x01000d9f
-keysym h = 0x01000dc4 0x01000d96 0x01000dde
+keysym h = 0x01000dc4 0x01000d83 0x01000dde 0x01000d96
 keysym j = 0x01000da2 0x01000da3 0x01000da6
 keysym k = 0x01000d9a 0x01000d9b 0x01000d8f 0x01000d90
 keysym l = 0x01000dbd 0x01000dc5 0x01000ddf 0x01000df3
@@ -47,12 +47,12 @@ keysym l = 0x01000dbd 0x01000dc5 0x01000ddf 0x01000df3
 keysym z = 0x01000da4 0x01000da5
 keysym x = 0x01000dac 0x01000db3
 keysym c = 0x01000da0 0x01000da1
-keysym v = 0x01000dc0 0x01000d82 0x01000d83
+keysym v = 0x01000dc0
 keysym b = 0x01000db6 0x01000db7
-keysym n = 0x01000db1 0x01000dab 0x01000d9e
+keysym n = 0x01000db1 0x01000dab 0x01000d82 0x01000d9e
 keysym m = 0x01000db8 0x01000db9
 
 keysym period = period greater 0x01000df4
 
-keysym backslash = backslash bar 0x01000dca 0x0100200d 
+keysym backslash = backslash bar 0x01000dca 0x0100200d
 keysym space = space nobreakspace 0x0100200c
