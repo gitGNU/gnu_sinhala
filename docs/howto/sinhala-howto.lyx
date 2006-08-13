@@ -545,17 +545,7 @@ Debian Etch:
 \end_layout
 
 \begin_layout Code
-/etc/X11/xkb/symbols/lk 
-\begin_inset Note Note
-status open
-
-\begin_layout Standard
-TODO: verify
-\end_layout
-
-\end_inset
-
-
+/usr/share/X11/xkb/symbols/lk
 \end_layout
 
 \begin_layout Standard
