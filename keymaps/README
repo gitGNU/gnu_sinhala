@@ -25,6 +25,8 @@ http://webcvs.freedesktop.org/xlibs/xkbdesc/symbols/lk?view=log
 
 Distros
 =======
+Debian
+/usr/share/X11/xkb/symbols/lk (xkb-data)
 Fedora Core:
 /usr/share/X11/xkb/symbols/lk (xorg-x11-xkbdata)
 Ubuntu:
