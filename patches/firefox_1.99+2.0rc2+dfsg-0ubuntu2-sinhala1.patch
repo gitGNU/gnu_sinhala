@@ -1,0 +1,12 @@
+diff -ru firefox-2.0rc2.old/debian/firefox-runner firefox-2.0rc2/debian/firefox-runner
+--- firefox-2.0rc2.old/debian/firefox-runner	2006-10-13 02:58:32.000000000 +1000
++++ firefox-2.0rc2/debian/firefox-runner	2006-10-13 02:59:54.000000000 +1000
+@@ -61,7 +61,7 @@
+ fi
+ 
+ if [ "x${MOZ_DISABLE_PANGO}" = x ]; then
+-    if egrep '^(bn|gu|hi|kn|ml|mr|ne|pa|ta|te)_' \
++    if egrep '^(bn|gu|hi|kn|ml|mr|ne|pa|si|ta|te)_' \
+ 	/var/lib/locales/supported.d/*[^~] >/dev/null 2>&1; then
+ 	MOZ_DISABLE_PANGO=0
+     else
