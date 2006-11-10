@@ -31,7 +31,8 @@ touching-letters-incorrect.png
 touching-letters-testcase.txt
 --------------------------------------------------------------------
 4) icu-2.6-oo-sinhala1.patch
-Patch not submitted to OO bugzilla because of (5)
+Patch not submitted to OOo bugzilla because of (6). However,
+now the ICU library used by OOo is distributed in its own package.
 
 icu-sinhala-rendering.txt
 
@@ -43,7 +44,7 @@ pango-1.8.1-sinhala4.patch
 http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
 --------------------------------------------------------------------
 5) icu-3.4-sinhala1.patch
-Problems due to point (6)
+Problems due to (6)
 
 icu-sinhala-rendering.txt
 
@@ -51,12 +52,20 @@ This patch is based on:
 icu-2.6-oo-sinhala1.patch
 http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057
 --------------------------------------------------------------------
-6) No patches yet
-Still debugging OO ZWJ handling issues
+6)
+http://qa.openoffice.org/issues/show_bug.cgi?id=68047
 
 icu-zwj-handling.txt
 --------------------------------------------------------------------
 7) HELLO.utf8.patch
 
 Include a line for Sinhala
+--------------------------------------------------------------------
+8) icu-3.6-sinhala1.patch
+Problems due to (6)
+
+icu-crash-testcase.txt
+
+This patch is based on:
+icu-3.4-sinhala1.patch
 --------------------------------------------------------------------
