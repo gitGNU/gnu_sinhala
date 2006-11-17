@@ -1,94 +1,12 @@
-diff -ru icu.old/source/layout/IndicReordering.cpp icu/source/layout/IndicReordering.cpp
---- icu.old/source/layout/IndicReordering.cpp	2006-04-26 00:38:12.000000000 +0530
-+++ icu/source/layout/IndicReordering.cpp	2006-11-11 01:33:21.000000000 +0530
-@@ -72,8 +72,8 @@
-     LEUnicode   fLengthMark;
-     le_int32    fLengthMarkIndex;
+diff -ru icu.orig/source/layout/IndicClassTables.cpp icu/source/layout/IndicClassTables.cpp
+--- icu.orig/source/layout/IndicClassTables.cpp	2006-08-23 05:42:40.000000000 +0530
++++ icu/source/layout/IndicClassTables.cpp	2006-11-17 06:33:12.000000000 +0530
+@@ -256,7 +256,7 @@
  
--    LEUnicode   fVirama;
--    le_int32    fViramaIndex;
-+    LEUnicode   fAlLakuna;
-+    le_int32    fAlLakunaIndex;
+ static const IndicClassTable mlymClassTable = {0x0D00, 0x0D6F, 3, MLYM_SCRIPT_FLAGS, mlymCharClasses, mlymSplitTable};
  
-     FeatureMask fMatraFeatures;
-     
-@@ -97,8 +97,8 @@
-             fLengthMark = matra;
-             fLengthMarkIndex = matraIndex;
-         } else if (IndicClassTable::isVirama(matraClass)) {
--            fVirama = matra;
--            fViramaIndex = matraIndex;
-+            fAlLakuna = matra;
-+            fAlLakunaIndex = matraIndex;
-         } else {
-             switch (matraClass & CF_POS_MASK) {
-             case CF_POS_BEFORE:
-@@ -132,7 +132,7 @@
-     IndicReorderingOutput(LEUnicode *outChars, LEGlyphStorage &glyphStorage, MPreFixups *mpreFixups)
-         : fOutIndex(0), fOutChars(outChars), fGlyphStorage(glyphStorage),
-           fMpre(0), fMpreIndex(0), fMbelow(0), fMbelowIndex(0), fMabove(0), fMaboveIndex(0),
--          fMpost(0), fMpostIndex(0), fLengthMark(0), fLengthMarkIndex(0), fVirama(0), fViramaIndex(0),
-+          fMpost(0), fMpostIndex(0), fLengthMark(0), fLengthMarkIndex(0), fAlLakuna(0), fAlLakunaIndex(0),
-           fMatraFeatures(0), fMPreOutIndex(-1), fMPreFixups(mpreFixups),
-           fVMabove(0), fVMpost(0), fVMIndex(0), fVMFeatures(0),
-           fSMabove(0), fSMbelow(0), fSMIndex(0), fSMFeatures(0)
-@@ -147,7 +147,7 @@
+-static const IndicClassTable sinhClassTable = {0x0D80, 0x0DF4, 3, SINH_SCRIPT_FLAGS, sinhCharClasses, sinhSplitTable};
++static const IndicClassTable sinhClassTable = {0x0D80, 0x0DF4, 4, SINH_SCRIPT_FLAGS, sinhCharClasses, sinhSplitTable};
  
-     void reset()
-     {
--        fMpre = fMbelow = fMabove = fMpost = fLengthMark = fVirama = 0;
-+        fMpre = fMbelow = fMabove = fMpost = fLengthMark = fAlLakuna = 0;
-         fMPreOutIndex = -1;
-         
-         fVMabove = fVMpost  = 0;
-@@ -252,11 +252,16 @@
-         }
-     }
- 
--    // Handles virama in Sinhala split vowels.
--    void writeVirama()
-+    int alLakunaExists()
-     {
--        if (fVirama != 0) {
--            writeChar(fVirama, fViramaIndex, fMatraFeatures);
-+        return (fAlLakuna != 0);
-+    }
-+
-+    // Handles Al-Lakuna (Virama) in Sinhala split vowels.
-+    void writeAlLakuna()
-+    {
-+        if (fAlLakuna != 0) {
-+            writeChar(fAlLakuna, fAlLakunaIndex, fMatraFeatures);
-         }
-     }
- 
-@@ -475,7 +480,10 @@
-         case CC_SPLIT_VOWEL_PIECE_3:
-         case CC_VOWEL_MODIFIER:
-         case CC_STRESS_MARK:
--            output.writeMpre();
-+            // A lone <U+0DDD> crashes ooffice without this workaround.
-+            if (!output.alLakunaExists()) {
-+                output.writeMpre();
-+            }
- 
-             output.writeChar(C_DOTTED_CIRCLE, prev, tagArray1);
- 
-@@ -497,7 +505,7 @@
-             }
- 
-             output.writeLengthMark();
--            output.writeVirama();
-+            output.writeAlLakuna();
- 
-             if ((classTable->scriptFlags & SF_REPH_AFTER_BELOW) == 0) {
-                 output.writeVMabove();
-@@ -689,7 +697,7 @@
-             }
- 
-             output.writeLengthMark();
--            output.writeVirama();
-+            output.writeAlLakuna();
- 
-             // write reph
-             if ((classTable->scriptFlags & SF_REPH_AFTER_BELOW) == 0) {
+ //
+ // IndicClassTable addresses
