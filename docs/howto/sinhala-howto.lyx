@@ -57,8 +57,7 @@ Sinhala is the main language of Sri Lanka.
 \end_layout
 
 \begin_layout Standard
-This guide is Gnome and Fedora Core centric.
- However, there will be some coverage of Ubuntu.
+This guide is GNOME and Debian/Ubuntu centric.
  Most of the explanations and suggestions should also be applicable to other
  distributions.
 \end_layout
@@ -80,7 +79,11 @@ v0.3 - 2005/03/06
 \end_layout
 
 \begin_layout Itemize
-v0.4 - 2006/04/03 - in progress
+v0.4 - 2006/04/03 
+\end_layout
+
+\begin_layout Itemize
+v0.5 - 2006/11/20 - in progress
 \end_layout
 
 \begin_layout Section
@@ -93,20 +96,48 @@ The level of Sinhala support in GNU/Linux distributions has improved quite
 \end_layout
 
 \begin_layout Standard
-Fedora Core 5 and Ubuntu 5.10 ship with full SLS1134 support in Pango, the
- Gnome renderer.
- They also ship with a phonetic Sinhala keyboard layout in Xorg.
- Ubuntu ships with a basic, broken, Sinhala font whereas Fedora Core does
- NOT ship with a Sinhala font.
- However, Open Office's renderer, ICU, does NOT have Sinhala support in
- either distribution.
+Debian 4.0 (Etch/testing) and Ubuntu 6.10 (Edgy) ship with SLS1134 support
+ in Pango, the GNOME renderer.
+ They also ship with a phonetic Sinhala keyboard layout in Xorg and a basic,
+ incomplete, Unicode Sinhala font.
+ Open Office's renderer, ICU, has SLS1134 support in Debian 4.0 (Etch/testing)
+ but Ubuntu 6.10 ships with ICU 3.4 and does not have SLS1134 support.
 \end_layout
 
 \begin_layout Standard
 As Sinhala support in GNU/Linux distributions improve, this HOWTO will only
  be of historical value.
- However, for the time being use this HOWTO to check the current status
+ However, for the time being, use this document to check the current status
  of Sinhala support in GNU/Linux and how to enable better support.
+\end_layout
+
+\begin_layout Standard
+Many individuals have contributed to the project.
+ Some of the notable contributors are:
+\end_layout
+
+\begin_layout Itemize
+Dushara Jayasinghe
+\end_layout
+
+\begin_layout Itemize
+Harshula Jayasuriya
+\end_layout
+
+\begin_layout Itemize
+Chamath Keppitiyagama
+\end_layout
+
+\begin_layout Itemize
+Anuradha Ratnaweera
+\end_layout
+
+\begin_layout Itemize
+Harsha Senanayake
+\end_layout
+
+\begin_layout Itemize
+Naoto Takahashi 
 \end_layout
 
 \begin_layout Subsection
@@ -206,8 +237,212 @@ Standards
 SLS1134 (not available online)
 \end_layout
 
+\begin_layout Itemize
+Sinhala Character Code for Information Interchange - Part 1: Collation Sequence
+ (not available online)
+\end_layout
+
+\begin_layout Subsection
+Mailing Lists
+\end_layout
+
+\begin_layout Standard
+The Sinhala GNU/Linux users and developers use these mailing lists for announcem
+ents, discussions, debugging and reviews.
+\end_layout
+
+\begin_layout Standard
+Therefore, the archives of the mailing lists contain very useful information
+ for both new users and new developers.
+\end_layout
+
+\begin_layout Standard
+Please search the archives for the answers to your questions before posting
+ to the mailing lists.
+\end_layout
+
+\begin_layout Subsubsection
+Sinhala CVS Commits List (in English for developers)
+\end_layout
+
+\begin_layout Itemize
+Archive: 
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?forum=sinhala-cvs-commits]{http://sourceforge.net/mailarchive/forum.php?forum=sinhala-cvs-commits}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Subscribe: 
+\begin_inset LatexCommand \htmlurl[https://lists.sourceforge.net/lists/listinfo/sinhala-cvs-commits]{https://lists.sourceforge.net/lists/listinfo/sinhala-cvs-commits}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Sinhala Technical List (in English for developers)
+\end_layout
+
+\begin_layout Itemize
+Archive: 
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?forum=sinhala-technical]{http://sourceforge.net/mailarchive/forum.php?forum=sinhala-technical}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Subscribe: 
+\begin_inset LatexCommand \htmlurl[https://lists.sourceforge.net/lists/listinfo/sinhala-technical]{https://lists.sourceforge.net/lists/listinfo/sinhala-technical}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Sinhala Linux List (in English for users)
+\end_layout
+
+\begin_layout Itemize
+Archive: 
+\begin_inset LatexCommand \htmlurl[http://www.lug.lk/lurker/list/sinhala.en.html]{http://www.lug.lk/lurker/list/sinhala.en.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Subscribe: 
+\begin_inset LatexCommand \htmlurl[https://secure.lug.lk/mailman/listinfo/sinhala]{https://secure.lug.lk/mailman/listinfo/sinhala}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Sinhala Unicode List (in Sinhala for developers and users)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://groups.google.com/group/sinhala-unicode]{http://groups.google.com/group/sinhala-unicode}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Enabling Sinhala
+\end_layout
+
+\begin_layout Subsection
+Debian and Ubuntu Sinhala repositories
+\end_layout
+
+\begin_layout Subsubsection
+What is available?
+\end_layout
+
+\begin_layout Itemize
+LKLUG Unicode Sinhala font
+\end_layout
+
+\begin_layout Itemize
+libicu (renderer used by Open Office) with Sinhala support
+\end_layout
+
+\begin_layout Itemize
+SCIM transliterated input method
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Automatically set the required environment variables in /etc/environment
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+How to install
+\end_layout
+
+\begin_layout Enumerate
+On Debian Etch (testing) add to /etc/apt/sources.list
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+deb http://sinhala.sourceforge.net/debian/i386/etch/ ./
+\end_layout
+
+\begin_layout Standard
+On Ubuntu Edgy (6.10) add to /etc/apt/sources.list
+\end_layout
+
+\begin_layout Code
+deb http://sinhala.sourceforge.net/ubuntu/i386/edgy/ ./
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Update repository metadata:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+apt-get update
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Install Sinhala packages:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+apt-get install sinhala-gnu-linux
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Upgrade libicu package:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+apt-get upgrade
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Logout and login again.
+ Environment variables need to be set/updated (NO NEED TO REBOOT)
+\end_layout
+
+\begin_layout Subsubsection
+How to test
+\end_layout
+
+\begin_layout Enumerate
+Visit http://si.wikipedia.org/ and see if the Sinhala letters render correctly.
+\end_layout
+
+\begin_layout Enumerate
+Copy and paste some of the content from Sinhala wikipedia to Open Office
+ Writer.
+ Then highlight the Sinhala text and choose the LKLUG font to display them.
+\end_layout
+
+\begin_layout Enumerate
+To test SCIM, press Control-space whilst you are running a GNOME application.
+ Then select one of the Sinhala input methods.
 \end_layout
 
 \begin_layout Subsection
@@ -286,10 +521,6 @@ gucharmap
 \end_layout
 
 \begin_layout Itemize
-gvim
-\end_layout
-
-\begin_layout Itemize
 Firefox/Mozilla (built with gtk2, FreeType2 and Pango support)
 \end_layout
 
@@ -300,6 +531,54 @@ If you have Pango 1.8.2 and greater, you will have full SLS1134 Sinhala support.
 
 \begin_layout Subsection
 Firefox/Mozilla
+\end_layout
+
+\begin_layout Subsubsection
+Debian 4.0 (Etch)
+\end_layout
+
+\begin_layout Standard
+Pango is enabled by default in Debian 4.0.
+\end_layout
+
+\begin_layout Subsubsection
+Ubuntu 5.10
+\end_layout
+
+\begin_layout Standard
+Pango is enabled by default in Ubuntu 5.10.
+\end_layout
+
+\begin_layout Subsubsection
+Ubuntu 6.06
+\end_layout
+
+\begin_layout Standard
+Ubuntu 6.06 users can enable Pango in Firefox by setting an environment variable:
+\end_layout
+
+\begin_layout Code
+MOZ_DISABLE_PANGO=0
+\end_layout
+
+\begin_layout Subsubsection
+Ubuntu 6.10
+\end_layout
+
+\begin_layout Standard
+Ubuntu 6.10 users can enable Pango in Firefox by setting an environment variable:
+\end_layout
+
+\begin_layout Code
+MOZ_DISABLE_PANGO=0
+\end_layout
+
+\begin_layout Standard
+Or by simply installing the Ubuntu package:
+\end_layout
+
+\begin_layout Code
+language-pack-si-base
 \end_layout
 
 \begin_layout Subsubsection
@@ -388,28 +667,27 @@ http://fedora.redhat.com/docs/release-notes/fc5/
 
 \end_layout
 
-\begin_layout Subsubsection
-Ubuntu 5.10
-\end_layout
-
-\begin_layout Standard
-Pango is enabled by default in Ubuntu 5.10.
-\end_layout
-
-\begin_layout Subsubsection
-Ubuntu 6.06
-\end_layout
-
-\begin_layout Standard
-Ubuntu 6.06 users can enable Pango in Firefox by setting an environment variable:
-\end_layout
-
-\begin_layout Code
-MOZ_DISABLE_PANGO=0
-\end_layout
-
 \begin_layout Subsection
 Open Office
+\end_layout
+
+\begin_layout Subsubsection
+Debian 4.0 (Etch)
+\end_layout
+
+\begin_layout Standard
+Debian 4.0 ships with ICU 3.6 which contains Sinhala support.
+ However, Open Office has not been patched to not filter out ZWJ.
+ Also, there is a bug in ICU that can trigger Open Office to crash when
+ typing in Sinhala.
+\end_layout
+
+\begin_layout Subsubsection
+Ubuntu 6.10
+\end_layout
+
+\begin_layout Standard
+Ubuntu 6.10 ships with ICU 3.4 which does not contain Sinhala support.
 \end_layout
 
 \begin_layout Subsubsection
@@ -417,47 +695,26 @@ Fedora Core 5
 \end_layout
 
 \begin_layout Standard
-Open Office uses the ICU renderer.
- ICU 3.4, which ships with Fedora Core 5, does not contain Sinhala support.
+Fedora Core 5 ships with ICU 3.4 which does not contain Sinhala support.
+\end_layout
+
+\begin_layout Subsubsection
+Fedora Core 6
 \end_layout
 
 \begin_layout Standard
-The next major version of ICU will contain Sinhala support.
+Fedora Core 6 ships with ICU 3.6 which contains Sinhala support.
+ Furthermore, Open Office has been patched to not filter out ZWJ.
+ However, there is a bug in ICU that can trigger Open Office to crash when
+ typing in Sinhala.
+\end_layout
+
+\begin_layout Subsubsection
+Open Office 2.1
 \end_layout
 
 \begin_layout Standard
-For the time being you can download a patched libicu and libicu-devel RPM
- packages that contain Sinhala support.
- First check that the libicu and/or libicu-devel packages are already installed
- on your system.
- If one or both are installed, then download the corresponding RPM package(s)
- from:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://sinhala.sourceforge.net/files/libicu-3.4-6.2.hj.i386.rpm]{http://sinhala.sourceforge.net/files/libicu-3.4-6.2.hj.i386.rpm}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://sinhala.sourceforge.net/files/libicu-devel-3.4-6.2.hj.i386.rpm]{http://sinhala.sourceforge.net/files/libicu-devel-3.4-6.2.hj.i386.rpm}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Once you have downloaded the RPM package(s), upgrade the installed libicu
- package(s) with the recently downloaded package(s).
-\end_layout
-
-\begin_layout Standard
-Unfortunately, rakaaranshaya, yansaya and repaya will not render at this
- stage due to a potential problem in Open Office's handling of ZWJ.
+Open Office 2.1 should support Sinhala on all distros.
 \end_layout
 
 \begin_layout Subsection
@@ -482,7 +739,7 @@ To check which input methods are available for gtk2 based programs, run:
 \end_layout
 
 \begin_layout Code
-/usr/bin/gtk-query-immodules-2.0-32
+/usr/bin/gtk-query-immodules-2.0
 \end_layout
 
 \begin_layout Standard
@@ -525,7 +782,7 @@ ions that ship with xkeyboard-config 0.6 and above.
 \end_layout
 
 \begin_layout Standard
-Fedora Core 5:
+Debian Etch:
 \end_layout
 
 \begin_layout Code
@@ -541,7 +798,7 @@ Ubuntu 5.10:
 \end_layout
 
 \begin_layout Standard
-Debian Etch:
+Fedora Core 5:
 \end_layout
 
 \begin_layout Code
@@ -561,6 +818,11 @@ The latest version of the keyboard layout can be downloaded from CVS:
 \end_layout
 
 \begin_layout Standard
+Read the comments in the lk file to see how to create rakaaranshaya, yansaya
+ and repaya.
+\end_layout
+
+\begin_layout Standard
 The window manager should come with a program which allows the user to choose
  multiple keyboard layouts.
 \end_layout
@@ -573,7 +835,7 @@ In the example below I have chosen the SHIFT keys to switch between the
 \end_layout
 
 \begin_layout Standard
-In Gnome:
+Using the GUI in GNOME:
 \end_layout
 
 \begin_layout Enumerate
@@ -684,6 +946,20 @@ ScrollLock LED shows alternative group
 .
 \end_layout
 
+\begin_layout Standard
+Using the command line in X:
+\end_layout
+
+\begin_layout Enumerate
+In an xterm do:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+setxkbmap -layout "us,lk" -option "grp:shifts_toggle,grp_led:scroll"
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 Alternately, you can directly modify /etc/X11/xorg.conf:
 \end_layout
@@ -835,7 +1111,7 @@ Character Maps
 \end_layout
 
 \begin_layout Standard
-You can use a Unicode Character Map program to copy 'n' paste Sinhala characters
+You can use a Unicode Character Map program to copy and paste Sinhala characters
  into your program/document.
  Available programs are:
 \end_layout
@@ -865,8 +1141,86 @@ TODO
 Developer Notes
 \end_layout
 
+\begin_layout Itemize
+Savannah Sinhala Project: 
+\begin_inset LatexCommand \htmlurl[http://savannah.nongnu.org/projects/sinhala/]{http://savannah.nongnu.org/projects/sinhala/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sourceforge Sinhala Project: 
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/projects/sinhala/]{http://sourceforge.net/projects/sinhala/}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Fonts
+Open Type Fonts
+\end_layout
+
+\begin_layout Subsubsection
+List of feature tags
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://partners.adobe.com/public/developer/opentype/index_tag3.html]{http://partners.adobe.com/public/developer/opentype/index_tag3.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Glyph Naming
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://partners.adobe.com/public/developer/en/opentype/aglfn13.txt]{http://partners.adobe.com/public/developer/en/opentype/aglfn13.txt}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://partners.adobe.com/public/developer/opentype/index_glyph.html]{http://partners.adobe.com/public/developer/opentype/index_glyph.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Indic
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://www.microsoft.com/typography/OpenType%20Dev/indic/intro.mspx]{http://www.microsoft.com/typography/OpenType%20Dev/indic/intro.mspx}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Indic FAQ at Unicode.org]{http://unicode.org/faq/indic.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Indic Working Group at Unicode.org]{http://unicode.org/~emuller/iwg/}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -874,19 +1228,35 @@ How Freefont obtained Sinhala glyphs
 \end_layout
 
 \begin_layout Itemize
-http://mail.gnu.org/archive/html/freefont-bugs/2003-03/msg00000.html
+\begin_inset LatexCommand \htmlurl[http://mail.gnu.org/archive/html/freefont-bugs/2003-03/msg00000.html]{http://mail.gnu.org/archive/html/freefont-bugs/2003-03/msg00000.html}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-http://mail.gnu.org/archive/html/freefont-bugs/2003-04/msg00001.html
+\begin_inset LatexCommand \htmlurl[http://mail.gnu.org/archive/html/freefont-bugs/2003-04/msg00001.html]{http://mail.gnu.org/archive/html/freefont-bugs/2003-04/msg00001.html}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-http://mail.gnu.org/archive/html/freefont-bugs/2003-05/msg00005.html
+\begin_inset LatexCommand \htmlurl[http://mail.gnu.org/archive/html/freefont-bugs/2003-05/msg00005.html]{http://mail.gnu.org/archive/html/freefont-bugs/2003-05/msg00005.html}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-http://mail.gnu.org/archive/html/freefont-bugs/2003-08/msg00002.html
+\begin_inset LatexCommand \htmlurl[http://mail.gnu.org/archive/html/freefont-bugs/2003-08/msg00002.html]{http://mail.gnu.org/archive/html/freefont-bugs/2003-08/msg00002.html}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -894,8 +1264,7 @@ Renderer
 \end_layout
 
 \begin_layout Standard
-The top of tree Pango (since 1.8.2) & ICU (since 3.4+) trees now support SLS1134.
- 
+The top of tree Pango (since 1.8.2) & ICU (since 3.6) now support SLS1134.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1019,8 +1388,8 @@ http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
 
 .
  Eric Mader (ICU) ported the Pango patch to ICU and checked-in the changes
- to ICU 3.4+.
- Then Eric added the state table & ZWJ modifications from Pango to ICU 3.4+
+ to ICU 3.6.
+ Then Eric added the state table & ZWJ modifications from Pango to ICU 3.6
  
 \begin_inset Foot
 status open
@@ -1044,32 +1413,7 @@ http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057
 .
 \end_layout
 
-\begin_layout Standard
-Look at files:
-\end_layout
-
-\begin_layout Code
-source/layout/IndicReordering.cpp
-\end_layout
-
-\begin_layout Code
-source/layout/IndicClassTables.cpp
-\end_layout
-
-\begin_layout Standard
-There are some issues with the interaction of Open Office and ICU:
-\end_layout
-
-\begin_layout Itemize
-ZWJ characters do not appear to reach the renderer.
-\end_layout
-
-\begin_layout Itemize
-There's an issue with split vowel modifiers that can cause Open Office to
- crash.
-\end_layout
-
-\begin_layout Standard
+\begin_layout Paragraph
 Patches:
 \end_layout
 
@@ -1091,155 +1435,161 @@ ICU 3.4 Sinhala patch
 
 \end_layout
 
+\begin_layout Itemize
+ICU 3.6 Sinhala patch 
+\begin_inset LatexCommand \htmlurl[http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.6-sinhala1.patch?root=sinhala]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.6-sinhala1.patch?root=sinhala}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Split dependent vowel modifier (diga o) issue
+\end_layout
+
+\begin_layout Standard
+There's an issue with U+0DDD (dependent vowel diga o) that can cause Open
+ Office to crash.
+ Opening this text file will crash Open Office and ICU 3.6:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-crash-testcase-dv-oo.txt?root=sinhala]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-crash-testcase-dv-oo.txt?root=sinhala}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The worstCaseExpansion for Sinhala was set to 3 when it should have been
+ set to 4.
+ The dependent vowel 'oo' (U+0DDD) consists of (kombuva)(dotted-circle)(aela-pil
+la)(al-lakuna) which are 4 glyphs.
+ As a result of the worstCaseExpansion being 3, memory was probably being
+ allocated for 3 glyphs when memory was required for 4 glyphs.
+ The actual crash occurred when unallocated memory was being freed.
+\end_layout
+
+\begin_layout Paragraph
+Call Tree
+\end_layout
+
+\begin_layout Enumerate
+source/layoutex/ParagraphLayout.cpp
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+ParagraphLayout::ParagraphLayout(const LEUnicode chars[], le_int32 count,
+ const FontRuns *fontRuns, const ValueRuns *levelRuns, const ValueRuns *scriptRu
+ns, const LocaleRuns *localeRuns, UBiDiLevel paragraphLevel, le_bool vertical,
+ LEErrorCode &status)
+\end_layout
+
+\begin_layout Enumerate
+source/layout/LayoutEngine.cpp: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+LayoutEngine *LayoutEngine::layoutEngineFactory(const LEFontInstance *fontInstan
+ce, le_int32 scriptCode, le_int32 languageCode, LEErrorCode &success)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+LayoutEngine *LayoutEngine::layoutEngineFactory(const LEFontInstance *fontInstan
+ce, le_int32 scriptCode, le_int32 languageCode, le_int32 typoFlags, LEErrorCode
+ &success)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+IndicOpenTypeLayoutEngine::IndicOpenTypeLayoutEngine(const LEFontInstance
+ *fontInstance, le_int32 scriptCode, le_int32 languageCode, le_int32 typoFlags,
+ const GlyphSubstitutionTableHeader *gsubTable) 
+\end_layout
+
+\begin_layout Itemize
+IndicOpenTypeLayoutEngine::IndicOpenTypeLayoutEngine(const LEFontInstance
+ *fontInstance, le_int32 scriptCode, le_int32 languageCode, le_int32 typoFlags)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+source/layout/LayoutEngine.cpp
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+le_int32 LayoutEngine::layoutChars(const LEUnicode chars[], le_int32 offset,
+ le_int32 count, le_int32 max, le_bool rightToLeft, float x, float y, LEErrorCod
+e &success)
+\end_layout
+
+\begin_layout Enumerate
+le_int32 LayoutEngine::computeGlyphs(const LEUnicode chars[], le_int32 offset,
+ le_int32 count, le_int32 max, le_bool rightToLeft, LEGlyphStorage &glyphStorage
+, LEErrorCode &success)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+source/layout/IndicLayoutEngine.cpp
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+le_int32 IndicOpenTypeLayoutEngine::characterProcessing(const LEUnicode
+ chars[], le_int32 offset, le_int32 count, le_int32 max, le_bool rightToLeft,
+ LEUnicode *&outChars, LEGlyphStorage &glyphStorage, LEErrorCode &success)
+\end_layout
+
+\begin_layout Enumerate
+source/layout/IndicReordering.cpp
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+le_int32 IndicReordering::reorder(const LEUnicode *chars, le_int32 charCount,
+ le_int32 scriptCode, LEUnicode *outChars, LEGlyphStorage &glyphStorage,
+ MPreFixups **outMPreFixups)
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+engine->getGlyphs(fStyleRunInfo[run].glyphs, layoutStatus);
+\end_layout
+
+\begin_layout Enumerate
+engine->getGlyphPositions(fStyleRunInfo[run].positions, layoutStatus);
+\end_layout
+
+\begin_layout Enumerate
+engine->getCharIndices(&fGlyphToCharMap[glyphBase], runStart, layoutStatus);
+\end_layout
+
 \begin_layout Subsection
 Firefox/Mozilla
 \end_layout
 
 \begin_layout Standard
-The two GNU/Linux distros I'm paying the most attention to are Fedora Core
- and Ubuntu.
- Interestingly, these two distros decided to address enabling Pango in Firefox
- in completely different ways.
+Interestingly, Debian, Fedora Core and Ubuntu decided to address enabling
+ Pango in Firefox in completely different ways.
 \end_layout
 
 \begin_layout Subsubsection
-Fedora Core
+Debian
 \end_layout
 
 \begin_layout Standard
-Since Fedora Core 4, Pango is enabled in Firefox by default.
- In order to disable Pango in Firefox an environment variable has to be
- set:
-\end_layout
-
-\begin_layout Code
-MOZ_DISABLE_PANGO=1
-\end_layout
-
-\begin_layout Standard
-You can see the difference by running Firefox at the command line like so:
-\end_layout
-
-\begin_layout Code
-# MOZ_DISABLE_PANGO=1 firefox
-\end_layout
-
-\begin_layout Standard
-Have a look at:
-\end_layout
-
-\begin_layout Code
-/usr/bin/firefox 
-\end_layout
-
-\begin_layout Standard
-for an explanation.
-\end_layout
-
-\begin_layout Paragraph
-Fedora Core 4 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=
-1.8
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Code
-##
-\end_layout
-
-\begin_layout Code
-## Set MOZ_ENABLE_PANGO is no longer used because Pango is enabled by default
-\end_layout
-
-\begin_layout Code
-## you may use MOZ_DISABLE_PANGO=1 to force disabling of pango
-\end_layout
-
-\begin_layout Code
-##
-\end_layout
-
-\begin_layout Code
-#MOZ_DISABLE_PANGO=1
-\end_layout
-
-\begin_layout Code
-#export MOZ_DISABLE_PANGO
-\end_layout
-
-\begin_layout Paragraph
-Fedora Core 5 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=
-1.11
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Code
-##
-\end_layout
-
-\begin_layout Code
-## In order to better support certain scripts (such as Indic and some CJK
- 
-\end_layout
-
-\begin_layout Code
-## scripts), Fedora builds its Firefox, with permission from the Mozilla
- 
-\end_layout
-
-\begin_layout Code
-## Corporation, with the Pango system as its text renderer.
-  This change 
-\end_layout
-
-\begin_layout Code
-## is known to break rendering of MathML, and may negatively impact 
-\end_layout
-
-\begin_layout Code
-## performance on some pages.
-  To disable the use of Pango, set 
-\end_layout
-
-\begin_layout Code
-## MOZ_DISABLE_PANGO=1 in your environment before launching Firefox.
-\end_layout
-
-\begin_layout Code
-##
-\end_layout
-
-\begin_layout Code
-#
-\end_layout
-
-\begin_layout Code
-# MOZ_DISABLE_PANGO=1
-\end_layout
-
-\begin_layout Code
-# export MOZ_DISABLE_PANGO
-\end_layout
-
-\begin_layout Code
-#
+Since Debian 4.0 (Etch), Pango is enabled by default.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1384,6 +1734,403 @@ You can see the difference by running Firefox at the command line like so:
 # MOZ_DISABLE_PANGO=0 mozilla-firefox
 \end_layout
 
+\begin_layout Subsubsection
+Fedora Core
+\end_layout
+
+\begin_layout Standard
+Since Fedora Core 4, Pango is enabled in Firefox by default.
+ In order to disable Pango in Firefox an environment variable has to be
+ set:
+\end_layout
+
+\begin_layout Code
+MOZ_DISABLE_PANGO=1
+\end_layout
+
+\begin_layout Standard
+You can see the difference by running Firefox at the command line like so:
+\end_layout
+
+\begin_layout Code
+# MOZ_DISABLE_PANGO=1 firefox
+\end_layout
+
+\begin_layout Standard
+Have a look at:
+\end_layout
+
+\begin_layout Code
+/usr/bin/firefox 
+\end_layout
+
+\begin_layout Standard
+for an explanation.
+\end_layout
+
+\begin_layout Paragraph
+Fedora Core 4 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=
+1.8
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Code
+##
+\end_layout
+
+\begin_layout Code
+## Set MOZ_ENABLE_PANGO is no longer used because Pango is enabled by default
+\end_layout
+
+\begin_layout Code
+## you may use MOZ_DISABLE_PANGO=1 to force disabling of pango
+\end_layout
+
+\begin_layout Code
+##
+\end_layout
+
+\begin_layout Code
+#MOZ_DISABLE_PANGO=1
+\end_layout
+
+\begin_layout Code
+#export MOZ_DISABLE_PANGO
+\end_layout
+
+\begin_layout Paragraph
+Fedora Core 5 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=
+1.11
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Code
+##
+\end_layout
+
+\begin_layout Code
+## In order to better support certain scripts (such as Indic and some CJK
+ 
+\end_layout
+
+\begin_layout Code
+## scripts), Fedora builds its Firefox, with permission from the Mozilla
+ 
+\end_layout
+
+\begin_layout Code
+## Corporation, with the Pango system as its text renderer.
+  This change 
+\end_layout
+
+\begin_layout Code
+## is known to break rendering of MathML, and may negatively impact 
+\end_layout
+
+\begin_layout Code
+## performance on some pages.
+  To disable the use of Pango, set 
+\end_layout
+
+\begin_layout Code
+## MOZ_DISABLE_PANGO=1 in your environment before launching Firefox.
+\end_layout
+
+\begin_layout Code
+##
+\end_layout
+
+\begin_layout Code
+#
+\end_layout
+
+\begin_layout Code
+# MOZ_DISABLE_PANGO=1
+\end_layout
+
+\begin_layout Code
+# export MOZ_DISABLE_PANGO
+\end_layout
+
+\begin_layout Code
+#
+\end_layout
+
+\begin_layout Subsubsection
+Epiphany Browser
+\end_layout
+
+\begin_layout Standard
+Changelog:
+\end_layout
+
+\begin_layout Code
+2006-01-27  Christian Persch  <chpe at cvs dot gnome dot org>
+\end_layout
+
+\begin_layout Code
+        * src/ephy-main.c: (main):
+\end_layout
+
+\begin_layout Code
+        Disable pango rendering by default, unless MOZ_ENABLE_PANGO env
+\end_layout
+
+\begin_layout Code
+        var is set.
+ Bug #328844.
+\end_layout
+
+\begin_layout Code
+
+\end_layout
+
+\begin_layout Standard
+src/ephy-main.c:
+\end_layout
+
+\begin_layout Code
+        /* Work around bug #328844, and avoid the gecko+pango performance
+ problem */
+\end_layout
+
+\begin_layout Code
+        env = g_getenv ("MOZ_ENABLE_PANGO");
+\end_layout
+
+\begin_layout Code
+        enable_pango = env != NULL &&
+\end_layout
+
+\begin_layout Code
+                       env[0] != '
+\backslash
+0' &&
+\end_layout
+
+\begin_layout Code
+                       g_ascii_strtoull (env, NULL, 10) != 0;
+\end_layout
+
+\begin_layout Code
+        if (eel_gconf_get_boolean (CONF_GECKO_ENABLE_PANGO))
+\end_layout
+
+\begin_layout Code
+        {
+\end_layout
+
+\begin_layout Code
+                g_print ("NOTE: Enabling gecko pango renderer; this may
+ cause performance degradation.
+\backslash
+n"
+\end_layout
+
+\begin_layout Code
+                         "You can set " CONF_GECKO_ENABLE_PANGO " to 
+\backslash
+"false
+\backslash
+" to disable it.
+\backslash
+n");
+\end_layout
+
+\begin_layout Code
+        }
+\end_layout
+
+\begin_layout Code
+        else if (!enable_pango)
+\end_layout
+
+\begin_layout Code
+        {
+\end_layout
+
+\begin_layout Code
+                g_setenv ("MOZ_DISABLE_PANGO", "1", TRUE);
+\end_layout
+
+\begin_layout Code
+        }
+\end_layout
+
+\begin_layout Standard
+Epiphany also has a file, data/epiphany-pango.schemas containing a list of
+ locales which require Pango to be enabled by default.
+\end_layout
+
+\begin_layout Subsection
+Open Office
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://wiki.services.openoffice.org/wiki/Debugging]{http://wiki.services.openoffice.org/wiki/Debugging}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Open Office 2.0.4
+\end_layout
+
+\begin_layout Standard
+Whilst working on the patches for adding Sinhala support to ICU, the renderer
+ of Open Office, I observed that the ZWJ characters do not appear to reach
+ ICU.
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, Caolan McNamara found the Open Office file that filters ZWJ and ZWNJ.
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+http://www.openoffice.org/issues/show_bug.cgi?id=68047
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The source file:
+\end_layout
+
+\begin_layout Code
+vcl/source/gdi/sallayout.cxx
+\end_layout
+
+\begin_layout Standard
+contains a function:
+\end_layout
+
+\begin_layout Code
+inline bool IsControlChar( sal_Unicode cChar )
+\end_layout
+
+\begin_layout Standard
+This function tells a caller that characters U+200B to U+200F are control
+ characters.
+\end_layout
+
+\begin_layout Standard
+In the source file:
+\end_layout
+
+\begin_layout Code
+linguistic/source/misc.cxx
+\end_layout
+
+\begin_layout Standard
+two functions, 
+\end_layout
+
+\begin_layout Code
+static INT16 GetOrigWordPos( const OUString &rOrigWord, INT16 nPos )
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Code
+INT32 GetPosInWordToCheck( const OUString &rTxt, INT32 nPos )
+\end_layout
+
+\begin_layout Standard
+call 
+\end_layout
+
+\begin_layout Code
+inline bool IsControlChar( sal_Unicode cChar )
+\end_layout
+
+\begin_layout Standard
+when doing lingustic analysis for what appears to be spelling purposes.
+ Even found some comments written in, I assume, German.
+\end_layout
+
+\begin_layout Standard
+In the source file:
+\end_layout
+
+\begin_layout Code
+vcl/source/gdi/sallayout.cxx
+\end_layout
+
+\begin_layout Standard
+there is a function:
+\end_layout
+
+\begin_layout Code
+void ImplLayoutArgs::AddRun( int nCharPos0, int nCharPos1, bool bRTL )
+\end_layout
+
+\begin_layout Standard
+which calls the function:
+\end_layout
+
+\begin_layout Code
+inline bool IsControlChar( sal_Unicode cChar )
+\end_layout
+
+\begin_layout Standard
+it's purpose is to:
+\end_layout
+
+\begin_layout Code
+// add a run after splitting it up to get rid of control chars
+\end_layout
+
+\begin_layout Standard
+It should be noted that this function handles RTL text in a different way
+ to LTR text.
+ My initial reaction is that should not be the case.
+ However, I have not looked into it any further.
+\end_layout
+
+\begin_layout Standard
+Compiling Open Office 2.0.4 on Debian Etch on a Pentium M 2.13 GHz with 1 GiB
+ RAM took approximately 10 hours and required 10 GBs of additional hard
+ drive space for the source and the compiled files.
+\end_layout
+
 \begin_layout Subsection
 Input Methods
 \end_layout
@@ -1408,6 +2155,16 @@ icle&artid=103&page=1
 
 \end_inset
 
+, m17n 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+http://www.m17n.org/
+\end_layout
+
+\end_inset
+
  and SCIM
 \begin_inset Foot
 status open
@@ -1420,7 +2177,7 @@ http://www.scim-im.org/
 
 .
  The recommended infrastructures are XKB, for simple one-to-one keyboard
- layouts, and SCIM for complex keyboard layouts.
+ layouts, and SCIM/m17n for complex keyboard layouts.
  XKB is a component of Xorg.
 \end_layout
 
@@ -1486,7 +2243,7 @@ Phonetic (Dynamic)
 \end_deeper
 \begin_layout Standard
 A Unicode Sinhala Font has to be installed in order to read the Keyboard
- Maps.
+ Layouts.
  
 \end_layout
 
@@ -1556,11 +2313,19 @@ All you need to do is just copy the keyboard layout file into the correct
 \end_layout
 
 \begin_layout Standard
-and/or
+or
 \end_layout
 
 \begin_layout Code
 /etc/X11/xkb/symbols/pc/
+\end_layout
+
+\begin_layout Standard
+or
+\end_layout
+
+\begin_layout Code
+/usr/share/X11/xkb/symbols
 \end_layout
 
 \begin_layout Standard
@@ -1577,6 +2342,14 @@ or
 
 \begin_layout Code
 /usr/X11R6/lib/X11/
+\end_layout
+
+\begin_layout Standard
+or
+\end_layout
+
+\begin_layout Code
+/usr/share/X11/
 \end_layout
 
 \begin_layout Standard
@@ -1758,6 +2531,34 @@ To toggle between the Sinhala keyboard layout and the standard ASCII keyboard
 
 \end_deeper
 \begin_layout Subsection
+Databases
+\end_layout
+
+\begin_layout Subsubsection
+MySQL
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \url[http://dev.mysql.com/tech-resources/articles/4.1/unicode.html]{http://dev.mysql.com/tech-resources/articles/4.1/unicode.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \url[http://dev.mysql.com/doc/refman/5.0/en/charset.html]{http://dev.mysql.com/doc/refman/5.0/en/charset.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+mysql/strings/ctype-uca.c
+\end_layout
+
+\begin_layout Subsection
 Locales
 \end_layout
 
@@ -1775,6 +2576,70 @@ TODO
 \end_layout
 
 \begin_layout Subsection
+Translations
+\end_layout
+
+\begin_layout Subsubsection
+GNOME
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \url[http://developer.gnome.org/projects/gtp/l10n-guide/]{http://developer.gnome.org/projects/gtp/l10n-guide/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \url[http://developer.gnome.org/doc/tutorials/gnome-i18n/translator.html]{http://developer.gnome.org/doc/tutorials/gnome-i18n/translator.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://developer.gnome.org/projects/gtp/teams.html]{http://developer.gnome.org/projects/gtp/teams.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://l10n-status.gnome.org/]{http://l10n-status.gnome.org/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+KDE
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://l10n.kde.org/team-infos.php?teamcode=si]{http://l10n.kde.org/team-infos.php?teamcode=si}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Ubuntu
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[https://launchpad.net/distros/ubuntu/edgy/+lang/si]{https://launchpad.net/distros/ubuntu/edgy/+lang/si}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 DONE
 \end_layout
 
@@ -1784,7 +2649,7 @@ Renderer
 
 \begin_deeper
 \begin_layout Itemize
-Submit Pango patch - don't implicitly create conjuncts
+Create and submit Pango patch - don't implicitly create conjuncts
 \begin_inset Foot
 status open
 
@@ -1813,7 +2678,7 @@ http://sourceforge.net/mailarchive/forum.php?thread_id=6637263&forum_id=12023
 \end_layout
 
 \begin_layout Itemize
-Submit Pango patch - Enable touching letters in Sinhala rendering
+Create and submit Pango patch - Enable touching letters in Sinhala rendering
 \begin_inset Foot
 status open
 
@@ -1901,6 +2766,64 @@ http://www.redhat.com/archives/fedora-cvs-commits/2006-May/msg00126.html
 
 \end_layout
 
+\begin_layout Itemize
+Convince Open Office developers to stop filtering ZWJ and ZWNJ - ZWJ: The
+ zero width joiner shouldn't be filtered out 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+http://qa.openoffice.org/issues/show_bug.cgi?id=68047
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Epiphany - Add si (Sinhala) to the list of locales requiring Pango 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+http://bugzilla.gnome.org/show_bug.cgi?id=361538
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Ubuntu - Add si (Sinhala) to the list of locales requiring Pango 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+https://launchpad.net/distros/ubuntu/+source/firefox/+bug/66270/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Inform of Open Office filtering ZWJ and ZWNJ - Incorrect Bengali rendering
+ of ra+japhala 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+https://launchpad.net/distros/debian/+source/icu/+bug/35085
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Input Methods
@@ -1939,6 +2862,14 @@ http://bugs.xfree86.org/show_bug.cgi?id=1509
 
 \end_layout
 
+\begin_layout Itemize
+Submit phonetic static keyboard layout to m17n
+\end_layout
+
+\begin_layout Itemize
+Test and provide feedback on the m17n Wijesekera input method.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Fonts
@@ -1950,6 +2881,30 @@ The printing problem was due to the font being an OTF font.
  Once the lklug font was changed to a TTF, the printing problem disappeared.
 \end_layout
 
+\begin_layout Itemize
+Added a glyph for 
+\begin_inset Quotes eld
+\end_inset
+
+Kunddaliya
+\begin_inset Quotes erd
+\end_inset
+
+ to LKLUG font.
+\end_layout
+
+\begin_layout Itemize
+Reorganised glyphs containing 
+\begin_inset Quotes eld
+\end_inset
+
+Repaya
+\begin_inset Quotes erd
+\end_inset
+
+ and added corresponding lookups to LKLUG font.
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Standards
@@ -1958,6 +2913,11 @@ Standards
 \begin_deeper
 \begin_layout Itemize
 Amend ISO639 to include 'Sinhala' in the languages list alongside 'Sinhalese'.
+\end_layout
+
+\begin_layout Itemize
+Report an error in the Sinhala Character Code for Information Interchange
+ - Part 1: Collation Sequence
 \end_layout
 
 \end_deeper
@@ -1971,8 +2931,7 @@ Renderer
 
 \begin_deeper
 \begin_layout Itemize
-SLS1134 support in Open Office - there's a ZWJ issue and ICU bug that crashes
- Open Office.
+ICU bug that crashes Open Office.
 \end_layout
 
 \begin_layout Itemize
@@ -2000,8 +2959,8 @@ Develop Phonetic & Transliteration standards.
 \end_layout
 
 \begin_layout Itemize
-Examine SCIM & implement static & dynamic phonetic keyboard layouts and
- transliteration schemes.
+Examine SCIM/m17n & implement static & dynamic phonetic keyboard layouts
+ and transliteration schemes.
 \end_layout
 
 \begin_layout Itemize
@@ -2035,10 +2994,6 @@ Develop a standard lookup table for font developers.
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
-Implement the output of the Translation Projects
-\end_layout
-
 \begin_layout Itemize
 Sorting
 \end_layout
@@ -2074,30 +3029,6 @@ Surrounding text / Cursor positioning in gedit with the text <gayanna><al-lakuna
 
 \end_deeper
 \begin_layout Itemize
-Maintenance
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Examine possibilities of automating regression testing
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Renderers: Pango, QT, ICU, m17n
-\end_layout
-
-\begin_layout Itemize
-Apps: Firefox, Open Office, Evolution, Thunderbird
-\end_layout
-
-\begin_layout Itemize
-WMs: Gnome, KDE
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Itemize
 Misc
 \end_layout
 
@@ -2126,7 +3057,27 @@ English Locale for Sri Lanka
 
 \end_deeper
 \begin_layout Section
-Resources/Info
+Resources/Links
+\end_layout
+
+\begin_layout Subsection
+Fonts
+\end_layout
+
+\begin_layout Subsection
+GNU/Linux & X
+\end_layout
+
+\begin_layout Subsection
+Input Methods
+\end_layout
+
+\begin_layout Subsection
+Internationalisation
+\end_layout
+
+\begin_layout Subsection
+Localisation
 \end_layout
 
 \begin_layout Itemize
@@ -2147,6 +3098,34 @@ Resources/Info
 
 \begin_layout Itemize
 Free/Open Source Software: Localization
+\end_layout
+
+\begin_layout Subsection
+Sinhala
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Sinhala TTF Font from LKLUG]{http://sinhala.sourceforge.net/files/lklug.ttf}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Sinhala TeX Metafont fonts]{http://www.ocs.mq.edu.au/~vsaparam/sinhala.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Typography
+\end_layout
+
+\begin_layout Subsection
+Unicode
 \end_layout
 
 \begin_layout Section
