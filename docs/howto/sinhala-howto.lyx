@@ -1472,6 +1472,21 @@ la)(al-lakuna) which are 4 glyphs.
  The actual crash occurred when unallocated memory was being freed.
 \end_layout
 
+\begin_layout Standard
+Caolan McNamara also found and fixed this bug.
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5501
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 Call Tree
 \end_layout
@@ -2620,6 +2635,14 @@ KDE
 \end_layout
 
 \begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[KDE Localization]{http://i18n.kde.org/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[http://l10n.kde.org/team-infos.php?teamcode=si]{http://l10n.kde.org/team-infos.php?teamcode=si}
 
 \end_inset
@@ -3061,19 +3084,195 @@ Resources/Links
 \end_layout
 
 \begin_layout Subsection
-Fonts
-\end_layout
-
-\begin_layout Subsection
-GNU/Linux & X
-\end_layout
-
-\begin_layout Subsection
 Input Methods
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[gtk-im-extra]{http://gtk-im-extra.sourceforge.net/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[GSwitchIt]{http://gswitchit.sourceforge.net/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[OpenI18N.org: IIIMF project]{http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=30&page=1}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Smart Common Input Method Platform]{http://www.scim-im.org/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[X Keyboard Configuration Database]{http://freedesktop.org/wiki/Software/XKeyboardConfig}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[X Keyboard Extension]{http://pascal.tsu.ru/en/xkb/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[An Unreliable Guide to XKB Configuration]{http://www.charvolant.org/~doug/xkb/html/index.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[The XKB Configuration Guide]{http://xfree86.org/4.4.0/XKB-Config.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[How to further enhance XKB configuration]{http://xfree86.org/4.4.0/XKB-Enhancing.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Creating custom keyboard layouts for X11 using XKB]{http://www.linux.com/article.pl?sid=04/06/03/1558258}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[How to setup international keyboard in X Window with Xmodmap and XKB]{http://www.tldp.org/HOWTO/Intkeyb/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Some hints about xmodmap(1) and the X11 keyboard model]{http://www.in-ulm.de/~mascheck/X11/xmodmap.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Using XMODMAP to modify key and mouse actions]{http://web.mit.edu/answers/xwindows/xwindows_xmodmap.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[XKeyCaps]{http://www.jwz.org/xkeycaps/}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Internationalisation
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Internationalization (I18n), Localization (L10n), Standards, and Amusements]{http://www.i18nguy.com/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[OpenI18N.org: The Free standards Group Open Internationalization Initiative]{http://www.openi18n.org/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[The Locale Data Markup Language Specification]{http://www.openi18n.org/specs/ldml/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Pango]{http://www.pango.org/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[International Components for Unicode]{http://icu.sourceforge.net/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Gtranslator]{http://gtranslator.sourceforge.net/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[www.m17n.org]{http://www.m17n.org/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[gucharmap]{http://gucharmap.sourceforge.net/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Yudit]{http://www.yudit.org/}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -3081,7 +3280,43 @@ Localisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/]{http://www.nongnu.org/sinhala/}
+\begin_inset LatexCommand \htmlurl[Ankur - Supporting Bangla (Bengali) on GNU/Linux]{http://www.bengalinux.org/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \url[indLinuX]{http://www.indlinux.org/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Thai Language Supports]{http://linux.thai.net/~thep/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[ZzzThai]{http://www.fedu.uec.ac.jp/ZzzThai/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sinhala
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Sinhala HOWTO, Keyboard Layouts and Transliteration Schemes]{http://www.nongnu.org/sinhala/}
 
 \end_inset
 
@@ -3097,15 +3332,7 @@ Localisation
 \end_layout
 
 \begin_layout Itemize
-Free/Open Source Software: Localization
-\end_layout
-
-\begin_layout Subsection
-Sinhala
-\end_layout
-
-\begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Sinhala TTF Font from LKLUG]{http://sinhala.sourceforge.net/files/lklug.ttf}
+\begin_inset LatexCommand \htmlurl[sinhala_tex]{http://www.ctan.org/tex-archive/language/sinhala/}
 
 \end_inset
 
@@ -3113,7 +3340,47 @@ Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Sinhala TeX Metafont fonts]{http://www.ocs.mq.edu.au/~vsaparam/sinhala.html}
+\begin_inset LatexCommand \htmlurl[Unicode Compatible Fonts for Sinhala and Tamil]{http://www.fonts.lk/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Sinhala Language Kit for Mac OS X]{http://www.xenotypetech.com/osxSinhala.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Microimage: Helawadana]{http://www.microimage.com/helawadana/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Sinhala fonts]{http://cg.scs.carleton.ca/~luc/sinhala.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Proposal for encoding the Sinhala script in ISO/IEC 10646]{http://www.evertype.com/standards/si/si.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Mapping of Sinhala between ISO/IEC 10646 and SLS 1134]{http://www.evertype.com/standards/si/iso10646-to-sls1134.html}
 
 \end_inset
 
@@ -3124,8 +3391,112 @@ Sinhala
 Typography
 \end_layout
 
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[TrueType Typography: Info about TTF Fonts and Technology]{http://www.truetype-typography.com/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Microsoft Typography]{http://www.microsoft.com/typography/default.mspx}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Introduction to OpenType]{http://www.adobe.com/type/opentype/index.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[TrueType/OpenType Tools]{http://home.kabelfoon.nl/~slam/fonts/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[FontForge]{http://fontforge.sourceforge.net/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[ Converting a legacy ASCII based Indic font to an Unicode compliant Open Type Font]{http://sayamindu.randomink.org/conv_guide/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[TTX/FontTools]{http://sourceforge.net/projects/fonttools/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Xfree86.org: fonts]{http://www.xfree86.org/current/fonts.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[FreeType2 Font Engine Documentation]{http://www.freetype.org/freetype2/documentation.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \url[Free UCS Outline Fonts]{http://www.nongnu.org/freefont/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[The GNU Unicode Font Project]{http://tech.groups.yahoo.com/group/gnu-unifont/}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Unicode
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Script Encoding Initiative]{http://www.linguistics.berkeley.edu/~dwanders/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[unicode@unicode.org mail archive]{http://www.mail-archive.com/unicode@unicode.org/}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
