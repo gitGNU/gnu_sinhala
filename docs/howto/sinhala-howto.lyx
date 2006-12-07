@@ -1,4 +1,4 @@
-#LyX 1.4.2 created this file. For more info see http://www.lyx.org/
+#LyX 1.4.3 created this file. For more info see http://www.lyx.org/
 \lyxformat 245
 \begin_document
 \begin_header
@@ -191,6 +191,22 @@ Learning about Unicode
 
 \begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[UTF-8 and Unicode FAQ for Unix/Linux]{http://www.cl.cam.ac.uk/~mgk25/unicode.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Unicode Technical Standard #10:]{http://unicode.org/reports/tr10/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Unicode Collation Charts]{http://unicode.org/charts/collation/}
 
 \end_inset
 
@@ -2550,11 +2566,11 @@ Databases
 \end_layout
 
 \begin_layout Subsubsection
-MySQL
+MySQL 5.0.27
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \url[http://dev.mysql.com/tech-resources/articles/4.1/unicode.html]{http://dev.mysql.com/tech-resources/articles/4.1/unicode.html}
+\begin_inset LatexCommand \htmlurl[Unicode and Other Funny Characters]{http://dev.mysql.com/tech-resources/articles/4.1/unicode.html}
 
 \end_inset
 
@@ -2562,17 +2578,686 @@ MySQL
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \url[http://dev.mysql.com/doc/refman/5.0/en/charset.html]{http://dev.mysql.com/doc/refman/5.0/en/charset.html}
+\begin_inset LatexCommand \htmlurl[MySQL 5.0 Reference Manual :: 5 Database Administration :: 5.2 mysqld ? The MySQL Server :: 5.2.1 Option and Variable Reference]{http://dev.mysql.com/doc/refman/5.0/en/mysqld-option-tables.html}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[MySQL 5.0 Reference Manual :: 10 Character Set Support]{http://dev.mysql.com/doc/refman/5.0/en/charset.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[MySQL Internals Manual :: 4 Important Algorithms and Structures :: 4.10 Character/Collation Sets]{http://dev.mysql.com/doc/internals/en/charsets.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Terminology
+\end_layout
+
+\begin_layout Itemize
+ci = case insensitive
+\end_layout
+
+\begin_layout Itemize
+cs = case sensitive
+\end_layout
+
+\begin_layout Itemize
+bin = binary
+\end_layout
+
+\begin_layout Paragraph
+Useful Commands
+\end_layout
+
+\begin_layout Itemize
+SHOW CHARACTER SET;
+\end_layout
+
+\begin_layout Itemize
+SHOW COLLATION;
+\end_layout
+
+\begin_layout Itemize
+SHOW COLLATION like 'ucs%';
+\end_layout
+
+\begin_layout Itemize
+SHOW COLLATION like 'utf8%';
+\end_layout
+
+\begin_layout Itemize
+SET NAMES 'utf8'; // after connecting to server if the server has NOT set
+ 'skip-character-set-client-handshake'
+\end_layout
+
+\begin_layout Itemize
+SHOW CREATE TABLE <table-name>
+\end_layout
+
+\begin_layout Itemize
+SHOW VARIABLES;
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+s
+\end_layout
+
+\begin_layout Paragraph
+Setup MySQL Server
+\end_layout
+
+\begin_layout Standard
+Edit the file /etc/mysql/my.cnf and add to the [mysqld] section:
+\end_layout
+
+\begin_layout Itemize
+default-character_set=utf8
+\end_layout
+
+\begin_layout Itemize
+skip-character-set-client-handshake
+\end_layout
+
+\begin_layout Standard
+This is done to ensure that UTF-8 is the default encoding for the server
+ and client.
+\end_layout
+
+\begin_layout Paragraph
+Files requiring modification
+\end_layout
+
+\begin_layout Itemize
+mysql/config/ac-macros/character_sets.m4
+\end_layout
+
+\begin_layout Itemize
+mysql/mysys/charset-def.c
 \end_layout
 
 \begin_layout Itemize
 mysql/strings/ctype-uca.c
 \end_layout
 
+\begin_layout Itemize
+mysql/configure (generated)
+\end_layout
+
+\begin_layout Paragraph
+Code
+\end_layout
+
+\begin_layout Itemize
+mysql/strings/ctype-uca.c
+\end_layout
+
+\begin_layout Code
+/*
+\end_layout
+
+\begin_layout Code
+  Collation language is implemented according to
+\end_layout
+
+\begin_layout Code
+  subset of ICU Collation Customization (tailorings):
+\end_layout
+
+\begin_layout Code
+  http://icu.sourceforge.net/userguide/Collate_Customization.html
+\end_layout
+
+\begin_layout Code
+  
+\end_layout
+
+\begin_layout Code
+  Collation language elements:
+\end_layout
+
+\begin_layout Code
+  Delimiters:
+\end_layout
+
+\begin_layout Code
+    space   - skipped
+\end_layout
+
+\begin_layout Code
+  
+\end_layout
+
+\begin_layout Code
+  <char> :=  A-Z | a-z | 
+\backslash
+uXXXX
+\end_layout
+
+\begin_layout Code
+  
+\end_layout
+
+\begin_layout Code
+  Shift command:
+\end_layout
+
+\begin_layout Code
+    <shift>  := &       - reset at this letter.
+ 
+\end_layout
+
+\begin_layout Code
+  
+\end_layout
+
+\begin_layout Code
+  Diff command:
+\end_layout
+
+\begin_layout Code
+    <d1> :=  <     - Identifies a primary difference.
+\end_layout
+
+\begin_layout Code
+    <d2> :=  <<    - Identifies a secondary difference.
+\end_layout
+
+\begin_layout Code
+    <d3> := <<<    - Idenfifies a tertiary difference.
+\end_layout
+
+\begin_layout Code
+  
+\end_layout
+
+\begin_layout Code
+  
+\end_layout
+
+\begin_layout Code
+  Collation rules:
+\end_layout
+
+\begin_layout Code
+    <ruleset> :=  <rule>  { <ruleset> }
+\end_layout
+
+\begin_layout Code
+    
+\end_layout
+
+\begin_layout Code
+    <rule> :=   <d1>    <string>
+\end_layout
+
+\begin_layout Code
+              | <d2>    <string>
+\end_layout
+
+\begin_layout Code
+              | <d3>    <string>
+\end_layout
+
+\begin_layout Code
+              | <shift> <char>
+\end_layout
+
+\begin_layout Code
+    
+\end_layout
+
+\begin_layout Code
+    <string> := <char> [ <string> ]
+\end_layout
+
+\begin_layout Code
+  An example, Polish collation:
+\end_layout
+
+\begin_layout Code
+  
+\end_layout
+
+\begin_layout Code
+    &A < 
+\backslash
+u0105 <<< 
+\backslash
+u0104
+\end_layout
+
+\begin_layout Code
+    &C < 
+\backslash
+u0107 <<< 
+\backslash
+u0106
+\end_layout
+
+\begin_layout Code
+    &E < 
+\backslash
+u0119 <<< 
+\backslash
+u0118
+\end_layout
+
+\begin_layout Code
+    &L < 
+\backslash
+u0142 <<< 
+\backslash
+u0141
+\end_layout
+
+\begin_layout Code
+    &N < 
+\backslash
+u0144 <<< 
+\backslash
+u0143
+\end_layout
+
+\begin_layout Code
+    &O < 
+\backslash
+u00F3 <<< 
+\backslash
+u00D3
+\end_layout
+
+\begin_layout Code
+    &S < 
+\backslash
+u015B <<< 
+\backslash
+u015A
+\end_layout
+
+\begin_layout Code
+    &Z < 
+\backslash
+u017A <<< 
+\backslash
+u017B    
+\end_layout
+
+\begin_layout Code
+*/
+\end_layout
+
+\begin_layout Itemize
+mysql/include/m_ctype.h
+\end_layout
+
+\begin_layout Code
+typedef struct charset_info_st
+\end_layout
+
+\begin_layout Code
+{
+\end_layout
+
+\begin_layout Code
+  uint      number;
+\end_layout
+
+\begin_layout Code
+  uint      primary_number;
+\end_layout
+
+\begin_layout Code
+  uint      binary_number;
+\end_layout
+
+\begin_layout Code
+  uint      state;
+\end_layout
+
+\begin_layout Code
+  const char *csname;
+\end_layout
+
+\begin_layout Code
+  const char *name;
+\end_layout
+
+\begin_layout Code
+  const char *comment;
+\end_layout
+
+\begin_layout Code
+  const char *tailoring;
+\end_layout
+
+\begin_layout Code
+  uchar    *ctype;
+\end_layout
+
+\begin_layout Code
+  uchar    *to_lower;
+\end_layout
+
+\begin_layout Code
+  uchar    *to_upper;
+\end_layout
+
+\begin_layout Code
+  uchar    *sort_order;
+\end_layout
+
+\begin_layout Code
+  uint16   *contractions;
+\end_layout
+
+\begin_layout Code
+  uint16   **sort_order_big;
+\end_layout
+
+\begin_layout Code
+  uint16      *tab_to_uni;
+\end_layout
+
+\begin_layout Code
+  MY_UNI_IDX  *tab_from_uni;
+\end_layout
+
+\begin_layout Code
+  MY_UNICASE_INFO **caseinfo;
+\end_layout
+
+\begin_layout Code
+  uchar     *state_map;
+\end_layout
+
+\begin_layout Code
+  uchar     *ident_map;
+\end_layout
+
+\begin_layout Code
+  uint      strxfrm_multiply;
+\end_layout
+
+\begin_layout Code
+  uchar     caseup_multiply;
+\end_layout
+
+\begin_layout Code
+  uchar     casedn_multiply;
+\end_layout
+
+\begin_layout Code
+  uint      mbminlen;
+\end_layout
+
+\begin_layout Code
+  uint      mbmaxlen;
+\end_layout
+
+\begin_layout Code
+  uint16    min_sort_char;
+\end_layout
+
+\begin_layout Code
+  uint16    max_sort_char; /* For LIKE optimization */
+\end_layout
+
+\begin_layout Code
+  uchar     pad_char;
+\end_layout
+
+\begin_layout Code
+  my_bool   escape_with_backslash_is_dangerous;
+\end_layout
+
+\begin_layout Code
+  
+\end_layout
+
+\begin_layout Code
+  MY_CHARSET_HANDLER *cset;
+\end_layout
+
+\begin_layout Code
+  MY_COLLATION_HANDLER *coll;
+\end_layout
+
+\begin_layout Code
+  
+\end_layout
+
+\begin_layout Code
+} CHARSET_INFO;
+\end_layout
+
+\begin_layout Itemize
+mysys/charset.c: CHARSET_INFO *all_charsets[256]
+\end_layout
+
+\begin_layout Itemize
+mysys/charset.c
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+init_available_charsets()
+\end_layout
+
+\begin_layout Itemize
+mysys/charset-def.c
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+init_compiled_charsets()
+\end_layout
+
+\begin_layout Itemize
+mysys/charset.c
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+add_compiled_collation()
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+init_state_maps()
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+mysys/charset.c
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+get_charset_by_name()
+\end_layout
+
+\begin_layout Itemize
+get_collation_number()
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+get_collation_number_internal()
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+get_internal_charset()
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+strings/ctype-uca.c
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+create_tailoring()
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Testing
+\end_layout
+
+\begin_layout Enumerate
+Test Swedish (MySQL is a Swedish company) collation algorithm:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset LatexCommand \htmlurl[http://en.wikipedia.org/wiki/Swedish_alphabet]{http://en.wikipedia.org/wiki/Swedish_alphabet}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Code
+CREATE TABLE ts (
+\end_layout
+
+\begin_layout Code
+        id SERIAL PRIMARY KEY,
+\end_layout
+
+\begin_layout Code
+        letter VARCHAR(10) NOT NULL
+\end_layout
+
+\begin_layout Code
+) CHARACTER SET utf8;
+\end_layout
+
+\begin_layout Standard
+Running this collation handler:
+\end_layout
+
+\begin_layout Code
+SELECT * FROM ts ORDER BY letter COLLATE utf8_swedish_ci;
+\end_layout
+
+\begin_layout Standard
+results in non-English alphabet characters appearing at the end of the sorted
+ alphabet as expected.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Apply the Sinhala collation patch to MySQL:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[mysql-dfsg-5.0-5.0.27-sinhala1.patch]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-dfsg-5.0-5.0.27-sinhala1.patch?root=sinhala}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Test new Sinhala collation algorithm:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset LatexCommand \htmlurl[http://en.wikipedia.org/wiki/Sinhala_alphabet]{http://en.wikipedia.org/wiki/Sinhala_alphabet}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Code
+CREATE TABLE tl (
+\end_layout
+
+\begin_layout Code
+        id SERIAL PRIMARY KEY,
+\end_layout
+
+\begin_layout Code
+        letter VARCHAR(10) NOT NULL
+\end_layout
+
+\begin_layout Code
+) CHARACTER SET utf8;
+\end_layout
+
+\begin_layout Standard
+Load the data from this file:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[mysql-data-sinhala.txt]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-data-sinhala.txt?root=sinhala}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Running this collation handler:
+\end_layout
+
+\begin_layout Code
+SELECT * FROM tl ORDER BY letter COLLATE utf8_sinhala_ci;
+\end_layout
+
+\begin_layout Standard
+results match the Sinhala Character Code for Information Interchange Part
+ 1 : Collation Sequence.
+\end_layout
+
+\begin_layout Standard
+Download the output file from:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[mysql-output-utf8_sinhala_ci.txt]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-output-utf8_sinhala_ci.txt?root=sinhala}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Need to add a Sinhala collation test to the MySQL test suite:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+mysql/mysql-test/t/ctype_utf8.test
+\end_layout
+
+\begin_layout Itemize
+mysql/mysql-test/r/ctype_utf8.result
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Locales
 \end_layout
