@@ -1,0 +1,174 @@
+diff -ru mysql-dfsg-5.0-5.0.27.orig/config/ac-macros/character_sets.m4 mysql-dfsg-5.0-5.0.27.hj/config/ac-macros/character_sets.m4
+--- mysql-dfsg-5.0-5.0.27.orig/config/ac-macros/character_sets.m4	2006-10-21 05:52:38.000000000 +0530
++++ mysql-dfsg-5.0-5.0.27.hj/config/ac-macros/character_sets.m4	2006-12-06 17:11:14.000000000 +0530
+@@ -346,7 +346,7 @@
+       define(UCSC3, ucs2_esperanto_ci ucs2_estonian_ci ucs2_icelandic_ci)
+       define(UCSC4, ucs2_latvian_ci ucs2_lithuanian_ci)
+       define(UCSC5, ucs2_persian_ci ucs2_polish_ci ucs2_romanian_ci)
+-      define(UCSC6, ucs2_slovak_ci ucs2_slovenian_ci)
++      define(UCSC6, ucs2_sinhala_ci ucs2_slovak_ci ucs2_slovenian_ci)
+       define(UCSC7, ucs2_spanish2_ci ucs2_spanish_ci)
+       define(UCSC8, ucs2_swedish_ci ucs2_turkish_ci)
+       define(UCSC9, ucs2_unicode_ci)
+@@ -370,7 +370,7 @@
+         define(UTFC3, utf8_esperanto_ci utf8_estonian_ci utf8_icelandic_ci)
+         define(UTFC4, utf8_latvian_ci utf8_lithuanian_ci)
+         define(UTFC5, utf8_persian_ci utf8_polish_ci utf8_romanian_ci)
+-        define(UTFC6, utf8_slovak_ci utf8_slovenian_ci)
++        define(UTFC6, utf8_sinhala_ci utf8_slovak_ci utf8_slovenian_ci)
+         define(UTFC7, utf8_spanish2_ci utf8_spanish_ci)
+         define(UTFC8, utf8_swedish_ci utf8_turkish_ci)
+         define(UTFC9, utf8_unicode_ci)
+diff -ru mysql-dfsg-5.0-5.0.27.orig/mysys/charset-def.c mysql-dfsg-5.0-5.0.27.hj/mysys/charset-def.c
+--- mysql-dfsg-5.0-5.0.27.orig/mysys/charset-def.c	2006-10-21 05:52:54.000000000 +0530
++++ mysql-dfsg-5.0-5.0.27.hj/mysys/charset-def.c	2006-12-06 17:11:14.000000000 +0530
+@@ -44,6 +44,7 @@
+ extern CHARSET_INFO my_charset_ucs2_persian_uca_ci;
+ extern CHARSET_INFO my_charset_ucs2_esperanto_uca_ci;
+ extern CHARSET_INFO my_charset_ucs2_hungarian_uca_ci;
++extern CHARSET_INFO my_charset_ucs2_sinhala_uca_ci;
+ #endif
+ 
+ #ifdef HAVE_CHARSET_utf8
+@@ -66,6 +67,7 @@
+ extern CHARSET_INFO my_charset_utf8_persian_uca_ci;
+ extern CHARSET_INFO my_charset_utf8_esperanto_uca_ci;
+ extern CHARSET_INFO my_charset_utf8_hungarian_uca_ci;
++extern CHARSET_INFO my_charset_utf8_sinhala_uca_ci;
+ #ifdef HAVE_UTF8_GENERAL_CS
+ extern CHARSET_INFO my_charset_utf8_general_cs;
+ #endif
+@@ -154,6 +156,7 @@
+   add_compiled_collation(&my_charset_ucs2_persian_uca_ci);
+   add_compiled_collation(&my_charset_ucs2_esperanto_uca_ci);
+   add_compiled_collation(&my_charset_ucs2_hungarian_uca_ci);
++  add_compiled_collation(&my_charset_ucs2_sinhala_uca_ci);
+ #endif
+ #endif
+ 
+@@ -188,6 +191,7 @@
+   add_compiled_collation(&my_charset_utf8_persian_uca_ci);
+   add_compiled_collation(&my_charset_utf8_esperanto_uca_ci);
+   add_compiled_collation(&my_charset_utf8_hungarian_uca_ci);
++  add_compiled_collation(&my_charset_utf8_sinhala_uca_ci);
+ #endif
+ #endif
+ 
+diff -ru mysql-dfsg-5.0-5.0.27.orig/strings/ctype-uca.c mysql-dfsg-5.0-5.0.27.hj/strings/ctype-uca.c
+--- mysql-dfsg-5.0-5.0.27.orig/strings/ctype-uca.c	2006-10-21 05:52:52.000000000 +0530
++++ mysql-dfsg-5.0-5.0.27.hj/strings/ctype-uca.c	2006-12-08 01:07:53.000000000 +0530
+@@ -6712,6 +6712,26 @@
+     "&O < \\u00F6 <<< \\u00D6 << \\u0151 <<< \\u0150"
+     "&U < \\u00FC <<< \\u00DC << \\u0171 <<< \\u0170";
+ 
++/*
++  SCCII Part 1 : Collation Sequence
++  2006/11/24
++  Harshula Jayasuriya <harshula at gmail dot com>
++  Language Technology Research Lab, University of Colombo / ICTA
++*/
++static const char sinhala[]=
++    "& \\u0D96 < \\u0D82 < \\u0D83 < \\u0D9A < \\u0D9B < \\u0D9C < \\u0D9D"
++              "< \\u0D9E < \\u0D9F < \\u0DA0 < \\u0DA1 < \\u0DA2 < \\u0DA3"
++              "< \\u0DA5 < \\u0DA4 < \\u0DA6"
++              "< \\u0DA7 < \\u0DA8 < \\u0DA9 < \\u0DAA < \\u0DAB < \\u0DAC"
++              "< \\u0DAD < \\u0DAE < \\u0DAF < \\u0DB0 < \\u0DB1 < \\u0DB2"
++              "< \\u0DB3 < \\u0DB4 < \\u0DB5 < \\u0DB6 < \\u0DB7 < \\u0DB8"
++              "< \\u0DB9 < \\u0DBA < \\u0DBB < \\u0DBD < \\u0DC0 < \\u0DC1"
++              "< \\u0DC2 < \\u0DC3 < \\u0DC4 < \\u0DC5 < \\u0DC6"
++              "< \\u0DCF"
++              "< \\u0DD0 < \\u0DD1 < \\u0DD2 < \\u0DD3 < \\u0DD4 < \\u0DD6"
++              "< \\u0DD8 < \\u0DF2 < \\u0DDF < \\u0DF3 < \\u0DD9 < \\u0DDA"
++              "< \\u0DDB < \\u0DDC < \\u0DDD < \\u0DDE < \\u0DCA";
++
+ 
+ /*
+   Unicode Collation Algorithm:
+@@ -7441,7 +7461,7 @@
+ /*
+   Collation language is implemented according to
+   subset of ICU Collation Customization (tailorings):
+-  http://oss.software.ibm.com/icu/userguide/Collate_Customization.html
++  http://icu.sourceforge.net/userguide/Collate_Customization.html
+   
+   Collation language elements:
+   Delimiters:
+@@ -8668,6 +8688,39 @@
+ };
+ 
+ 
++CHARSET_INFO my_charset_ucs2_sinhala_uca_ci=
++{
++    147,0,0,		/* number       */
++    MY_CS_COMPILED|MY_CS_STRNXFRM|MY_CS_UNICODE,
++    "ucs2",		/* cs name    */
++    "ucs2_sinhala_ci",	/* name         */
++    "",			/* comment      */
++    sinhala,		/* tailoring    */
++    NULL,		/* ctype        */
++    NULL,		/* to_lower     */
++    NULL,		/* to_upper     */
++    NULL,		/* sort_order   */
++    NULL,		/* contractions */
++    NULL,		/* sort_order_big*/
++    NULL,		/* tab_to_uni   */
++    NULL,		/* tab_from_uni */
++    my_unicase_default, /* caseinfo     */
++    NULL,		/* state_map    */
++    NULL,		/* ident_map    */
++    8,			/* strxfrm_multiply */
++    1,                  /* caseup_multiply  */
++    1,                  /* casedn_multiply  */
++    2,			/* mbminlen     */
++    2,			/* mbmaxlen     */
++    9,			/* min_sort_char */
++    0xFFFF,		/* max_sort_char */
++    ' ',                /* pad char      */
++    0,                  /* escape_with_backslash_is_dangerous */
++    &my_charset_ucs2_handler,
++    &my_collation_ucs2_uca_handler
++};
++
++
+ #endif
+ 
+ 
+@@ -9325,6 +9378,38 @@
+     &my_collation_any_uca_handler
+ };
+ 
++CHARSET_INFO my_charset_utf8_sinhala_uca_ci=
++{
++    211,0,0,		/* number       */
++    MY_CS_COMPILED|MY_CS_STRNXFRM|MY_CS_UNICODE,
++    "utf8",		/* cs name    */
++    "utf8_sinhala_ci",	/* name         */
++    "",			/* comment      */
++    sinhala,		/* tailoring    */
++    ctype_utf8,		/* ctype        */
++    NULL,		/* to_lower     */
++    NULL,		/* to_upper     */
++    NULL,		/* sort_order   */
++    NULL,		/* contractions */
++    NULL,		/* sort_order_big*/
++    NULL,		/* tab_to_uni   */
++    NULL,		/* tab_from_uni */
++    my_unicase_default, /* caseinfo     */
++    NULL,		/* state_map    */
++    NULL,		/* ident_map    */
++    8,			/* strxfrm_multiply */
++    1,                  /* caseup_multiply  */
++    1,                  /* casedn_multiply  */
++    3,			/* mbminlen     */
++    3,			/* mbmaxlen     */
++    9,			/* min_sort_char */
++    0xFFFF,		/* max_sort_char */
++    ' ',                /* pad char      */
++    0,                  /* escape_with_backslash_is_dangerous */
++    &my_charset_utf8_handler,
++    &my_collation_any_uca_handler
++};
++
+ #endif /* HAVE_CHARSET_utf8 */
+ 
+ #endif /* HAVE_UCA_COLLATIONS */
