@@ -34,6 +34,7 @@ touching-letters-testcase.txt
 Patch not submitted to OOo bugzilla because of (6). However,
 now the ICU library used by OOo is distributed in its own package.
 
+icu-sinhala-rendering.png
 icu-sinhala-rendering.txt
 
 This patch is based on:
@@ -46,6 +47,7 @@ http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
 5) icu-3.4-sinhala1.patch
 Problems due to (6)
 
+icu-sinhala-rendering.png
 icu-sinhala-rendering.txt
 
 This patch is based on:
@@ -55,6 +57,9 @@ http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057
 6)
 http://qa.openoffice.org/issues/show_bug.cgi?id=68047
 
+icu-zwj-handling-correct-gedit.png
+icu-zwj-handling-correct-oo.png
+icu-zwj-handling-incorrect-oo.png
 icu-zwj-handling.txt
 --------------------------------------------------------------------
 7) HELLO.utf8.patch
@@ -64,8 +69,10 @@ Include a line for Sinhala
 8) icu-3.6-sinhala1.patch
 Problems due to (6)
 
-icu-crash-testcase.txt
+icu-crash-testcase-dv-oo.txt
+--------------------------------------------------------------------
+9) mysql-dfsg-5.0-5.0.27-sinhala1.patch
 
-This patch is based on:
-icu-3.4-sinhala1.patch
+mysql-data-sinhala.txt
+mysql-output-utf8_sinhala_ci.txt
 --------------------------------------------------------------------
