@@ -76,3 +76,10 @@ icu-crash-testcase-dv-oo.txt
 mysql-data-sinhala.txt
 mysql-output-utf8_sinhala_ci.txt
 --------------------------------------------------------------------
+10) pango-1.14.8-sinhala5.patch
+
+The worst case expansion for Sinhala should be 4, not 3. e.g.
+(kombuva)(dotted_circle)(aela-pilla)(al-lakuna). However, this
+patch is only superficial because Pango doesn't appear to ever
+use the worst case expansion value, unlike ICU.
+--------------------------------------------------------------------
