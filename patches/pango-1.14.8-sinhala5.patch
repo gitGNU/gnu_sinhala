@@ -1,0 +1,12 @@
+diff -ru pango1.0-1.14.8.orig/modules/indic/indic-ot-class-tables.c pango1.0-1.14.8/modules/indic/indic-ot-class-tables.c
+--- pango1.0-1.14.8.orig/modules/indic/indic-ot-class-tables.c	2006-10-16 19:18:40.000000000 +0530
++++ pango1.0-1.14.8/modules/indic/indic-ot-class-tables.c	2006-12-13 04:15:52.000000000 +0530
+@@ -290,7 +290,7 @@
+ INDIC_OT_CLASS_TABLE_DEFINE (telu_class_table, 0x0C00, 3, TELU_SCRIPT_FLAGS, teluCharClasses, teluSplitTable);
+ INDIC_OT_CLASS_TABLE_DEFINE (knda_class_table, 0x0C80, 4, KNDA_SCRIPT_FLAGS, kndaCharClasses, kndaSplitTable);
+ INDIC_OT_CLASS_TABLE_DEFINE (mlym_class_table, 0x0D00, 3, MLYM_SCRIPT_FLAGS, mlymCharClasses, mlymSplitTable);
+-INDIC_OT_CLASS_TABLE_DEFINE (sinh_class_table, 0x0D80, 3, SINH_SCRIPT_FLAGS, sinhCharClasses, sinhSplitTable);
++INDIC_OT_CLASS_TABLE_DEFINE (sinh_class_table, 0x0D80, 4, SINH_SCRIPT_FLAGS, sinhCharClasses, sinhSplitTable);
+ 
+ const IndicOTSplitMatra *indic_ot_get_split_matra(const IndicOTClassTable *class_table, IndicOTCharClass char_class)
+ {
