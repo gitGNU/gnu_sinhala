@@ -72,7 +72,7 @@ diff -ru mysql-dfsg-5.0-5.0.27.orig/strings/ctype-uca.c mysql-dfsg-5.0-5.0.27.hj
 +              "< \\u0D9E < \\u0D9F < \\u0DA0 < \\u0DA1 < \\u0DA2 < \\u0DA3"
 +              "< \\u0DA5 < \\u0DA4 < \\u0DA6"
 +              "< \\u0DA7 < \\u0DA8 < \\u0DA9 < \\u0DAA < \\u0DAB < \\u0DAC"
-+              "< \\u0DAD < \\u0DAE < \\u0DAF < \\u0DB0 < \\u0DB1 < \\u0DB2"
++              "< \\u0DAD < \\u0DAE < \\u0DAF < \\u0DB0 < \\u0DB1"
 +              "< \\u0DB3 < \\u0DB4 < \\u0DB5 < \\u0DB6 < \\u0DB7 < \\u0DB8"
 +              "< \\u0DB9 < \\u0DBA < \\u0DBB < \\u0DBD < \\u0DC0 < \\u0DC1"
 +              "< \\u0DC2 < \\u0DC3 < \\u0DC4 < \\u0DC5 < \\u0DC6"
