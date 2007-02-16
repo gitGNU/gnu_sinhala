@@ -62,7 +62,7 @@ diff -ru mysql-dfsg-5.0-5.0.27.orig/strings/ctype-uca.c mysql-dfsg-5.0-5.0.27/st
      "&U < \\u00FC <<< \\u00DC << \\u0171 <<< \\u0170";
  
 +/*
-+  SCCII Part 1 : Collation Sequence
++  SCCII Part 1 : Collation Sequence (SLS1134)
 +  2006/11/24
 +  Harshula Jayasuriya <harshula at gmail dot com>
 +  Language Technology Research Lab, University of Colombo / ICTA
