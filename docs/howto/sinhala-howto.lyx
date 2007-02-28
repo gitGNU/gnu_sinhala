@@ -33,16 +33,116 @@
 Enabling Sinhala in GNU/Linux HOWTO
 \end_layout
 
-\begin_layout Author
-Harshula Jayasuriya <harshula at gmail dot com>
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Standard
+
+<authorgroup>
 \end_layout
 
-\begin_layout Author
-\begin_inset LatexCommand \tableofcontents{}
+\begin_layout Standard
+
+<author>
+\end_layout
+
+\begin_layout Standard
+
+<firstname>Harshula</firstname>
+\end_layout
+
+\begin_layout Standard
+
+<surname>Jayasuriya</surname>
+\end_layout
+
+\begin_layout Standard
+
+<affiliation>
+\end_layout
+
+\begin_layout Standard
+
+<address>
+\end_layout
+
+\begin_layout Standard
+
+<email>harshula&nbsp;at&nbsp;gmail&nbsp;dot&nbsp;com</email>
+\end_layout
+
+\begin_layout Standard
+
+<address>
+\end_layout
+
+\begin_layout Standard
+
+</affiliation>
+\end_layout
+
+\begin_layout Standard
+
+</author>
+\end_layout
+
+\begin_layout Standard
+
+</authorgroup>
+\end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout RevisionHistory
+
+\end_layout
+
+\begin_layout Revision
+0.5
+\end_layout
+
+\begin_layout Date
+2006/11/20
+\end_layout
+
+\begin_layout RevisionRemark
+In progress
+\end_layout
+
+\begin_layout Revision
+0.4
+\end_layout
+
+\begin_layout Date
+2006/04/03
+\end_layout
+
+\begin_layout Revision
+0.3
+\end_layout
+
+\begin_layout Date
+2005/03/06 
+\end_layout
+
+\begin_layout Revision
+0.2
+\end_layout
+
+\begin_layout Date
+2004/10/07
+\end_layout
+
+\begin_layout Revision
+0.1
+\end_layout
+
+\begin_layout Date
+2004/06/05
 \end_layout
 
 \begin_layout Section
@@ -60,30 +160,6 @@ Sinhala is the main language of Sri Lanka.
 This guide is GNOME and Debian/Ubuntu centric.
  Most of the explanations and suggestions should also be applicable to other
  distributions.
-\end_layout
-
-\begin_layout Subsection
-Revisions
-\end_layout
-
-\begin_layout Itemize
-v0.1 - 2004/06/05
-\end_layout
-
-\begin_layout Itemize
-v0.2 - 2004/10/07
-\end_layout
-
-\begin_layout Itemize
-v0.3 - 2005/03/06
-\end_layout
-
-\begin_layout Itemize
-v0.4 - 2006/04/03 
-\end_layout
-
-\begin_layout Itemize
-v0.5 - 2006/11/20 - in progress
 \end_layout
 
 \begin_layout Section
