@@ -250,12 +250,18 @@ Standards
 \end_layout
 
 \begin_layout Itemize
-SLS1134 (not available online)
+SLS1134 - Sinhala Character Code for Information Interchange (SCCII) (not
+ available online)
 \end_layout
 
 \begin_layout Itemize
-Sinhala Character Code for Information Interchange - Part 1: Collation Sequence
- (not available online)
+SLS1134 - Sinhala Character Code for Information Interchange (SCCII) - Part
+ 1: Collation Sequence (not available online)
+\end_layout
+
+\begin_layout Itemize
+SLS1134 - Sinhala Character Code for Information Interchange (SCCII) - Part
+ 2 : Requirements and Methods of Test (not available online)
 \end_layout
 
 \begin_layout Subsection
@@ -283,7 +289,7 @@ Sinhala CVS Commits List (in English for developers)
 
 \begin_layout Itemize
 Archive: 
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?forum=sinhala-cvs-commits]{http://sourceforge.net/mailarchive/forum.php?forum=sinhala-cvs-commits}
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?forum_id=49318]{http://sourceforge.net/mailarchive/forum.php?forum_id=49318}
 
 \end_inset
 
@@ -305,7 +311,7 @@ Sinhala Technical List (in English for developers)
 
 \begin_layout Itemize
 Archive: 
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?forum=sinhala-technical]{http://sourceforge.net/mailarchive/forum.php?forum=sinhala-technical}
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?forum_id=50807]{http://sourceforge.net/mailarchive/forum.php?forum_id=50807}
 
 \end_inset
 
@@ -428,7 +434,7 @@ apt-get install sinhala-gnu-linux
 
 \end_deeper
 \begin_layout Enumerate
-Upgrade libicu package:
+Upgrade relevant packages:
 \end_layout
 
 \begin_deeper
@@ -693,9 +699,7 @@ Debian 4.0 (Etch)
 
 \begin_layout Standard
 Debian 4.0 ships with ICU 3.6 which contains Sinhala support.
- However, Open Office has not been patched to not filter out ZWJ.
- Also, there is a bug in ICU that can trigger Open Office to crash when
- typing in Sinhala.
+ Furthermore, Open Office has been patched to not filter out ZWJ.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2566,6 +2570,436 @@ Databases
 \end_layout
 
 \begin_layout Subsubsection
+Tailoring
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[ICU User Guide: Collation Customization]{http://icu.sourceforge.net/userguide/Collate_Customization.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Change Management for the Unicode Collation Algorithm]{http://unicode.org/collation/ducet-changes.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Sinhala tailoring rules
+\end_layout
+
+\begin_layout Standard
+The first tailoring rule is the minimal description of Sinhala tailoring.
+ The second tailoring rule is the complete description of Sinhala tailoring
+ as required by MySQL.
+\end_layout
+
+\begin_layout Code
+/*
+\end_layout
+
+\begin_layout Code
+  SCCII Part 1 : Collation Sequence (SLS1134)
+\end_layout
+
+\begin_layout Code
+  2006/11/24
+\end_layout
+
+\begin_layout Code
+  Harshula Jayasuriya <harshula at gmail dot com>
+\end_layout
+
+\begin_layout Code
+  Language Technology Research Lab, University of Colombo / ICTA
+\end_layout
+
+\begin_layout Code
+*/
+\end_layout
+
+\begin_layout Code
+#if 1
+\end_layout
+
+\begin_layout Code
+static const char sinhala[]=
+\end_layout
+
+\begin_layout Code
+    "& 
+\backslash
+
+\backslash
+u0D96 < 
+\backslash
+
+\backslash
+u0D82 < 
+\backslash
+
+\backslash
+u0D83"
+\end_layout
+
+\begin_layout Code
+    "& 
+\backslash
+
+\backslash
+u0DA5 < 
+\backslash
+
+\backslash
+u0DA4"
+\end_layout
+
+\begin_layout Code
+    "& 
+\backslash
+
+\backslash
+u0DD8 < 
+\backslash
+
+\backslash
+u0DF2 < 
+\backslash
+
+\backslash
+u0DDF < 
+\backslash
+
+\backslash
+u0DF3"
+\end_layout
+
+\begin_layout Code
+    "& 
+\backslash
+
+\backslash
+u0DDE < 
+\backslash
+
+\backslash
+u0DCA";
+\end_layout
+
+\begin_layout Code
+#else
+\end_layout
+
+\begin_layout Code
+static const char sinhala[]=
+\end_layout
+
+\begin_layout Code
+    "& 
+\backslash
+
+\backslash
+u0D96 < 
+\backslash
+
+\backslash
+u0D82 < 
+\backslash
+
+\backslash
+u0D83 < 
+\backslash
+
+\backslash
+u0D9A < 
+\backslash
+
+\backslash
+u0D9B < 
+\backslash
+
+\backslash
+u0D9C < 
+\backslash
+
+\backslash
+u0D9D"
+\end_layout
+
+\begin_layout Code
+              "< 
+\backslash
+
+\backslash
+u0D9E < 
+\backslash
+
+\backslash
+u0D9F < 
+\backslash
+
+\backslash
+u0DA0 < 
+\backslash
+
+\backslash
+u0DA1 < 
+\backslash
+
+\backslash
+u0DA2 < 
+\backslash
+
+\backslash
+u0DA3"
+\end_layout
+
+\begin_layout Code
+              "< 
+\backslash
+
+\backslash
+u0DA5 < 
+\backslash
+
+\backslash
+u0DA4 < 
+\backslash
+
+\backslash
+u0DA6"
+\end_layout
+
+\begin_layout Code
+              "< 
+\backslash
+
+\backslash
+u0DA7 < 
+\backslash
+
+\backslash
+u0DA8 < 
+\backslash
+
+\backslash
+u0DA9 < 
+\backslash
+
+\backslash
+u0DAA < 
+\backslash
+
+\backslash
+u0DAB < 
+\backslash
+
+\backslash
+u0DAC"
+\end_layout
+
+\begin_layout Code
+              "< 
+\backslash
+
+\backslash
+u0DAD < 
+\backslash
+
+\backslash
+u0DAE < 
+\backslash
+
+\backslash
+u0DAF < 
+\backslash
+
+\backslash
+u0DB0 < 
+\backslash
+
+\backslash
+u0DB1"
+\end_layout
+
+\begin_layout Code
+              "< 
+\backslash
+
+\backslash
+u0DB3 < 
+\backslash
+
+\backslash
+u0DB4 < 
+\backslash
+
+\backslash
+u0DB5 < 
+\backslash
+
+\backslash
+u0DB6 < 
+\backslash
+
+\backslash
+u0DB7 < 
+\backslash
+
+\backslash
+u0DB8"
+\end_layout
+
+\begin_layout Code
+              "< 
+\backslash
+
+\backslash
+u0DB9 < 
+\backslash
+
+\backslash
+u0DBA < 
+\backslash
+
+\backslash
+u0DBB < 
+\backslash
+
+\backslash
+u0DBD < 
+\backslash
+
+\backslash
+u0DC0 < 
+\backslash
+
+\backslash
+u0DC1"
+\end_layout
+
+\begin_layout Code
+              "< 
+\backslash
+
+\backslash
+u0DC2 < 
+\backslash
+
+\backslash
+u0DC3 < 
+\backslash
+
+\backslash
+u0DC4 < 
+\backslash
+
+\backslash
+u0DC5 < 
+\backslash
+
+\backslash
+u0DC6"
+\end_layout
+
+\begin_layout Code
+              "< 
+\backslash
+
+\backslash
+u0DCF"
+\end_layout
+
+\begin_layout Code
+              "< 
+\backslash
+
+\backslash
+u0DD0 < 
+\backslash
+
+\backslash
+u0DD1 < 
+\backslash
+
+\backslash
+u0DD2 < 
+\backslash
+
+\backslash
+u0DD3 < 
+\backslash
+
+\backslash
+u0DD4 < 
+\backslash
+
+\backslash
+u0DD6"
+\end_layout
+
+\begin_layout Code
+              "< 
+\backslash
+
+\backslash
+u0DD8 < 
+\backslash
+
+\backslash
+u0DF2 < 
+\backslash
+
+\backslash
+u0DDF < 
+\backslash
+
+\backslash
+u0DF3 < 
+\backslash
+
+\backslash
+u0DD9 < 
+\backslash
+
+\backslash
+u0DDA"
+\end_layout
+
+\begin_layout Code
+              "< 
+\backslash
+
+\backslash
+u0DDB < 
+\backslash
+
+\backslash
+u0DDC < 
+\backslash
+
+\backslash
+u0DDD < 
+\backslash
+
+\backslash
+u0DDE < 
+\backslash
+
+\backslash
+u0DCA";
+\end_layout
+
+\begin_layout Code
+#endif
+\end_layout
+
+\begin_layout Subsubsection
 MySQL 5.0.27
 \end_layout
 
@@ -2643,7 +3077,7 @@ SET NAMES 'utf8'; // after connecting to server if the server has NOT set
 \end_layout
 
 \begin_layout Itemize
-SHOW CREATE TABLE <table-name>
+SHOW CREATE TABLE <table-name>;
 \end_layout
 
 \begin_layout Itemize
@@ -2657,48 +3091,7 @@ s
 \end_layout
 
 \begin_layout Paragraph
-Setup MySQL Server
-\end_layout
-
-\begin_layout Standard
-Edit the file /etc/mysql/my.cnf and add to the [mysqld] section:
-\end_layout
-
-\begin_layout Itemize
-default-character_set=utf8
-\end_layout
-
-\begin_layout Itemize
-skip-character-set-client-handshake
-\end_layout
-
-\begin_layout Standard
-This is done to ensure that UTF-8 is the default encoding for the server
- and client.
-\end_layout
-
-\begin_layout Paragraph
-Files requiring modification
-\end_layout
-
-\begin_layout Itemize
-mysql/config/ac-macros/character_sets.m4
-\end_layout
-
-\begin_layout Itemize
-mysql/mysys/charset-def.c
-\end_layout
-
-\begin_layout Itemize
-mysql/strings/ctype-uca.c
-\end_layout
-
-\begin_layout Itemize
-mysql/configure (generated)
-\end_layout
-
-\begin_layout Paragraph
-Code
+Source Code
 \end_layout
 
 \begin_layout Itemize
@@ -3083,6 +3476,36 @@ init_state_maps()
 
 \end_deeper
 \begin_layout Itemize
+strings/ctype-uca.c
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+my_coll_init_uca()
+\end_layout
+
+\begin_layout Itemize
+create_tailoring()
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+my_coll_rule_parse()
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+my_coll_lexem_init()
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+[Copy the default weights data to the new weights data structure]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
 mysys/charset.c
 \end_layout
 
@@ -3106,16 +3529,59 @@ get_internal_charset()
 \end_layout
 
 \end_deeper
+\begin_layout Paragraph
+Files requiring modification
+\end_layout
+
 \begin_layout Itemize
-strings/ctype-uca.c
+mysql/config/ac-macros/character_sets.m4
 \end_layout
 
-\begin_deeper
+\begin_layout Itemize
+mysql/mysys/charset-def.c
+\end_layout
+
+\begin_layout Itemize
+mysql/strings/ctype-uca.c
+\end_layout
+
+\begin_layout Itemize
+mysql/configure (generated)
+\end_layout
+
+\begin_layout Paragraph
+Patch
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[mysql-dfsg-5.0-5.0.27-sinhala1.patch]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-dfsg-5.0-5.0.27-sinhala1.patch?root=sinhala}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Configure MySQL Server
+\end_layout
+
 \begin_layout Standard
-create_tailoring()
+Edit the file /etc/mysql/my.cnf and add to the [mysqld] section:
 \end_layout
 
-\end_deeper
+\begin_layout Itemize
+default-character_set=utf8
+\end_layout
+
+\begin_layout Itemize
+skip-character-set-client-handshake
+\end_layout
+
+\begin_layout Standard
+This is done to ensure that UTF-8 is the default encoding for the server
+ and client.
+\end_layout
+
 \begin_layout Paragraph
 Testing
 \end_layout
@@ -3134,7 +3600,7 @@ Test Swedish (MySQL is a Swedish company) collation algorithm:
 \end_layout
 
 \begin_layout Code
-CREATE TABLE ts (
+CREATE TABLE t1 (
 \end_layout
 
 \begin_layout Code
@@ -3154,29 +3620,19 @@ Running this collation handler:
 \end_layout
 
 \begin_layout Code
-SELECT * FROM ts ORDER BY letter COLLATE utf8_swedish_ci;
+SELECT * FROM t1 ORDER BY letter COLLATE utf8_swedish_ci;
 \end_layout
 
 \begin_layout Standard
-results in non-English alphabet characters appearing at the end of the sorted
- alphabet as expected.
+results in non-English letters appearing at the end of the sorted alphabet
+ as expected.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Apply the Sinhala collation patch to MySQL:
+Apply the MySQL Sinhala collation patch.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[mysql-dfsg-5.0-5.0.27-sinhala1.patch]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-dfsg-5.0-5.0.27-sinhala1.patch?root=sinhala}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 Test new Sinhala collation algorithm:
 \end_layout
@@ -3191,7 +3647,7 @@ Test new Sinhala collation algorithm:
 \end_layout
 
 \begin_layout Code
-CREATE TABLE tl (
+CREATE TABLE t2 (
 \end_layout
 
 \begin_layout Code
@@ -3223,12 +3679,11 @@ Running this collation handler:
 \end_layout
 
 \begin_layout Code
-SELECT * FROM tl ORDER BY letter COLLATE utf8_sinhala_ci;
+SELECT * FROM t2 ORDER BY letter COLLATE utf8_sinhala_ci;
 \end_layout
 
 \begin_layout Standard
-results match the Sinhala Character Code for Information Interchange Part
- 1 : Collation Sequence.
+results match the SCCII Part 1 : Collation Sequence (SLS1134).
 \end_layout
 
 \begin_layout Standard
@@ -3532,6 +3987,34 @@ https://launchpad.net/distros/debian/+source/icu/+bug/35085
 
 \end_layout
 
+\begin_layout Itemize
+Pango - Worst case expansion for Sinhala 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+http://bugzilla.gnome.org/show_bug.cgi?id=385321
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Debian Open Office - The zero width joiner shouldn't be filtered out 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=403275
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Input Methods
@@ -3586,7 +4069,7 @@ Fonts
 \begin_deeper
 \begin_layout Itemize
 The printing problem was due to the font being an OTF font.
- Once the lklug font was changed to a TTF, the printing problem disappeared.
+ Once the LKLUG font was changed to a TTF, the printing problem disappeared.
 \end_layout
 
 \begin_layout Itemize
@@ -3624,8 +4107,27 @@ Amend ISO639 to include 'Sinhala' in the languages list alongside 'Sinhalese'.
 \end_layout
 
 \begin_layout Itemize
-Report an error in the Sinhala Character Code for Information Interchange
- - Part 1: Collation Sequence
+Report errors in the SCCII - Part 1: Collation Sequence (SLS1134)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Collation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Add Sinhala script (Sri Lanka) collation to MySQL 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+http://bugs.mysql.com/bug.php?id=26474
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -3638,10 +4140,6 @@ Renderer
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-ICU bug that crashes Open Office.
-\end_layout
-
 \begin_layout Itemize
 Support touching letters in QT Renderer.
 \end_layout
@@ -3714,6 +4212,10 @@ Implement established standards
 \begin_layout Itemize
 String matching - a consonant followed by dependent vowel 'o' should not
  match the same consonant followed by dependent vowel 'oo'.
+\end_layout
+
+\begin_layout Itemize
+Can the DUCET be updated with the correct Sinhala collation sequence?
 \end_layout
 
 \end_deeper
