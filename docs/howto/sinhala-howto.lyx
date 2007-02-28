@@ -223,7 +223,7 @@ Harsha Senanayake
 \end_layout
 
 \begin_layout Itemize
-Naoto Takahashi 
+Naoto Takahashi
 \end_layout
 
 \begin_layout Subsection
@@ -747,8 +747,11 @@ MOZ_ENABLE_PANGO=1
 status open
 
 \begin_layout Standard
-http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.h
-tml
+\begin_inset LatexCommand \htmlurl[http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.html]{http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.html}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -807,7 +810,11 @@ To disable the use of Pango, set MOZ_DISABLE_PANGO=1 in your environment
 status open
 
 \begin_layout Standard
-http://fedora.redhat.com/docs/release-notes/fc5/
+\begin_inset LatexCommand \htmlurl[http://fedora.redhat.com/docs/release-notes/fc5/]{http://fedora.redhat.com/docs/release-notes/fc5/}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1458,7 +1465,11 @@ The original patch to add Sinhala support was created by Harsha Senanayake
 status open
 
 \begin_layout Standard
-http://marc.theaimsgroup.com/?t=106354110900001&r=1&w=2
+\begin_inset LatexCommand \htmlurl[http://marc.theaimsgroup.com/?t=106354110900001&r=1&w=2]{http://marc.theaimsgroup.com/?t=106354110900001&r=1&w=2}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1471,7 +1482,11 @@ ama.
 status open
 
 \begin_layout Standard
-http://bugzilla.gnome.org/show_bug.cgi?id=153517
+\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=153517]{http://bugzilla.gnome.org/show_bug.cgi?id=153517}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1482,7 +1497,11 @@ http://bugzilla.gnome.org/show_bug.cgi?id=153517
 status open
 
 \begin_layout Standard
-http://bugzilla.gnome.org/show_bug.cgi?id=161981
+\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=161981]{http://bugzilla.gnome.org/show_bug.cgi?id=161981}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1492,7 +1511,11 @@ http://bugzilla.gnome.org/show_bug.cgi?id=161981
 status open
 
 \begin_layout Standard
-http://bugzilla.gnome.org/show_bug.cgi?id=302577
+\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=302577]{http://bugzilla.gnome.org/show_bug.cgi?id=302577}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1557,7 +1580,11 @@ Owen Taylor (Pango) submitted the Pango Sinhala patch to the ICU project
 status open
 
 \begin_layout Standard
-http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
+\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1571,7 +1598,11 @@ http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
 status open
 
 \begin_layout Standard
-http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711
+\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1581,7 +1612,11 @@ http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711
 status open
 
 \begin_layout Standard
-http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057
+\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1655,7 +1690,11 @@ Caolan McNamara also found and fixed this bug.
 status open
 
 \begin_layout Standard
-http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5501
+\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5501]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5501}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1970,8 +2009,11 @@ Fedora Core 4
 status open
 
 \begin_layout Standard
-http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=
-1.8
+\begin_inset LatexCommand \htmlurl[http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=1.8]{http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=1.8}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2009,8 +2051,11 @@ Fedora Core 5
 status open
 
 \begin_layout Standard
-http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=
-1.11
+\begin_inset LatexCommand \htmlurl[http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=1.11]{http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=1.11}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2206,7 +2251,11 @@ Whilst working on the patches for adding Sinhala support to ICU, the renderer
 status open
 
 \begin_layout Standard
-http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html
+\begin_inset LatexCommand \htmlurl[http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html]{http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2221,7 +2270,11 @@ Then, Caolan McNamara found the Open Office file that filters ZWJ and ZWNJ.
 status open
 
 \begin_layout Standard
-http://www.openoffice.org/issues/show_bug.cgi?id=68047
+\begin_inset LatexCommand \htmlurl[http://www.openoffice.org/issues/show_bug.cgi?id=68047]{http://www.openoffice.org/issues/show_bug.cgi?id=68047}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2355,8 +2408,11 @@ XKB, XIM, IIIMF
 status open
 
 \begin_layout Standard
-http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewart
-icle&artid=103&page=1
+\begin_inset LatexCommand \htmlurl[http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=103&page=1]{http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=103&page=1}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2366,7 +2422,11 @@ icle&artid=103&page=1
 status open
 
 \begin_layout Standard
-http://www.m17n.org/
+\begin_inset LatexCommand \htmlurl[http://www.m17n.org/]{http://www.m17n.org/}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2376,7 +2436,11 @@ http://www.m17n.org/
 status open
 
 \begin_layout Standard
-http://www.scim-im.org/
+\begin_inset LatexCommand \htmlurl[http://www.scim-im.org/]{http://www.scim-im.org/}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4004,208 +4068,208 @@ Renderer
 \begin_deeper
 \begin_layout Itemize
 Create and submit Pango patch - don't implicitly create conjuncts
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://bugzilla.gnome.org/show_bug.cgi?id=161981
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=161981]{http://bugzilla.gnome.org/show_bug.cgi?id=161981}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 Inform bengalinux-core team (India) the implications of the fix to bugzilla.gnome.
 org's bug 145233
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://sourceforge.net/mailarchive/forum.php?thread_id=6637263&forum_id=12023
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?thread_id=6637263&forum_id=12023]{http://sourceforge.net/mailarchive/forum.php?thread_id=6637263&forum_id=12023}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 Create and submit Pango patch - Enable touching letters in Sinhala rendering
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://bugzilla.gnome.org/show_bug.cgi?id=302577
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=302577]{http://bugzilla.gnome.org/show_bug.cgi?id=302577}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 Convince Pango and ICU maintainers to emit ZWJ to the font lookup stage.
 \end_layout
 
 \begin_layout Itemize
-Provide test files and images for ICU Sinhala support 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
+Provide test files and images for ICU Sinhala support
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \url[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 ICU: ZWJ Processing in Sinhala
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4710
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
+\begin_deeper
 \begin_layout Itemize
-ICU: Implement PR 37 ZWJ/ZWNJ Behavior 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711
-\end_layout
+\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4710]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4710}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+ICU: Implement PR 37 ZWJ/ZWNJ Behavior
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 ICU: Indic Reordering State Table Allows ZWJ Virama ZWJ
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 Port Pango patches, which add Sinhala support, to ICU for immediate use
  in ICU 3.4
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://www.redhat.com/archives/fedora-cvs-commits/2006-May/msg00126.html
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://www.redhat.com/archives/fedora-cvs-commits/2006-May/msg00126.html]{http://www.redhat.com/archives/fedora-cvs-commits/2006-May/msg00126.html}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 Convince Open Office developers to stop filtering ZWJ and ZWNJ - ZWJ: The
- zero width joiner shouldn't be filtered out 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://qa.openoffice.org/issues/show_bug.cgi?id=68047
+ zero width joiner shouldn't be filtered out
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
+\begin_deeper
 \begin_layout Itemize
-Epiphany - Add si (Sinhala) to the list of locales requiring Pango 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://bugzilla.gnome.org/show_bug.cgi?id=361538
-\end_layout
+\begin_inset LatexCommand \url[http://qa.openoffice.org/issues/show_bug.cgi?id=68047]{http://qa.openoffice.org/issues/show_bug.cgi?id=68047}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
-Ubuntu - Add si (Sinhala) to the list of locales requiring Pango 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-https://launchpad.net/distros/ubuntu/+source/firefox/+bug/66270/
+Epiphany - Add si (Sinhala) to the list of locales requiring Pango
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=361538]{http://bugzilla.gnome.org/show_bug.cgi?id=361538}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+Ubuntu - Add si (Sinhala) to the list of locales requiring Pango
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[https://launchpad.net/distros/ubuntu/+source/firefox/+bug/66270/]{https://launchpad.net/distros/ubuntu/+source/firefox/+bug/66270/}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Inform of Open Office filtering ZWJ and ZWNJ - Incorrect Bengali rendering
- of ra+japhala 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-https://launchpad.net/distros/debian/+source/icu/+bug/35085
+ of ra+japhala
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
+\begin_deeper
 \begin_layout Itemize
-Pango - Worst case expansion for Sinhala 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://bugzilla.gnome.org/show_bug.cgi?id=385321
-\end_layout
+\begin_inset LatexCommand \htmlurl[https://launchpad.net/distros/debian/+source/icu/+bug/35085]{https://launchpad.net/distros/debian/+source/icu/+bug/35085}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+Pango - Worst case expansion for Sinhala
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=385321]{http://bugzilla.gnome.org/show_bug.cgi?id=385321}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Debian Open Office - The zero width joiner shouldn't be filtered out 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=403275
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=403275]{http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=403275}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 Input Methods
@@ -4222,28 +4286,32 @@ Submit vim keyboard layout to Bram
 
 \begin_layout Itemize
 Submit XKB keyboard layout to xorg
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-https://bugs.freedesktop.org/show_bug.cgi?id=1850
 \end_layout
 
-\end_inset
-
- and xfree86
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://bugs.xfree86.org/show_bug.cgi?id=1509
-\end_layout
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[https://bugs.freedesktop.org/show_bug.cgi?id=1850]{https://bugs.freedesktop.org/show_bug.cgi?id=1850}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+Submit XKB keyboard layout to xfree86
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://bugs.xfree86.org/show_bug.cgi?id=1509]{http://bugs.xfree86.org/show_bug.cgi?id=1509}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Submit phonetic static keyboard layout to m17n
 \end_layout
@@ -4308,19 +4376,19 @@ Collation
 
 \begin_deeper
 \begin_layout Itemize
-Add Sinhala script (Sri Lanka) collation to MySQL 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-http://bugs.mysql.com/bug.php?id=26474
+Add Sinhala script (Sri Lanka) collation to MySQL
 \end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://bugs.mysql.com/bug.php?id=26474]{http://bugs.mysql.com/bug.php?id=26474}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Subsection
 TODO
@@ -4650,7 +4718,7 @@ Internationalisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[www.m17n.org]{http://www.m17n.org/}
+\begin_inset LatexCommand \htmlurl[m17n]{http://www.m17n.org/}
 
 \end_inset
 
