@@ -294,7 +294,15 @@ Learn about Unicode
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Unicode Technical Standard #10:]{http://unicode.org/reports/tr10/}
+\begin_inset LatexCommand \htmlurl[Unicode Technical Standard #10]{http://unicode.org/reports/tr10/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Unicode Normalization Forms]{http://unicode.org/reports/tr15/}
 
 \end_inset
 
@@ -912,7 +920,66 @@ which comes with gtk2.
 \end_layout
 
 \begin_layout Subsubsection
-Keyboard Layouts: X Keyboard Extension
+m17n
+\end_layout
+
+\begin_layout Paragraph
+Wijesekera
+\end_layout
+
+\begin_layout Enumerate
+Install scim-m17n and m17n-db (In Ubuntu, these packages are in the Universe
+ repository.
+ For help read: 
+\begin_inset LatexCommand \htmlurl[http://www.ubuntuguide.org/]{http://www.ubuntuguide.org/}
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Download the m17n Wijesekera input method from:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://cvs.m17n.org/viewcvs/*checkout*/m17n/m17n-db/si-wijesekera-preedit.mim]{http://cvs.m17n.org/viewcvs/*checkout*/m17n/m17n-db/si-wijesekera-preedit.mim}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Copy the file to:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+/usr/share/m17n/
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Logout and Login again, no need to restart
+\end_layout
+
+\begin_layout Enumerate
+Select the M17N-si-wijesekera-preedit input method in SCIM
+\end_layout
+
+\begin_layout Enumerate
+Type away
+\end_layout
+
+\begin_layout Subsubsection
+X Keyboard Extension
+\end_layout
+
+\begin_layout Paragraph
+Phonetic Static
 \end_layout
 
 \begin_layout Standard
@@ -2403,7 +2470,7 @@ are
 \series medium
  
 \series default
-XKB, XIM, IIIMF
+XKB, XIM, IIIMF 
 \begin_inset Foot
 status open
 
@@ -2431,7 +2498,7 @@ status open
 
 \end_inset
 
- and SCIM
+ and SCIM 
 \begin_inset Foot
 status open
 
@@ -2449,6 +2516,49 @@ status open
  The recommended infrastructures are XKB, for simple one-to-one keyboard
  layouts, and SCIM/m17n for complex keyboard layouts.
  XKB is a component of Xorg.
+\end_layout
+
+\begin_layout Subsubsection
+Syllable Segmentation 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?thread_id=31126797&forum_id=50807]{http://sourceforge.net/mailarchive/forum.php?thread_id=31126797&forum_id=50807}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sinhala letters which define the start of a new 'syllable':
+\end_layout
+
+\begin_layout Enumerate
+All independent vowels (U+0d85 - U+0d96)
+\end_layout
+
+\begin_layout Enumerate
+Kombuva (U+0dd9) - except if preceded by a kombuva.
+\end_layout
+
+\begin_layout Enumerate
+All consonants (U+0d9a - U+0dc6) - except if preceded by kombuva or kombuva
+ deka (U+0ddb)
+\end_layout
+
+\begin_layout Enumerate
+Kunddaliya (U+0df4)
+\end_layout
+
+\begin_layout Enumerate
+All non-Sinhala characters/codepoints - except ZWJ (U+200D)
 \end_layout
 
 \begin_layout Subsubsection
@@ -4280,6 +4390,16 @@ Input Methods
 Submit XKB keyboard layout to X Keyboard Configuration Database
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://listserv.bat.ru/xkb/Message/320.html]{http://listserv.bat.ru/xkb/Message/320.html}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Submit vim keyboard layout to Bram
 \end_layout
@@ -4316,10 +4436,46 @@ Submit XKB keyboard layout to xfree86
 Submit phonetic static keyboard layout to m17n
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://www.linux.lk/lurker/message/20060906.191738.e7c770f0.en.html]{http://www.linux.lk/lurker/message/20060906.191738.e7c770f0.en.html}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Test and provide feedback on the m17n Wijesekera input method.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://www.linux.lk/lurker/message/20060926.124636.9781ef2e.en.html]{http://www.linux.lk/lurker/message/20060926.124636.9781ef2e.en.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?thread_id=31112620&forum_id=50807]{http://sourceforge.net/mailarchive/forum.php?thread_id=31112620&forum_id=50807}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?thread_id=31126797&forum_id=50807]{http://sourceforge.net/mailarchive/forum.php?thread_id=31126797&forum_id=50807}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 Fonts
@@ -4327,7 +4483,7 @@ Fonts
 
 \begin_deeper
 \begin_layout Itemize
-The printing problem was due to the font being an OTF font.
+Discovered that the printing problem was due to the font being an OTF font.
  Once the LKLUG font was changed to a TTF, the printing problem disappeared.
 \end_layout
 
@@ -4362,13 +4518,23 @@ Standards
 
 \begin_deeper
 \begin_layout Itemize
-Amend ISO639 to include 'Sinhala' in the languages list alongside 'Sinhalese'.
+Amended ISO639 to include 'Sinhala' in the languages list alongside 'Sinhalese'.
 \end_layout
 
 \begin_layout Itemize
-Report errors in the SCCII - Part 1: Collation Sequence (SLS1134)
+Reported errors in the SCCII - Part 1: Collation Sequence (SLS1134)
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?thread_id=31003987&forum_id=50807]{http://sourceforge.net/mailarchive/forum.php?thread_id=31003987&forum_id=50807}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 Collation
