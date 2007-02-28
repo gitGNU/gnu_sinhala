@@ -146,7 +146,12 @@ In progress
 \end_layout
 
 \begin_layout Section
-About This Guide
+About
+\begin_inset LatexCommand \label{About}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -164,6 +169,11 @@ This guide is GNOME and Debian/Ubuntu centric.
 
 \begin_layout Section
 Introduction
+\begin_inset LatexCommand \label{Introduction}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -217,7 +227,12 @@ Naoto Takahashi
 \end_layout
 
 \begin_layout Subsection
-Learning about Sinhala
+Learn about Sinhala
+\begin_inset LatexCommand \label{Intro-Learn-about-Sinhala}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -254,7 +269,12 @@ The first chapter has excellent coverage of the Sinhala letters.
 
 \end_deeper
 \begin_layout Subsection
-Learning about Unicode
+Learn about Unicode
+\begin_inset LatexCommand \label{Intro-Learn-about-Unicode}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -290,7 +310,12 @@ Learning about Unicode
 \end_layout
 
 \begin_layout Subsection
-Standards
+Learn about Standards
+\begin_inset LatexCommand \label{Intro-Learn-about-Standards}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -342,6 +367,11 @@ SLS1134 - Sinhala Character Code for Information Interchange (SCCII) - Part
 
 \begin_layout Subsection
 Mailing Lists
+\begin_inset LatexCommand \label{Intro-Mailing-Lists}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -439,10 +469,20 @@ Sinhala Unicode List (in Sinhala for developers and users)
 
 \begin_layout Section
 Enabling Sinhala
+\begin_inset LatexCommand \label{Enabling-Sinhala}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Debian and Ubuntu Sinhala repositories
+\begin_inset LatexCommand \label{Enable-Debian-and-Ubuntu}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -545,6 +585,11 @@ To test SCIM, press Control-space whilst you are running a GNOME application.
 
 \begin_layout Subsection
 Fonts
+\begin_inset LatexCommand \label{Enable-Fonts}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -629,6 +674,11 @@ If you have Pango 1.8.2 and greater, you will have full SLS1134 Sinhala support.
 
 \begin_layout Subsection
 Firefox/Mozilla
+\begin_inset LatexCommand \label{Enable-Firefox-Mozilla}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -767,6 +817,11 @@ http://fedora.redhat.com/docs/release-notes/fc5/
 
 \begin_layout Subsection
 Open Office
+\begin_inset LatexCommand \label{Enable-Open-Office}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -815,6 +870,11 @@ Open Office 2.1 should support Sinhala on all distros.
 
 \begin_layout Subsection
 Input Methods
+\begin_inset LatexCommand \label{Enable-Input-Methods}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1218,6 +1278,11 @@ gucharmap
 
 \begin_layout Subsection
 Locales
+\begin_inset LatexCommand \label{Enable-Locales}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1235,6 +1300,11 @@ TODO
 
 \begin_layout Section
 Developer Notes
+\begin_inset LatexCommand \label{Developer-Notes}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1257,6 +1327,11 @@ Sourceforge Sinhala Project:
 
 \begin_layout Subsection
 Open Type Fonts
+\begin_inset LatexCommand \label{Dev-Open-Type-Fonts}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -1357,6 +1432,11 @@ How Freefont obtained Sinhala glyphs
 
 \begin_layout Subsection
 Renderer
+\begin_inset LatexCommand \label{Dev-Renderer}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1688,6 +1768,11 @@ engine->getCharIndices(&fGlyphToCharMap[glyphBase], runStart, layoutStatus);
 
 \begin_layout Subsection
 Firefox/Mozilla
+\begin_inset LatexCommand \label{Dev-Firefox-Mozilla}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2093,6 +2178,11 @@ Epiphany also has a file, data/epiphany-pango.schemas containing a list of
 
 \begin_layout Subsection
 Open Office
+\begin_inset LatexCommand \label{Dev-Open-Office}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2244,6 +2334,11 @@ Compiling Open Office 2.0.4 on Debian Etch on a Pentium M 2.13 GHz with 1 GiB
 
 \begin_layout Subsection
 Input Methods
+\begin_inset LatexCommand \label{Dev-Input-Methods}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2643,6 +2738,11 @@ To toggle between the Sinhala keyboard layout and the standard ASCII keyboard
 \end_deeper
 \begin_layout Subsection
 Databases
+\begin_inset LatexCommand \label{Dev-Databases}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -3791,6 +3891,11 @@ mysql/mysql-test/r/ctype_utf8.result
 \end_deeper
 \begin_layout Subsection
 Locales
+\begin_inset LatexCommand \label{Dev-Locales}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3808,6 +3913,11 @@ TODO
 
 \begin_layout Subsection
 Translations
+\begin_inset LatexCommand \label{Dev-Translations}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -3880,6 +3990,11 @@ Ubuntu
 
 \begin_layout Subsection
 DONE
+\begin_inset LatexCommand \label{Dev-DONE}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -4209,6 +4324,11 @@ http://bugs.mysql.com/bug.php?id=26474
 \end_deeper
 \begin_layout Subsection
 TODO
+\begin_inset LatexCommand \label{Dev-TODO}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -4343,11 +4463,21 @@ English Locale for Sri Lanka
 
 \end_deeper
 \begin_layout Section
-Resources/Links
+Resources
+\begin_inset LatexCommand \label{Resources}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Input Methods
+\begin_inset LatexCommand \label{Res-Input-Methods}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -4464,6 +4594,11 @@ Input Methods
 
 \begin_layout Subsection
 Internationalisation
+\begin_inset LatexCommand \label{Res-Internationalisation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -4540,6 +4675,11 @@ Internationalisation
 
 \begin_layout Subsection
 Localisation
+\begin_inset LatexCommand \label{Res-Localisation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -4576,6 +4716,11 @@ Localisation
 
 \begin_layout Subsection
 Sinhala
+\begin_inset LatexCommand \label{Res-Sinhala}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -4652,6 +4797,11 @@ Sinhala
 
 \begin_layout Subsection
 Typography
+\begin_inset LatexCommand \label{Res-Typography}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -4744,6 +4894,11 @@ Typography
 
 \begin_layout Subsection
 Unicode
+\begin_inset LatexCommand \label{Res-Unicode}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -4764,6 +4919,11 @@ Unicode
 
 \begin_layout Section
 Conclusion
+\begin_inset LatexCommand \label{Conclusion}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
