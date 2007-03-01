@@ -3899,12 +3899,28 @@ mysql/strings/ctype-uca.c
 mysql/configure (generated)
 \end_layout
 
+\begin_layout Itemize
+mysql/mysql-test/t/ctype_utf8.test
+\end_layout
+
+\begin_layout Itemize
+mysql/mysql-test/r/ctype_utf8.result
+\end_layout
+
 \begin_layout Paragraph
 Patch
 \end_layout
 
 \begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[mysql-dfsg-5.0-5.0.27-sinhala1.patch]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-dfsg-5.0-5.0.27-sinhala1.patch?root=sinhala}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[mysql-dfsg-5.0-5.0.32-sinhala2.patch]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-dfsg-5.0-5.0.32-sinhala2.patch?root=sinhala}
 
 \end_inset
 
@@ -3980,7 +3996,7 @@ results in non-English letters appearing at the end of the sorted alphabet
 
 \end_deeper
 \begin_layout Enumerate
-Apply the MySQL Sinhala collation patch.
+Apply the MySQL Sinhala collation patch & the testcase patch.
 \end_layout
 
 \begin_layout Enumerate
@@ -4046,20 +4062,6 @@ Download the output file from:
 \end_inset
 
 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Need to add a Sinhala collation test to the MySQL test suite:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-mysql/mysql-test/t/ctype_utf8.test
-\end_layout
-
-\begin_layout Itemize
-mysql/mysql-test/r/ctype_utf8.result
 \end_layout
 
 \end_deeper
