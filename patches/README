@@ -72,11 +72,14 @@ Problems due to (6)
 icu-crash-testcase-dv-oo.txt
 --------------------------------------------------------------------
 9) mysql-dfsg-5.0-5.0.27-sinhala1.patch
+http://bugs.mysql.com/bug.php?id=26474
 
 mysql-data-sinhala.txt
 mysql-output-utf8_sinhala_ci.txt
+mysql-dfsg-5.0-5.0.32-sinhala2.patch
 --------------------------------------------------------------------
 10) pango-1.14.8-sinhala5.patch
+http://bugzilla.gnome.org/show_bug.cgi?id=385321
 
 The worst case expansion for Sinhala should be 4, not 3. e.g.
 (kombuva)(dotted_circle)(aela-pilla)(al-lakuna). However, this
