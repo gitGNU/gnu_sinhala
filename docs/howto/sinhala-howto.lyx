@@ -963,6 +963,24 @@ Copy the file to:
 
 \end_deeper
 \begin_layout Enumerate
+Make sure the file /etc/environment contains:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+XMODIFIERS=@im=SCIM
+\end_layout
+
+\begin_layout Code
+GTK_IM_MODULE=scim
+\end_layout
+
+\begin_layout Code
+QT_IM_MODULE=scim
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 Logout and Login again, no need to restart
 \end_layout
 
@@ -4489,6 +4507,16 @@ Discovered that the printing problem was due to the font being an OTF font.
  Once the LKLUG font was changed to a TTF, the printing problem disappeared.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://www.lug.lk/lurker/message/20050810.094347.8539b8d4.en.html]{http://www.lug.lk/lurker/message/20050810.094347.8539b8d4.en.html}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Added a glyph for 
 \begin_inset Quotes eld
@@ -4523,6 +4551,16 @@ Standards
 Amended ISO639 to include 'Sinhala' in the languages list alongside 'Sinhalese'.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://www.loc.gov/standards/iso639-2/php/code_list.php]{http://www.loc.gov/standards/iso639-2/php/code_list.php}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Reported errors in the SCCII - Part 1: Collation Sequence (SLS1134)
 \end_layout
