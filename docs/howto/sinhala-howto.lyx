@@ -4092,16 +4092,90 @@ Locales
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Standard
-TODO
+\begin_layout Subsubsection
+Debian 4.0
 \end_layout
 
-\end_inset
+\begin_layout Standard
+The supported locales are listed in the file:
+\end_layout
 
+\begin_layout Code
+/usr/share/i18n/SUPPORTED
+\end_layout
+
+\begin_layout Standard
+The locale definition is available in:
+\end_layout
+
+\begin_layout Code
+/usr/share/i18n/locales/
+\end_layout
+
+\begin_layout Standard
+These files are provided by the 
+\emph on
+locales
+\emph default
+ package.
+ 
+\end_layout
+
+\begin_layout Standard
+The locale definitions need to be compiled before before they can be used.
+ To compile a particular locale, first edit:
+\end_layout
+
+\begin_layout Code
+
+\end_layout
+
+\begin_layout Code
+/etc/locale.gen
+\end_layout
+
+\begin_layout Standard
+Then run the program:
+\end_layout
+
+\begin_layout Code
+/usr/sbin/locale-gen
+\end_layout
+
+\begin_layout Standard
+Following that step you can then see what a particular program looks like
+ when it is localised:
+\end_layout
+
+\begin_layout Code
+LANG=si_LK.UTF-8 gedit
+\end_layout
+
+\begin_layout Code
+LANG=fr_FR.UTF-8 gedit
+\end_layout
+
+\begin_layout Standard
+The actual translated message strings are stored in:
+\end_layout
+
+\begin_layout Code
+/usr/share/locale/<ISO639 2 character lang code>/LC_MESSAGES/
+\end_layout
+
+\begin_layout Standard
+Each program adds a file containing translated message strings.
+\end_layout
+
+\begin_layout Standard
+The default locale is set in the file:
+\end_layout
+
+\begin_layout Code
+/etc/default/locale
+\end_layout
+
+\begin_layout Code
 
 \end_layout
 
@@ -4143,7 +4217,7 @@ GNOME
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://l10n-status.gnome.org/]{http://l10n-status.gnome.org/}
+\begin_inset LatexCommand \htmlurl[http://l10n.gnome.org/languages/si/]{http://l10n.gnome.org/languages/si/}
 
 \end_inset
 
@@ -4182,6 +4256,39 @@ Ubuntu
 
 \end_layout
 
+\begin_layout Subsubsection
+Fedora Core
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://i18n.redhat.com/cgi-bin/i18n-status]{http://i18n.redhat.com/cgi-bin/i18n-status}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Packaging
+\begin_inset LatexCommand \label{Dev-Packaging}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Debian
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://www.debian.org/doc/maint-guide/]{http://www.debian.org/doc/maint-guide/}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 DONE
 \begin_inset LatexCommand \label{Dev-DONE}
@@ -4211,13 +4318,21 @@ Create and submit Pango patch - don't implicitly create conjuncts
 
 \end_deeper
 \begin_layout Itemize
-Inform bengalinux-core team (India) the implications of the fix to bugzilla.gnome.
-org's bug 145233
+Inform bengalinux-core team the implications of the fix to bugzilla.gnome.org's
+ bug 145233
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?thread_id=6637263&forum_id=12023]{http://sourceforge.net/mailarchive/forum.php?thread_id=6637263&forum_id=12023}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://www.mail-archive.com/bengalinux-core@lists.sourceforge.net/msg00502.html]{http://www.mail-archive.com/bengalinux-core@lists.sourceforge.net/msg00502.html}
 
 \end_inset
 
@@ -4307,6 +4422,20 @@ Port Pango patches, which add Sinhala support, to ICU for immediate use
 \begin_deeper
 \begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[http://www.redhat.com/archives/fedora-cvs-commits/2006-May/msg00126.html]{http://www.redhat.com/archives/fedora-cvs-commits/2006-May/msg00126.html}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Discovered Open Office was filtering ZWJ
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html]{http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html}
 
 \end_inset
 
@@ -4624,6 +4753,10 @@ Pango tries to display a 25CC, which is a dotted circle, when a dependent
 see chapter 9 of TUS Unicode - apparently discusses ZWJ/ZWNJ.
 \end_layout
 
+\begin_layout Itemize
+What does Thunderbird use for rendering?
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Input Methods
@@ -4705,6 +4838,20 @@ OTF printing problem.
 \begin_layout Itemize
 Surrounding text / Cursor positioning in gedit with the text <gayanna><al-lakuna
 ><hayanna><al-lakuna>
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Printing
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Firefox & Thunderbird can't print Sinhala.
+\end_layout
+
+\begin_layout Itemize
+Evolution can't print Sinhala, but gedit can.
 \end_layout
 
 \end_deeper
@@ -5006,6 +5153,14 @@ Sinhala
 \end_layout
 
 \begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[UCSC: Language Technology Research Lab]{http://www.ucsc.cmb.ac.lk/ltrl/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[http://sinhala.linux.lk]{http://sinhala.linux.lk}
 
 \end_inset
@@ -5096,6 +5251,14 @@ Typography
 
 \begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[Introduction to OpenType]{http://www.adobe.com/type/opentype/index.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[scripts.sil.org: Computers and Writing Systems]{http://scripts.sil.org/}
 
 \end_inset
 
