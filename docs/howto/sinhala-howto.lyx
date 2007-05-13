@@ -102,15 +102,19 @@ status open
 \end_layout
 
 \begin_layout Revision
+0.6
+\end_layout
+
+\begin_layout Date
+2007/05/13
+\end_layout
+
+\begin_layout Revision
 0.5
 \end_layout
 
 \begin_layout Date
 2006/11/20
-\end_layout
-
-\begin_layout RevisionRemark
-In progress
 \end_layout
 
 \begin_layout Revision
@@ -157,8 +161,8 @@ About
 \begin_layout Standard
 Sinhala is the main language of Sri Lanka.
  This guide describes the level of Sinhala support available in GNU/Linux.
- It also describes how to enable Sinhala support and the tasks that still
- require attention.
+ It also describes how to enable improved Sinhala support and the tasks
+ that still require attention.
 \end_layout
 
 \begin_layout Standard
@@ -182,12 +186,10 @@ The level of Sinhala support in GNU/Linux distributions has improved quite
 \end_layout
 
 \begin_layout Standard
-Debian 4.0 (Etch/testing) and Ubuntu 6.10 (Edgy) ship with SLS1134 support
- in Pango, the GNOME renderer.
- They also ship with a phonetic Sinhala keyboard layout in Xorg and a basic,
+Debian 4.0 (Etch) and Ubuntu 7.04 (Feisty) ship with SLS1134 support in Pango,
+ the GNOME renderer, and ICU, the Open Office renderer.
+ Both also ship with a phonetic Sinhala keyboard layout in Xorg and a basic,
  incomplete, Unicode Sinhala font.
- Open Office's renderer, ICU, has SLS1134 support in Debian 4.0 (Etch/testing)
- but Ubuntu 6.10 ships with ICU 3.4 and does not have SLS1134 support.
 \end_layout
 
 \begin_layout Standard
@@ -502,10 +504,6 @@ LKLUG Unicode Sinhala font
 \end_layout
 
 \begin_layout Itemize
-libicu (renderer used by Open Office) with Sinhala support
-\end_layout
-
-\begin_layout Itemize
 SCIM transliterated input method
 \end_layout
 
@@ -520,7 +518,12 @@ How to install
 \end_layout
 
 \begin_layout Enumerate
-On Debian Etch (testing) add to /etc/apt/sources.list
+Add to /etc/apt/sources.list
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+On Debian 4.0 (Etch)
 \end_layout
 
 \begin_deeper
@@ -528,14 +531,37 @@ On Debian Etch (testing) add to /etc/apt/sources.list
 deb http://sinhala.sourceforge.net/debian/i386/etch/ ./
 \end_layout
 
-\begin_layout Standard
-On Ubuntu Edgy (6.10) add to /etc/apt/sources.list
+\end_deeper
+\begin_layout Enumerate
+On Debian testing (Lenny)
 \end_layout
 
+\begin_deeper
 \begin_layout Code
-deb http://sinhala.sourceforge.net/ubuntu/i386/edgy/ ./
+deb http://sinhala.sourceforge.net/debian/i386/lenny/ ./
 \end_layout
 
+\end_deeper
+\begin_layout Enumerate
+On Ubuntu 7.04 (Feisty) i386
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+deb http://sinhala.sourceforge.net/ubuntu/i386/feisty/ ./
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+On Ubuntu 7.04 (Feisty) amd64
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+deb http://sinhala.sourceforge.net/ubuntu/amd64/feisty/ ./
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Update repository metadata:
@@ -718,7 +744,7 @@ MOZ_DISABLE_PANGO=0
 \end_layout
 
 \begin_layout Subsubsection
-Ubuntu 6.10
+Ubuntu 6.10 & newer
 \end_layout
 
 \begin_layout Standard
@@ -849,11 +875,11 @@ Debian 4.0 ships with ICU 3.6 which contains Sinhala support.
 \end_layout
 
 \begin_layout Subsubsection
-Ubuntu 6.10
+Ubuntu 7.04 (Feisty)
 \end_layout
 
 \begin_layout Standard
-Ubuntu 6.10 ships with ICU 3.4 which does not contain Sinhala support.
+Ubuntu 7.04 ships with Open Office 2.2 and ICU 3.6 which contain Sinhala support.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1369,6 +1395,27 @@ gucharmap
 \end_layout
 
 \begin_layout Subsection
+LaTeX
+\begin_inset LatexCommand \label{sec:Enable-LaTeX}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you want to write Unicode Sinhala LaTeX documents, download:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://www.ucsc.cmb.ac.lk/People/cik/sintex-0.2.0.tar.gz]{http://www.ucsc.cmb.ac.lk/People/cik/sintex-0.2.0.tar.gz}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Locales
 \begin_inset LatexCommand \label{Enable-Locales}
 
@@ -1378,16 +1425,7 @@ Locales
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Standard
-TODO
-\end_layout
-
-\end_inset
-
-
+The Sinhala locale for Sri Lanka is already included in most distributions.
 \end_layout
 
 \begin_layout Section
@@ -2800,7 +2838,7 @@ The m17n backend keyboard layout definition file is a text file.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.m17n.org/m17n-lib/m17n-docs/m17nDBFormat.html#mdbIM]{http://www.m17n.org/m17n-lib/m17n-docs/m17nDBFormat.html#mdbIM}
+\begin_inset LatexCommand \htmlurl[http://www.m17n.org/common/m17n-docs-en/m17nDBFormat.html#mdbIM]{http://www.m17n.org/common/m17n-docs-en/m17nDBFormat.html#mdbIM}
 
 \end_inset
 
