@@ -35,7 +35,7 @@ diff -Naru scim-m17n-0.2.2.orig/debian/control scim-m17n-0.2.2/debian/control
 +Priority: optional
 +Maintainer: Osamu Aoki <osamu@debian.org>
 +Uploaders: Harshula Jayasuriya <harshula@gmail.com>
-+Build-Depends: debhelper (>= 5.0.0), autotools-dev, pkg-config, libscim-dev (>= 1.4.4), libm17n-dev
++Build-Depends: debhelper (>= 5.0.0), autotools-dev, pkg-config, libscim-dev (>= 1.4.6), libm17n-dev
 +Standards-Version: 3.7.2.2
 +
 +Package: scim-m17n
