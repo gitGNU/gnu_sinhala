@@ -1,0 +1,135 @@
+diff -ru mysql-dfsg-5.0-5.0.38.orig/mysql-test/r/ctype_utf8.result mysql-dfsg-5.0-5.0.38/mysql-test/r/ctype_utf8.result
+--- mysql-dfsg-5.0-5.0.38.orig/mysql-test/r/ctype_utf8.result	2007-03-21 06:25:52.000000000 +1100
++++ mysql-dfsg-5.0-5.0.38/mysql-test/r/ctype_utf8.result	2007-05-31 03:55:22.000000000 +1000
+@@ -1602,3 +1602,112 @@
+ 1	foo	1	foo
+ 2	foo bar	2	foo bar
+ DROP TABLE t1, t2;
++DROP TABLE IF EXISTS t1;
++CREATE TABLE t1 (
++col1 VARCHAR(10) NOT NULL
++) CHARACTER SET utf8;
++INSERT INTO t1 VALUES (x'e0b682'), (x'e0b683'), (x'e0b685'), (x'e0b686'), (x'e0b687'), (x'e0b688'), (x'e0b689'), (x'e0b68a'), (x'e0b68b'), (x'e0b68c'), (x'e0b68d'), (x'e0b68e'), (x'e0b68f'), (x'e0b690'), (x'e0b691'), (x'e0b692'), (x'e0b693'), (x'e0b694'), (x'e0b695'), (x'e0b696'), (x'e0b69a'), (x'e0b69b'), (x'e0b69c'), (x'e0b69d'), (x'e0b69e'), (x'e0b69f'), (x'e0b6a0'), (x'e0b6a1'), (x'e0b6a2'), (x'e0b6a3'), (x'e0b6a4'), (x'e0b6a5'), (x'e0b6a6'), (x'e0b6a7'), (x'e0b6a8'), (x'e0b6a9'), (x'e0b6aa'), (x'e0b6ab'), (x'e0b6ac'), (x'e0b6ad'), (x'e0b6ae'), (x'e0b6af'), (x'e0b6b0'), (x'e0b6b1'), (x'e0b6b3'), (x'e0b6b4'), (x'e0b6b5'), (x'e0b6b6'), (x'e0b6b7'), (x'e0b6b8'), (x'e0b6b9'), (x'e0b6ba'), (x'e0b6bb'), (x'e0b6bd'), (x'e0b780'), (x'e0b781'), (x'e0b782'), (x'e0b783'), (x'e0b784'), (x'e0b785'), (x'e0b786'), (x'e0b78a'), (x'e0b78f'), (x'e0b790'), (x'e0b791'), (x'e0b792'), (x'e0b793'), (x'e0b794'), (x'e0b796'), (x'e0b798'), (x'e0b799'), (x'e0b79a'), (x'e0b79b'), (x'e0b79c'), (x'e0b79d'), (x'e0b79e'), (x'e0b79f'), (x'e0b7b2'), (x'e0b7b3'), (x'e0b7b4'), (x'e0b78ae2808de0b6bb'), (x'e0b78ae2808de0b6ba'), (x'e0b6bbe0b78ae2808d'), (x'e0b69ae0b78a'), (x'e0b69ae0b78f'), (x'e0b69ae0b790'), (x'e0b69ae0b791'), (x'e0b69ae0b792'), (x'e0b69ae0b793'), (x'e0b69ae0b794'), (x'e0b69ae0b796'), (x'e0b69ae0b798'), (x'e0b69ae0b799'), (x'e0b69ae0b79a'), (x'e0b69ae0b79b'), (x'e0b69ae0b79c'), (x'e0b69ae0b79d'), (x'e0b69ae0b79e'), (x'e0b69ae0b79f'), (x'e0b69ae0b7b2'), (x'e0b69ae0b7b3');
++SELECT hex(col1) FROM t1 ORDER BY col1 COLLATE utf8_sinhala_ci;
++hex(col1)
++E0B7B4
++E0B685
++E0B686
++E0B687
++E0B688
++E0B689
++E0B68A
++E0B68B
++E0B68C
++E0B68D
++E0B68E
++E0B68F
++E0B690
++E0B691
++E0B692
++E0B693
++E0B694
++E0B695
++E0B696
++E0B682
++E0B683
++E0B69A
++E0B69AE0B78F
++E0B69AE0B790
++E0B69AE0B791
++E0B69AE0B792
++E0B69AE0B793
++E0B69AE0B794
++E0B69AE0B796
++E0B69AE0B798
++E0B69AE0B7B2
++E0B69AE0B79F
++E0B69AE0B7B3
++E0B69AE0B799
++E0B69AE0B79A
++E0B69AE0B79B
++E0B69AE0B79C
++E0B69AE0B79D
++E0B69AE0B79E
++E0B69AE0B78A
++E0B69B
++E0B69C
++E0B69D
++E0B69E
++E0B69F
++E0B6A0
++E0B6A1
++E0B6A2
++E0B6A3
++E0B6A5
++E0B6A4
++E0B6A6
++E0B6A7
++E0B6A8
++E0B6A9
++E0B6AA
++E0B6AB
++E0B6AC
++E0B6AD
++E0B6AE
++E0B6AF
++E0B6B0
++E0B6B1
++E0B6B3
++E0B6B4
++E0B6B5
++E0B6B6
++E0B6B7
++E0B6B8
++E0B6B9
++E0B6BA
++E0B6BB
++E0B6BBE0B78AE2808D
++E0B6BD
++E0B780
++E0B781
++E0B782
++E0B783
++E0B784
++E0B785
++E0B786
++E0B78F
++E0B790
++E0B791
++E0B792
++E0B793
++E0B794
++E0B796
++E0B798
++E0B7B2
++E0B79F
++E0B7B3
++E0B799
++E0B79A
++E0B79B
++E0B79C
++E0B79D
++E0B79E
++E0B78A
++E0B78AE2808DE0B6BA
++E0B78AE2808DE0B6BB
++DROP TABLE t1;
+diff -ru mysql-dfsg-5.0-5.0.38.orig/mysql-test/t/ctype_utf8.test mysql-dfsg-5.0-5.0.38/mysql-test/t/ctype_utf8.test
+--- mysql-dfsg-5.0-5.0.38.orig/mysql-test/t/ctype_utf8.test	2007-03-21 06:25:51.000000000 +1100
++++ mysql-dfsg-5.0-5.0.38/mysql-test/t/ctype_utf8.test	2007-05-31 03:55:10.000000000 +1000
+@@ -1295,3 +1295,15 @@
+ SELECT * FROM t1 JOIN t2 ON t1.colA=t2.colA AND t1.colB=t2.colB
+ WHERE t1.colA < 3;
+ DROP TABLE t1, t2;
++#
++# Bug#26474: Add Sinhala script (Sri Lanka) collation to MySQL
++#
++--disable_warnings
++DROP TABLE IF EXISTS t1;
++--enable_warnings
++CREATE TABLE t1 (
++        col1 VARCHAR(10) NOT NULL
++) CHARACTER SET utf8;
++INSERT INTO t1 VALUES (x'e0b682'), (x'e0b683'), (x'e0b685'), (x'e0b686'), (x'e0b687'), (x'e0b688'), (x'e0b689'), (x'e0b68a'), (x'e0b68b'), (x'e0b68c'), (x'e0b68d'), (x'e0b68e'), (x'e0b68f'), (x'e0b690'), (x'e0b691'), (x'e0b692'), (x'e0b693'), (x'e0b694'), (x'e0b695'), (x'e0b696'), (x'e0b69a'), (x'e0b69b'), (x'e0b69c'), (x'e0b69d'), (x'e0b69e'), (x'e0b69f'), (x'e0b6a0'), (x'e0b6a1'), (x'e0b6a2'), (x'e0b6a3'), (x'e0b6a4'), (x'e0b6a5'), (x'e0b6a6'), (x'e0b6a7'), (x'e0b6a8'), (x'e0b6a9'), (x'e0b6aa'), (x'e0b6ab'), (x'e0b6ac'), (x'e0b6ad'), (x'e0b6ae'), (x'e0b6af'), (x'e0b6b0'), (x'e0b6b1'), (x'e0b6b3'), (x'e0b6b4'), (x'e0b6b5'), (x'e0b6b6'), (x'e0b6b7'), (x'e0b6b8'), (x'e0b6b9'), (x'e0b6ba'), (x'e0b6bb'), (x'e0b6bd'), (x'e0b780'), (x'e0b781'), (x'e0b782'), (x'e0b783'), (x'e0b784'), (x'e0b785'), (x'e0b786'), (x'e0b78a'), (x'e0b78f'), (x'e0b790'), (x'e0b791'), (x'e0b792'), (x'e0b793'), (x'e0b794'), (x'e0b796'), (x'e0b798'), (x'e0b799'), (x'e0b79a'), (x'e0b79b'), (x'e0b79c'), (x'e0b79d'), (x'e0b79e'), (x'e0b79f'), (x'e0b7b2'), (x'e0b7b3'), (x'e0b7b4'), (x'e0b78ae2808de0b6bb'), (x'e0b78ae2808de0b6ba'), (x'e0b6bbe0b78ae2808d'), (x'e0b69ae0b78a'), (x'e0b69ae0b78f'), (x'e0b69ae0b790'), (x'e0b69ae0b791'), (x'e0b69ae0b792'), (x'e0b69ae0b793'), (x'e0b69ae0b794'), (x'e0b69ae0b796'), (x'e0b69ae0b798'), (x'e0b69ae0b799'), (x'e0b69ae0b79a'), (x'e0b69ae0b79b'), (x'e0b69ae0b79c'), (x'e0b69ae0b79d'), (x'e0b69ae0b79e'), (x'e0b69ae0b79f'), (x'e0b69ae0b7b2'), (x'e0b69ae0b7b3');
++SELECT hex(col1) FROM t1 ORDER BY col1 COLLATE utf8_sinhala_ci;
++DROP TABLE t1;
