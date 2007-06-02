@@ -87,7 +87,7 @@
 +
 --- m17n-contrib-1.1.1.orig/debian/rules
 +++ m17n-contrib-1.1.1/debian/rules
-@@ -0,0 +1,91 @@
+@@ -0,0 +1,92 @@
 +#!/usr/bin/make -f
 +# -*- makefile -*-
 +# Sample debian/rules that uses debhelper.
@@ -153,6 +153,7 @@
 +
 +	$(MAKE) DESTDIR=$(INSTALLDIR) install
 +	find $(INSTALLDIR) -name bn-itrans.mim -exec rm -f {} \;
++	find $(INSTALLDIR) -name tbl2mim.awk -exec rm -f {} \;
 +
 +
 +# Build architecture-independent files here.
