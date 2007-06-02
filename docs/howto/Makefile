@@ -8,7 +8,7 @@ DOC_HTML = $(DOC_LYX:.lyx=.html)
 DOC_PDF = $(DOC_LYX:.lyx=.pdf)
 DEST = ../../../web/doc/howto
 DSSSL = /usr/share/sgml/docbook/stylesheet/dsssl/ldp/ldp.dsl
-LYX_BIN = $(HOME)/source/lyx/lyx-1.4.3/src/lyx
+LYX_BIN = /usr/bin/lyx
 
 default: $(DOC_SGML) $(DOC_HTML)
 
