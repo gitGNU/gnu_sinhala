@@ -153,7 +153,7 @@
 +
 +	$(MAKE) DESTDIR=$(INSTALLDIR) install
 +	find $(INSTALLDIR) -name bn-itrans.mim -exec rm -f {} \;
-+	find $(INSTALLDIR) -name tbl2mim.awk -exec rm -f {} \;
++	rm -rf $(INSTALLDIR)/usr/bin
 +
 +
 +# Build architecture-independent files here.
