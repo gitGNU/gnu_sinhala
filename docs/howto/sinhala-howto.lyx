@@ -1,4 +1,4 @@
-#LyX 1.4.3 created this file. For more info see http://www.lyx.org/
+#LyX 1.4.4 created this file. For more info see http://www.lyx.org/
 \lyxformat 245
 \begin_document
 \begin_header
@@ -181,51 +181,43 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-The level of Sinhala support in GNU/Linux distributions has improved quite
- significantly as patches have been committed upstream.
+The level of Sinhala support in GNU/Linux distributions have improved significan
+tly.
+ On most modern distributions, simply installing a Unicode Sinhala font
+ should be sufficient to read and type in Sinhala.
 \end_layout
 
 \begin_layout Standard
-Debian 4.0 (Etch) and Ubuntu 7.04 (Feisty) ship with SLS1134 support in Pango,
- the GNOME renderer, and ICU, the Open Office renderer.
- Both also ship with a phonetic Sinhala keyboard layout in Xorg and a basic,
- incomplete, Unicode Sinhala font.
+Debian 4.0 (Etch) and Ubuntu 7.04 (Feisty) ship with Unicode Sinhala (SLS1134)
+ support on the desktop.
+ This includes Sinhala support in the web browser, Firefox [
+\begin_inset LatexCommand \ref{Enable-Firefox-Mozilla}
+
+\end_inset
+
+], and the office suite, Open Office [
+\begin_inset LatexCommand \ref{Enable-Open-Office}
+
+\end_inset
+
+].
+ Both distributions ship with a phonetic Sinhala keyboard layout and a basic,
+ incomplete, Unicode Sinhala font [
+\begin_inset LatexCommand \ref{Enable-Fonts}
+
+\end_inset
+
+].
 \end_layout
 
 \begin_layout Standard
-As Sinhala support in GNU/Linux distributions improve, this HOWTO will only
- be of historical value.
- However, for the time being, use this document to check the current status
- of Sinhala support in GNU/Linux and how to enable better support.
-\end_layout
+To improve the level of Sinhala support in Debian 4.0 and Ubuntu 7.04, simply
+ follow the instructions in this document [
+\begin_inset LatexCommand \ref{Enabling-Sinhala}
 
-\begin_layout Standard
-Many individuals have contributed to the project.
- Some of the notable contributors are:
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-Dushara Jayasinghe
-\end_layout
-
-\begin_layout Itemize
-Harshula Jayasuriya
-\end_layout
-
-\begin_layout Itemize
-Chamath Keppitiyagama
-\end_layout
-
-\begin_layout Itemize
-Anuradha Ratnaweera
-\end_layout
-
-\begin_layout Itemize
-Harsha Senanayake
-\end_layout
-
-\begin_layout Itemize
-Naoto Takahashi
+].
 \end_layout
 
 \begin_layout Subsection
@@ -477,6 +469,50 @@ Sinhala Unicode List (in Sinhala for developers and users)
 
 \end_layout
 
+\begin_layout Subsection
+Contributors
+\begin_inset LatexCommand \label{Intro-Contributors}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Many individuals have contributed to the project that began in 2003 on an
+ 
+\begin_inset LatexCommand \htmlurl[LKLUG]{http://www.lug.lk/}
+
+\end_inset
+
+ mailing list.
+ Some of the notable contributors are:
+\end_layout
+
+\begin_layout Itemize
+Dushara Jayasinghe
+\end_layout
+
+\begin_layout Itemize
+Harshula Jayasuriya
+\end_layout
+
+\begin_layout Itemize
+Chamath Keppitiyagama
+\end_layout
+
+\begin_layout Itemize
+Anuradha Ratnaweera
+\end_layout
+
+\begin_layout Itemize
+Harsha Senanayake
+\end_layout
+
+\begin_layout Itemize
+Naoto Takahashi
+\end_layout
+
 \begin_layout Section
 Enabling Sinhala
 \begin_inset LatexCommand \label{Enabling-Sinhala}
@@ -509,7 +545,7 @@ SCIM transliterated input method
 
 \begin_deeper
 \begin_layout Itemize
-Automatically set the required environment variables in /etc/environment
+Automatically sets the required environment variables in /etc/environment
 \end_layout
 
 \end_deeper
@@ -2976,6 +3012,60 @@ Databases
 \end_layout
 
 \begin_layout Subsubsection
+Collation
+\end_layout
+
+\begin_layout Standard
+The Sinhala letters in the Unicode chart can be categorised as:
+\end_layout
+
+\begin_layout Itemize
+independent vowels: U+0D85 - U+0D96
+\end_layout
+
+\begin_layout Itemize
+consonants: U+0D9A - U+0DC6
+\end_layout
+
+\begin_layout Itemize
+dependent vowels: U+0DCA - U+0DF3
+\end_layout
+
+\begin_layout Itemize
+consonant modifiers: U+0D82 - U+0D83
+\end_layout
+
+\begin_layout Standard
+The collation order of the groups can be broadly described as:
+\end_layout
+
+\begin_layout Enumerate
+independent vowels
+\end_layout
+
+\begin_layout Enumerate
+consonant modifiers
+\end_layout
+
+\begin_layout Enumerate
+consonants
+\end_layout
+
+\begin_layout Enumerate
+dependent vowels.
+\end_layout
+
+\begin_layout Standard
+The order of the groups and the order of the letters within the groups do
+ 
+\emph on
+not
+\emph default
+ correspond to the collation order.
+ Hence, tailoring is required.
+\end_layout
+
+\begin_layout Subsubsection
 Tailoring
 \end_layout
 
@@ -4320,11 +4410,132 @@ Debian
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.debian.org/doc/maint-guide/]{http://www.debian.org/doc/maint-guide/}
+\begin_inset LatexCommand \htmlurl[Debian New Maintainers' Guide]{http://www.debian.org/doc/maint-guide/}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Work-Needing and Prospective Packages]{http://www.debian.org/devel/wnpp/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Debian Policy Manual]{http://www.debian.org/doc/debian-policy/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+To understand issues involving 
+\emph on
+config.guess
+\emph default
+ and 
+\emph on
+config.sub
+\emph default
+, refer to /usr/share/doc/autotools-dev/README.Debian.gz .
+\end_layout
+
+\begin_layout Itemize
+In 
+\emph on
+debian/rules
+\emph default
+, for the target 
+\emph on
+binary-arch
+\emph default
+, you'll probably have to uncomment 
+\emph on
+dh_install
+\emph default
+.
+ Or you can just change the 
+\emph on
+DESTDIR
+\emph default
+ of:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+$(MAKE) DESTDIR=$(CURDIR)/debian/tmp install
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[pbuilder]{http://www.netfort.gr.jp/~dancer/software/pbuilder-doc/pbuilder-doc.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[pbuilder HOWTO]{https://wiki.ubuntu.com/PbuilderHowto}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+To extract the content of a .deb file:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+ar -x <name>.deb
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+To create a Debianized source tree from a Debian source package:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+dpkg-source -x <name>.dsc
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+To generate a .deb from within a Debianized source tree:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+dpkg-buildpackage -b -uc -us
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+To generate the .dsc and the .diff.gz run:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+dpkg-source -b <dir>
+\end_layout
+
+\begin_layout Standard
+on the untarred Debianized source tree.
+ Remember to leave the renamed original source tarball of the package in
+ the parent directory.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+irc.oftc.net, channel #debian-mentors
 \end_layout
 
 \begin_layout Subsection
