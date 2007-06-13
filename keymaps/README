@@ -6,12 +6,11 @@ Downstream
 http://vim.cvs.sourceforge.net/vim/vim7/runtime/keymap/sinhala-phonetic_utf-8.vim?view=log
 http://vim.cvs.sourceforge.net/vim/vim7/runtime/keymap/sinhala.vim?view=log
 
-
 Distros
 =======
-Fedora Core:
-/usr/share/vim/vim70/keymap/sinhala-phonetic_utf-8.vim
-/usr/share/vim/vim70/keymap/sinhala.vim
+Debian:
+/usr/share/vim/vimcurrent/keymap/sinhala-phonetic_utf-8.vim
+/usr/share/vim/vimcurrent/keymap/sinhala.vim
 --------------------------------------------------------------------
 2) sin.xmodmap (unmaintained)
 --------------------------------------------------------------------
@@ -21,16 +20,25 @@ Fedora Core:
 
 Downstream
 ==========
-http://webcvs.freedesktop.org/xlibs/xkbdesc/symbols/lk?view=log
+http://webcvs.freedesktop.org/xlibs/xkbdesc/xkeyboard-config/symbols/lk?view=log
 
 Distros
 =======
-Debian
+Debian:
 /usr/share/X11/xkb/symbols/lk (xkb-data)
 Fedora Core:
 /usr/share/X11/xkb/symbols/lk (xorg-x11-xkbdata)
 Ubuntu:
-/etc/X11/xkb/symbols/lk (xkeyboard-config)
+/usr/share/X11/xkb/symbols/lk (xkb-data)
 --------------------------------------------------------------------
 5) si-phonetic-static.mim
+
+Downstream
+==========
+http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-static.mim?view=log
+
+Distros
+=======
+Debian:
+/usr/share/m17n/si-phonetic-static.mim (m17n-contrib)
 --------------------------------------------------------------------
