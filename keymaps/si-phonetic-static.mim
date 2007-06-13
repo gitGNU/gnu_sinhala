@@ -1,7 +1,7 @@
 ;; si-phonetic-static.mim -- Sinhala phonetic static keymap
 ;; m17n Keymap file for Sinhala (Sri Lanka) (2006-04-26)
 ;; Maintainer: Harshula Jayasuriya <harshula@gmail.com>
-;; Last Updated: 2006-08-15
+;; Last Updated: 2007-06-14
 ;; This is a phonetic static mapping for a standard US-English keyboard
 ;; (qwerty)
 ;; http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
@@ -50,18 +50,18 @@
   ("z" "ඤ")		; 0x0da4 - taaluja naasikyaya (nya)
   ("Z" "ඥ")		; 0x0da5 - taaluja sanyooga naasikyaya (jnya)
   ((A-j) "ඦ")		; 0x0da6 - sanyaka jayanna (nyja)
-  ("t" "ට")		; 0x0da7 - alpapraana ttayanna (tta)
-  ("T" "ඨ")		; 0x0da8 - mahaapraana ttayanna (ttha)
-  ("d" "ඩ")		; 0x0da9 - alpapraana ddayanna (dda)
-  ("D" "ඪ")		; 0x0daa - mahaapraana ddayanna (ddha)
+  ((A-t) "ට")		; 0x0da7 - alpapraana ttayanna (tta)
+  ((A-T) "ඨ")		; 0x0da8 - mahaapraana ttayanna (ttha)
+  ((A-d) "ඩ")		; 0x0da9 - alpapraana ddayanna (dda)
+  ((A-D) "ඪ")		; 0x0daa - mahaapraana ddayanna (ddha)
   ("N" "ණ")		; 0x0dab - muurdhaja nayanna (nna)
-  ("x" "ඬ")		; 0x0dac - sanyaka ddayanna (nndda)
-  ((A-t) "ත")		; 0x0dad - alpapraana tayanna (ta)
-  ((A-T) "ථ")		; 0x0dae - mahaapraana tayanna (tha)
-  ((A-d) "ද")		; 0x0daf - alpapraana dayanna (da)
-  ((A-D) "ධ")		; 0x0db0 - mahaapraana dayanna (dha)
+  ("X" "ඬ")		; 0x0dac - sanyaka ddayanna (nndda)
+  ("t" "ත")		; 0x0dad - alpapraana tayanna (ta)
+  ("T" "ථ")		; 0x0dae - mahaapraana tayanna (tha)
+  ("d" "ද")		; 0x0daf - alpapraana dayanna (da)
+  ("D" "ධ")		; 0x0db0 - mahaapraana dayanna (dha)
   ("n" "න")		; 0x0db1 - dantaja nayanna (na)
-  ("X" "ඳ")		; 0x0db3 - sanyaka dayanna (nda)
+  ("x" "ඳ")		; 0x0db3 - sanyaka dayanna (nda)
   ("p" "ප")		; 0x0db4 - alpapraana payanna (pa)
   ("P" "ඵ")		; 0x0db5 - mahaapraana payanna (pha)
   ("b" "බ")		; 0x0db6 - alpapraana bayanna (ba)
@@ -72,8 +72,8 @@
   ("r" "ර")		; 0x0dbb - rayanna (ra)
   ("l" "ල")		; 0x0dbd - dantaja layanna (la)
   ("v" "ව")		; 0x0dc0 - vayanna (va)
-  ((A-s) "ශ")		; 0x0dc1 - taaluja sayanna (sha)
-  ("S" "ෂ")		; 0x0dc2 - muurdhaja sayanna (ssa)
+  ("S" "ශ")		; 0x0dc1 - taaluja sayanna (sha)
+  ((A-s) "ෂ")		; 0x0dc2 - muurdhaja sayanna (ssa)
   ("s" "ස")		; 0x0dc3 - dantaja sayanna (sa)
   ("h" "හ")		; 0x0dc4 - hayanna (ha)
   ("L" "ළ")		; 0x0dc5 - muurdhaja layanna (lla)
