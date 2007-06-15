@@ -1431,6 +1431,39 @@ gucharmap
 \end_layout
 
 \begin_layout Subsection
+Databases
+\begin_inset LatexCommand \label{Enable-Databases}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The ability to alphabetically sort words in a database is essential.
+ Till recently databases containing Sinhala words could not be sorted according
+ to the Sinhala sorting order as established by SLS1134 - Part 1: Collation
+ Sequence.
+ Now, Sinhala words can be sorted in MySQL (from version 5.2).
+\end_layout
+
+\begin_layout Standard
+Instead of running this query:
+\end_layout
+
+\begin_layout Code
+SELECT * FROM table1 ORDER BY column1;
+\end_layout
+
+\begin_layout Standard
+run a slightly modified query that looks like:
+\end_layout
+
+\begin_layout Code
+SELECT * FROM table1 ORDER BY column1 COLLATE utf8_sinhala_ci;
+\end_layout
+
+\begin_layout Subsection
 LaTeX
 \begin_inset LatexCommand \label{sec:Enable-LaTeX}
 
