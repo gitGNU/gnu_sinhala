@@ -397,7 +397,7 @@ Sinhala CVS Commits List (in English for developers)
 
 \begin_layout Itemize
 Archive: 
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?forum_id=49318]{http://sourceforge.net/mailarchive/forum.php?forum_id=49318}
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-cvs-commits]{http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-cvs-commits}
 
 \end_inset
 
@@ -419,7 +419,7 @@ Sinhala Technical List (in English for developers)
 
 \begin_layout Itemize
 Archive: 
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?forum_id=50807]{http://sourceforge.net/mailarchive/forum.php?forum_id=50807}
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-technical]{http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-technical}
 
 \end_inset
 
@@ -2649,7 +2649,7 @@ Syllable Segmentation
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?thread_id=31126797&forum_id=50807]{http://sourceforge.net/mailarchive/forum.php?thread_id=31126797&forum_id=50807}
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/message.php?msg_id=1164743938.10123.14.camel%40B1.HOME]{http://sourceforge.net/mailarchive/message.php?msg_id=1164743938.10123.14.camel%40B1.HOME}
 
 \end_inset
 
@@ -3529,7 +3529,7 @@ u0DCA";
 \end_layout
 
 \begin_layout Subsubsection
-MySQL 5.0.27
+MySQL
 \end_layout
 
 \begin_layout Itemize
@@ -3619,6 +3619,140 @@ SHOW VARIABLES;
 s
 \end_layout
 
+\begin_layout Paragraph
+Configure MySQL Server
+\end_layout
+
+\begin_layout Standard
+Edit the file /etc/mysql/my.cnf and add to the [mysqld] section:
+\end_layout
+
+\begin_layout Itemize
+default-character_set=utf8
+\end_layout
+
+\begin_layout Itemize
+skip-character-set-client-handshake
+\end_layout
+
+\begin_layout Standard
+This is done to ensure that UTF-8 is the default encoding for the server
+ and client.
+\end_layout
+
+\begin_layout Paragraph
+Testing MySQL
+\end_layout
+
+\begin_layout Enumerate
+Test Swedish (MySQL is a Swedish company) collation algorithm:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset LatexCommand \htmlurl[http://en.wikipedia.org/wiki/Swedish_alphabet]{http://en.wikipedia.org/wiki/Swedish_alphabet}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Code
+CREATE TABLE t1 (
+\end_layout
+
+\begin_layout Code
+        id SERIAL PRIMARY KEY,
+\end_layout
+
+\begin_layout Code
+        letter VARCHAR(10) NOT NULL
+\end_layout
+
+\begin_layout Code
+) CHARACTER SET utf8;
+\end_layout
+
+\begin_layout Standard
+Running this collation handler:
+\end_layout
+
+\begin_layout Code
+SELECT * FROM t1 ORDER BY letter COLLATE utf8_swedish_ci;
+\end_layout
+
+\begin_layout Standard
+results in non-English letters appearing at the end of the sorted alphabet
+ as expected.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Test new Sinhala collation algorithm:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset LatexCommand \htmlurl[http://en.wikipedia.org/wiki/Sinhala_alphabet]{http://en.wikipedia.org/wiki/Sinhala_alphabet}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Code
+CREATE TABLE t2 (
+\end_layout
+
+\begin_layout Code
+        id SERIAL PRIMARY KEY,
+\end_layout
+
+\begin_layout Code
+        letter VARCHAR(10) NOT NULL
+\end_layout
+
+\begin_layout Code
+) CHARACTER SET utf8;
+\end_layout
+
+\begin_layout Standard
+Load the data from this file:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[mysql-data-sinhala.txt]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-data-sinhala.txt?root=sinhala}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Running this collation handler:
+\end_layout
+
+\begin_layout Code
+SELECT * FROM t2 ORDER BY letter COLLATE utf8_sinhala_ci;
+\end_layout
+
+\begin_layout Standard
+results match the SCCII Part 1 : Collation Sequence (SLS1134).
+\end_layout
+
+\begin_layout Standard
+Download the output file from:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[mysql-output-utf8_sinhala_ci.txt]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-output-utf8_sinhala_ci.txt?root=sinhala}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Paragraph
 Source Code
 \end_layout
@@ -4106,144 +4240,6 @@ Patch
 
 \end_layout
 
-\begin_layout Paragraph
-Configure MySQL Server
-\end_layout
-
-\begin_layout Standard
-Edit the file /etc/mysql/my.cnf and add to the [mysqld] section:
-\end_layout
-
-\begin_layout Itemize
-default-character_set=utf8
-\end_layout
-
-\begin_layout Itemize
-skip-character-set-client-handshake
-\end_layout
-
-\begin_layout Standard
-This is done to ensure that UTF-8 is the default encoding for the server
- and client.
-\end_layout
-
-\begin_layout Paragraph
-Testing
-\end_layout
-
-\begin_layout Enumerate
-Test Swedish (MySQL is a Swedish company) collation algorithm:
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://en.wikipedia.org/wiki/Swedish_alphabet]{http://en.wikipedia.org/wiki/Swedish_alphabet}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Code
-CREATE TABLE t1 (
-\end_layout
-
-\begin_layout Code
-        id SERIAL PRIMARY KEY,
-\end_layout
-
-\begin_layout Code
-        letter VARCHAR(10) NOT NULL
-\end_layout
-
-\begin_layout Code
-) CHARACTER SET utf8;
-\end_layout
-
-\begin_layout Standard
-Running this collation handler:
-\end_layout
-
-\begin_layout Code
-SELECT * FROM t1 ORDER BY letter COLLATE utf8_swedish_ci;
-\end_layout
-
-\begin_layout Standard
-results in non-English letters appearing at the end of the sorted alphabet
- as expected.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Apply the MySQL Sinhala collation patch & the testcase patch.
-\end_layout
-
-\begin_layout Enumerate
-Test new Sinhala collation algorithm:
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://en.wikipedia.org/wiki/Sinhala_alphabet]{http://en.wikipedia.org/wiki/Sinhala_alphabet}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Code
-CREATE TABLE t2 (
-\end_layout
-
-\begin_layout Code
-        id SERIAL PRIMARY KEY,
-\end_layout
-
-\begin_layout Code
-        letter VARCHAR(10) NOT NULL
-\end_layout
-
-\begin_layout Code
-) CHARACTER SET utf8;
-\end_layout
-
-\begin_layout Standard
-Load the data from this file:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[mysql-data-sinhala.txt]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-data-sinhala.txt?root=sinhala}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Running this collation handler:
-\end_layout
-
-\begin_layout Code
-SELECT * FROM t2 ORDER BY letter COLLATE utf8_sinhala_ci;
-\end_layout
-
-\begin_layout Standard
-results match the SCCII Part 1 : Collation Sequence (SLS1134).
-\end_layout
-
-\begin_layout Standard
-Download the output file from:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[mysql-output-utf8_sinhala_ci.txt]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-output-utf8_sinhala_ci.txt?root=sinhala}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Subsection
 Locales
 \begin_inset LatexCommand \label{Dev-Locales}
@@ -4606,14 +4602,6 @@ Inform bengalinux-core team the implications of the fix to bugzilla.gnome.org's
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?thread_id=6637263&forum_id=12023]{http://sourceforge.net/mailarchive/forum.php?thread_id=6637263&forum_id=12023}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[http://www.mail-archive.com/bengalinux-core@lists.sourceforge.net/msg00502.html]{http://www.mail-archive.com/bengalinux-core@lists.sourceforge.net/msg00502.html}
 
 \end_inset
@@ -4891,7 +4879,7 @@ Test and provide feedback on the m17n Wijesekera input method.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?thread_id=31112620&forum_id=50807]{http://sourceforge.net/mailarchive/forum.php?thread_id=31112620&forum_id=50807}
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/message.php?msg_id=1164580258.4822.9.camel%40B1.HOME]{http://sourceforge.net/mailarchive/message.php?msg_id=1164580258.4822.9.camel%40B1.HOME}
 
 \end_inset
 
@@ -4899,7 +4887,21 @@ Test and provide feedback on the m17n Wijesekera input method.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?thread_id=31126797&forum_id=50807]{http://sourceforge.net/mailarchive/forum.php?thread_id=31126797&forum_id=50807}
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/message.php?msg_name=1174588315.5255.187.camel%40localhost]{http://sourceforge.net/mailarchive/message.php?msg_name=1174588315.5255.187.camel%40localhost}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Update XKB keyboard layout
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[https://bugs.freedesktop.org/show_bug.cgi?id=11284]{https://bugs.freedesktop.org/show_bug.cgi?id=11284}
 
 \end_inset
 
@@ -4978,7 +4980,7 @@ Reported errors in the SCCII - Part 1: Collation Sequence (SLS1134)
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?thread_id=31003987&forum_id=50807]{http://sourceforge.net/mailarchive/forum.php?thread_id=31003987&forum_id=50807}
+\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/message.php?msg_id=1163523215.5225.19.camel%40B1.HOME]{http://sourceforge.net/mailarchive/message.php?msg_id=1163523215.5225.19.camel%40B1.HOME}
 
 \end_inset
 
