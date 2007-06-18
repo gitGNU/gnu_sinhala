@@ -1,9 +1,10 @@
 --- scim-m17n-0.2.2.orig/debian/changelog
 +++ scim-m17n-0.2.2/debian/changelog
-@@ -0,0 +1,35 @@
+@@ -0,0 +1,36 @@
 +scim-m17n (0.2.2-1) unstable; urgency=low
 +
 +  * New Upstream release. (Closes: #329327, #414247)
++  * Repackage to reduce the size of the unnecessarily large diff.
 +
 + -- Harshula Jayasuriya <harshula@gmail.com>  Sat, 26 May 2007 21:26:34 +1000
 +
@@ -46,14 +47,14 @@
 +Source: scim-m17n
 +Section: utils
 +Priority: optional
-+Maintainer: Osamu Aoki <osamu@debian.org>
-+Uploaders: Harshula Jayasuriya <harshula@gmail.com>, Ming Hua <minghua@rice.edu>
++Maintainer: Harshula Jayasuriya <harshula@gmail.com>
++Uploaders: Osamu Aoki <osamu@debian.org>, Ming Hua <minghua@rice.edu>
 +Build-Depends: debhelper (>= 5.0.0), autotools-dev, pkg-config, libscim-dev (>= 1.4.6), libm17n-dev
 +Standards-Version: 3.7.2.2
 +
 +Package: scim-m17n
 +Architecture: any
-+Depends: ${shlibs:Depends}, ${misc:Depends}, scim
++Depends: ${shlibs:Depends}, scim
 +Description: M17N Input Method Engine for SCIM
 + SCIM (Smart Common Input Method) is an input method (IM) platform.
 + .
