@@ -86,3 +86,7 @@ The worst case expansion for Sinhala should be 4, not 3. e.g.
 patch is only superficial because Pango doesn't appear to ever
 use the worst case expansion value, unlike ICU.
 --------------------------------------------------------------------
+11) pango-1.16.4-cursor-position-sinhala1.patch
+
+cursor-position-testcase.txt
+--------------------------------------------------------------------
