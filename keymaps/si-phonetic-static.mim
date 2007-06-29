@@ -1,7 +1,7 @@
 ;; si-phonetic-static.mim -- Sinhala phonetic static keymap
 ;; m17n Keymap file for Sinhala (Sri Lanka) (2006-04-26)
 ;; Maintainer: Harshula Jayasuriya <harshula@gmail.com>
-;; Last Updated: 2007-06-14
+;; Last Updated: 2007-06-30
 ;; This is a phonetic static mapping for a standard US-English keyboard
 ;; (qwerty)
 ;; http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
@@ -102,9 +102,8 @@
   ("Y" "්‍ය")		;  0x0dca,0x200d,0x0dba - yansaya
   ((A-r) "ර්‍")		;  0x0dbb,0x0dca,0x200d - repaya
 
-  ;; Need the first backslash to escape the second.
-  ((A-\\) "්‍")		; 0x0dca,0x200d - join - conjunct letters cons 0DCA ZWJ cons
-  ((A-|) "‍්")		; 0x200d,0x0dca - touch - cons ZWJ 0DCA cons
+  ((A-,) "්‍")		; 0x0dca,0x200d - join - conjunct letters cons 0DCA ZWJ cons
+  ((A-/) "‍්")		; 0x200d,0x0dca - touch - cons ZWJ 0DCA cons
 
   ;; Shift-space and Alt-space
   ((S-\ ) " ")		; 0x00a0 - no-break space

@@ -1,6 +1,6 @@
 " Vim Keymap file for Sinhala (Sri Lanka) (2003-11-02)
 " Maintainer  : Harshula Jayasuriya <harshula@gmail.com>
-" Last Updated: 2007-06-14
+" Last Updated: 2007-06-30
 " This is a phonetic static mapping for a standard US-English keyboard
 " (qwerty)
 " http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html
@@ -100,8 +100,8 @@ R	<char-0x0dca><char-0x200d><char-0x0dbb>	"  ්‍ර - rakaaranshaya
 Y	<char-0x0dca><char-0x200d><char-0x0dba>	"  ්‍ය - yansaya
 <A-r>	<char-0x0dbb><char-0x0dca><char-0x200d>	" ර්‍ - repaya
 
-<A-\>	<char-0x0dca><char-0x200d>	" join - conjunct letters cons 0DCA ZWJ cons
-<A-|>	<char-0x200d><char-0x0dca>	" touch - cons ZWJ 0DCA cons
+<A-,>	<char-0x0dca><char-0x200d>	" join - conjunct letters cons 0DCA ZWJ cons
+<A-/>	<char-0x200d><char-0x0dca>	" touch - cons ZWJ 0DCA cons
 
 <C-space>	<char-0x00a0>	" - no-break space. <S-space> didn't work.
 <A-space>	<char-0x200c>	" - ZWNJ. <A-space> doesn't work!
