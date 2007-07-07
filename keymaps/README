@@ -42,3 +42,14 @@ Distros
 Debian:
 /usr/share/m17n/si-phonetic-static.mim (m17n-contrib)
 --------------------------------------------------------------------
+6) si-phonetic-dynamic.mim
+
+Downstream
+==========
+
+
+Distros
+=======
+Debian:
+
+--------------------------------------------------------------------
