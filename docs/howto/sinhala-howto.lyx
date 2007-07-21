@@ -4799,6 +4799,20 @@ Debian Open Office - The zero width joiner shouldn't be filtered out
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Create and submit Pango patch - Cursor positioning for Sinhala is broken
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=451682]{http://bugzilla.gnome.org/show_bug.cgi?id=451682}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 Input Methods
@@ -4812,6 +4826,14 @@ Submit XKB keyboard layout to X Keyboard Configuration Database
 \begin_deeper
 \begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[http://listserv.bat.ru/xkb/Message/320.html]{http://listserv.bat.ru/xkb/Message/320.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://bugs.freedesktop.org/show_bug.cgi?id=11284]{http://bugs.freedesktop.org/show_bug.cgi?id=11284}
 
 \end_inset
 
@@ -5119,11 +5141,6 @@ Add Sinhala to /usr/include/X11/keysymdef.h
 OTF printing problem.
 \end_layout
 
-\begin_layout Itemize
-Surrounding text / Cursor positioning in gedit with the text <gayanna><al-lakuna
-><hayanna><al-lakuna>
-\end_layout
-
 \end_deeper
 \begin_layout Itemize
 Printing
@@ -5132,10 +5149,6 @@ Printing
 \begin_deeper
 \begin_layout Itemize
 Firefox & Thunderbird can't print Sinhala.
-\end_layout
-
-\begin_layout Itemize
-Evolution can't print Sinhala, but gedit can.
 \end_layout
 
 \end_deeper
