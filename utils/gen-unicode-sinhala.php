@@ -22,74 +22,97 @@
 class sinhala_letters
 {
     // Independent vowels
-    private $iv = array( "අ", "ආ", "ඇ", "ඈ", "ඉ", "ඊ", "උ", "ඌ", "ඍ", "ඎ", "ඏ", "ඐ", "එ", "ඒ", "ඓ", "ඔ", "ඕ", "ඖ" );
+    private static $iv = array( "අ", "ආ", "ඇ", "ඈ", "ඉ", "ඊ", "උ", "ඌ", "ඍ", "ඎ", "ඏ", "ඐ", "එ", "ඒ", "ඓ", "ඔ", "ඕ", "ඖ" );
 
-    private $sv = array ( "ං", "ඃ" );
+    private static $sv = array ( "ං", "ඃ" );
 
     // Consonants
-    private $con = array( "ක", "ඛ", "ග", "ඝ", "ඞ", "ඟ", "ච", "ඡ", "ජ", "ඣ", "ඥ", "ඤ", "ඦ", "ට", "ඨ", "ඩ", "ඪ", "ණ", "ඬ", "ත", "ථ", "ද", "ධ", "න", "ඳ", "ප", "ඵ", "බ", "භ", "ම", "ඹ", "ය", "ර", "ල", "ව", "ශ", "ෂ", "ස", "හ", "ළ", "ෆ" );
+    private static $con = array( "ක", "ඛ", "ග", "ඝ", "ඞ", "ඟ", "ච", "ඡ", "ජ", "ඣ", "ඥ", "ඤ", "ඦ", "ට", "ඨ", "ඩ", "ඪ", "ණ", "ඬ", "ත", "ථ", "ද", "ධ", "න", "ඳ", "ප", "ඵ", "බ", "භ", "ම", "ඹ", "ය", "ර", "ල", "ව", "ශ", "ෂ", "ස", "හ", "ළ", "ෆ" );
 
     // Dependent vowels
-    private $dv = array ( "ා", "ැ", "ෑ", "ි", "ී", "ු", "ූ", "ෘ", "ෲ", "ෟ", "ෳ", "ෙ", "ේ", "ෛ", "ො", "ෝ", "ෞ", "්" );
+    private static $dv = array ( "ා", "ැ", "ෑ", "ි", "ී", "ු", "ූ", "ෘ", "ෲ", "ෟ", "ෳ", "ෙ", "ේ", "ෛ", "ො", "ෝ", "ෞ", "්" );
 
-    private $rakyan = array ( "්‍ර", "්‍ය" );
-    private $rep = "ර්‍";
+    private static $rakyan = array ( "්‍ර", "්‍ය" );
+    private static $rep = "ර්‍";
 
     // Conjuncts
-    private $conj = array ( "ක්‍ෂ", "ක්‍ව", "ත්‍ථ", "ත්‍ව", "න්‍ථ", "න්‍ද", "න්‍ධ", "න්‍ව", "ද්‍ව", "ද්‍ධ", "ට්‍ඨ" );
+    private static $conj = array ( "ක්‍ෂ", "ක්‍ව", "ත්‍ථ", "ත්‍ව", "න්‍ථ", "න්‍ද", "න්‍ධ", "න්‍ව", "ද්‍ව", "ද්‍ධ", "ට්‍ඨ" );
 
     // Punctuation
-    private $punct = '෴';
+    private static $punct = '෴';
+
+    private $buf = null;
 
     public function gen_collation()
     {
-        $out = array_merge($this->iv, $this->sv);
-        foreach ($this->con as $con)
+        $this->buf = array_merge(self::$iv, self::$sv);
+        foreach (self::$con as $con)
         {
-            $out[] = $con;
-            foreach ($this->dv as $dv)
+            $this->buf[] = $con;
+            foreach (self::$dv as $dv)
             {
-                $out[] = "{$con}{$dv}";
+                $this->buf[] = "{$con}{$dv}";
             }
         }
-        return $out;
     }
 
     public function gen_glyphs()
     {
-        $out = $this->iv;
-        foreach (array_merge($this->con, $this->conj) as $base)
+        $this->buf = self::$iv;
+        foreach (array_merge(self::$con, self::$conj) as $base)
         {
-            $out[] = $base;
-            foreach (array_merge($this->sv, $this->dv, $this->rakyan) as $dia)
+            $this->buf[] = $base;
+            foreach (array_merge(self::$sv, self::$dv, self::$rakyan) as $dia)
             {
-                $out[] = "{$base}{$dia}";
+                $this->buf[] = "{$base}{$dia}";
             }
-            $out[] = "{$this->rep}{$base}";
+            $this->buf[] = self::$rep . $base;
         }
-        $out[] = $this->punct;
-        return $out;
+        $this->buf[] = self::$punct;
     }
 
     public function gen_letters()
     {
-        return array_merge($this->iv, $this->sv, $this->con, $this->dv, $this->rakyan, array($this->rep));
+        $this->buf = array_merge(self::$iv, self::$sv, self::$con, self::$dv, self::$rakyan, array(self::$rep));
     }
 
     public function gen_syllables()
     {
-        $out = $this->iv;
-        foreach ($this->con as $con)
+        $this->buf = self::$iv;
+        foreach (self::$con as $con)
         {
-            $out[] = $con;
-            foreach (array_merge($this->sv, $this->dv) as $dia)
+            $this->buf[] = $con;
+            foreach (array_merge(self::$sv, self::$dv) as $dia)
             {
-                $out[] = "{$con}{$dia}";
+                $this->buf[] = "{$con}{$dia}";
             }
         }
-        return $out;
     }
 
+    public function generate()
+    {
+        return $this->buf;
+    }
+
+    public function set_hex()
+    {
+        if ($this->buf === null)
+        {
+            return false;
+        }
+        $this->buf = array_map("bin2hex", $this->buf);
+        return true;
+    }
+
+    public function set_random()
+    {
+        if ($this->buf === null)
+        {
+            return false;
+        }
+        shuffle($this->buf);
+        return true;
+    }
 }
 
 $MAP_ARGS = array('\t' => "\t", '\n' => "\n");
@@ -138,19 +161,19 @@ $s = new sinhala_letters();
 
 if ($argv[0] == 'collation')
 {
-    $chars = $s->gen_collation();
+    $s->gen_collation();
 }
 elseif ($argv[0] == 'glyphs')
 {
-    $chars = $s->gen_glyphs();
+    $s->gen_glyphs();
 }
 elseif ($argv[0] == 'letters')
 {
-    $chars = $s->gen_letters();
+    $s->gen_letters();
 }
 elseif ($argv[0] == 'syllables')
 {
-    $chars = $s->gen_syllables();
+    $s->gen_syllables();
 }
 else
 {
@@ -160,11 +183,11 @@ else
 
 if (isset($opts['r']))
 {
-    shuffle($chars);
+    $s->set_random();
 }
 if (isset($opts['h']))
 {
-    $chars = array_map("bin2hex", $chars);
+    $s->set_hex();
 }
 $sep = "\n";
 if (isset($opts['s']))
@@ -176,7 +199,7 @@ if (isset($opts['s']))
     }
 }
 
-echo implode("$sep", $chars) . "\n";
+echo implode("$sep", $s->generate()) . "\n";
 
 exit(0);
 
