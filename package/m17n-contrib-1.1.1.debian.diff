@@ -1,6 +1,6 @@
 --- m17n-contrib-1.1.1.orig/debian/control
 +++ m17n-contrib-1.1.1/debian/control
-@@ -0,0 +1,13 @@
+@@ -0,0 +1,15 @@
 +Source: m17n-contrib
 +Section: text
 +Priority: optional
@@ -14,6 +14,8 @@
 +Description: Contributed works to be used with the m17n library
 + The m17n-contrib is a collection of contributed works to be used with the
 + m17n library.
++ .
++  Homepage: http://www.m17n.org/
 --- m17n-contrib-1.1.1.orig/debian/compat
 +++ m17n-contrib-1.1.1/debian/compat
 @@ -0,0 +1 @@
@@ -32,7 +34,7 @@
 +README
 --- m17n-contrib-1.1.1.orig/debian/copyright
 +++ m17n-contrib-1.1.1/debian/copyright
-@@ -0,0 +1,43 @@
+@@ -0,0 +1,80 @@
 +This package was debianized by Harshula Jayasuriya <harshula@gmail.com> on
 +Sun, 27 May 2007 04:08:15 +1000.
 +
@@ -74,6 +76,43 @@
 +    Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
 +    02110-1301, USA.
 +
++The following files are licensed under the terms of the GNU Lesser General
++Public License and are listed with their corresponding copyright notice:
++
++File             Copyright Notice
++
++ur-phonetic.mim: Copyright (c) 2006 Tahir Abdul Rauf Butt <linux_kernel_worm@yahoo.com>
++te-rts.mim:	 Copyright 2005, 2006 Suraj N. Kurapati <skurapat@ucsc.edu>
++te-rts.mim:	 Copyright 2006 Chaitanya Kamisetty <chaitanya@atc.tcs.co.in>
++ne-trad.mim:	 Copyright (c) 2005 Suyash Shrestha <suyash.shr@gmail.com>
++ne-rom.mim:	 Copyright (c) 2005 Suyash Shrestha <suyash.shr@gmail.com>
++te-apple.mim:	 Copyright (c) 2006, Chaitanya Kamisetty <chaitanya@atc.tcs.co.in>
++bn-inscript.mim: Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
++pa-inscript.mim: Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
++ta-inscript.mim: Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
++te-inscript.mim: Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
++hi-inscript.mim: Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
++gu-inscript.mim: Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
++ml-inscript.mim: Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
++kn-kgp.mim:	 Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
++kn-inscript.mim: Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
++bn-probhat.mim:	 Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
++gu-phonetic.mim: Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
++pa-jhelum.mim:	 Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
++pa-phonetic.mim: Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
++as-phonetic.mim: Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
++hi-phonetic.mim: Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
++as-inscript.mim: Copyright (c) Red Hat, Inc. All Rights Reserved.
++ta-typewriter.mim: Copyright (c) 2006 Red Hat, Inc. All rights reserved.
++or-inscript.mim: Copyright (c) Red Hat, Inc. All Rights Reserved.
++ta-tamil99.mim:	 Copyright (c) 2006 Red Hat, Inc. All rights reserved.
++ta-phonetic.mim: Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
++mr-inscript.mim: Copyright (c) Red Hat, Inc. All Rights Reserved.
++hi-remington.mim: Copyright (c) Red Hat, Inc. All Rights Reserved.
++te-rts.mim:	 Copyright (C) 2003, 2004, 2005, 2006 National Institute of Advanced Industrial Science and Technology (AIST)
++hi-typewriter.mim: Copyright (C) 2005 National Institute of Advanced Industrial Science and Technology (AIST)
++bn-itrans.mim:	 Copyright (C) 2003, 2004, 2005, 2006 National Institute of Advanced Industrial Science and Technology (AIST)
++
 +The Debian packaging is (C) 2007, Harshula Jayasuriya <harshula@gmail.com> and
 +is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
 --- m17n-contrib-1.1.1.orig/debian/changelog
@@ -81,7 +120,7 @@
 @@ -0,0 +1,6 @@
 +m17n-contrib (1.1.1-1) unstable; urgency=low
 +
-+  * Initial release
++  * Initial release. Closes: #428126.
 +
 + -- Harshula Jayasuriya <harshula@gmail.com>  Sun, 27 May 2007 04:08:15 +1000
 +
