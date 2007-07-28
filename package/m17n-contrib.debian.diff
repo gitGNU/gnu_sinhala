@@ -16,7 +16,7 @@
 + The m17n-contrib is a collection of contributed works to be used with the
 + m17n library.
 + .
-+ Homepage: http://www.m17n.org/
++  Homepage: http://www.m17n.org/
 --- m17n-contrib-1.1.3.orig/debian/compat
 +++ m17n-contrib-1.1.3/debian/compat
 @@ -0,0 +1 @@
@@ -35,9 +35,11 @@
 +README
 --- m17n-contrib-1.1.3.orig/debian/copyright
 +++ m17n-contrib-1.1.3/debian/copyright
-@@ -0,0 +1,121 @@
+@@ -0,0 +1,162 @@
 +This package was debianized by Harshula Jayasuriya <harshula@gmail.com> on
 +Sun, 27 May 2007 04:08:15 +1000.
++
++The current Debian maintainer is Harshula Jayasuriya <harshula@gmail.com>.
 +
 +It was downloaded from http://www.m17n.org/m17n-lib-download/m17n-contrib-1.1.3.tar.gz
 +
@@ -54,7 +56,7 @@
 +
 +Copyright:
 +
-+    Copyright (C) 2006
++    Copyright (C) 2006, 2007
 +      National Institute of Advanced Industrial Science and Technology (AIST)
 +      Registration Number H15PRO112
 +
@@ -72,10 +74,10 @@
 +    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 +    Lesser General Public License for more details.
 +
-+    You should have received a copy of the GNU General Public License
-+    along with GNU Emacs; see the file COPYING.  If not, write to the Free
-+    Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
-+    02110-1301, USA.
++    You should have received a copy of the GNU Lesser General Public
++    License along with the m17n library; if not, write to the Free
++    Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
++    Boston, MA 02110-1301, USA.
 +
 +Contributers of im subdir:
 +
@@ -89,20 +91,29 @@
 +
 +    Chaitanya Kamisetty <chaitanya@atc.tcs.co.in>
 +	te-apple.mim -- Apple keyboard layout for Telugu
++	 -- Copyright (c) 2006, Chaitanya Kamisetty <chaitanya@atc.tcs.co.in>
 +	te-rts.mim -- Telugu input method with RTS method
++	 -- Copyright (C) 2003, 2004, 2005, 2006 AIST
++	 -- Copyright 2006 Chaitanya Kamisetty <chaitanya@atc.tcs.co.in>
 +
 +    Suraj N. Kurapati <skurapat@ucsc.edu>
 +	te-rts.mim -- Telugu input method with RTS method
++	 -- Copyright (C) 2003, 2004, 2005, 2006 AIST
++	 -- Copyright 2005, 2006 Suraj N. Kurapati <skurapat@ucsc.edu>
 +
 +    Tahir Abdul Rauf Butt <linux_kernel_worm@yahoo.com>
 +	ur-phonetic.mim -- Urdu input method for phonetic layout
++	 -- Copyright (c) 2006 Tahir Abdul Rauf Butt <linux_kernel_worm@yahoo.com>
 +
 +    Suyash Shrestha <suyash.shr@gmail.com>
 +	ne-rom.mim -- Nepali input method for romanized layout
++	 -- Copyright (c) 2005 Suyash Shrestha <suyash.shr@gmail.com>
 +	ne-trad.mim -- Nepali input method for traditional layout
++	 -- Copyright (c) 2005 Suyash Shrestha <suyash.shr@gmail.com>
 +
 +    Maxim Treskin <zerthurd@gmail.com>
 +	ru-translit.mim -- Cyrillic input method with translit keyboard layout
++	 -- Copyright (C) 2007 Maxim Treskin <zerthurd@gmail.com>
 +
 +    Subhransu Behera <sbehera@redhat.com>
 +    Rahul Bhalerao <rbhalera@redhat.com>
@@ -119,41 +130,71 @@
 +    Jaswinder Singh <jsingh@redhat.com>
 +    Sree Thottempudi <sthottem@redhat.com>
 +	as-inscript.mim -- Assamese input method for inscript layout
++	 -- Copyright (c) 2006-2007 Red Hat, Inc. All Rights Reserved.
 +	as-phonetic.mim -- Assamese input method for phonetic layout
++	 -- Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
 +	bn-inscript.mim -- Bengali input method for inscript layout
++	 -- Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
 +	bn-probhat.mim -- Bengali input method for probhat layout
++	 -- Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
 +	gu-inscript.mim -- Gujarati input method for inscript layout
++	 -- Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
 +	gu-phonetic.mim -- Gujarati input method for phonetic layout
++	 -- Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
 +	hi-inscript.mim -- Hindi input method for inscript layout
++	 -- Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
 +	hi-phonetic.mim -- Hindi input method for phonetic layout
++	 -- Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
 +	hi-remington.mim -- Hindi input method for Remington typewriter layout
++	 -- Copyright (c) 2006-2007 Red Hat, Inc. All Rights Reserved.
 +	kn-inscript.mim -- Kannada input method for inscript layout
++	 -- Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
 +	kn-kgp.mim -- Kannada input method for KGP layout
++	 -- Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
 +	ml-inscript.mim -- Malayalam input method for inscript layout
++	 -- Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
 +	mr-inscript.mim -- Marathi input method for inscript layout
++	 -- Copyright (c) 2006-2007 Red Hat, Inc. All Rights Reserved.
 +	mr-itrans.mim -- Marathi input method with ITRANS method
++	 -- Copyright (C) 2003, 2004, 2005, 2006 AIST
 +	mr-phonetic.mim -- Marathi input method for phonetic layout
++	 -- Copyright (c) 2004-2007 Red Hat, Inc. All rights reserved.
 +	or-inscript.mim -- Oriya input method for inscript layout
++	 -- Copyright (c) 2006-2007 Red Hat, Inc. All Rights Reserved.
 +	or-phonetic.mim -- Oriya input method for phonetic layout
++	 -- Copyright (c) 2004-2007 Red Hat, Inc. All rights reserved.
 +	pa-inscript.mim -- Punjabi input method for inscript layout
++	 -- Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
 +	pa-jhelum.mim -- Punjabi input method for jhelum layout
++	 -- Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
 +	pa-phonetic.mim -- Punjabi input method for phonetic layout
++	 -- Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
 +	ta-inscript.mim -- Tamil input method for inscript layout
++	 -- Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
 +	ta-phonetic.mim -- Tamil input method for phonetic layout
++	 -- Copyright (c) 2004-2006 Red Hat, Inc. All rights reserved.
 +	ta-tamil99.mim -- Tamil input method for tamil99 layout
++	 -- Copyright (c) 2006 Red Hat, Inc. All rights reserved.
 +	ta-typewriter.mim -- Tamil input method for type writer layout
++	 -- Copyright (c) 2006-2007 Red Hat, Inc. All rights reserved.
 +	te-inscript.mim -- Telugu input method for inscript layout
++	 -- Copyright (c) 2003 Sun Microsystems, Inc. All Rights Reserved.
 +
 +    Phan Anh Dung  <padung@huesoft.com.vn>
 +	vi-nom.mim -- Chu Nom input method with Viet-Phonetic sequence
++	 -- Copyright (C) 2007 HueCIT, Vietnam
 +	vi-han.mim -- Han Viet input method with Viet-Phonetic sequence
++	 -- Copyright (C) 2007 HueCIT, Vietnam
 +
 +    Tuyet Nhung  <dangtuyetnhung@gmail.com>
 +	tai-sonla.mim -- Tai Viet input method with Phonetic sequence
++	 -- Copyright (C) 2007 HueCIT, Vietnam
++	 -- Copyright (C) 2007 AIST
 +
 +    Joop Kiefte <ikojba@gmail.com>
 +	eo-h-f.mim, eo-h.mim, eoplena.mim, eo-q.mim, eo-x.mim
 +	-- Various Esperanto input methods
++	 -- Copyright (C) 2007 Joop Kiefte (LaPingvino)
 +
 +The Debian packaging is (C) 2007, Harshula Jayasuriya <harshula@gmail.com> and
 +is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
