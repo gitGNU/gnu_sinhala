@@ -211,8 +211,8 @@ Debian 4.0 (Etch) and Ubuntu 7.04 (Feisty) ship with Unicode Sinhala (SLS1134)
 \end_layout
 
 \begin_layout Standard
-To improve the level of Sinhala support in Debian 4.0 and Ubuntu 7.04, simply
- follow the instructions in this document [
+To improve the level of Sinhala support in Debian and Ubuntu, simply follow
+ the instructions in this document [
 \begin_inset LatexCommand \ref{Enabling-Sinhala}
 
 \end_inset
@@ -579,22 +579,22 @@ deb http://sinhala.sourceforge.net/debian/i386/lenny/ ./
 
 \end_deeper
 \begin_layout Enumerate
-On Ubuntu 7.04 (Feisty) i386
+On Ubuntu 7.10 (Gutsy) i386
 \end_layout
 
 \begin_deeper
 \begin_layout Code
-deb http://sinhala.sourceforge.net/ubuntu/i386/feisty/ ./
+deb http://sinhala.sourceforge.net/ubuntu/i386/gutsy/ ./
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-On Ubuntu 7.04 (Feisty) amd64
+On Ubuntu 7.10 (Gutsy) amd64
 \end_layout
 
 \begin_deeper
 \begin_layout Code
-deb http://sinhala.sourceforge.net/ubuntu/amd64/feisty/ ./
+deb http://sinhala.sourceforge.net/ubuntu/amd64/gutsy/ ./
 \end_layout
 
 \end_deeper
@@ -713,7 +713,8 @@ fc-list :lang=si file
 \end_layout
 
 \begin_layout Standard
-Immediately you'll be able to read Unicode Sinhala in these programs:
+Immediately you'll be able to read Unicode Sinhala in these programs (You
+ may have to restart the program.):
 \end_layout
 
 \begin_layout Itemize
@@ -1627,6 +1628,17 @@ How Freefont obtained Sinhala glyphs
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Development Info
+\end_layout
+
+\begin_layout Standard
+If you wish to use TeX font glyphs to create a new font, mftrace will be
+ useful.
+ In most circumstances fontforge alone will be sufficient for most of your
+ needs.
 \end_layout
 
 \begin_layout Subsection
@@ -4439,6 +4451,14 @@ Debian
 \end_layout
 
 \begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Debian Developers' Corner]{http://www.debian.org/devel/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[Debian New Maintainers' Guide]{http://www.debian.org/doc/maint-guide/}
 
 \end_inset
@@ -4447,7 +4467,7 @@ Debian
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Work-Needing and Prospective Packages]{http://www.debian.org/devel/wnpp/}
+\begin_inset LatexCommand \htmlurl[Debian Developer's Reference]{http://www.debian.org/doc/developers-reference/}
 
 \end_inset
 
@@ -4456,6 +4476,14 @@ Debian
 
 \begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[Debian Policy Manual]{http://www.debian.org/doc/debian-policy/}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[Work-Needing and Prospective Packages]{http://www.debian.org/devel/wnpp/}
 
 \end_inset
 
@@ -4565,6 +4593,18 @@ on the untarred Debianized source tree.
 \end_deeper
 \begin_layout Itemize
 irc.oftc.net, channel #debian-mentors
+\end_layout
+
+\begin_layout Subsubsection
+Ubuntu
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[MOTU/Packages/New]{https://wiki.ubuntu.com/MOTU/Packages/New}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -4924,6 +4964,20 @@ Update XKB keyboard layout
 \begin_deeper
 \begin_layout Itemize
 \begin_inset LatexCommand \htmlurl[https://bugs.freedesktop.org/show_bug.cgi?id=11284]{https://bugs.freedesktop.org/show_bug.cgi?id=11284}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Sync m17n-contrib from Debian to Ubuntu
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[https://bugs.launchpad.net/ubuntu/+bug/129952]{https://bugs.launchpad.net/ubuntu/+bug/129952}
 
 \end_inset
 
