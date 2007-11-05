@@ -46,7 +46,17 @@ Debian:
 
 Downstream
 ==========
+http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-dynamic.mim?view=log
 
+Distros
+=======
+Debian:
+/usr/share/m17n/si-phonetic-dynamic.mim (m17n-contrib)
+--------------------------------------------------------------------
+7) si-trans.mim
+
+Downstream
+==========
 
 Distros
 =======
