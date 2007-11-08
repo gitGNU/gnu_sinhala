@@ -4418,7 +4418,7 @@ Ubuntu
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[https://launchpad.net/distros/ubuntu/edgy/+lang/si]{https://launchpad.net/distros/ubuntu/edgy/+lang/si}
+\begin_inset LatexCommand \htmlurl[https://translations.launchpad.net/ubuntu/gutsy/+lang/si]{https://translations.launchpad.net/ubuntu/gutsy/+lang/si}
 
 \end_inset
 
@@ -4985,6 +4985,66 @@ Sync m17n-contrib from Debian to Ubuntu
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Developed Sinhala Phonetic keyboard layouts and a Transliteration scheme.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html]{http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Implemented phonetic and transliteration input methods for m17n.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-dynamic.mim?view=log]{http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-dynamic.mim?view=log}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-static.mim?view=log]{http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-static.mim?view=log}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-trans.mim?view=log]{http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-trans.mim?view=log}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 Fonts
@@ -5117,21 +5177,16 @@ see chapter 9 of TUS Unicode - apparently discusses ZWJ/ZWNJ.
 What does Thunderbird use for rendering?
 \end_layout
 
+\begin_layout Itemize
+Is Firefox 3 filtering ZWJ?
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 Input Methods
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Develop Phonetic & Transliteration standards.
-\end_layout
-
-\begin_layout Itemize
-Examine SCIM/m17n & implement static & dynamic phonetic keyboard layouts
- and transliteration schemes.
-\end_layout
-
 \begin_layout Itemize
 See if XKB can be extended to allow multiple codepoints per keycode.
 \end_layout
@@ -5179,6 +5234,10 @@ String matching - a consonant followed by dependent vowel 'o' should not
 
 \begin_layout Itemize
 Can the DUCET be updated with the correct Sinhala collation sequence?
+\end_layout
+
+\begin_layout Itemize
+MySQL Sinhala locale needed.
 \end_layout
 
 \end_deeper
