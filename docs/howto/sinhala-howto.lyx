@@ -1,17 +1,25 @@
-#LyX 1.4.4 created this file. For more info see http://www.lyx.org/
-\lyxformat 245
+#LyX 1.5.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
 \begin_document
 \begin_header
 \textclass docbook
 \language english
 \inputencoding auto
-\fontscheme default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
 \graphics default
 \paperfontsize default
 \spacing single
 \papersize a4paper
 \use_geometry false
 \use_amsmath 1
+\use_esint 0
 \cite_engine basic
 \use_bibtopic false
 \paperorientation portrait
@@ -24,7 +32,8 @@
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
-\output_changes true
+\output_changes false
+\author "" 
 \end_header
 
 \begin_body
@@ -151,7 +160,8 @@ status open
 
 \begin_layout Section
 About
-\begin_inset LatexCommand \label{About}
+\begin_inset LatexCommand label
+name "About"
 
 \end_inset
 
@@ -173,7 +183,8 @@ This guide is GNOME and Debian/Ubuntu centric.
 
 \begin_layout Section
 Introduction
-\begin_inset LatexCommand \label{Introduction}
+\begin_inset LatexCommand label
+name "Introduction"
 
 \end_inset
 
@@ -191,19 +202,22 @@ tly.
 Debian 4.0 (Etch) and Ubuntu 7.04 (Feisty) ship with Unicode Sinhala (SLS1134)
  support on the desktop.
  This includes Sinhala support in the web browser, Firefox [
-\begin_inset LatexCommand \ref{Enable-Firefox-Mozilla}
+\begin_inset LatexCommand ref
+reference "Enable-Firefox-Mozilla"
 
 \end_inset
 
 ], and the office suite, Open Office [
-\begin_inset LatexCommand \ref{Enable-Open-Office}
+\begin_inset LatexCommand ref
+reference "Enable-Open-Office"
 
 \end_inset
 
 ].
  Both distributions ship with a phonetic Sinhala keyboard layout and a basic,
  incomplete, Unicode Sinhala font [
-\begin_inset LatexCommand \ref{Enable-Fonts}
+\begin_inset LatexCommand ref
+reference "Enable-Fonts"
 
 \end_inset
 
@@ -213,7 +227,8 @@ Debian 4.0 (Etch) and Ubuntu 7.04 (Feisty) ship with Unicode Sinhala (SLS1134)
 \begin_layout Standard
 To improve the level of Sinhala support in Debian and Ubuntu, simply follow
  the instructions in this document [
-\begin_inset LatexCommand \ref{Enabling-Sinhala}
+\begin_inset LatexCommand ref
+reference "Enabling-Sinhala"
 
 \end_inset
 
@@ -222,7 +237,8 @@ To improve the level of Sinhala support in Debian and Ubuntu, simply follow
 
 \begin_layout Subsection
 Learn about Sinhala
-\begin_inset LatexCommand \label{Intro-Learn-about-Sinhala}
+\begin_inset LatexCommand label
+name "Intro-Learn-about-Sinhala"
 
 \end_inset
 
@@ -230,7 +246,9 @@ Learn about Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://en.wikipedia.org/wiki/Sinhala]{http://en.wikipedia.org/wiki/Sinhala}
+\begin_inset LatexCommand htmlurl
+name "http://en.wikipedia.org/wiki/Sinhala"
+target "http://en.wikipedia.org/wiki/Sinhala"
 
 \end_inset
 
@@ -238,7 +256,9 @@ Learn about Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.speaksinhala.com]{http://www.speaksinhala.com}
+\begin_inset LatexCommand htmlurl
+name "http://www.speaksinhala.com"
+target "http://www.speaksinhala.com"
 
 \end_inset
 
@@ -264,7 +284,8 @@ The first chapter has excellent coverage of the Sinhala letters.
 \end_deeper
 \begin_layout Subsection
 Learn about Unicode
-\begin_inset LatexCommand \label{Intro-Learn-about-Unicode}
+\begin_inset LatexCommand label
+name "Intro-Learn-about-Unicode"
 
 \end_inset
 
@@ -272,7 +293,9 @@ Learn about Unicode
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.unicode.org]{http://www.unicode.org}
+\begin_inset LatexCommand htmlurl
+name "http://www.unicode.org"
+target "http://www.unicode.org"
 
 \end_inset
 
@@ -280,7 +303,9 @@ Learn about Unicode
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[UTF-8 and Unicode FAQ for Unix/Linux]{http://www.cl.cam.ac.uk/~mgk25/unicode.html}
+\begin_inset LatexCommand htmlurl
+name "UTF-8 and Unicode FAQ for Unix/Linux"
+target "http://www.cl.cam.ac.uk/~mgk25/unicode.html"
 
 \end_inset
 
@@ -288,7 +313,9 @@ Learn about Unicode
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Unicode Technical Standard #10]{http://unicode.org/reports/tr10/}
+\begin_inset LatexCommand htmlurl
+name "Unicode Technical Standard #10"
+target "http://unicode.org/reports/tr10/"
 
 \end_inset
 
@@ -296,7 +323,9 @@ Learn about Unicode
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Unicode Normalization Forms]{http://unicode.org/reports/tr15/}
+\begin_inset LatexCommand htmlurl
+name "Unicode Normalization Forms"
+target "http://unicode.org/reports/tr15/"
 
 \end_inset
 
@@ -304,7 +333,9 @@ Learn about Unicode
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Unicode Collation Charts]{http://unicode.org/charts/collation/}
+\begin_inset LatexCommand htmlurl
+name "Unicode Collation Charts"
+target "http://unicode.org/charts/collation/"
 
 \end_inset
 
@@ -313,7 +344,8 @@ Learn about Unicode
 
 \begin_layout Subsection
 Learn about Standards
-\begin_inset LatexCommand \label{Intro-Learn-about-Standards}
+\begin_inset LatexCommand label
+name "Intro-Learn-about-Standards"
 
 \end_inset
 
@@ -321,7 +353,9 @@ Learn about Standards
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[ISO 639-2: Codes for the Representation of Names of Languages]{http://www.loc.gov/standards/iso639-2/}
+\begin_inset LatexCommand htmlurl
+name "ISO 639-2: Codes for the Representation of Names of Languages"
+target "http://www.loc.gov/standards/iso639-2/"
 
 \end_inset
 
@@ -329,7 +363,9 @@ Learn about Standards
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[ISO 3166: English country names and code elements]{http://www.iso.org/iso/en/prods-services/iso3166ma/index.html}
+\begin_inset LatexCommand htmlurl
+name "ISO 3166: English country names and code elements"
+target "http://www.iso.org/iso/en/prods-services/iso3166ma/index.html"
 
 \end_inset
 
@@ -337,7 +373,9 @@ Learn about Standards
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[ISO 15924: Codes for the representation of names of scripts]{http://www.unicode.org/iso15924/}
+\begin_inset LatexCommand htmlurl
+name "ISO 15924: Codes for the representation of names of scripts"
+target "http://www.unicode.org/iso15924/"
 
 \end_inset
 
@@ -345,7 +383,9 @@ Learn about Standards
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Unicode Sinhala codepoints]{http://www.unicode.org/charts/PDF/U0D80.pdf}
+\begin_inset LatexCommand htmlurl
+name "Unicode Sinhala codepoints"
+target "http://www.unicode.org/charts/PDF/U0D80.pdf"
 
 \end_inset
 
@@ -369,7 +409,8 @@ SLS1134 - Sinhala Character Code for Information Interchange (SCCII) - Part
 
 \begin_layout Subsection
 Mailing Lists
-\begin_inset LatexCommand \label{Intro-Mailing-Lists}
+\begin_inset LatexCommand label
+name "Intro-Mailing-Lists"
 
 \end_inset
 
@@ -397,7 +438,9 @@ Sinhala CVS Commits List (in English for developers)
 
 \begin_layout Itemize
 Archive: 
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-cvs-commits]{http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-cvs-commits}
+\begin_inset LatexCommand htmlurl
+name "http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-cvs-commits"
+target "http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-cvs-commits"
 
 \end_inset
 
@@ -406,7 +449,9 @@ Archive:
 
 \begin_layout Itemize
 Subscribe: 
-\begin_inset LatexCommand \htmlurl[https://lists.sourceforge.net/lists/listinfo/sinhala-cvs-commits]{https://lists.sourceforge.net/lists/listinfo/sinhala-cvs-commits}
+\begin_inset LatexCommand htmlurl
+name "https://lists.sourceforge.net/lists/listinfo/sinhala-cvs-commits"
+target "https://lists.sourceforge.net/lists/listinfo/sinhala-cvs-commits"
 
 \end_inset
 
@@ -419,7 +464,9 @@ Sinhala Technical List (in English for developers)
 
 \begin_layout Itemize
 Archive: 
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-technical]{http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-technical}
+\begin_inset LatexCommand htmlurl
+name "http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-technical"
+target "http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-technical"
 
 \end_inset
 
@@ -428,7 +475,9 @@ Archive:
 
 \begin_layout Itemize
 Subscribe: 
-\begin_inset LatexCommand \htmlurl[https://lists.sourceforge.net/lists/listinfo/sinhala-technical]{https://lists.sourceforge.net/lists/listinfo/sinhala-technical}
+\begin_inset LatexCommand htmlurl
+name "https://lists.sourceforge.net/lists/listinfo/sinhala-technical"
+target "https://lists.sourceforge.net/lists/listinfo/sinhala-technical"
 
 \end_inset
 
@@ -441,7 +490,9 @@ Sinhala Linux List (in English for users)
 
 \begin_layout Itemize
 Archive: 
-\begin_inset LatexCommand \htmlurl[http://www.lug.lk/lurker/list/sinhala.en.html]{http://www.lug.lk/lurker/list/sinhala.en.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.lug.lk/lurker/list/sinhala.en.html"
+target "http://www.lug.lk/lurker/list/sinhala.en.html"
 
 \end_inset
 
@@ -450,7 +501,9 @@ Archive:
 
 \begin_layout Itemize
 Subscribe: 
-\begin_inset LatexCommand \htmlurl[https://secure.lug.lk/mailman/listinfo/sinhala]{https://secure.lug.lk/mailman/listinfo/sinhala}
+\begin_inset LatexCommand htmlurl
+name "https://secure.lug.lk/mailman/listinfo/sinhala"
+target "https://secure.lug.lk/mailman/listinfo/sinhala"
 
 \end_inset
 
@@ -462,7 +515,9 @@ Sinhala Unicode List (in Sinhala for developers and users)
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://groups.google.com/group/sinhala-unicode]{http://groups.google.com/group/sinhala-unicode}
+\begin_inset LatexCommand htmlurl
+name "http://groups.google.com/group/sinhala-unicode"
+target "http://groups.google.com/group/sinhala-unicode"
 
 \end_inset
 
@@ -471,7 +526,8 @@ Sinhala Unicode List (in Sinhala for developers and users)
 
 \begin_layout Subsection
 Contributors
-\begin_inset LatexCommand \label{Intro-Contributors}
+\begin_inset LatexCommand label
+name "Intro-Contributors"
 
 \end_inset
 
@@ -481,7 +537,9 @@ Contributors
 \begin_layout Standard
 Many individuals have contributed to the project that began in 2003 on an
  
-\begin_inset LatexCommand \htmlurl[LKLUG]{http://www.lug.lk/}
+\begin_inset LatexCommand htmlurl
+name "LKLUG"
+target "http://www.lug.lk/"
 
 \end_inset
 
@@ -515,7 +573,8 @@ Naoto Takahashi
 
 \begin_layout Section
 Enabling Sinhala
-\begin_inset LatexCommand \label{Enabling-Sinhala}
+\begin_inset LatexCommand label
+name "Enabling-Sinhala"
 
 \end_inset
 
@@ -524,7 +583,8 @@ Enabling Sinhala
 
 \begin_layout Subsection
 Debian and Ubuntu Sinhala repositories
-\begin_inset LatexCommand \label{Enable-Debian-and-Ubuntu}
+\begin_inset LatexCommand label
+name "Enable-Debian-and-Ubuntu"
 
 \end_inset
 
@@ -655,7 +715,8 @@ To test SCIM, press Control-space whilst you are running a GNOME application.
 
 \begin_layout Subsection
 Fonts
-\begin_inset LatexCommand \label{Enable-Fonts}
+\begin_inset LatexCommand label
+name "Enable-Fonts"
 
 \end_inset
 
@@ -667,7 +728,9 @@ Download a Unicode Sinhala font:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://sinhala.sourceforge.net/files/lklug.ttf]{http://sinhala.sourceforge.net/files/lklug.ttf}
+\begin_inset LatexCommand htmlurl
+name "http://sinhala.sourceforge.net/files/lklug.ttf"
+target "http://sinhala.sourceforge.net/files/lklug.ttf"
 
 \end_inset
 
@@ -745,7 +808,8 @@ If you have Pango 1.8.2 and greater, you will have full SLS1134 Sinhala support.
 
 \begin_layout Subsection
 Firefox/Mozilla
-\begin_inset LatexCommand \label{Enable-Firefox-Mozilla}
+\begin_inset LatexCommand label
+name "Enable-Firefox-Mozilla"
 
 \end_inset
 
@@ -818,7 +882,9 @@ MOZ_ENABLE_PANGO=1
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.html]{http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.html}
+\begin_inset LatexCommand htmlurl
+name "http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.html"
+target "http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.html"
 
 \end_inset
 
@@ -881,7 +947,9 @@ To disable the use of Pango, set MOZ_DISABLE_PANGO=1 in your environment
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://fedora.redhat.com/docs/release-notes/fc5/]{http://fedora.redhat.com/docs/release-notes/fc5/}
+\begin_inset LatexCommand htmlurl
+name "http://fedora.redhat.com/docs/release-notes/fc5/"
+target "http://fedora.redhat.com/docs/release-notes/fc5/"
 
 \end_inset
 
@@ -895,7 +963,8 @@ status open
 
 \begin_layout Subsection
 Open Office
-\begin_inset LatexCommand \label{Enable-Open-Office}
+\begin_inset LatexCommand label
+name "Enable-Open-Office"
 
 \end_inset
 
@@ -948,7 +1017,8 @@ Open Office 2.1 should support Sinhala on all distros.
 
 \begin_layout Subsection
 Input Methods
-\begin_inset LatexCommand \label{Enable-Input-Methods}
+\begin_inset LatexCommand label
+name "Enable-Input-Methods"
 
 \end_inset
 
@@ -994,7 +1064,9 @@ Wijesekera
 Install scim-m17n and m17n-db (In Ubuntu, these packages are in the Universe
  repository.
  For help read: 
-\begin_inset LatexCommand \htmlurl[http://www.ubuntuguide.org/]{http://www.ubuntuguide.org/}
+\begin_inset LatexCommand htmlurl
+name "http://www.ubuntuguide.org/"
+target "http://www.ubuntuguide.org/"
 
 \end_inset
 
@@ -1007,7 +1079,9 @@ Download the m17n Wijesekera input method from:
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://cvs.m17n.org/viewcvs/*checkout*/m17n/m17n-db/si-wijesekera-preedit.mim]{http://cvs.m17n.org/viewcvs/*checkout*/m17n/m17n-db/si-wijesekera-preedit.mim}
+\begin_inset LatexCommand htmlurl
+name "http://cvs.m17n.org/viewcvs/*checkout*/m17n/m17n-db/si-wijesekera-preedit.mim"
+target "http://cvs.m17n.org/viewcvs/*checkout*/m17n/m17n-db/si-wijesekera-preedit.mim"
 
 \end_inset
 
@@ -1069,7 +1143,9 @@ You should have at least XFree86 4.3 or Xorg 6.7.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
+\begin_inset LatexCommand htmlurl
+name "www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
+target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
 
 \end_inset
 
@@ -1121,7 +1197,9 @@ The latest version of the keyboard layout can be downloaded from CVS:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[lk]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/lk?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "lk"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/lk?root=sinhala"
 
 \end_inset
 
@@ -1334,7 +1412,9 @@ Download the keyboard layout from:
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[sin]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sin?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "sin"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sin?root=sinhala"
 
 \end_inset
 
@@ -1433,7 +1513,8 @@ gucharmap
 
 \begin_layout Subsection
 Databases
-\begin_inset LatexCommand \label{Enable-Databases}
+\begin_inset LatexCommand label
+name "Enable-Databases"
 
 \end_inset
 
@@ -1466,7 +1547,8 @@ SELECT * FROM table1 ORDER BY column1 COLLATE utf8_sinhala_ci;
 
 \begin_layout Subsection
 LaTeX
-\begin_inset LatexCommand \label{sec:Enable-LaTeX}
+\begin_inset LatexCommand label
+name "sec:Enable-LaTeX"
 
 \end_inset
 
@@ -1478,7 +1560,9 @@ If you want to write Unicode Sinhala LaTeX documents, download:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.ucsc.cmb.ac.lk/People/cik/sintex-0.2.0.tar.gz]{http://www.ucsc.cmb.ac.lk/People/cik/sintex-0.2.0.tar.gz}
+\begin_inset LatexCommand htmlurl
+name "http://www.ucsc.cmb.ac.lk/People/cik/sintex-0.2.0.tar.gz"
+target "http://www.ucsc.cmb.ac.lk/People/cik/sintex-0.2.0.tar.gz"
 
 \end_inset
 
@@ -1487,7 +1571,8 @@ If you want to write Unicode Sinhala LaTeX documents, download:
 
 \begin_layout Subsection
 Locales
-\begin_inset LatexCommand \label{Enable-Locales}
+\begin_inset LatexCommand label
+name "Enable-Locales"
 
 \end_inset
 
@@ -1500,7 +1585,8 @@ The Sinhala locale for Sri Lanka is already included in most distributions.
 
 \begin_layout Section
 Developer Notes
-\begin_inset LatexCommand \label{Developer-Notes}
+\begin_inset LatexCommand label
+name "Developer-Notes"
 
 \end_inset
 
@@ -1509,7 +1595,9 @@ Developer Notes
 
 \begin_layout Itemize
 Savannah Sinhala Project: 
-\begin_inset LatexCommand \htmlurl[http://savannah.nongnu.org/projects/sinhala/]{http://savannah.nongnu.org/projects/sinhala/}
+\begin_inset LatexCommand htmlurl
+name "http://savannah.nongnu.org/projects/sinhala/"
+target "http://savannah.nongnu.org/projects/sinhala/"
 
 \end_inset
 
@@ -1518,7 +1606,9 @@ Savannah Sinhala Project:
 
 \begin_layout Itemize
 Sourceforge Sinhala Project: 
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/projects/sinhala/]{http://sourceforge.net/projects/sinhala/}
+\begin_inset LatexCommand htmlurl
+name "http://sourceforge.net/projects/sinhala/"
+target "http://sourceforge.net/projects/sinhala/"
 
 \end_inset
 
@@ -1527,7 +1617,8 @@ Sourceforge Sinhala Project:
 
 \begin_layout Subsection
 Open Type Fonts
-\begin_inset LatexCommand \label{Dev-Open-Type-Fonts}
+\begin_inset LatexCommand label
+name "Dev-Open-Type-Fonts"
 
 \end_inset
 
@@ -1539,7 +1630,9 @@ You can use this PHP script to generate Unicode Sinhala letters:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://cvs.savannah.nongnu.org/viewvc/*checkout*/sinhala/utils/gen-unicode-sinhala.php?root=sinhala]{http://cvs.savannah.nongnu.org/viewvc/*checkout*/sinhala/utils/gen-unicode-sinhala.php?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "http://cvs.savannah.nongnu.org/viewvc/*checkout*/sinhala/utils/gen-unicode-sinhala.php?root=sinhala"
+target "http://cvs.savannah.nongnu.org/viewvc/*checkout*/sinhala/utils/gen-unicode-sinhala.php?root=sinhala"
 
 \end_inset
 
@@ -1551,7 +1644,9 @@ List of feature tags
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://partners.adobe.com/public/developer/opentype/index_tag3.html]{http://partners.adobe.com/public/developer/opentype/index_tag3.html}
+\begin_inset LatexCommand htmlurl
+name "http://partners.adobe.com/public/developer/opentype/index_tag3.html"
+target "http://partners.adobe.com/public/developer/opentype/index_tag3.html"
 
 \end_inset
 
@@ -1563,7 +1658,9 @@ Glyph Naming
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://partners.adobe.com/public/developer/en/opentype/aglfn13.txt]{http://partners.adobe.com/public/developer/en/opentype/aglfn13.txt}
+\begin_inset LatexCommand htmlurl
+name "http://partners.adobe.com/public/developer/en/opentype/aglfn13.txt"
+target "http://partners.adobe.com/public/developer/en/opentype/aglfn13.txt"
 
 \end_inset
 
@@ -1571,7 +1668,9 @@ Glyph Naming
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://partners.adobe.com/public/developer/opentype/index_glyph.html]{http://partners.adobe.com/public/developer/opentype/index_glyph.html}
+\begin_inset LatexCommand htmlurl
+name "http://partners.adobe.com/public/developer/opentype/index_glyph.html"
+target "http://partners.adobe.com/public/developer/opentype/index_glyph.html"
 
 \end_inset
 
@@ -1583,7 +1682,9 @@ Indic
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.microsoft.com/typography/OpenType%20Dev/indic/intro.mspx]{http://www.microsoft.com/typography/OpenType%20Dev/indic/intro.mspx}
+\begin_inset LatexCommand htmlurl
+name "http://www.microsoft.com/typography/OpenType%20Dev/indic/intro.mspx"
+target "http://www.microsoft.com/typography/OpenType%20Dev/indic/intro.mspx"
 
 \end_inset
 
@@ -1591,7 +1692,9 @@ Indic
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Indic FAQ at Unicode.org]{http://unicode.org/faq/indic.html}
+\begin_inset LatexCommand htmlurl
+name "Indic FAQ at Unicode.org"
+target "http://unicode.org/faq/indic.html"
 
 \end_inset
 
@@ -1599,7 +1702,9 @@ Indic
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Indic Working Group at Unicode.org]{http://unicode.org/~emuller/iwg/}
+\begin_inset LatexCommand htmlurl
+name "Indic Working Group at Unicode.org"
+target "http://unicode.org/~emuller/iwg/"
 
 \end_inset
 
@@ -1611,7 +1716,9 @@ How Freefont obtained Sinhala glyphs
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://mail.gnu.org/archive/html/freefont-bugs/2003-03/msg00000.html]{http://mail.gnu.org/archive/html/freefont-bugs/2003-03/msg00000.html}
+\begin_inset LatexCommand htmlurl
+name "http://mail.gnu.org/archive/html/freefont-bugs/2003-03/msg00000.html"
+target "http://mail.gnu.org/archive/html/freefont-bugs/2003-03/msg00000.html"
 
 \end_inset
 
@@ -1619,7 +1726,9 @@ How Freefont obtained Sinhala glyphs
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://mail.gnu.org/archive/html/freefont-bugs/2003-04/msg00001.html]{http://mail.gnu.org/archive/html/freefont-bugs/2003-04/msg00001.html}
+\begin_inset LatexCommand htmlurl
+name "http://mail.gnu.org/archive/html/freefont-bugs/2003-04/msg00001.html"
+target "http://mail.gnu.org/archive/html/freefont-bugs/2003-04/msg00001.html"
 
 \end_inset
 
@@ -1627,7 +1736,9 @@ How Freefont obtained Sinhala glyphs
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://mail.gnu.org/archive/html/freefont-bugs/2003-05/msg00005.html]{http://mail.gnu.org/archive/html/freefont-bugs/2003-05/msg00005.html}
+\begin_inset LatexCommand htmlurl
+name "http://mail.gnu.org/archive/html/freefont-bugs/2003-05/msg00005.html"
+target "http://mail.gnu.org/archive/html/freefont-bugs/2003-05/msg00005.html"
 
 \end_inset
 
@@ -1635,7 +1746,9 @@ How Freefont obtained Sinhala glyphs
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://mail.gnu.org/archive/html/freefont-bugs/2003-08/msg00002.html]{http://mail.gnu.org/archive/html/freefont-bugs/2003-08/msg00002.html}
+\begin_inset LatexCommand htmlurl
+name "http://mail.gnu.org/archive/html/freefont-bugs/2003-08/msg00002.html"
+target "http://mail.gnu.org/archive/html/freefont-bugs/2003-08/msg00002.html"
 
 \end_inset
 
@@ -1655,7 +1768,8 @@ If you wish to use TeX font glyphs to create a new font, mftrace will be
 
 \begin_layout Subsection
 Renderer
-\begin_inset LatexCommand \label{Dev-Renderer}
+\begin_inset LatexCommand label
+name "Dev-Renderer"
 
 \end_inset
 
@@ -1681,7 +1795,9 @@ The original patch to add Sinhala support was created by Harsha Senanayake
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://marc.theaimsgroup.com/?t=106354110900001&r=1&w=2]{http://marc.theaimsgroup.com/?t=106354110900001&r=1&w=2}
+\begin_inset LatexCommand htmlurl
+name "http://marc.theaimsgroup.com/?t=106354110900001&r=1&w=2"
+target "http://marc.theaimsgroup.com/?t=106354110900001&r=1&w=2"
 
 \end_inset
 
@@ -1698,7 +1814,9 @@ ama.
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=153517]{http://bugzilla.gnome.org/show_bug.cgi?id=153517}
+\begin_inset LatexCommand htmlurl
+name "http://bugzilla.gnome.org/show_bug.cgi?id=153517"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=153517"
 
 \end_inset
 
@@ -1713,7 +1831,9 @@ status open
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=161981]{http://bugzilla.gnome.org/show_bug.cgi?id=161981}
+\begin_inset LatexCommand htmlurl
+name "http://bugzilla.gnome.org/show_bug.cgi?id=161981"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=161981"
 
 \end_inset
 
@@ -1727,7 +1847,9 @@ status open
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=302577]{http://bugzilla.gnome.org/show_bug.cgi?id=302577}
+\begin_inset LatexCommand htmlurl
+name "http://bugzilla.gnome.org/show_bug.cgi?id=302577"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=302577"
 
 \end_inset
 
@@ -1796,7 +1918,9 @@ Owen Taylor (Pango) submitted the Pango Sinhala patch to the ICU project
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298}
+\begin_inset LatexCommand htmlurl
+name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298"
+target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298"
 
 \end_inset
 
@@ -1814,7 +1938,9 @@ status open
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711}
+\begin_inset LatexCommand htmlurl
+name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711"
+target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711"
 
 \end_inset
 
@@ -1828,7 +1954,9 @@ status open
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057}
+\begin_inset LatexCommand htmlurl
+name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057"
+target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057"
 
 \end_inset
 
@@ -1846,7 +1974,9 @@ Patches:
 
 \begin_layout Itemize
 ICU 2.6 Sinhala patch 
-\begin_inset LatexCommand \htmlurl[http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-2.6-oo-sinhala1.patch?root=sinhala]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-2.6-oo-sinhala1.patch?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-2.6-oo-sinhala1.patch?root=sinhala"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-2.6-oo-sinhala1.patch?root=sinhala"
 
 \end_inset
 
@@ -1855,7 +1985,9 @@ ICU 2.6 Sinhala patch
 
 \begin_layout Itemize
 ICU 3.4 Sinhala patch 
-\begin_inset LatexCommand \htmlurl[http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.4-sinhala1.patch?root=sinhala]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.4-sinhala1.patch?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.4-sinhala1.patch?root=sinhala"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.4-sinhala1.patch?root=sinhala"
 
 \end_inset
 
@@ -1864,7 +1996,9 @@ ICU 3.4 Sinhala patch
 
 \begin_layout Itemize
 ICU 3.6 Sinhala patch 
-\begin_inset LatexCommand \htmlurl[http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.6-sinhala1.patch?root=sinhala]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.6-sinhala1.patch?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.6-sinhala1.patch?root=sinhala"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.6-sinhala1.patch?root=sinhala"
 
 \end_inset
 
@@ -1882,7 +2016,9 @@ There's an issue with U+0DDD (dependent vowel diga o) that can cause Open
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-crash-testcase-dv-oo.txt?root=sinhala]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-crash-testcase-dv-oo.txt?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-crash-testcase-dv-oo.txt?root=sinhala"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-crash-testcase-dv-oo.txt?root=sinhala"
 
 \end_inset
 
@@ -1906,7 +2042,9 @@ Caolan McNamara also found and fixed this bug.
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5501]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5501}
+\begin_inset LatexCommand htmlurl
+name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5501"
+target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5501"
 
 \end_inset
 
@@ -2023,7 +2161,8 @@ engine->getCharIndices(&fGlyphToCharMap[glyphBase], runStart, layoutStatus);
 
 \begin_layout Subsection
 Firefox/Mozilla
-\begin_inset LatexCommand \label{Dev-Firefox-Mozilla}
+\begin_inset LatexCommand label
+name "Dev-Firefox-Mozilla"
 
 \end_inset
 
@@ -2099,7 +2238,9 @@ On the other hand Ubuntu 6.06, decided to disable Pango in Firefox by default
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[https://launchpad.net/distros/ubuntu/+source/firefox/+bug/32561]{https://launchpad.net/distros/ubuntu/+source/firefox/+bug/32561}
+\begin_inset LatexCommand htmlurl
+name "https://launchpad.net/distros/ubuntu/+source/firefox/+bug/32561"
+target "https://launchpad.net/distros/ubuntu/+source/firefox/+bug/32561"
 
 \end_inset
 
@@ -2225,7 +2366,9 @@ Fedora Core 4
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=1.8]{http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=1.8}
+\begin_inset LatexCommand htmlurl
+name "http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=1.8"
+target "http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=1.8"
 
 \end_inset
 
@@ -2267,7 +2410,9 @@ Fedora Core 5
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=1.11]{http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=1.11}
+\begin_inset LatexCommand htmlurl
+name "http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=1.11"
+target "http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firefox.sh.in?rev=1.11"
 
 \end_inset
 
@@ -2439,7 +2584,8 @@ Epiphany also has a file, data/epiphany-pango.schemas containing a list of
 
 \begin_layout Subsection
 Open Office
-\begin_inset LatexCommand \label{Dev-Open-Office}
+\begin_inset LatexCommand label
+name "Dev-Open-Office"
 
 \end_inset
 
@@ -2447,7 +2593,9 @@ Open Office
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://wiki.services.openoffice.org/wiki/Debugging]{http://wiki.services.openoffice.org/wiki/Debugging}
+\begin_inset LatexCommand htmlurl
+name "http://wiki.services.openoffice.org/wiki/Debugging"
+target "http://wiki.services.openoffice.org/wiki/Debugging"
 
 \end_inset
 
@@ -2467,7 +2615,9 @@ Whilst working on the patches for adding Sinhala support to ICU, the renderer
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html]{http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html}
+\begin_inset LatexCommand htmlurl
+name "http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html"
+target "http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html"
 
 \end_inset
 
@@ -2486,7 +2636,9 @@ Then, Caolan McNamara found the Open Office file that filters ZWJ and ZWNJ.
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://www.openoffice.org/issues/show_bug.cgi?id=68047]{http://www.openoffice.org/issues/show_bug.cgi?id=68047}
+\begin_inset LatexCommand htmlurl
+name "http://www.openoffice.org/issues/show_bug.cgi?id=68047"
+target "http://www.openoffice.org/issues/show_bug.cgi?id=68047"
 
 \end_inset
 
@@ -2603,7 +2755,8 @@ Compiling Open Office 2.0.4 on Debian Etch on a Pentium M 2.13 GHz with 1 GiB
 
 \begin_layout Subsection
 Input Methods
-\begin_inset LatexCommand \label{Dev-Input-Methods}
+\begin_inset LatexCommand label
+name "Dev-Input-Methods"
 
 \end_inset
 
@@ -2624,7 +2777,9 @@ XKB, XIM, IIIMF
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=103&page=1]{http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=103&page=1}
+\begin_inset LatexCommand htmlurl
+name "http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=103&page=1"
+target "http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=103&page=1"
 
 \end_inset
 
@@ -2638,7 +2793,9 @@ status open
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://www.m17n.org/]{http://www.m17n.org/}
+\begin_inset LatexCommand htmlurl
+name "http://www.m17n.org/"
+target "http://www.m17n.org/"
 
 \end_inset
 
@@ -2652,7 +2809,9 @@ status open
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://www.scim-im.org/]{http://www.scim-im.org/}
+\begin_inset LatexCommand htmlurl
+name "http://www.scim-im.org/"
+target "http://www.scim-im.org/"
 
 \end_inset
 
@@ -2673,7 +2832,9 @@ Syllable Segmentation
 status open
 
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/message.php?msg_id=1164743938.10123.14.camel%40B1.HOME]{http://sourceforge.net/mailarchive/message.php?msg_id=1164743938.10123.14.camel%40B1.HOME}
+\begin_inset LatexCommand htmlurl
+name "http://sourceforge.net/mailarchive/message.php?msg_id=1164743938.10123.14.camel%40B1.HOME"
+target "http://sourceforge.net/mailarchive/message.php?msg_id=1164743938.10123.14.camel%40B1.HOME"
 
 \end_inset
 
@@ -2720,7 +2881,9 @@ Wijesekera Compatible
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_1.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_1.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_1.html"
+target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_1.html"
 
 \end_inset
 
@@ -2734,7 +2897,9 @@ ASCII Compatible Wijesekera
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_2.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_2.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_2.html"
+target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_2.html"
 
 \end_inset
 
@@ -2748,7 +2913,9 @@ Phonetic (Static)
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
+target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
 
 \end_inset
 
@@ -2762,7 +2929,9 @@ Phonetic (Dynamic)
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html"
+target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html"
 
 \end_inset
 
@@ -2931,7 +3100,9 @@ The m17n backend keyboard layout definition file is a text file.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.m17n.org/common/m17n-docs-en/m17nDBFormat.html#mdbIM]{http://www.m17n.org/common/m17n-docs-en/m17nDBFormat.html#mdbIM}
+\begin_inset LatexCommand htmlurl
+name "http://www.m17n.org/common/m17n-docs-en/m17nDBFormat.html#mdbIM"
+target "http://www.m17n.org/common/m17n-docs-en/m17nDBFormat.html#mdbIM"
 
 \end_inset
 
@@ -2949,7 +3120,9 @@ The xmodmap keyboard layout is not fully functional, hence it is recommended
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
+target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
 
 \end_inset
 
@@ -2962,7 +3135,9 @@ Download the keyboard layout from:
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[sin.xmodmap]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sin.xmodmap?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "sin.xmodmap"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sin.xmodmap?root=sinhala"
 
 \end_inset
 
@@ -2989,7 +3164,9 @@ To familiarise yourself with this keyboard layout, read:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
+target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
 
 \end_inset
 
@@ -3002,7 +3179,9 @@ Download the keyboard layout and redirector from:
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[sinhala-phonetic_utf-8.vim]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sinhala-phonetic_utf-8.vim?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "sinhala-phonetic_utf-8.vim"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sinhala-phonetic_utf-8.vim?root=sinhala"
 
 \end_inset
 
@@ -3010,7 +3189,9 @@ Download the keyboard layout and redirector from:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[sinhala.vim]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sinhala.vim?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "sinhala.vim"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sinhala.vim?root=sinhala"
 
 \end_inset
 
@@ -3061,7 +3242,8 @@ To toggle between the Sinhala keyboard layout and the standard ASCII keyboard
 \end_deeper
 \begin_layout Subsection
 Databases
-\begin_inset LatexCommand \label{Dev-Databases}
+\begin_inset LatexCommand label
+name "Dev-Databases"
 
 \end_inset
 
@@ -3127,7 +3309,9 @@ Tailoring
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[ICU User Guide: Collation Customization]{http://icu.sourceforge.net/userguide/Collate_Customization.html}
+\begin_inset LatexCommand htmlurl
+name "ICU User Guide: Collation Customization"
+target "http://icu.sourceforge.net/userguide/Collate_Customization.html"
 
 \end_inset
 
@@ -3135,7 +3319,9 @@ Tailoring
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Change Management for the Unicode Collation Algorithm]{http://unicode.org/collation/ducet-changes.html}
+\begin_inset LatexCommand htmlurl
+name "Change Management for the Unicode Collation Algorithm"
+target "http://unicode.org/collation/ducet-changes.html"
 
 \end_inset
 
@@ -3557,7 +3743,9 @@ MySQL
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Unicode and Other Funny Characters]{http://dev.mysql.com/tech-resources/articles/4.1/unicode.html}
+\begin_inset LatexCommand htmlurl
+name "Unicode and Other Funny Characters"
+target "http://dev.mysql.com/tech-resources/articles/4.1/unicode.html"
 
 \end_inset
 
@@ -3565,7 +3753,9 @@ MySQL
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[MySQL 5.0 Reference Manual :: 5 Database Administration :: 5.2 mysqld ? The MySQL Server :: 5.2.1 Option and Variable Reference]{http://dev.mysql.com/doc/refman/5.0/en/mysqld-option-tables.html}
+\begin_inset LatexCommand htmlurl
+name "MySQL 5.0 Reference Manual :: 5 Database Administration :: 5.2 mysqld ? The MySQL Server :: 5.2.1 Option and Variable Reference"
+target "http://dev.mysql.com/doc/refman/5.0/en/mysqld-option-tables.html"
 
 \end_inset
 
@@ -3573,7 +3763,9 @@ MySQL
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[MySQL 5.0 Reference Manual :: 10 Character Set Support]{http://dev.mysql.com/doc/refman/5.0/en/charset.html}
+\begin_inset LatexCommand htmlurl
+name "MySQL 5.0 Reference Manual :: 10 Character Set Support"
+target "http://dev.mysql.com/doc/refman/5.0/en/charset.html"
 
 \end_inset
 
@@ -3581,7 +3773,9 @@ MySQL
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[MySQL Internals Manual :: 4 Important Algorithms and Structures :: 4.10 Character/Collation Sets]{http://dev.mysql.com/doc/internals/en/charsets.html}
+\begin_inset LatexCommand htmlurl
+name "MySQL Internals Manual :: 4 Important Algorithms and Structures :: 4.10 Character/Collation Sets"
+target "http://dev.mysql.com/doc/internals/en/charsets.html"
 
 \end_inset
 
@@ -3674,7 +3868,9 @@ Test Swedish (MySQL is a Swedish company) collation algorithm:
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://en.wikipedia.org/wiki/Swedish_alphabet]{http://en.wikipedia.org/wiki/Swedish_alphabet}
+\begin_inset LatexCommand htmlurl
+name "http://en.wikipedia.org/wiki/Swedish_alphabet"
+target "http://en.wikipedia.org/wiki/Swedish_alphabet"
 
 \end_inset
 
@@ -3717,7 +3913,9 @@ Test new Sinhala collation algorithm:
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset LatexCommand \htmlurl[http://en.wikipedia.org/wiki/Sinhala_alphabet]{http://en.wikipedia.org/wiki/Sinhala_alphabet}
+\begin_inset LatexCommand htmlurl
+name "http://en.wikipedia.org/wiki/Sinhala_alphabet"
+target "http://en.wikipedia.org/wiki/Sinhala_alphabet"
 
 \end_inset
 
@@ -3745,7 +3943,9 @@ Load the data from this file:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[mysql-data-sinhala.txt]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-data-sinhala.txt?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "mysql-data-sinhala.txt"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-data-sinhala.txt?root=sinhala"
 
 \end_inset
 
@@ -3769,7 +3969,9 @@ Download the output file from:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[mysql-output-utf8_sinhala_ci.txt]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-output-utf8_sinhala_ci.txt?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "mysql-output-utf8_sinhala_ci.txt"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-output-utf8_sinhala_ci.txt?root=sinhala"
 
 \end_inset
 
@@ -4249,7 +4451,9 @@ Patch
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[mysql-dfsg-5.0-5.0.27-sinhala1.patch]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-dfsg-5.0-5.0.27-sinhala1.patch?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "mysql-dfsg-5.0-5.0.27-sinhala1.patch"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-dfsg-5.0-5.0.27-sinhala1.patch?root=sinhala"
 
 \end_inset
 
@@ -4257,7 +4461,9 @@ Patch
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[mysql-dfsg-5.0-5.0.32-sinhala2.patch]{http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-dfsg-5.0-5.0.32-sinhala2.patch?root=sinhala}
+\begin_inset LatexCommand htmlurl
+name "mysql-dfsg-5.0-5.0.32-sinhala2.patch"
+target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-dfsg-5.0-5.0.32-sinhala2.patch?root=sinhala"
 
 \end_inset
 
@@ -4266,7 +4472,8 @@ Patch
 
 \begin_layout Subsection
 Locales
-\begin_inset LatexCommand \label{Dev-Locales}
+\begin_inset LatexCommand label
+name "Dev-Locales"
 
 \end_inset
 
@@ -4362,7 +4569,8 @@ The default locale is set in the file:
 
 \begin_layout Subsection
 Translations
-\begin_inset LatexCommand \label{Dev-Translations}
+\begin_inset LatexCommand label
+name "Dev-Translations"
 
 \end_inset
 
@@ -4374,7 +4582,9 @@ GNOME
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \url[http://developer.gnome.org/projects/gtp/l10n-guide/]{http://developer.gnome.org/projects/gtp/l10n-guide/}
+\begin_inset LatexCommand url
+name "http://developer.gnome.org/projects/gtp/l10n-guide/"
+target "http://developer.gnome.org/projects/gtp/l10n-guide/"
 
 \end_inset
 
@@ -4382,7 +4592,9 @@ GNOME
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \url[http://developer.gnome.org/doc/tutorials/gnome-i18n/translator.html]{http://developer.gnome.org/doc/tutorials/gnome-i18n/translator.html}
+\begin_inset LatexCommand url
+name "http://developer.gnome.org/doc/tutorials/gnome-i18n/translator.html"
+target "http://developer.gnome.org/doc/tutorials/gnome-i18n/translator.html"
 
 \end_inset
 
@@ -4390,7 +4602,9 @@ GNOME
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://developer.gnome.org/projects/gtp/teams.html]{http://developer.gnome.org/projects/gtp/teams.html}
+\begin_inset LatexCommand htmlurl
+name "http://developer.gnome.org/projects/gtp/teams.html"
+target "http://developer.gnome.org/projects/gtp/teams.html"
 
 \end_inset
 
@@ -4398,7 +4612,9 @@ GNOME
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://l10n.gnome.org/languages/si/]{http://l10n.gnome.org/languages/si/}
+\begin_inset LatexCommand htmlurl
+name "http://l10n.gnome.org/languages/si/"
+target "http://l10n.gnome.org/languages/si/"
 
 \end_inset
 
@@ -4410,7 +4626,9 @@ KDE
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[KDE Localization]{http://i18n.kde.org/}
+\begin_inset LatexCommand htmlurl
+name "KDE Localization"
+target "http://i18n.kde.org/"
 
 \end_inset
 
@@ -4418,7 +4636,9 @@ KDE
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://l10n.kde.org/team-infos.php?teamcode=si]{http://l10n.kde.org/team-infos.php?teamcode=si}
+\begin_inset LatexCommand htmlurl
+name "http://l10n.kde.org/team-infos.php?teamcode=si"
+target "http://l10n.kde.org/team-infos.php?teamcode=si"
 
 \end_inset
 
@@ -4430,7 +4650,9 @@ Ubuntu
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[https://translations.launchpad.net/ubuntu/gutsy/+lang/si]{https://translations.launchpad.net/ubuntu/gutsy/+lang/si}
+\begin_inset LatexCommand htmlurl
+name "https://translations.launchpad.net/ubuntu/gutsy/+lang/si"
+target "https://translations.launchpad.net/ubuntu/gutsy/+lang/si"
 
 \end_inset
 
@@ -4442,7 +4664,9 @@ Fedora Core
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://i18n.redhat.com/cgi-bin/i18n-status]{http://i18n.redhat.com/cgi-bin/i18n-status}
+\begin_inset LatexCommand htmlurl
+name "http://i18n.redhat.com/cgi-bin/i18n-status"
+target "http://i18n.redhat.com/cgi-bin/i18n-status"
 
 \end_inset
 
@@ -4451,7 +4675,8 @@ Fedora Core
 
 \begin_layout Subsection
 Packaging
-\begin_inset LatexCommand \label{Dev-Packaging}
+\begin_inset LatexCommand label
+name "Dev-Packaging"
 
 \end_inset
 
@@ -4463,7 +4688,9 @@ Debian
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Debian Developers' Corner]{http://www.debian.org/devel/}
+\begin_inset LatexCommand htmlurl
+name "Debian Developers' Corner"
+target "http://www.debian.org/devel/"
 
 \end_inset
 
@@ -4471,7 +4698,9 @@ Debian
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Debian New Maintainers' Guide]{http://www.debian.org/doc/maint-guide/}
+\begin_inset LatexCommand htmlurl
+name "Debian New Maintainers' Guide"
+target "http://www.debian.org/doc/maint-guide/"
 
 \end_inset
 
@@ -4479,7 +4708,9 @@ Debian
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Debian Developer's Reference]{http://www.debian.org/doc/developers-reference/}
+\begin_inset LatexCommand htmlurl
+name "Debian Developer's Reference"
+target "http://www.debian.org/doc/developers-reference/"
 
 \end_inset
 
@@ -4487,7 +4718,9 @@ Debian
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Debian Policy Manual]{http://www.debian.org/doc/debian-policy/}
+\begin_inset LatexCommand htmlurl
+name "Debian Policy Manual"
+target "http://www.debian.org/doc/debian-policy/"
 
 \end_inset
 
@@ -4495,7 +4728,9 @@ Debian
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Work-Needing and Prospective Packages]{http://www.debian.org/devel/wnpp/}
+\begin_inset LatexCommand htmlurl
+name "Work-Needing and Prospective Packages"
+target "http://www.debian.org/devel/wnpp/"
 
 \end_inset
 
@@ -4542,7 +4777,9 @@ $(MAKE) DESTDIR=$(CURDIR)/debian/tmp install
 
 \end_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[pbuilder]{http://www.netfort.gr.jp/~dancer/software/pbuilder-doc/pbuilder-doc.html}
+\begin_inset LatexCommand htmlurl
+name "pbuilder"
+target "http://www.netfort.gr.jp/~dancer/software/pbuilder-doc/pbuilder-doc.html"
 
 \end_inset
 
@@ -4550,7 +4787,9 @@ $(MAKE) DESTDIR=$(CURDIR)/debian/tmp install
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[pbuilder HOWTO]{https://wiki.ubuntu.com/PbuilderHowto}
+\begin_inset LatexCommand htmlurl
+name "pbuilder HOWTO"
+target "https://wiki.ubuntu.com/PbuilderHowto"
 
 \end_inset
 
@@ -4612,7 +4851,9 @@ Ubuntu
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[MOTU/Packages/New]{https://wiki.ubuntu.com/MOTU/Packages/New}
+\begin_inset LatexCommand htmlurl
+name "MOTU/Packages/New"
+target "https://wiki.ubuntu.com/MOTU/Packages/New"
 
 \end_inset
 
@@ -4621,7 +4862,8 @@ Ubuntu
 
 \begin_layout Subsection
 DONE
-\begin_inset LatexCommand \label{Dev-DONE}
+\begin_inset LatexCommand label
+name "Dev-DONE"
 
 \end_inset
 
@@ -4639,7 +4881,9 @@ Create and submit Pango patch - don't implicitly create conjuncts
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=161981]{http://bugzilla.gnome.org/show_bug.cgi?id=161981}
+\begin_inset LatexCommand htmlurl
+name "http://bugzilla.gnome.org/show_bug.cgi?id=161981"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=161981"
 
 \end_inset
 
@@ -4654,7 +4898,9 @@ Inform bengalinux-core team the implications of the fix to bugzilla.gnome.org's
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.mail-archive.com/bengalinux-core@lists.sourceforge.net/msg00502.html]{http://www.mail-archive.com/bengalinux-core@lists.sourceforge.net/msg00502.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.mail-archive.com/bengalinux-core@lists.sourceforge.net/msg00502.html"
+target "http://www.mail-archive.com/bengalinux-core@lists.sourceforge.net/msg00502.html"
 
 \end_inset
 
@@ -4668,7 +4914,9 @@ Create and submit Pango patch - Enable touching letters in Sinhala rendering
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=302577]{http://bugzilla.gnome.org/show_bug.cgi?id=302577}
+\begin_inset LatexCommand htmlurl
+name "http://bugzilla.gnome.org/show_bug.cgi?id=302577"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=302577"
 
 \end_inset
 
@@ -4686,7 +4934,9 @@ Provide test files and images for ICU Sinhala support
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \url[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298}
+\begin_inset LatexCommand url
+name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298"
+target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298"
 
 \end_inset
 
@@ -4700,7 +4950,9 @@ ICU: ZWJ Processing in Sinhala
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4710]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4710}
+\begin_inset LatexCommand htmlurl
+name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4710"
+target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4710"
 
 \end_inset
 
@@ -4714,7 +4966,9 @@ ICU: Implement PR 37 ZWJ/ZWNJ Behavior
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711}
+\begin_inset LatexCommand htmlurl
+name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711"
+target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711"
 
 \end_inset
 
@@ -4728,7 +4982,9 @@ ICU: Indic Reordering State Table Allows ZWJ Virama ZWJ
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057]{http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057}
+\begin_inset LatexCommand htmlurl
+name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057"
+target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057"
 
 \end_inset
 
@@ -4743,7 +4999,9 @@ Port Pango patches, which add Sinhala support, to ICU for immediate use
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.redhat.com/archives/fedora-cvs-commits/2006-May/msg00126.html]{http://www.redhat.com/archives/fedora-cvs-commits/2006-May/msg00126.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.redhat.com/archives/fedora-cvs-commits/2006-May/msg00126.html"
+target "http://www.redhat.com/archives/fedora-cvs-commits/2006-May/msg00126.html"
 
 \end_inset
 
@@ -4757,7 +5015,9 @@ Discovered Open Office was filtering ZWJ
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html]{http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html}
+\begin_inset LatexCommand htmlurl
+name "http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html"
+target "http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html"
 
 \end_inset
 
@@ -4772,7 +5032,9 @@ Convince Open Office developers to stop filtering ZWJ and ZWNJ - ZWJ: The
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \url[http://qa.openoffice.org/issues/show_bug.cgi?id=68047]{http://qa.openoffice.org/issues/show_bug.cgi?id=68047}
+\begin_inset LatexCommand url
+name "http://qa.openoffice.org/issues/show_bug.cgi?id=68047"
+target "http://qa.openoffice.org/issues/show_bug.cgi?id=68047"
 
 \end_inset
 
@@ -4786,7 +5048,9 @@ Epiphany - Add si (Sinhala) to the list of locales requiring Pango
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=361538]{http://bugzilla.gnome.org/show_bug.cgi?id=361538}
+\begin_inset LatexCommand htmlurl
+name "http://bugzilla.gnome.org/show_bug.cgi?id=361538"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=361538"
 
 \end_inset
 
@@ -4800,7 +5064,9 @@ Ubuntu - Add si (Sinhala) to the list of locales requiring Pango
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[https://launchpad.net/distros/ubuntu/+source/firefox/+bug/66270/]{https://launchpad.net/distros/ubuntu/+source/firefox/+bug/66270/}
+\begin_inset LatexCommand htmlurl
+name "https://launchpad.net/distros/ubuntu/+source/firefox/+bug/66270/"
+target "https://launchpad.net/distros/ubuntu/+source/firefox/+bug/66270/"
 
 \end_inset
 
@@ -4815,7 +5081,9 @@ Inform of Open Office filtering ZWJ and ZWNJ - Incorrect Bengali rendering
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[https://launchpad.net/distros/debian/+source/icu/+bug/35085]{https://launchpad.net/distros/debian/+source/icu/+bug/35085}
+\begin_inset LatexCommand htmlurl
+name "https://launchpad.net/distros/debian/+source/icu/+bug/35085"
+target "https://launchpad.net/distros/debian/+source/icu/+bug/35085"
 
 \end_inset
 
@@ -4829,7 +5097,9 @@ Pango - Worst case expansion for Sinhala
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=385321]{http://bugzilla.gnome.org/show_bug.cgi?id=385321}
+\begin_inset LatexCommand htmlurl
+name "http://bugzilla.gnome.org/show_bug.cgi?id=385321"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=385321"
 
 \end_inset
 
@@ -4843,7 +5113,9 @@ Debian Open Office - The zero width joiner shouldn't be filtered out
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=403275]{http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=403275}
+\begin_inset LatexCommand htmlurl
+name "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=403275"
+target "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=403275"
 
 \end_inset
 
@@ -4857,7 +5129,9 @@ Create and submit Pango patch - Cursor positioning for Sinhala is broken
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://bugzilla.gnome.org/show_bug.cgi?id=451682]{http://bugzilla.gnome.org/show_bug.cgi?id=451682}
+\begin_inset LatexCommand htmlurl
+name "http://bugzilla.gnome.org/show_bug.cgi?id=451682"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=451682"
 
 \end_inset
 
@@ -4877,7 +5151,9 @@ Submit XKB keyboard layout to X Keyboard Configuration Database
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://listserv.bat.ru/xkb/Message/320.html]{http://listserv.bat.ru/xkb/Message/320.html}
+\begin_inset LatexCommand htmlurl
+name "http://listserv.bat.ru/xkb/Message/320.html"
+target "http://listserv.bat.ru/xkb/Message/320.html"
 
 \end_inset
 
@@ -4885,7 +5161,9 @@ Submit XKB keyboard layout to X Keyboard Configuration Database
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://bugs.freedesktop.org/show_bug.cgi?id=11284]{http://bugs.freedesktop.org/show_bug.cgi?id=11284}
+\begin_inset LatexCommand htmlurl
+name "http://bugs.freedesktop.org/show_bug.cgi?id=11284"
+target "http://bugs.freedesktop.org/show_bug.cgi?id=11284"
 
 \end_inset
 
@@ -4903,7 +5181,9 @@ Submit XKB keyboard layout to xorg
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[https://bugs.freedesktop.org/show_bug.cgi?id=1850]{https://bugs.freedesktop.org/show_bug.cgi?id=1850}
+\begin_inset LatexCommand htmlurl
+name "https://bugs.freedesktop.org/show_bug.cgi?id=1850"
+target "https://bugs.freedesktop.org/show_bug.cgi?id=1850"
 
 \end_inset
 
@@ -4917,7 +5197,9 @@ Submit XKB keyboard layout to xfree86
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://bugs.xfree86.org/show_bug.cgi?id=1509]{http://bugs.xfree86.org/show_bug.cgi?id=1509}
+\begin_inset LatexCommand htmlurl
+name "http://bugs.xfree86.org/show_bug.cgi?id=1509"
+target "http://bugs.xfree86.org/show_bug.cgi?id=1509"
 
 \end_inset
 
@@ -4931,7 +5213,9 @@ Submit phonetic static keyboard layout to m17n
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.linux.lk/lurker/message/20060906.191738.e7c770f0.en.html]{http://www.linux.lk/lurker/message/20060906.191738.e7c770f0.en.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.linux.lk/lurker/message/20060906.191738.e7c770f0.en.html"
+target "http://www.linux.lk/lurker/message/20060906.191738.e7c770f0.en.html"
 
 \end_inset
 
@@ -4945,7 +5229,9 @@ Test and provide feedback on the m17n Wijesekera input method.
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.linux.lk/lurker/message/20060926.124636.9781ef2e.en.html]{http://www.linux.lk/lurker/message/20060926.124636.9781ef2e.en.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.linux.lk/lurker/message/20060926.124636.9781ef2e.en.html"
+target "http://www.linux.lk/lurker/message/20060926.124636.9781ef2e.en.html"
 
 \end_inset
 
@@ -4953,7 +5239,9 @@ Test and provide feedback on the m17n Wijesekera input method.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/message.php?msg_id=1164580258.4822.9.camel%40B1.HOME]{http://sourceforge.net/mailarchive/message.php?msg_id=1164580258.4822.9.camel%40B1.HOME}
+\begin_inset LatexCommand htmlurl
+name "http://sourceforge.net/mailarchive/message.php?msg_id=1164580258.4822.9.camel%40B1.HOME"
+target "http://sourceforge.net/mailarchive/message.php?msg_id=1164580258.4822.9.camel%40B1.HOME"
 
 \end_inset
 
@@ -4961,7 +5249,9 @@ Test and provide feedback on the m17n Wijesekera input method.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/message.php?msg_name=1174588315.5255.187.camel%40localhost]{http://sourceforge.net/mailarchive/message.php?msg_name=1174588315.5255.187.camel%40localhost}
+\begin_inset LatexCommand htmlurl
+name "http://sourceforge.net/mailarchive/message.php?msg_name=1174588315.5255.187.camel%40localhost"
+target "http://sourceforge.net/mailarchive/message.php?msg_name=1174588315.5255.187.camel%40localhost"
 
 \end_inset
 
@@ -4975,7 +5265,9 @@ Update XKB keyboard layout
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[https://bugs.freedesktop.org/show_bug.cgi?id=11284]{https://bugs.freedesktop.org/show_bug.cgi?id=11284}
+\begin_inset LatexCommand htmlurl
+name "https://bugs.freedesktop.org/show_bug.cgi?id=11284"
+target "https://bugs.freedesktop.org/show_bug.cgi?id=11284"
 
 \end_inset
 
@@ -4989,7 +5281,9 @@ Sync m17n-contrib from Debian to Ubuntu
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[https://bugs.launchpad.net/ubuntu/+bug/129952]{https://bugs.launchpad.net/ubuntu/+bug/129952}
+\begin_inset LatexCommand htmlurl
+name "https://bugs.launchpad.net/ubuntu/+bug/129952"
+target "https://bugs.launchpad.net/ubuntu/+bug/129952"
 
 \end_inset
 
@@ -5003,7 +5297,9 @@ Developed Sinhala Phonetic keyboard layouts and a Transliteration scheme.
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
+target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
 
 \end_inset
 
@@ -5011,7 +5307,9 @@ Developed Sinhala Phonetic keyboard layouts and a Transliteration scheme.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html]{http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html"
+target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html"
 
 \end_inset
 
@@ -5019,7 +5317,9 @@ Developed Sinhala Phonetic keyboard layouts and a Transliteration scheme.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html]{http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html"
+target "http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html"
 
 \end_inset
 
@@ -5033,7 +5333,9 @@ Implemented phonetic and transliteration input methods for m17n.
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-dynamic.mim?view=log]{http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-dynamic.mim?view=log}
+\begin_inset LatexCommand htmlurl
+name "http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-dynamic.mim?view=log"
+target "http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-dynamic.mim?view=log"
 
 \end_inset
 
@@ -5041,7 +5343,9 @@ Implemented phonetic and transliteration input methods for m17n.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-static.mim?view=log]{http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-static.mim?view=log}
+\begin_inset LatexCommand htmlurl
+name "http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-static.mim?view=log"
+target "http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-phonetic-static.mim?view=log"
 
 \end_inset
 
@@ -5049,7 +5353,9 @@ Implemented phonetic and transliteration input methods for m17n.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-trans.mim?view=log]{http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-trans.mim?view=log}
+\begin_inset LatexCommand htmlurl
+name "http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-trans.mim?view=log"
+target "http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-trans.mim?view=log"
 
 \end_inset
 
@@ -5070,7 +5376,9 @@ Discovered that the printing problem was due to the font being an OTF font.
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.lug.lk/lurker/message/20050810.094347.8539b8d4.en.html]{http://www.lug.lk/lurker/message/20050810.094347.8539b8d4.en.html}
+\begin_inset LatexCommand htmlurl
+name "http://www.lug.lk/lurker/message/20050810.094347.8539b8d4.en.html"
+target "http://www.lug.lk/lurker/message/20050810.094347.8539b8d4.en.html"
 
 \end_inset
 
@@ -5114,7 +5422,9 @@ Amended ISO639 to include 'Sinhala' in the languages list alongside 'Sinhalese'.
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://www.loc.gov/standards/iso639-2/php/code_list.php]{http://www.loc.gov/standards/iso639-2/php/code_list.php}
+\begin_inset LatexCommand htmlurl
+name "http://www.loc.gov/standards/iso639-2/php/code_list.php"
+target "http://www.loc.gov/standards/iso639-2/php/code_list.php"
 
 \end_inset
 
@@ -5128,7 +5438,9 @@ Reported errors in the SCCII - Part 1: Collation Sequence (SLS1134)
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://sourceforge.net/mailarchive/message.php?msg_id=1163523215.5225.19.camel%40B1.HOME]{http://sourceforge.net/mailarchive/message.php?msg_id=1163523215.5225.19.camel%40B1.HOME}
+\begin_inset LatexCommand htmlurl
+name "http://sourceforge.net/mailarchive/message.php?msg_id=1163523215.5225.19.camel%40B1.HOME"
+target "http://sourceforge.net/mailarchive/message.php?msg_id=1163523215.5225.19.camel%40B1.HOME"
 
 \end_inset
 
@@ -5148,7 +5460,9 @@ Add Sinhala script (Sri Lanka) collation to MySQL
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://bugs.mysql.com/bug.php?id=26474]{http://bugs.mysql.com/bug.php?id=26474}
+\begin_inset LatexCommand htmlurl
+name "http://bugs.mysql.com/bug.php?id=26474"
+target "http://bugs.mysql.com/bug.php?id=26474"
 
 \end_inset
 
@@ -5159,7 +5473,8 @@ Add Sinhala script (Sri Lanka) collation to MySQL
 \end_deeper
 \begin_layout Subsection
 TODO
-\begin_inset LatexCommand \label{Dev-TODO}
+\begin_inset LatexCommand label
+name "Dev-TODO"
 
 \end_inset
 
@@ -5307,7 +5622,8 @@ English Locale for Sri Lanka
 \end_deeper
 \begin_layout Section
 Resources
-\begin_inset LatexCommand \label{Resources}
+\begin_inset LatexCommand label
+name "Resources"
 
 \end_inset
 
@@ -5316,7 +5632,8 @@ Resources
 
 \begin_layout Subsection
 Input Methods
-\begin_inset LatexCommand \label{Res-Input-Methods}
+\begin_inset LatexCommand label
+name "Res-Input-Methods"
 
 \end_inset
 
@@ -5324,7 +5641,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[gtk-im-extra]{http://gtk-im-extra.sourceforge.net/}
+\begin_inset LatexCommand htmlurl
+name "gtk-im-extra"
+target "http://gtk-im-extra.sourceforge.net/"
 
 \end_inset
 
@@ -5332,7 +5651,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[GSwitchIt]{http://gswitchit.sourceforge.net/}
+\begin_inset LatexCommand htmlurl
+name "GSwitchIt"
+target "http://gswitchit.sourceforge.net/"
 
 \end_inset
 
@@ -5340,7 +5661,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[OpenI18N.org: IIIMF project]{http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=30&page=1}
+\begin_inset LatexCommand htmlurl
+name "OpenI18N.org: IIIMF project"
+target "http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=30&page=1"
 
 \end_inset
 
@@ -5348,7 +5671,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Smart Common Input Method Platform]{http://www.scim-im.org/}
+\begin_inset LatexCommand htmlurl
+name "Smart Common Input Method Platform"
+target "http://www.scim-im.org/"
 
 \end_inset
 
@@ -5356,7 +5681,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[X Keyboard Configuration Database]{http://freedesktop.org/wiki/Software/XKeyboardConfig}
+\begin_inset LatexCommand htmlurl
+name "X Keyboard Configuration Database"
+target "http://freedesktop.org/wiki/Software/XKeyboardConfig"
 
 \end_inset
 
@@ -5364,7 +5691,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[X Keyboard Extension]{http://pascal.tsu.ru/en/xkb/}
+\begin_inset LatexCommand htmlurl
+name "X Keyboard Extension"
+target "http://pascal.tsu.ru/en/xkb/"
 
 \end_inset
 
@@ -5372,7 +5701,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[An Unreliable Guide to XKB Configuration]{http://www.charvolant.org/~doug/xkb/html/index.html}
+\begin_inset LatexCommand htmlurl
+name "An Unreliable Guide to XKB Configuration"
+target "http://www.charvolant.org/~doug/xkb/html/index.html"
 
 \end_inset
 
@@ -5380,7 +5711,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[The XKB Configuration Guide]{http://xfree86.org/4.4.0/XKB-Config.html}
+\begin_inset LatexCommand htmlurl
+name "The XKB Configuration Guide"
+target "http://xfree86.org/4.4.0/XKB-Config.html"
 
 \end_inset
 
@@ -5388,7 +5721,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[How to further enhance XKB configuration]{http://xfree86.org/4.4.0/XKB-Enhancing.html}
+\begin_inset LatexCommand htmlurl
+name "How to further enhance XKB configuration"
+target "http://xfree86.org/4.4.0/XKB-Enhancing.html"
 
 \end_inset
 
@@ -5396,7 +5731,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Creating custom keyboard layouts for X11 using XKB]{http://www.linux.com/article.pl?sid=04/06/03/1558258}
+\begin_inset LatexCommand htmlurl
+name "Creating custom keyboard layouts for X11 using XKB"
+target "http://www.linux.com/article.pl?sid=04/06/03/1558258"
 
 \end_inset
 
@@ -5404,7 +5741,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[How to setup international keyboard in X Window with Xmodmap and XKB]{http://www.tldp.org/HOWTO/Intkeyb/}
+\begin_inset LatexCommand htmlurl
+name "How to setup international keyboard in X Window with Xmodmap and XKB"
+target "http://www.tldp.org/HOWTO/Intkeyb/"
 
 \end_inset
 
@@ -5412,7 +5751,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Some hints about xmodmap(1) and the X11 keyboard model]{http://www.in-ulm.de/~mascheck/X11/xmodmap.html}
+\begin_inset LatexCommand htmlurl
+name "Some hints about xmodmap(1) and the X11 keyboard model"
+target "http://www.in-ulm.de/~mascheck/X11/xmodmap.html"
 
 \end_inset
 
@@ -5420,7 +5761,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Using XMODMAP to modify key and mouse actions]{http://web.mit.edu/answers/xwindows/xwindows_xmodmap.html}
+\begin_inset LatexCommand htmlurl
+name "Using XMODMAP to modify key and mouse actions"
+target "http://web.mit.edu/answers/xwindows/xwindows_xmodmap.html"
 
 \end_inset
 
@@ -5428,7 +5771,9 @@ Input Methods
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[XKeyCaps]{http://www.jwz.org/xkeycaps/}
+\begin_inset LatexCommand htmlurl
+name "XKeyCaps"
+target "http://www.jwz.org/xkeycaps/"
 
 \end_inset
 
@@ -5437,7 +5782,8 @@ Input Methods
 
 \begin_layout Subsection
 Internationalisation
-\begin_inset LatexCommand \label{Res-Internationalisation}
+\begin_inset LatexCommand label
+name "Res-Internationalisation"
 
 \end_inset
 
@@ -5445,7 +5791,9 @@ Internationalisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Internationalization (I18n), Localization (L10n), Standards, and Amusements]{http://www.i18nguy.com/}
+\begin_inset LatexCommand htmlurl
+name "Internationalization (I18n), Localization (L10n), Standards, and Amusements"
+target "http://www.i18nguy.com/"
 
 \end_inset
 
@@ -5453,7 +5801,9 @@ Internationalisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[OpenI18N.org: The Free standards Group Open Internationalization Initiative]{http://www.openi18n.org/}
+\begin_inset LatexCommand htmlurl
+name "OpenI18N.org: The Free standards Group Open Internationalization Initiative"
+target "http://www.openi18n.org/"
 
 \end_inset
 
@@ -5461,7 +5811,9 @@ Internationalisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[The Locale Data Markup Language Specification]{http://www.openi18n.org/specs/ldml/}
+\begin_inset LatexCommand htmlurl
+name "The Locale Data Markup Language Specification"
+target "http://www.openi18n.org/specs/ldml/"
 
 \end_inset
 
@@ -5469,7 +5821,9 @@ Internationalisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Pango]{http://www.pango.org/}
+\begin_inset LatexCommand htmlurl
+name "Pango"
+target "http://www.pango.org/"
 
 \end_inset
 
@@ -5477,7 +5831,9 @@ Internationalisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[International Components for Unicode]{http://icu.sourceforge.net/}
+\begin_inset LatexCommand htmlurl
+name "International Components for Unicode"
+target "http://icu.sourceforge.net/"
 
 \end_inset
 
@@ -5485,7 +5841,9 @@ Internationalisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Gtranslator]{http://gtranslator.sourceforge.net/}
+\begin_inset LatexCommand htmlurl
+name "Gtranslator"
+target "http://gtranslator.sourceforge.net/"
 
 \end_inset
 
@@ -5493,7 +5851,9 @@ Internationalisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[m17n]{http://www.m17n.org/}
+\begin_inset LatexCommand htmlurl
+name "m17n"
+target "http://www.m17n.org/"
 
 \end_inset
 
@@ -5501,7 +5861,9 @@ Internationalisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[gucharmap]{http://gucharmap.sourceforge.net/}
+\begin_inset LatexCommand htmlurl
+name "gucharmap"
+target "http://gucharmap.sourceforge.net/"
 
 \end_inset
 
@@ -5509,7 +5871,9 @@ Internationalisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Yudit]{http://www.yudit.org/}
+\begin_inset LatexCommand htmlurl
+name "Yudit"
+target "http://www.yudit.org/"
 
 \end_inset
 
@@ -5518,7 +5882,8 @@ Internationalisation
 
 \begin_layout Subsection
 Localisation
-\begin_inset LatexCommand \label{Res-Localisation}
+\begin_inset LatexCommand label
+name "Res-Localisation"
 
 \end_inset
 
@@ -5526,7 +5891,9 @@ Localisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Ankur - Supporting Bangla (Bengali) on GNU/Linux]{http://www.bengalinux.org/}
+\begin_inset LatexCommand htmlurl
+name "Ankur - Supporting Bangla (Bengali) on GNU/Linux"
+target "http://www.bengalinux.org/"
 
 \end_inset
 
@@ -5534,7 +5901,9 @@ Localisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \url[indLinuX]{http://www.indlinux.org/}
+\begin_inset LatexCommand url
+name "indLinuX"
+target "http://www.indlinux.org/"
 
 \end_inset
 
@@ -5542,7 +5911,9 @@ Localisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Thai Language Supports]{http://linux.thai.net/~thep/}
+\begin_inset LatexCommand htmlurl
+name "Thai Language Supports"
+target "http://linux.thai.net/~thep/"
 
 \end_inset
 
@@ -5550,7 +5921,9 @@ Localisation
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[ZzzThai]{http://www.fedu.uec.ac.jp/ZzzThai/}
+\begin_inset LatexCommand htmlurl
+name "ZzzThai"
+target "http://www.fedu.uec.ac.jp/ZzzThai/"
 
 \end_inset
 
@@ -5559,7 +5932,8 @@ Localisation
 
 \begin_layout Subsection
 Sinhala
-\begin_inset LatexCommand \label{Res-Sinhala}
+\begin_inset LatexCommand label
+name "Res-Sinhala"
 
 \end_inset
 
@@ -5567,7 +5941,9 @@ Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Sinhala HOWTO, Keyboard Layouts and Transliteration Schemes]{http://www.nongnu.org/sinhala/}
+\begin_inset LatexCommand htmlurl
+name "Sinhala HOWTO, Keyboard Layouts and Transliteration Schemes"
+target "http://www.nongnu.org/sinhala/"
 
 \end_inset
 
@@ -5575,7 +5951,9 @@ Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[UCSC: Language Technology Research Lab]{http://www.ucsc.cmb.ac.lk/ltrl/}
+\begin_inset LatexCommand htmlurl
+name "UCSC: Language Technology Research Lab"
+target "http://www.ucsc.cmb.ac.lk/ltrl/"
 
 \end_inset
 
@@ -5583,7 +5961,9 @@ Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[http://sinhala.linux.lk]{http://sinhala.linux.lk}
+\begin_inset LatexCommand htmlurl
+name "http://sinhala.linux.lk"
+target "http://sinhala.linux.lk"
 
 \end_inset
 
@@ -5591,7 +5971,9 @@ Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[sinhala_tex]{http://www.ctan.org/tex-archive/language/sinhala/}
+\begin_inset LatexCommand htmlurl
+name "sinhala_tex"
+target "http://www.ctan.org/tex-archive/language/sinhala/"
 
 \end_inset
 
@@ -5599,7 +5981,9 @@ Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Unicode Compatible Fonts for Sinhala and Tamil]{http://www.fonts.lk/}
+\begin_inset LatexCommand htmlurl
+name "Unicode Compatible Fonts for Sinhala and Tamil"
+target "http://www.fonts.lk/"
 
 \end_inset
 
@@ -5607,7 +5991,9 @@ Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Sinhala Language Kit for Mac OS X]{http://www.xenotypetech.com/osxSinhala.html}
+\begin_inset LatexCommand htmlurl
+name "Sinhala Language Kit for Mac OS X"
+target "http://www.xenotypetech.com/osxSinhala.html"
 
 \end_inset
 
@@ -5615,7 +6001,9 @@ Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Microimage: Helawadana]{http://www.microimage.com/helawadana/}
+\begin_inset LatexCommand htmlurl
+name "Microimage: Helawadana"
+target "http://www.microimage.com/helawadana/"
 
 \end_inset
 
@@ -5623,7 +6011,9 @@ Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Sinhala fonts]{http://cg.scs.carleton.ca/~luc/sinhala.html}
+\begin_inset LatexCommand htmlurl
+name "Sinhala fonts"
+target "http://cg.scs.carleton.ca/~luc/sinhala.html"
 
 \end_inset
 
@@ -5631,7 +6021,9 @@ Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Proposal for encoding the Sinhala script in ISO/IEC 10646]{http://www.evertype.com/standards/si/si.html}
+\begin_inset LatexCommand htmlurl
+name "Proposal for encoding the Sinhala script in ISO/IEC 10646"
+target "http://www.evertype.com/standards/si/si.html"
 
 \end_inset
 
@@ -5639,7 +6031,9 @@ Sinhala
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Mapping of Sinhala between ISO/IEC 10646 and SLS 1134]{http://www.evertype.com/standards/si/iso10646-to-sls1134.html}
+\begin_inset LatexCommand htmlurl
+name "Mapping of Sinhala between ISO/IEC 10646 and SLS 1134"
+target "http://www.evertype.com/standards/si/iso10646-to-sls1134.html"
 
 \end_inset
 
@@ -5648,7 +6042,8 @@ Sinhala
 
 \begin_layout Subsection
 Typography
-\begin_inset LatexCommand \label{Res-Typography}
+\begin_inset LatexCommand label
+name "Res-Typography"
 
 \end_inset
 
@@ -5656,7 +6051,9 @@ Typography
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[TrueType Typography: Info about TTF Fonts and Technology]{http://www.truetype-typography.com/}
+\begin_inset LatexCommand htmlurl
+name "TrueType Typography: Info about TTF Fonts and Technology"
+target "http://www.truetype-typography.com/"
 
 \end_inset
 
@@ -5664,7 +6061,9 @@ Typography
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Microsoft Typography]{http://www.microsoft.com/typography/default.mspx}
+\begin_inset LatexCommand htmlurl
+name "Microsoft Typography"
+target "http://www.microsoft.com/typography/default.mspx"
 
 \end_inset
 
@@ -5672,7 +6071,9 @@ Typography
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Introduction to OpenType]{http://www.adobe.com/type/opentype/index.html}
+\begin_inset LatexCommand htmlurl
+name "Introduction to OpenType"
+target "http://www.adobe.com/type/opentype/index.html"
 
 \end_inset
 
@@ -5680,7 +6081,9 @@ Typography
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[scripts.sil.org: Computers and Writing Systems]{http://scripts.sil.org/}
+\begin_inset LatexCommand htmlurl
+name "scripts.sil.org: Computers and Writing Systems"
+target "http://scripts.sil.org/"
 
 \end_inset
 
@@ -5688,7 +6091,9 @@ Typography
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[TrueType/OpenType Tools]{http://home.kabelfoon.nl/~slam/fonts/}
+\begin_inset LatexCommand htmlurl
+name "TrueType/OpenType Tools"
+target "http://home.kabelfoon.nl/~slam/fonts/"
 
 \end_inset
 
@@ -5696,7 +6101,9 @@ Typography
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[FontForge]{http://fontforge.sourceforge.net/}
+\begin_inset LatexCommand htmlurl
+name "FontForge"
+target "http://fontforge.sourceforge.net/"
 
 \end_inset
 
@@ -5704,7 +6111,9 @@ Typography
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[ Converting a legacy ASCII based Indic font to an Unicode compliant Open Type Font]{http://sayamindu.randomink.org/conv_guide/}
+\begin_inset LatexCommand htmlurl
+name " Converting a legacy ASCII based Indic font to an Unicode compliant Open Type Font"
+target "http://sayamindu.randomink.org/conv_guide/"
 
 \end_inset
 
@@ -5712,7 +6121,9 @@ Typography
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[TTX/FontTools]{http://sourceforge.net/projects/fonttools/}
+\begin_inset LatexCommand htmlurl
+name "TTX/FontTools"
+target "http://sourceforge.net/projects/fonttools/"
 
 \end_inset
 
@@ -5720,7 +6131,9 @@ Typography
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Xfree86.org: fonts]{http://www.xfree86.org/current/fonts.html}
+\begin_inset LatexCommand htmlurl
+name "Xfree86.org: fonts"
+target "http://www.xfree86.org/current/fonts.html"
 
 \end_inset
 
@@ -5728,7 +6141,9 @@ Typography
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[FreeType2 Font Engine Documentation]{http://www.freetype.org/freetype2/documentation.html}
+\begin_inset LatexCommand htmlurl
+name "FreeType2 Font Engine Documentation"
+target "http://www.freetype.org/freetype2/documentation.html"
 
 \end_inset
 
@@ -5736,7 +6151,9 @@ Typography
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \url[Free UCS Outline Fonts]{http://www.nongnu.org/freefont/}
+\begin_inset LatexCommand url
+name "Free UCS Outline Fonts"
+target "http://www.nongnu.org/freefont/"
 
 \end_inset
 
@@ -5744,7 +6161,9 @@ Typography
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[The GNU Unicode Font Project]{http://tech.groups.yahoo.com/group/gnu-unifont/}
+\begin_inset LatexCommand htmlurl
+name "The GNU Unicode Font Project"
+target "http://tech.groups.yahoo.com/group/gnu-unifont/"
 
 \end_inset
 
@@ -5753,7 +6172,8 @@ Typography
 
 \begin_layout Subsection
 Unicode
-\begin_inset LatexCommand \label{Res-Unicode}
+\begin_inset LatexCommand label
+name "Res-Unicode"
 
 \end_inset
 
@@ -5761,7 +6181,9 @@ Unicode
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[Script Encoding Initiative]{http://www.linguistics.berkeley.edu/~dwanders/}
+\begin_inset LatexCommand htmlurl
+name "Script Encoding Initiative"
+target "http://www.linguistics.berkeley.edu/~dwanders/"
 
 \end_inset
 
@@ -5769,7 +6191,9 @@ Unicode
 \end_layout
 
 \begin_layout Itemize
-\begin_inset LatexCommand \htmlurl[unicode@unicode.org mail archive]{http://www.mail-archive.com/unicode@unicode.org/}
+\begin_inset LatexCommand htmlurl
+name "unicode@unicode.org mail archive"
+target "http://www.mail-archive.com/unicode@unicode.org/"
 
 \end_inset
 
@@ -5778,7 +6202,8 @@ Unicode
 
 \begin_layout Section
 Conclusion
-\begin_inset LatexCommand \label{Conclusion}
+\begin_inset LatexCommand label
+name "Conclusion"
 
 \end_inset
 
