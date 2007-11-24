@@ -1534,6 +1534,18 @@ Open Type Fonts
 
 \end_layout
 
+\begin_layout Standard
+You can use this PHP script to generate Unicode Sinhala letters:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand \htmlurl[http://cvs.savannah.nongnu.org/viewvc/*checkout*/sinhala/utils/gen-unicode-sinhala.php?root=sinhala]{http://cvs.savannah.nongnu.org/viewvc/*checkout*/sinhala/utils/gen-unicode-sinhala.php?root=sinhala}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 List of feature tags
 \end_layout
