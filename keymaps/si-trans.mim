@@ -1,7 +1,7 @@
 ;; si-trans.mim -- Sinhala transliteration keymap
 ;; m17n Keymap file for Sinhala (Sri Lanka) (2007-07-08)
 ;; Maintainer: Harshula Jayasuriya <harshula@gmail.com>
-;; Last Updated: 2007-11-17
+;; Last Updated: 2007-11-27
 ;; This is a transliteration mapping for a standard US-English keyboard
 ;; (qwerty)
 ;; http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html
@@ -131,6 +131,6 @@
  )
  (second
   (dependent (shift init))
-  (rakyan (shift second))
+  (rakyan)
  )
 )
