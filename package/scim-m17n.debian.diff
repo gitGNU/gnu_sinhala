@@ -1,3 +1,13 @@
+--- scim-m17n-0.2.2.orig/src/scim_m17n_imengine.cpp
++++ scim-m17n-0.2.2/src/scim_m17n_imengine.cpp
+@@ -28,6 +28,7 @@
+ #define Uses_SCIM_LOOKUP_TABLE
+ #define Uses_SCIM_CONFIG_BASE
+ #define Uses_STL_MAP
++#define Uses_C_STRING
+ 
+ #ifdef HAVE_CONFIG_H
+   #include <config.h>
 --- scim-m17n-0.2.2.orig/debian/control
 +++ scim-m17n-0.2.2/debian/control
 @@ -0,0 +1,22 @@
@@ -5,13 +15,13 @@
 +Section: utils
 +Priority: optional
 +Maintainer: Harshula Jayasuriya <harshula@gmail.com>
-+Uploaders: Osamu Aoki <osamu@debian.org>, Ming Hua <minghua@rice.edu>
++Uploaders: Osamu Aoki <osamu@debian.org>, Ming Hua <minghua-guest@users.alioth.debian.org>
 +Build-Depends: debhelper (>= 5.0.0), autotools-dev, pkg-config, libscim-dev (>= 1.4.6), libm17n-dev
-+Standards-Version: 3.7.2.2
++Standards-Version: 3.7.3
 +
 +Package: scim-m17n
 +Architecture: any
-+Depends: ${shlibs:Depends}, scim
++Depends: ${shlibs:Depends}, ${misc:Depends}, scim
 +Description: M17N Input Method Engine for SCIM
 + SCIM (Smart Common Input Method) is an input method (IM) platform.
 + .
@@ -78,7 +88,17 @@
 +is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
 --- scim-m17n-0.2.2.orig/debian/changelog
 +++ scim-m17n-0.2.2/debian/changelog
-@@ -0,0 +1,44 @@
+@@ -0,0 +1,54 @@
++scim-m17n (0.2.2-3) unstable; urgency=low
++
++  * Adding ${misc:Depends} as per debhelper(7). (Closes: #438703)
++  * Prepare package for gcc 4.3 by adding #include (Closes: #454894)
++  * Update the uploader's email address as per:
++    http://bugs.debian.org/cgi-bin/bugreport.cgi?msg=20;bug=454894
++  * Update Standards-Version to Debian Policy 3.7.3, no changes required.
++
++ -- Harshula Jayasuriya <harshula@gmail.com>  Tue, 18 Dec 2007 11:15:59 +1100
++
 +scim-m17n (0.2.2-2) unstable; urgency=low
 +
 +  * Updating the maintainer/uploader fields as per:
