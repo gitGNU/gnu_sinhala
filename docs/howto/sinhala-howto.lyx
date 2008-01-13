@@ -485,32 +485,6 @@ target "https://lists.sourceforge.net/lists/listinfo/sinhala-technical"
 \end_layout
 
 \begin_layout Subsubsection
-Sinhala Linux List (in English for users)
-\end_layout
-
-\begin_layout Itemize
-Archive: 
-\begin_inset LatexCommand htmlurl
-name "http://www.lug.lk/lurker/list/sinhala.en.html"
-target "http://www.lug.lk/lurker/list/sinhala.en.html"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Subscribe: 
-\begin_inset LatexCommand htmlurl
-name "https://secure.lug.lk/mailman/listinfo/sinhala"
-target "https://secure.lug.lk/mailman/listinfo/sinhala"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
 Sinhala Unicode List (in Sinhala for developers and users)
 \end_layout
 
@@ -3335,7 +3309,23 @@ Sinhala tailoring rules
 \begin_layout Standard
 The first tailoring rule is the minimal description of Sinhala tailoring.
  The second tailoring rule is the complete description of Sinhala tailoring
- as required by MySQL.
+ as required by MySQL
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+\begin_inset LatexCommand htmlurl
+name "http://lists.mysql.com/internals/34303"
+target "http://lists.mysql.com/internals/34303"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Code
@@ -4839,6 +4829,16 @@ dpkg-source -b <dir>
 on the untarred Debianized source tree.
  Remember to leave the renamed original source tarball of the package in
  the parent directory.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Don't forget to sign the source package:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+debsign -m<maintainer> <name>.dsc
 \end_layout
 
 \end_deeper
