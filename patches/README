@@ -42,7 +42,7 @@ pango-1.6.0-sinhala1.patch
 pango-1.6.0-sinhala2.patch
 pango-1.8.0-sinhala3.patch
 pango-1.8.1-sinhala4.patch
-http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298
+http://bugs.icu-project.org/trac/ticket/4298
 --------------------------------------------------------------------
 5) icu-3.4-sinhala1.patch
 Problems due to (6)
@@ -52,7 +52,7 @@ icu-sinhala-rendering.txt
 
 This patch is based on:
 icu-2.6-oo-sinhala1.patch
-http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057
+http://bugs.icu-project.org/trac/ticket/5057
 --------------------------------------------------------------------
 6)
 http://qa.openoffice.org/issues/show_bug.cgi?id=68047
@@ -87,6 +87,11 @@ patch is only superficial because Pango doesn't appear to ever
 use the worst case expansion value, unlike ICU.
 --------------------------------------------------------------------
 11) pango-1.16.4-cursor-position-sinhala1.patch
+http://bugzilla.gnome.org/show_bug.cgi?id=451682
 
 cursor-position-testcase.txt
+--------------------------------------------------------------------
+12) icu-3.8.1-sinhala-fix-matra-segmentation.patch
+
+matra-segmentation-testcase.txt
 --------------------------------------------------------------------
