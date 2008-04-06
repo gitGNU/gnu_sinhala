@@ -92,6 +92,8 @@ http://bugzilla.gnome.org/show_bug.cgi?id=451682
 cursor-position-testcase.txt
 --------------------------------------------------------------------
 12) icu-3.8.1-sinhala-fix-matra-segmentation.patch
+http://bugs.icu-project.org/trac/ticket/6232
 
+matra-segmentation-testcase-correct-oo.png
 matra-segmentation-testcase.txt
 --------------------------------------------------------------------
