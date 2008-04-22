@@ -1,4 +1,4 @@
-#LyX 1.5.2 created this file. For more info see http://www.lyx.org/
+#LyX 1.5.4 created this file. For more info see http://www.lyx.org/
 \lyxformat 276
 \begin_document
 \begin_header
@@ -1741,7 +1741,7 @@ If you wish to use TeX font glyphs to create a new font, mftrace will be
 \end_layout
 
 \begin_layout Subsection
-Renderer
+Renderer (Layout Engine)
 \begin_inset LatexCommand label
 name "Dev-Renderer"
 
@@ -1893,8 +1893,8 @@ status open
 
 \begin_layout Standard
 \begin_inset LatexCommand htmlurl
-name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298"
-target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298"
+name "http://bugs.icu-project.org/trac/ticket/4298"
+target "http://bugs.icu-project.org/trac/ticket/4298"
 
 \end_inset
 
@@ -1913,8 +1913,8 @@ status open
 
 \begin_layout Standard
 \begin_inset LatexCommand htmlurl
-name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711"
-target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711"
+name "http://bugs.icu-project.org/trac/ticket/4711"
+target "http://bugs.icu-project.org/trac/ticket/4711"
 
 \end_inset
 
@@ -1929,8 +1929,8 @@ status open
 
 \begin_layout Standard
 \begin_inset LatexCommand htmlurl
-name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057"
-target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057"
+name "http://bugs.icu-project.org/trac/ticket/5057"
+target "http://bugs.icu-project.org/trac/ticket/5057"
 
 \end_inset
 
@@ -1943,48 +1943,11 @@ target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057"
 \end_layout
 
 \begin_layout Paragraph
-Patches:
-\end_layout
-
-\begin_layout Itemize
-ICU 2.6 Sinhala patch 
-\begin_inset LatexCommand htmlurl
-name "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-2.6-oo-sinhala1.patch?root=sinhala"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-2.6-oo-sinhala1.patch?root=sinhala"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-ICU 3.4 Sinhala patch 
-\begin_inset LatexCommand htmlurl
-name "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.4-sinhala1.patch?root=sinhala"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.4-sinhala1.patch?root=sinhala"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-ICU 3.6 Sinhala patch 
-\begin_inset LatexCommand htmlurl
-name "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.6-sinhala1.patch?root=sinhala"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-3.6-sinhala1.patch?root=sinhala"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Paragraph
 Split dependent vowel modifier (diga o) issue
 \end_layout
 
 \begin_layout Standard
-There's an issue with U+0DDD (dependent vowel diga o) that can cause Open
+There was an issue with U+0DDD (dependent vowel diga o) that can cause Open
  Office to crash.
  Opening this text file will crash Open Office and ICU 3.6:
 \end_layout
@@ -2010,15 +1973,15 @@ la)(al-lakuna) which are 4 glyphs.
 \end_layout
 
 \begin_layout Standard
-Caolan McNamara also found and fixed this bug.
+Caolan McNamara also found this bug and fixed it first.
  
 \begin_inset Foot
 status open
 
 \begin_layout Standard
 \begin_inset LatexCommand htmlurl
-name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5501"
-target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5501"
+name "http://bugs.icu-project.org/trac/ticket/5501"
+target "http://bugs.icu-project.org/trac/ticket/5501"
 
 \end_inset
 
@@ -4852,6 +4815,16 @@ Ubuntu
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
+name "Packaging Guide"
+target "https://wiki.ubuntu.com/PackagingGuide"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
 name "MOTU/Packages/New"
 target "https://wiki.ubuntu.com/MOTU/Packages/New"
 
@@ -4871,7 +4844,12 @@ name "Dev-DONE"
 \end_layout
 
 \begin_layout Itemize
-Renderer
+Renderer (Layout Engine)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Pango
 \end_layout
 
 \begin_deeper
@@ -4892,8 +4870,15 @@ target "http://bugzilla.gnome.org/show_bug.cgi?id=161981"
 
 \end_deeper
 \begin_layout Itemize
-Inform bengalinux-core team the implications of the fix to bugzilla.gnome.org's
- bug 145233
+Inform bengalinux-core team the implications of the fix to Pango Bug 145233
+ – Zero-width non-joiner is displayed (
+\begin_inset LatexCommand htmlurl
+name "http://bugzilla.gnome.org/show_bug.cgi?id=145233"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=145233"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_deeper
@@ -4925,18 +4910,52 @@ target "http://bugzilla.gnome.org/show_bug.cgi?id=302577"
 
 \end_deeper
 \begin_layout Itemize
-Convince Pango and ICU maintainers to emit ZWJ to the font lookup stage.
+Create and submit Pango patch - Worst case expansion for Sinhala
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://bugzilla.gnome.org/show_bug.cgi?id=385321"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=385321"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Create and submit Pango patch - Cursor positioning for Sinhala is broken
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://bugzilla.gnome.org/show_bug.cgi?id=451682"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=451682"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+ICU
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Provide test files and images for ICU Sinhala support
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset LatexCommand url
-name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298"
-target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298"
+\begin_inset LatexCommand htmlurl
+name "http://bugs.icu-project.org/trac/ticket/4298"
+target "http://bugs.icu-project.org/trac/ticket/4298"
 
 \end_inset
 
@@ -4945,14 +4964,29 @@ target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4298"
 
 \end_deeper
 \begin_layout Itemize
-ICU: ZWJ Processing in Sinhala
+Convince Pango and ICU maintainers to emit ZWJ to the font lookup stage.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ICU: ZWJ Processing in Sinhala / Implement PR 37 ZWJ/ZWNJ Behavior
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
-name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4710"
-target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4710"
+name "http://bugs.icu-project.org/trac/ticket/4710"
+target "http://bugs.icu-project.org/trac/ticket/4710"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://bugs.icu-project.org/trac/ticket/4711"
+target "http://bugs.icu-project.org/trac/ticket/4711"
 
 \end_inset
 
@@ -4960,31 +4994,16 @@ target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4710"
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
-ICU: Implement PR 37 ZWJ/ZWNJ Behavior
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711"
-target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=4711"
-
-\end_inset
-
-
-\end_layout
-
 \end_deeper
 \begin_layout Itemize
-ICU: Indic Reordering State Table Allows ZWJ Virama ZWJ
+Find ICU bug - Indic Reordering State Table Allows ZWJ Virama ZWJ
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
-name "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057"
-target "http://dev.icu-project.org/cgi-bin/icu-bugs?findid=5057"
+name "http://bugs.icu-project.org/trac/ticket/5057"
+target "http://bugs.icu-project.org/trac/ticket/5057"
 
 \end_inset
 
@@ -5009,6 +5028,29 @@ target "http://www.redhat.com/archives/fedora-cvs-commits/2006-May/msg00126.html
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Create and submit ICU patch - SF_MPRE_FIXUP causing conjuncts to be split
+ in Sinhala
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://bugs.icu-project.org/trac/ticket/6232"
+target "http://bugs.icu-project.org/trac/ticket/6232"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Open Office
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Discovered Open Office was filtering ZWJ
 \end_layout
@@ -5043,38 +5085,6 @@ target "http://qa.openoffice.org/issues/show_bug.cgi?id=68047"
 
 \end_deeper
 \begin_layout Itemize
-Epiphany - Add si (Sinhala) to the list of locales requiring Pango
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "http://bugzilla.gnome.org/show_bug.cgi?id=361538"
-target "http://bugzilla.gnome.org/show_bug.cgi?id=361538"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Ubuntu - Add si (Sinhala) to the list of locales requiring Pango
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "https://launchpad.net/distros/ubuntu/+source/firefox/+bug/66270/"
-target "https://launchpad.net/distros/ubuntu/+source/firefox/+bug/66270/"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
 Inform of Open Office filtering ZWJ and ZWNJ - Incorrect Bengali rendering
  of ra+japhala
 \end_layout
@@ -5092,23 +5102,8 @@ target "https://launchpad.net/distros/debian/+source/icu/+bug/35085"
 
 \end_deeper
 \begin_layout Itemize
-Pango - Worst case expansion for Sinhala
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "http://bugzilla.gnome.org/show_bug.cgi?id=385321"
-target "http://bugzilla.gnome.org/show_bug.cgi?id=385321"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Debian Open Office - The zero width joiner shouldn't be filtered out 
+Inform Debian of Open Office bug - The zero width joiner shouldn't be filtered
+ out 
 \end_layout
 
 \begin_deeper
@@ -5123,15 +5118,34 @@ target "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=403275"
 \end_layout
 
 \end_deeper
+\end_deeper
 \begin_layout Itemize
-Create and submit Pango patch - Cursor positioning for Sinhala is broken
+Create and submit Epiphany patch - Add si (Sinhala) to the list of locales
+ requiring Pango
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
-name "http://bugzilla.gnome.org/show_bug.cgi?id=451682"
-target "http://bugzilla.gnome.org/show_bug.cgi?id=451682"
+name "http://bugzilla.gnome.org/show_bug.cgi?id=361538"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=361538"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Create and submit Ubuntu Firefox patch - Add si (Sinhala) to the list of
+ locales requiring Pango
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "https://launchpad.net/distros/ubuntu/+source/firefox/+bug/66270/"
+target "https://launchpad.net/distros/ubuntu/+source/firefox/+bug/66270/"
 
 \end_inset
 
@@ -5482,7 +5496,7 @@ name "Dev-TODO"
 \end_layout
 
 \begin_layout Itemize
-Renderer
+Renderer (Layout Engine)
 \end_layout
 
 \begin_deeper
