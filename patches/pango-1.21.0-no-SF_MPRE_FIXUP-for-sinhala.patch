@@ -1,0 +1,13 @@
+Index: modules/indic/indic-ot-class-tables.c
+===================================================================
+--- modules/indic/indic-ot-class-tables.c	(revision 2619)
++++ modules/indic/indic-ot-class-tables.c	(working copy)
+@@ -271,7 +271,7 @@
+ #define TELU_SCRIPT_FLAGS (SF_MATRAS_AFTER_BASE | 3)
+ #define KNDA_SCRIPT_FLAGS (SF_MATRAS_AFTER_BASE | 3)
+ #define MLYM_SCRIPT_FLAGS (SF_MPRE_FIXUP | SF_NO_POST_BASE_LIMIT | SF_PROCESS_ZWJ)
+-#define SINH_SCRIPT_FLAGS (SF_MPRE_FIXUP | SF_NO_POST_BASE_LIMIT | SF_PROCESS_ZWJ)
++#define SINH_SCRIPT_FLAGS (SF_NO_POST_BASE_LIMIT | SF_PROCESS_ZWJ)
+ 
+ /*
+  * Indic Class Tables

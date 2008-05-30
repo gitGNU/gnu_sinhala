@@ -97,3 +97,5 @@ http://bugs.icu-project.org/trac/ticket/6232
 matra-segmentation-testcase-correct-oo.png
 matra-segmentation-testcase.txt
 --------------------------------------------------------------------
+13) pango-1.21.0-no-SF_MPRE_FIXUP-for-sinhala.patch
+--------------------------------------------------------------------
