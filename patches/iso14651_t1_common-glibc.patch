@@ -1,0 +1,92 @@
+--- iso14651_t1_common.orig	2008-08-27 22:11:28.000000000 +1000
++++ iso14651_t1_common	2008-08-27 22:20:38.000000000 +1000
+@@ -3968,6 +3968,89 @@
+ <U0CD6> <k-ai_lenght_mark>;<BAS>;<MIN>;IGNORE
+ <U0CBC> IGNORE;<KNKT>;<MIN>;IGNORE
+ 
++order_start forward
++# SCCII Part 1 : Collation Sequence (SLS1134)
++<U0DF4>
++<U0D85>
++<U0D86>
++<U0D87>
++<U0D88>
++<U0D89>
++<U0D8A>
++<U0D8B>
++<U0D8C>
++<U0D8D>
++<U0D8E>
++<U0D8F>
++<U0D90>
++<U0D91>
++<U0D92>
++<U0D93>
++<U0D94>
++<U0D95>
++<U0D96>
++<U0D82>
++<U0D83>
++<U0D9A>
++<U0D9B>
++<U0D9C>
++<U0D9D>
++<U0D9E>
++<U0D9F>
++<U0DA0>
++<U0DA1>
++<U0DA2>
++<U0DA3>
++<U0DA5>
++<U0DA4>
++<U0DA6>
++<U0DA7>
++<U0DA8>
++<U0DA9>
++<U0DAA>
++<U0DAB>
++<U0DAC>
++<U0DAD>
++<U0DAE>
++<U0DAF>
++<U0DB0>
++<U0DB1>
++<U0DB3>
++<U0DB4>
++<U0DB5>
++<U0DB6>
++<U0DB7>
++<U0DB8>
++<U0DB9>
++<U0DBA>
++<U0DBB>
++<U0DBD>
++<U0DC0>
++<U0DC1>
++<U0DC2>
++<U0DC3>
++<U0DC4>
++<U0DC5>
++<U0DC6>
++<U0DCF>
++<U0DD0>
++<U0DD1>
++<U0DD2>
++<U0DD3>
++<U0DD4>
++<U0DD6>
++<U0DD8>
++<U0DF2>
++<U0DDF>
++<U0DF3>
++<U0DD9>
++<U0DDA>
++<U0DDB>
++<U0DDC>
++<U0DDD>
++<U0DDE>
++<U0DCA>
++
+ order_end
+ 
+ END LC_COLLATE
