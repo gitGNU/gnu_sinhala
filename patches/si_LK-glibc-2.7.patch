@@ -1,0 +1,104 @@
+--- si_LK.orig	2006-07-31 08:19:43.000000000 +1000
++++ si_LK	2008-05-19 00:05:50.000000000 +1000
+@@ -4,6 +4,7 @@
+ % Charset: UTF-8
+ % Contributed by Anuradha Ratnaweera <anuradha at gnu org>
+ % and Himira Ratnatilake <himira at linux lk>
++% LC_COLLATE contributed by Harshula Jayasuriya <harshula@gmail.com>
+ 
+ LC_IDENTIFICATION
+ title      "Sinhala language locale for Sri Lanka"
+@@ -41,10 +42,89 @@
+ END LC_CTYPE
+ 
+ LC_COLLATE
+-
+-% Copy the template from ISO/IEC 14651
+-copy "iso14651_t1"
+-
++% SCCII Part 1 : Collation Sequence (SLS1134)
++order_start forward
++<U0DF4>
++<U0D85>
++<U0D86>
++<U0D87>
++<U0D88>
++<U0D89>
++<U0D8A>
++<U0D8B>
++<U0D8C>
++<U0D8D>
++<U0D8E>
++<U0D8F>
++<U0D90>
++<U0D91>
++<U0D92>
++<U0D93>
++<U0D94>
++<U0D95>
++<U0D96>
++<U0D82>
++<U0D83>
++<U0D9A>
++<U0D9B>
++<U0D9C>
++<U0D9D>
++<U0D9E>
++<U0D9F>
++<U0DA0>
++<U0DA1>
++<U0DA2>
++<U0DA3>
++<U0DA5>
++<U0DA4>
++<U0DA6>
++<U0DA7>
++<U0DA8>
++<U0DA9>
++<U0DAA>
++<U0DAB>
++<U0DAC>
++<U0DAD>
++<U0DAE>
++<U0DAF>
++<U0DB0>
++<U0DB1>
++<U0DB3>
++<U0DB4>
++<U0DB5>
++<U0DB6>
++<U0DB7>
++<U0DB8>
++<U0DB9>
++<U0DBA>
++<U0DBB>
++<U0DBD>
++<U0DC0>
++<U0DC1>
++<U0DC2>
++<U0DC3>
++<U0DC4>
++<U0DC5>
++<U0DC6>
++<U0DCF>
++<U0DD0>
++<U0DD1>
++<U0DD2>
++<U0DD3>
++<U0DD4>
++<U0DD6>
++<U0DD8>
++<U0DF2>
++<U0DDF>
++<U0DF3>
++<U0DD9>
++<U0DDA>
++<U0DDB>
++<U0DDC>
++<U0DDD>
++<U0DDE>
++<U0DCA>
++order_end
+ END LC_COLLATE
+ 
+ 
