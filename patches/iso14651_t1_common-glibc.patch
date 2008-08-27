@@ -1,10 +1,18 @@
 --- iso14651_t1_common.orig	2008-08-27 22:11:28.000000000 +1000
-+++ iso14651_t1_common	2008-08-27 22:20:38.000000000 +1000
-@@ -3968,6 +3968,89 @@
++++ iso14651_t1_common	2008-08-28 00:23:32.000000000 +1000
+@@ -65,6 +65,7 @@
+ script <TELUGU>
+ script <GURUMUKHI>
+ script <KANNADA>
++script <SINHALA>
+ 
+ # Déclaration des symboles internes / Declaration of internal symbols
+ #
+@@ -3968,6 +3969,89 @@
  <U0CD6> <k-ai_lenght_mark>;<BAS>;<MIN>;IGNORE
  <U0CBC> IGNORE;<KNKT>;<MIN>;IGNORE
  
-+order_start forward
++order_start <SINHALA>;forward;forward;forward;forward,position
 +# SCCII Part 1 : Collation Sequence (SLS1134)
 +<U0DF4>
 +<U0D85>
