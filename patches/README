@@ -99,3 +99,11 @@ matra-segmentation-testcase.txt
 --------------------------------------------------------------------
 13) pango-1.21.0-no-SF_MPRE_FIXUP-for-sinhala.patch
 --------------------------------------------------------------------
+14) iso14651_t1_common-glibc.patch
+
+mysql-data-sinhala.txt
+glibc-collation-correct.txt
+
+This patch is based on:
+si_LK-glibc-2.7.patch
+--------------------------------------------------------------------
