@@ -1,4 +1,4 @@
-#LyX 1.5.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.5.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 276
 \begin_document
 \begin_header
@@ -111,6 +111,14 @@ status open
 \end_layout
 
 \begin_layout Revision
+0.7
+\end_layout
+
+\begin_layout Date
+2008/09/01
+\end_layout
+
+\begin_layout Revision
 0.6
 \end_layout
 
@@ -192,8 +200,8 @@ name "Introduction"
 \end_layout
 
 \begin_layout Standard
-The level of Sinhala support in GNU/Linux distributions have improved significan
-tly.
+The level of Sinhala support in GNU/Linux distributions has improved significant
+ly.
  On most modern distributions, simply installing a Unicode Sinhala font
  should be sufficient to read and type in Sinhala.
 \end_layout
@@ -201,19 +209,8 @@ tly.
 \begin_layout Standard
 Debian 4.0 (Etch) and Ubuntu 7.04 (Feisty) ship with Unicode Sinhala (SLS1134)
  support on the desktop.
- This includes Sinhala support in the web browser, Firefox [
-\begin_inset LatexCommand ref
-reference "Enable-Firefox-Mozilla"
-
-\end_inset
-
-], and the office suite, Open Office [
-\begin_inset LatexCommand ref
-reference "Enable-Open-Office"
-
-\end_inset
-
-].
+ This includes Sinhala support in the web browser, Firefox, and the office
+ suite, Open Office.
  Both distributions ship with a phonetic Sinhala keyboard layout and a basic,
  incomplete, Unicode Sinhala font [
 \begin_inset LatexCommand ref
@@ -433,32 +430,6 @@ Please search the archives for the answers to your questions before posting
 \end_layout
 
 \begin_layout Subsubsection
-Sinhala CVS Commits List (in English for developers)
-\end_layout
-
-\begin_layout Itemize
-Archive: 
-\begin_inset LatexCommand htmlurl
-name "http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-cvs-commits"
-target "http://sourceforge.net/mailarchive/forum.php?forum_name=sinhala-cvs-commits"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Subscribe: 
-\begin_inset LatexCommand htmlurl
-name "https://lists.sourceforge.net/lists/listinfo/sinhala-cvs-commits"
-target "https://lists.sourceforge.net/lists/listinfo/sinhala-cvs-commits"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
 Sinhala Technical List (in English for developers)
 \end_layout
 
@@ -512,7 +483,7 @@ name "Intro-Contributors"
 Many individuals have contributed to the project that began in 2003 on an
  
 \begin_inset LatexCommand htmlurl
-name "LKLUG"
+name "lug.lk"
 target "http://www.lug.lk/"
 
 \end_inset
@@ -556,9 +527,9 @@ name "Enabling-Sinhala"
 \end_layout
 
 \begin_layout Subsection
-Debian and Ubuntu Sinhala repositories
+Short Answer
 \begin_inset LatexCommand label
-name "Enable-Debian-and-Ubuntu"
+name "sec:Enabling-Sinhala-Short"
 
 \end_inset
 
@@ -566,100 +537,71 @@ name "Enable-Debian-and-Ubuntu"
 \end_layout
 
 \begin_layout Subsubsection
-What is available?
+Debian 5.0 (Lenny) and Above
 \end_layout
 
-\begin_layout Itemize
-LKLUG Unicode Sinhala font
-\end_layout
-
-\begin_layout Itemize
-SCIM transliterated input method
+\begin_layout Enumerate
+As root/superuser run,
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Automatically sets the required environment variables in /etc/environment
+\begin_layout Code
+apt-get install ttf-sinhala-lklug scim scim-gtk2-immodule im-switch scim-m17n
+ m17n-db m17n-contrib
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+From your user account (i.e.
+ not root) run,
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+im-switch -s scim-immodule
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Logout and login again.
+ Environment variables need to be set/updated (NO NEED TO REBOOT)
+\end_layout
+
 \begin_layout Subsubsection
-How to install
+Ubuntu 8.10 (Intrepid) and Above
 \end_layout
 
 \begin_layout Enumerate
-Add to /etc/apt/sources.list
+The Universe repository should already be enabled (
+\begin_inset LatexCommand htmlurl
+name "https://wiki.ubuntu.com/AlwaysEnableUniverseMultiverse"
+target "https://wiki.ubuntu.com/AlwaysEnableUniverseMultiverse"
+
+\end_inset
+
+).
+ If not, first enable the Universe repository.
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
-On Debian 4.0 (Etch)
-\end_layout
-
-\begin_deeper
-\begin_layout Code
-deb http://sinhala.sourceforge.net/debian/i386/etch/ ./
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-On Debian testing (Lenny)
+As root/superuser run,
 \end_layout
 
 \begin_deeper
 \begin_layout Code
-deb http://sinhala.sourceforge.net/debian/i386/lenny/ ./
+apt-get install ttf-sinhala-lklug scim scim-gtk2-immodule im-switch scim-m17n
+ m17n-db m17n-contrib language-pack-si-base
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-On Ubuntu 7.10 (Gutsy) i386
+From your user account (i.e.
+ not root) run,
 \end_layout
 
 \begin_deeper
 \begin_layout Code
-deb http://sinhala.sourceforge.net/ubuntu/i386/gutsy/ ./
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-On Ubuntu 7.10 (Gutsy) amd64
-\end_layout
-
-\begin_deeper
-\begin_layout Code
-deb http://sinhala.sourceforge.net/ubuntu/amd64/gutsy/ ./
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
-Update repository metadata:
-\end_layout
-
-\begin_deeper
-\begin_layout Code
-apt-get update
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Install Sinhala packages:
-\end_layout
-
-\begin_deeper
-\begin_layout Code
-apt-get install sinhala-gnu-linux
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Upgrade relevant packages:
-\end_layout
-
-\begin_deeper
-\begin_layout Code
-apt-get upgrade
+im-switch -s scim-immodule
 \end_layout
 
 \end_deeper
@@ -673,21 +615,59 @@ How to test
 \end_layout
 
 \begin_layout Enumerate
-Visit http://si.wikipedia.org/ and see if the Sinhala letters render correctly.
+Visit 
+\begin_inset LatexCommand htmlurl
+name "http://si.wikipedia.org/"
+target "http://si.wikipedia.org/"
+
+\end_inset
+
+ and see if the Sinhala letters render correctly.
 \end_layout
 
 \begin_layout Enumerate
-Copy and paste some of the content from Sinhala wikipedia to Open Office
+Copy and paste some of the content from Sinhala Wikipedia to Open Office
  Writer.
  Then highlight the Sinhala text and choose the LKLUG font to display them.
 \end_layout
 
 \begin_layout Enumerate
-To test SCIM, press Control-space whilst you are running a GNOME application.
+To test typing, press Control-space whilst you are running a GNOME application.
  Then select one of the Sinhala input methods.
 \end_layout
 
 \begin_layout Subsection
+Long Answer
+\begin_inset LatexCommand label
+name "sec:Enabling-Sinhala-Long"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First follow all the instructions in 
+\begin_inset LatexCommand ref
+reference "sec:Enabling-Sinhala-Short"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The latest Sinhala patched packages and programs can be found at 
+\begin_inset LatexCommand htmlurl
+name "http://sinhala.sourceforge.net/"
+target "http://sinhala.sourceforge.net/"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
 Fonts
 \begin_inset LatexCommand label
 name "Enable-Fonts"
@@ -698,7 +678,8 @@ name "Enable-Fonts"
 \end_layout
 
 \begin_layout Standard
-Download a Unicode Sinhala font:
+If your distribution does not contain a Sinhala font package, then download
+ a Unicode Sinhala font:
 \end_layout
 
 \begin_layout Itemize
@@ -780,216 +761,7 @@ Firefox/Mozilla (built with gtk2, FreeType2 and Pango support)
 If you have Pango 1.8.2 and greater, you will have full SLS1134 Sinhala support.
 \end_layout
 
-\begin_layout Subsection
-Firefox/Mozilla
-\begin_inset LatexCommand label
-name "Enable-Firefox-Mozilla"
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
-Debian 4.0 (Etch)
-\end_layout
-
-\begin_layout Standard
-Pango is enabled by default in Debian 4.0.
-\end_layout
-
-\begin_layout Subsubsection
-Ubuntu 5.10
-\end_layout
-
-\begin_layout Standard
-Pango is enabled by default in Ubuntu 5.10.
-\end_layout
-
-\begin_layout Subsubsection
-Ubuntu 6.06
-\end_layout
-
-\begin_layout Standard
-Ubuntu 6.06 users can enable Pango in Firefox by setting an environment variable:
-\end_layout
-
-\begin_layout Code
-MOZ_DISABLE_PANGO=0
-\end_layout
-
-\begin_layout Subsubsection
-Ubuntu 6.10 & newer
-\end_layout
-
-\begin_layout Standard
-Ubuntu 6.10 users can enable Pango in Firefox by setting an environment variable:
-\end_layout
-
-\begin_layout Code
-MOZ_DISABLE_PANGO=0
-\end_layout
-
-\begin_layout Standard
-Or by simply installing the Ubuntu package:
-\end_layout
-
-\begin_layout Code
-language-pack-si-base
-\end_layout
-
-\begin_layout Subsubsection
-Fedora Core 3
-\end_layout
-
-\begin_layout Quotation
-Firefox and Mozilla can be enabled with pango rendering support, which enables
- many text layout features, including the rendering of CTL (Complex Text
- Layout) such as Indic languages.
- To enable this, set the following environment variable when running Firefox
- or Mozilla:
-\end_layout
-
-\begin_layout Quotation
-MOZ_ENABLE_PANGO=1 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-\begin_inset LatexCommand htmlurl
-name "http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.html"
-target "http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.html"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Fedora Core 4 & Above
-\end_layout
-
-\begin_layout Standard
-Pango is enabled by default so you don't have to do anything extra:
-\end_layout
-
-\begin_layout Quotation
-7.2.
- Pango Text Renderer for Firefox
-\end_layout
-
-\begin_layout Quotation
-Fedora is building Firefox with the Pango system as the text renderer.
- This provides better support for certain language scripts, such as Indic
- and some CJK scripts.
- Pango is included with with permission of the Mozilla Corporation.
- This change is known to break rendering of MathML, and may negatively impact
- performance on some pages.
- To disable the use of Pango, set your environment before launching Firefox:
-\end_layout
-
-\begin_layout Quotation
-MOZ_DISABLE_PANGO=1 /usr/bin/firefox 
-\end_layout
-
-\begin_layout Quotation
-...
-\end_layout
-
-\begin_layout Quotation
-23.4.
- Pango Support in Firefox
-\end_layout
-
-\begin_layout Quotation
-Firefox in Fedora Core is built with Pango, which provides better support
- for certain scripts, such as Indic and some CJK scripts.
- Fedora has the permission of the Mozilla Corporation to use the Pango system
- for text renderering.
-\end_layout
-
-\begin_layout Quotation
-To disable the use of Pango, set MOZ_DISABLE_PANGO=1 in your environment
- before launching Firefox.
- 
-\begin_inset Foot
-status open
-
-\begin_layout Standard
-\begin_inset LatexCommand htmlurl
-name "http://fedora.redhat.com/docs/release-notes/fc5/"
-target "http://fedora.redhat.com/docs/release-notes/fc5/"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Open Office
-\begin_inset LatexCommand label
-name "Enable-Open-Office"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Debian 4.0 (Etch)
-\end_layout
-
-\begin_layout Standard
-Debian 4.0 ships with ICU 3.6 which contains Sinhala support.
- Furthermore, Open Office has been patched to not filter out ZWJ.
-\end_layout
-
-\begin_layout Subsubsection
-Ubuntu 7.04 (Feisty)
-\end_layout
-
-\begin_layout Standard
-Ubuntu 7.04 ships with Open Office 2.2 and ICU 3.6 which contain Sinhala support.
-\end_layout
-
-\begin_layout Subsubsection
-Fedora Core 5
-\end_layout
-
-\begin_layout Standard
-Fedora Core 5 ships with ICU 3.4 which does not contain Sinhala support.
-\end_layout
-
-\begin_layout Subsubsection
-Fedora Core 6
-\end_layout
-
-\begin_layout Standard
-Fedora Core 6 ships with ICU 3.6 which contains Sinhala support.
- Furthermore, Open Office has been patched to not filter out ZWJ.
- However, there is a bug in ICU that can trigger Open Office to crash when
- typing in Sinhala.
-\end_layout
-
-\begin_layout Subsubsection
-Open Office 2.1
-\end_layout
-
-\begin_layout Standard
-Open Office 2.1 should support Sinhala on all distros.
-\end_layout
-
-\begin_layout Subsection
 Input Methods
 \begin_inset LatexCommand label
 name "Enable-Input-Methods"
@@ -997,6 +769,12 @@ name "Enable-Input-Methods"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+There are a number of different input method infrastructures available on
+ GNU/Linux.
+ In general, first try m17n/SCIM and as a last resort XKB.
 \end_layout
 
 \begin_layout Standard
@@ -1013,7 +791,6 @@ gedit
 
 \series medium
 To check which input methods are available for gtk2 based programs, run:
- 
 \end_layout
 
 \begin_layout Code
@@ -1026,94 +803,111 @@ To check which input methods are available for gtk2 based programs, run:
 which comes with gtk2.
 \end_layout
 
-\begin_layout Subsubsection
-m17n
-\end_layout
-
-\begin_layout Paragraph
-Wijesekera
-\end_layout
-
-\begin_layout Enumerate
-Install scim-m17n and m17n-db (In Ubuntu, these packages are in the Universe
- repository.
- For help read: 
-\begin_inset LatexCommand htmlurl
-name "http://www.ubuntuguide.org/"
-target "http://www.ubuntuguide.org/"
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Enumerate
-Download the m17n Wijesekera input method from:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "http://cvs.m17n.org/viewcvs/*checkout*/m17n/m17n-db/si-wijesekera-preedit.mim"
-target "http://cvs.m17n.org/viewcvs/*checkout*/m17n/m17n-db/si-wijesekera-preedit.mim"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Copy the file to:
-\end_layout
-
-\begin_deeper
-\begin_layout Code
-/usr/share/m17n/
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Make sure the file /etc/environment contains:
-\end_layout
-
-\begin_deeper
-\begin_layout Code
-XMODIFIERS=@im=SCIM
+\begin_layout Standard
+To switch between input method systems, run:
 \end_layout
 
 \begin_layout Code
-GTK_IM_MODULE=scim
-\end_layout
-
-\begin_layout Code
-QT_IM_MODULE=scim
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Logout and Login again, no need to restart
-\end_layout
-
-\begin_layout Enumerate
-Select the M17N-si-wijesekera-preedit input method in SCIM
-\end_layout
-
-\begin_layout Enumerate
-Type away
+im-switch -c
 \end_layout
 
 \begin_layout Subsubsection
-X Keyboard Extension
-\end_layout
-
-\begin_layout Paragraph
-Phonetic Static
+Surrounding Text Support.
 \end_layout
 
 \begin_layout Standard
-You should have at least XFree86 4.3 or Xorg 6.7.
- To familiarise yourself with this keyboard layout, read:
+Surrounding text support allows the creation of user-friendly input methods.
+ Input methods that do not use surrounding text support are generally less
+ user-friendly.
+\end_layout
+
+\begin_layout Standard
+Some applications do not fully support surrounding text.
+ In these circumstances you may want use an input method that uses pre-edit.
+ e.g.
+ The m17n Wijesekera (si-wijesekera) requires surrounding text support,
+ however, there is a pre-edit version (si-wijesekera-preedit) that does
+ not.
+\end_layout
+
+\begin_layout Subsubsection
+KDE Users
+\end_layout
+
+\begin_layout Standard
+Those who predominately use KDE and/or KDE applications may find difficulties
+ when using SCIM directly.
+ If so, then try using scim-bridge,
+\end_layout
+
+\begin_layout Code
+im-switch -s scim-bridge
+\end_layout
+
+\begin_layout Standard
+Note, scim-bridge currently does not have surrounding text support.
+\end_layout
+
+\begin_layout Subsubsection
+m17n Phonetic Static Keyboard Layout
+\end_layout
+
+\begin_layout Itemize
+In the m17n-contrib package.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
+target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+m17n Phonetic Dynamic Keyboard Layout
+\end_layout
+
+\begin_layout Itemize
+In the m17n-contrib package.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html"
+target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+m17n Transliteration Keyboard Layout
+\end_layout
+
+\begin_layout Itemize
+In the m17n-contrib package.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html"
+target "http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+XKB Phonetic Static Keyboard Layout
+\end_layout
+
+\begin_layout Standard
+To familiarise yourself with this keyboard layout, read:
 \end_layout
 
 \begin_layout Itemize
@@ -1134,32 +928,16 @@ The X Keyboard Extension only allows one-to-one mappings between keys and
 \end_layout
 
 \begin_layout Paragraph
-Xorg 6.9+
+Xorg 7.3 and Above
 \end_layout
 
 \begin_layout Standard
-The aforementioned layout is already included in Xorg 6.9 and above and distribut
-ions that ship with xkeyboard-config 0.6 and above.
+The aforementioned layout is already included in distributions that ship
+ with xkeyboard-config (xkb-data) 0.6 and above.
 \end_layout
 
 \begin_layout Standard
-Debian Etch:
-\end_layout
-
-\begin_layout Code
-/usr/share/X11/xkb/symbols/lk
-\end_layout
-
-\begin_layout Standard
-Ubuntu 5.10:
-\end_layout
-
-\begin_layout Code
-/etc/X11/xkb/symbols/lk
-\end_layout
-
-\begin_layout Standard
-Fedora Core 5:
+The file can be found at:
 \end_layout
 
 \begin_layout Code
@@ -1216,7 +994,7 @@ Choose the
 \begin_inset Quotes eld
 \end_inset
 
-Layout
+Layouts
 \begin_inset Quotes erd
 \end_inset
 
@@ -1231,7 +1009,6 @@ Add
  button.
  This will open a new window which contains a list of layouts ordered by
  country.
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -1244,8 +1021,7 @@ Sri Lanka
 \end_inset
 
  and then highlight it by clicking on it.
- The Sinhala layout is the default in the Sri Lanka layouts file, so you
- do NOT need to click the expand triangle icon.
+ The Sinhala layout is the Default in the Sri Lanka layouts file.
  Then press 
 \begin_inset Quotes eld
 \end_inset
@@ -1270,7 +1046,7 @@ Layout Options
 \begin_inset Quotes eld
 \end_inset
 
-Group Shift/Lock behavior
+Layout switching
 \begin_inset Quotes erd
 \end_inset
 
@@ -1283,7 +1059,7 @@ Scroll down the list till you find the text
 \begin_inset Quotes eld
 \end_inset
 
-Both Shift keys together change group
+Both Shift keys together change layout
 \begin_inset Quotes erd
 \end_inset
 
@@ -1293,7 +1069,7 @@ Both Shift keys together change group
 
 \begin_layout Enumerate
 If you wish to use an LED to indicate the toggling of keyboard layouts,
- click on the text "Use keyboard LED to show alternative group".
+ click on the text "Use keyboard LED to show alternative layout".
  A list will expand below this text
 \end_layout
 
@@ -1302,7 +1078,7 @@ Scroll down the list till you find the text
 \begin_inset Quotes eld
 \end_inset
 
-ScrollLock LED shows alternative group
+ScrollLock LED shows alternative layout
 \begin_inset Quotes erd
 \end_inset
 
@@ -1369,108 +1145,6 @@ Option "XkbOptions" "grp:shifts_toggle,grp_led:scroll"
 If asked by the window manager, reset keyboard defaults to the X defaults.
 \end_layout
 
-\begin_layout Paragraph
-XFree86 4.3+ or Xorg 6.7+
-\end_layout
-
-\begin_layout Standard
-In the example below I have chosen the ALT keys to switch between the Sinhala
- phonetic layout and the US QWERTY layout.
- Hold one of the ALT keys down and then press the other ALT key, this should
- toggle between the layouts.
-\end_layout
-
-\begin_layout Enumerate
-Download the keyboard layout from:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "sin"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sin?root=sinhala"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Copy the keyboard layout to:
-\end_layout
-
-\begin_deeper
-\begin_layout Code
-/etc/X11/xkb/symbols/pc/
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-There are two options:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-In an xterm do:
-\end_layout
-
-\begin_deeper
-\begin_layout Code
-setxkbmap -layout "sin,us" -option "grp:alts_toggle,grp_led:scroll"
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Or alternately, edit the /etc/X11/XF86Config or /etc/X11/xorg.conf file.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-To add the new 'sin' keyboard layout, look for this line:
-\end_layout
-
-\begin_deeper
-\begin_layout Code
-Section "InputDevice"
-\end_layout
-
-\begin_layout Standard
-There will probably be two such lines, one for the keyboard and another
- for the mouse.
- Go to the keyboard related line.
- 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Then add 'sin' to a line that looks like:
-\end_layout
-
-\begin_deeper
-\begin_layout Code
-Option "XkbLayout" "sin,us"
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Also add a mechanism to switch between 'us' and 'sin' and indicate which
- LED should be used:
-\end_layout
-
-\begin_deeper
-\begin_layout Code
-Option "XkbOptions" "grp:alts_toggle,grp_led:scroll"
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-If asked by the window manager, reset keyboard defaults to the X defaults.
-\end_layout
-
-\end_deeper
-\end_deeper
 \begin_layout Subsubsection
 Character Maps
 \end_layout
@@ -1485,7 +1159,7 @@ You can use a Unicode Character Map program to copy and paste Sinhala characters
 gucharmap
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Databases
 \begin_inset LatexCommand label
 name "Enable-Databases"
@@ -1500,7 +1174,7 @@ The ability to alphabetically sort words in a database is essential.
  Till recently databases containing Sinhala words could not be sorted according
  to the Sinhala sorting order as established by SLS1134 - Part 1: Collation
  Sequence.
- Now, Sinhala words can be sorted in MySQL (from version 5.2).
+ Sinhala words can be sorted in MySQL (from version 5.2).
 \end_layout
 
 \begin_layout Standard
@@ -1519,7 +1193,7 @@ run a slightly modified query that looks like:
 SELECT * FROM table1 ORDER BY column1 COLLATE utf8_sinhala_ci;
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 LaTeX
 \begin_inset LatexCommand label
 name "sec:Enable-LaTeX"
@@ -1530,7 +1204,10 @@ name "sec:Enable-LaTeX"
 \end_layout
 
 \begin_layout Standard
-If you want to write Unicode Sinhala LaTeX documents, download:
+TeX Live, 2008 release, should contain a version of XeTeX with Unicode Sinhala
+ support.
+ Otherwise.
+ if you want to write Unicode Sinhala LaTeX documents, download:
 \end_layout
 
 \begin_layout Itemize
@@ -1543,7 +1220,7 @@ target "http://www.ucsc.cmb.ac.lk/People/cik/sintex-0.2.0.tar.gz"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Locales
 \begin_inset LatexCommand label
 name "Enable-Locales"
@@ -2264,6 +1941,26 @@ You can see the difference by running Firefox at the command line like so:
 \end_layout
 
 \begin_layout Subsubsection
+Ubuntu 6.10 & Above
+\end_layout
+
+\begin_layout Standard
+Ubuntu 6.10 users can enable Pango in Firefox by setting an environment variable:
+\end_layout
+
+\begin_layout Code
+MOZ_DISABLE_PANGO=0
+\end_layout
+
+\begin_layout Standard
+Or by simply installing the Ubuntu package:
+\end_layout
+
+\begin_layout Code
+language-pack-si-base
+\end_layout
+
+\begin_layout Subsubsection
 Fedora Core
 \end_layout
 
@@ -2295,6 +1992,38 @@ Have a look at:
 
 \begin_layout Standard
 for an explanation.
+\end_layout
+
+\begin_layout Paragraph
+Fedora Core 3
+\end_layout
+
+\begin_layout Quotation
+Firefox and Mozilla can be enabled with pango rendering support, which enables
+ many text layout features, including the rendering of CTL (Complex Text
+ Layout) such as Indic languages.
+ To enable this, set the following environment variable when running Firefox
+ or Mozilla:
+\end_layout
+
+\begin_layout Quotation
+MOZ_ENABLE_PANGO=1 
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+\begin_inset LatexCommand htmlurl
+name "http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.html"
+target "http://download.fedora.redhat.com/pub/fedora/linux/core/3/i386/os/RELEASE-NOTES-en.html"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -2546,8 +2275,7 @@ Open Office 2.0.4
 \begin_layout Standard
 Whilst working on the patches for adding Sinhala support to ICU, the renderer
  of Open Office, I observed that the ZWJ characters do not appear to reach
- ICU.
- 
+ ICU 
 \begin_inset Foot
 status open
 
@@ -2563,11 +2291,28 @@ target "http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html"
 
 \end_inset
 
+.
+ I demonstrated this at the Red Hat Sri Lanka office (approx.
+ 21/04/2006).
+ Red Hat Sri Lanka then conveyed this to Red Hat India on 27/07/2006.
+ A few days later Red Hat India opened a bug
+\begin_inset Foot
+status open
+
+\begin_layout Standard
+\begin_inset LatexCommand htmlurl
+name "https://bugzilla.redhat.com/show_bug.cgi?id=200728"
+target "https://bugzilla.redhat.com/show_bug.cgi?id=200728"
+
+\end_inset
+
 
 \end_layout
 
-\begin_layout Standard
-Then, Caolan McNamara found the Open Office file that filters ZWJ and ZWNJ.
+\end_inset
+
+.
+ Then, Caolan McNamara found the Open Office file that filters ZWJ and ZWNJ
  
 \begin_inset Foot
 status open
@@ -2584,7 +2329,7 @@ target "http://www.openoffice.org/issues/show_bug.cgi?id=68047"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -2688,6 +2433,14 @@ It should be noted that this function handles RTL text in a different way
 Compiling Open Office 2.0.4 on Debian Etch on a Pentium M 2.13 GHz with 1 GiB
  RAM took approximately 10 hours and required 10 GBs of additional hard
  drive space for the source and the compiled files.
+\end_layout
+
+\begin_layout Subsubsection
+Open Office 2.1
+\end_layout
+
+\begin_layout Standard
+Open Office 2.1 does not filter ZWJ, therefore, it supports Unicode Sinhala.
 \end_layout
 
 \begin_layout Subsection
@@ -2809,77 +2562,7 @@ All non-Sinhala characters/codepoints - except ZWJ (U+200D)
 \end_layout
 
 \begin_layout Subsubsection
-Keyboard Layouts
-\end_layout
-
-\begin_layout Enumerate
-Wijesekera Compatible
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_1.html"
-target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_1.html"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-ASCII Compatible Wijesekera
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_2.html"
-target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_2.html"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Phonetic (Static)
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
-target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Phonetic (Dynamic)
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html"
-target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-A Unicode Sinhala Font has to be installed in order to read the Keyboard
- Layouts.
- 
+Keyboard
 \end_layout
 
 \begin_layout Standard
@@ -4682,6 +4365,16 @@ target "http://www.debian.org/doc/debian-policy/"
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
+name "Debian Library Packaging guide"
+target "http://www.netfort.gr.jp/~dancer/column/libpkg-guide/libpkg-guide.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
 name "Work-Needing and Prospective Packages"
 target "http://www.debian.org/devel/wnpp/"
 
@@ -4733,16 +4426,6 @@ $(MAKE) DESTDIR=$(CURDIR)/debian/tmp install
 \begin_inset LatexCommand htmlurl
 name "pbuilder"
 target "http://www.netfort.gr.jp/~dancer/software/pbuilder-doc/pbuilder-doc.html"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "pbuilder HOWTO"
-target "https://wiki.ubuntu.com/PbuilderHowto"
 
 \end_inset
 
@@ -4827,6 +4510,16 @@ target "https://wiki.ubuntu.com/PackagingGuide"
 \begin_inset LatexCommand htmlurl
 name "MOTU/Packages/New"
 target "https://wiki.ubuntu.com/MOTU/Packages/New"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "pbuilder HOWTO"
+target "https://wiki.ubuntu.com/PbuilderHowto"
 
 \end_inset
 
@@ -4934,6 +4627,23 @@ Create and submit Pango patch - Cursor positioning for Sinhala is broken
 \begin_inset LatexCommand htmlurl
 name "http://bugzilla.gnome.org/show_bug.cgi?id=451682"
 target "http://bugzilla.gnome.org/show_bug.cgi?id=451682"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Create and submit Pango patch - Remove SF_MPRE_FIXUP from Sinhala script
+ flags
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://bugzilla.gnome.org/show_bug.cgi?id=536017"
+target "http://bugzilla.gnome.org/show_bug.cgi?id=536017"
 
 \end_inset
 
@@ -5906,6 +5616,16 @@ name "Res-Localisation"
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
+name "PAN - Guide to Localization of Open Source Software"
+target "http://www.panl10n.net/english/outputs/GLOSS.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
 name "Ankur - Supporting Bangla (Bengali) on GNU/Linux"
 target "http://www.bengalinux.org/"
 
@@ -5976,8 +5696,8 @@ target "http://www.ucsc.cmb.ac.lk/ltrl/"
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
-name "http://sinhala.linux.lk"
-target "http://sinhala.linux.lk"
+name "http://sinhala.sourceforge.net"
+target "http://sinhala.sourceforge.net"
 
 \end_inset
 
@@ -6225,9 +5945,10 @@ name "Conclusion"
 \end_layout
 
 \begin_layout Standard
-We have made significant progress in providing Sinhala support in GNU/Linux.
- There are still areas that require attention before GNU/Linux can be deployed
- more widely in Sri Lanka.
+We have made significant progress in adding Sinhala support to GNU/Linux,
+ however, there are still areas that require attention.
+ The level of Sinhala support in GNU/Linux is more than adequate for deployment
+ in Sri Lanka.
 \end_layout
 
 \end_body
