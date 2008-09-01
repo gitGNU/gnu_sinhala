@@ -852,8 +852,8 @@ Note, scim-bridge currently does not have surrounding text support.
 m17n Phonetic Static Keyboard Layout
 \end_layout
 
-\begin_layout Itemize
-In the m17n-contrib package.
+\begin_layout Standard
+To familiarise yourself with this keyboard layout, read:
 \end_layout
 
 \begin_layout Itemize
@@ -866,12 +866,40 @@ target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
 
 \end_layout
 
+\begin_layout Standard
+The aforementioned layout is already included in distributions that contain
+ the m17n-contrib package.
+ It does not require surrounding text support.
+\end_layout
+
+\begin_layout Standard
+The file can be found at:
+\end_layout
+
+\begin_layout Code
+/usr/share/m17n/si-phonetic-static.mim
+\end_layout
+
+\begin_layout Standard
+The latest version of the keyboard layout can be downloaded from CVS:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "si-phonetic-static.mim"
+target "http://cvs.savannah.gnu.org/viewvc/*checkout*/sinhala/keymaps/si-phonetic-static.mim?root=sinhala"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 m17n Phonetic Dynamic Keyboard Layout
 \end_layout
 
-\begin_layout Itemize
-In the m17n-contrib package.
+\begin_layout Standard
+To familiarise yourself with this keyboard layout, read:
 \end_layout
 
 \begin_layout Itemize
@@ -884,18 +912,74 @@ target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_4.html"
 
 \end_layout
 
+\begin_layout Standard
+The aforementioned layout is already included in distributions that contain
+ the m17n-contrib package.
+ It requires surrounding text support.
+\end_layout
+
+\begin_layout Standard
+The file can be found at:
+\end_layout
+
+\begin_layout Code
+/usr/share/m17n/si-phonetic-dynamic.mim
+\end_layout
+
+\begin_layout Standard
+The latest version of the keyboard layout can be downloaded from CVS:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "si-phonetic-dynamic.mim"
+target "http://cvs.savannah.gnu.org/viewvc/*checkout*/sinhala/keymaps/si-phonetic-dynamic.mim?root=sinhala"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 m17n Transliteration Keyboard Layout
 \end_layout
 
-\begin_layout Itemize
-In the m17n-contrib package.
+\begin_layout Standard
+To familiarise yourself with this keyboard layout, read:
 \end_layout
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html"
 target "http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The aforementioned layout is already included in distributions that contain
+ the m17n-contrib package.
+ It does not require surrounding text support.
+\end_layout
+
+\begin_layout Standard
+The file can be found at:
+\end_layout
+
+\begin_layout Code
+/usr/share/m17n/si-trans.mim
+\end_layout
+
+\begin_layout Standard
+The latest version of the keyboard layout can be downloaded from CVS:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "si-trans.mim"
+target "http://cvs.savannah.gnu.org/viewvc/*checkout*/sinhala/keymaps/si-trans.mim?root=sinhala"
 
 \end_inset
 
@@ -925,10 +1009,6 @@ The X Keyboard Extension only allows one-to-one mappings between keys and
  codepoints, therefore rakaaranshaya, yansaya and repaya, which consist
  of multiple codepoints, have to be manually constructed.
  See the comments in the Sinhala X Keyboard Extension layout file.
-\end_layout
-
-\begin_layout Paragraph
-Xorg 7.3 and Above
 \end_layout
 
 \begin_layout Standard
@@ -975,7 +1055,7 @@ In the example below I have chosen the SHIFT keys to switch between the
  should toggle between the layouts.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Paragraph
 Using the GUI in GNOME:
 \end_layout
 
@@ -1085,7 +1165,7 @@ ScrollLock LED shows alternative layout
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Paragraph
 Using the command line in X:
 \end_layout
 
@@ -1099,7 +1179,7 @@ setxkbmap -layout "us,lk" -option "grp:shifts_toggle,grp_led:scroll"
 \end_layout
 
 \end_deeper
-\begin_layout Standard
+\begin_layout Paragraph
 Alternately, you can directly modify /etc/X11/xorg.conf:
 \end_layout
 
