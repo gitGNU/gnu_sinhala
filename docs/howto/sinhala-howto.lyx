@@ -34,6 +34,7 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
@@ -558,7 +559,7 @@ From your user account (i.e.
 
 \begin_deeper
 \begin_layout Code
-im-switch -s scim-immodule
+im-switch -z all_ALL -s scim-immodule
 \end_layout
 
 \end_deeper
@@ -601,7 +602,7 @@ From your user account (i.e.
 
 \begin_deeper
 \begin_layout Code
-im-switch -s scim-immodule
+im-switch -z all_ALL -s scim-immodule
 \end_layout
 
 \end_deeper
@@ -808,7 +809,7 @@ To switch between input method systems, run:
 \end_layout
 
 \begin_layout Code
-im-switch -c
+im-switch -z all_ALL -c
 \end_layout
 
 \begin_layout Subsubsection
@@ -841,7 +842,7 @@ Those who predominately use KDE and/or KDE applications may find difficulties
 \end_layout
 
 \begin_layout Code
-im-switch -s scim-bridge
+im-switch -z all_ALL -s scim-bridge
 \end_layout
 
 \begin_layout Standard
@@ -4196,6 +4197,16 @@ name "Dev-Locales"
 
 \end_layout
 
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "The Open Group Base Specifications Issue 6"
+target "http://www.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap07.html"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Debian 4.0
 \end_layout
@@ -5285,6 +5296,136 @@ name "Dev-TODO"
 
 \end_layout
 
+\begin_layout Itemize
+Software should use the word 
+\begin_inset Quotes eld
+\end_inset
+
+Sinhala
+\begin_inset Quotes erd
+\end_inset
+
+, not 
+\begin_inset Quotes eld
+\end_inset
+
+Sinhalese
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Software should use the word "Sinhala" to refer to the language.
+ Unfortunately, some software projects use 
+\begin_inset Quotes eld
+\end_inset
+
+Sinhalese", 
+\begin_inset Quotes eld
+\end_inset
+
+Singhalese" or some other variant.
+\end_layout
+
+\begin_layout Standard
+If you come across FOSS or non-FOSS software that do not use the word "Sinhala"
+ to refer to the language, can you please file a 
+\emph on
+bug
+\emph default
+ with the software or send an email to the software maintainer(s)?
+\end_layout
+
+\begin_layout Standard
+ISO 639 is the reference used by most software projects.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Sinhala" is the preferred word for the language as per ISO 639 and the Sri
+ Lankan constitution:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://www.loc.gov/standards/iso639-2/php/code_list.php"
+target "http://www.loc.gov/standards/iso639-2/php/code_list.php"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+sin si Sinhala; Sinhalese
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://www.constitution.gov.lk/downloads/Chapter%20IV%20-%20Language.pdf"
+target "http://www.constitution.gov.lk/downloads/Chapter%20IV%20-%20Language.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+18.
+ 3[(1)] The Official Language of Sri Lanka shall be Sinhala.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Furthermore, if it is FOSS project, you can refer to the GNOME and KDE projects
+ as an example where the word "Sinhala" is used: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://l10n.gnome.org/languages/si/"
+target "http://l10n.gnome.org/languages/si/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+Sinhala Translation Team
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://l10n.kde.org/team-infos.php?teamcode=si"
+target "http://l10n.kde.org/team-infos.php?teamcode=si"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+Sinhala Team (si)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+This is an easy way to help out, so if get a chance please do your little
+ bit, good luck!
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Renderer (Layout Engine)
 \end_layout
