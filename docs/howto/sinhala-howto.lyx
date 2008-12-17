@@ -40,7 +40,7 @@
 \begin_body
 
 \begin_layout Title
-Enabling Sinhala in GNU/Linux HOWTO
+Enabling Unicode Sinhala in GNU/Linux HOWTO
 \end_layout
 
 \begin_layout Standard
@@ -3012,7 +3012,7 @@ Tailoring
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "ICU User Guide: Collation Customization"
-target "http://icu.sourceforge.net/userguide/Collate_Customization.html"
+target "http://www.icu-project.org/userguide/Collate_Customization.html"
 
 \end_inset
 
@@ -3717,7 +3717,7 @@ mysql/strings/ctype-uca.c
 \end_layout
 
 \begin_layout Code
-  http://icu.sourceforge.net/userguide/Collate_Customization.html
+  http://www.icu-project.org/userguide/Collate_Customization.html
 \end_layout
 
 \begin_layout Code
@@ -4201,6 +4201,36 @@ name "Dev-Locales"
 \begin_inset LatexCommand htmlurl
 name "The Open Group Base Specifications Issue 6"
 target "http://www.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap07.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://www.open-std.org/jtc1/sc22/wg20/docs/n972-14652ft.pdf"
+target "http://www.open-std.org/jtc1/sc22/wg20/docs/n972-14652ft.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "UTS #35: Unicode Locale Data Markup Language (LDML)"
+target "http://www.unicode.org/reports/tr35/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "Common Locale Data Repository"
+target "http://www.unicode.org/cldr/"
 
 \end_inset
 
@@ -5285,6 +5315,22 @@ target "http://bugs.mysql.com/bug.php?id=26474"
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+glibc: Sinhala (si) collation order undefined
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+name "http://sourceware.org/bugzilla/show_bug.cgi?id=6968"
+target "http://sourceware.org/bugzilla/show_bug.cgi?id=6968"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Subsection
 TODO
@@ -5757,16 +5803,6 @@ target "http://www.openi18n.org/"
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
-name "The Locale Data Markup Language Specification"
-target "http://www.openi18n.org/specs/ldml/"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
 name "Pango"
 target "http://www.pango.org/"
 
@@ -5778,7 +5814,7 @@ target "http://www.pango.org/"
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "International Components for Unicode"
-target "http://icu.sourceforge.net/"
+target "http://www.icu-project.org/"
 
 \end_inset
 
@@ -5875,16 +5911,6 @@ target "http://linux.thai.net/~thep/"
 
 \end_layout
 
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "ZzzThai"
-target "http://www.fedu.uec.ac.jp/ZzzThai/"
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Sinhala
 \begin_inset LatexCommand label
@@ -5927,8 +5953,7 @@ target "http://sinhala.sourceforge.net"
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
-name "sinhala_tex"
-target "http://www.ctan.org/tex-archive/language/sinhala/"
+target "http://locallanguages.lk/"
 
 \end_inset
 
@@ -5937,8 +5962,8 @@ target "http://www.ctan.org/tex-archive/language/sinhala/"
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
-name "Unicode Compatible Fonts for Sinhala and Tamil"
-target "http://www.fonts.lk/"
+name "sinhala_tex"
+target "http://www.ctan.org/tex-archive/language/sinhala/"
 
 \end_inset
 
