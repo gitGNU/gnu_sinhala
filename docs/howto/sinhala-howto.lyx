@@ -178,7 +178,7 @@ name "About"
 \end_layout
 
 \begin_layout Standard
-Sinhala is the main language of Sri Lanka.
+Sinhala is the language spoken by the majority of Sri Lanka's population.
  This guide describes the level of Sinhala support available in GNU/Linux.
  It also describes how to enable improved Sinhala support and the tasks
  that still require attention.
@@ -203,34 +203,24 @@ name "Introduction"
 \begin_layout Standard
 The level of Sinhala support in GNU/Linux distributions has improved significant
 ly.
- On most modern distributions, simply installing a Unicode Sinhala font
- should be sufficient to read and type in Sinhala.
-\end_layout
-
-\begin_layout Standard
-Debian 4.0 (Etch) and Ubuntu 7.04 (Feisty) ship with Unicode Sinhala (SLS1134)
- support on the desktop.
- This includes Sinhala support in the web browser, Firefox, and the office
- suite, Open Office.
- Both distributions ship with a phonetic Sinhala keyboard layout and a basic,
- incomplete, Unicode Sinhala font [
-\begin_inset LatexCommand ref
-reference "Enable-Fonts"
-
-\end_inset
-
-].
-\end_layout
-
-\begin_layout Standard
-To improve the level of Sinhala support in Debian and Ubuntu, simply follow
- the instructions in this document [
+ Most modern distributions contain the required Unicode Sinhala (SLS1134)
+ font and Sinhala input methods (keyboard layouts).
+ Usually it is simply a matter of installing the relevant packages by following
+ the instructions in 
 \begin_inset LatexCommand ref
 reference "Enabling-Sinhala"
 
 \end_inset
 
-].
+.
+\end_layout
+
+\begin_layout Standard
+Debian 5.0 (Lenny), Fedora 10 (Cambridge) and Ubuntu 8.10 (Intrepid) contain
+ Unicode Sinhala support on the desktop.
+ This includes the ability to read Unicode Sinhala websites in Firefox,
+ read and write Unicode Sinhala documents in Open Office and send Unicode
+ Sinhala emails in Evolution.
 \end_layout
 
 \begin_layout Subsection
@@ -538,7 +528,7 @@ name "sec:Enabling-Sinhala-Short"
 \end_layout
 
 \begin_layout Subsubsection
-Debian 5.0 (Lenny) and Above
+Debian 5.0 (Lenny) and Above (may work on older versions)
 \end_layout
 
 \begin_layout Enumerate
@@ -569,7 +559,7 @@ Logout and login again.
 \end_layout
 
 \begin_layout Subsubsection
-Ubuntu 8.10 (Intrepid) and Above
+Ubuntu 8.10 (Intrepid) and Above (may work on older versions)
 \end_layout
 
 \begin_layout Enumerate
@@ -648,24 +638,15 @@ name "sec:Enabling-Sinhala-Long"
 \end_layout
 
 \begin_layout Standard
-First follow all the instructions in 
+Following the instructions in 
 \begin_inset LatexCommand ref
 reference "sec:Enabling-Sinhala-Short"
 
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-The latest Sinhala patched packages and programs can be found at 
-\begin_inset LatexCommand htmlurl
-name "http://sinhala.sourceforge.net/"
-target "http://sinhala.sourceforge.net/"
-
-\end_inset
-
-.
+ should be sufficient.
+ If you are using an older version of the distribution or a different distributi
+on, then you may need to read the following section.
 \end_layout
 
 \begin_layout Subsubsection
@@ -791,17 +772,11 @@ gedit
 \begin_layout Standard
 
 \series medium
-To check which input methods are available for gtk2 based programs, run:
+To check which input method systems are available, run:
 \end_layout
 
 \begin_layout Code
-/usr/bin/gtk-query-immodules-2.0
-\end_layout
-
-\begin_layout Standard
-
-\series medium
-which comes with gtk2.
+im-switch  -l
 \end_layout
 
 \begin_layout Standard
@@ -812,14 +787,22 @@ To switch between input method systems, run:
 im-switch -z all_ALL -c
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+Generally choose:
+\end_layout
+
+\begin_layout Code
+scim-immodule
+\end_layout
+
+\begin_layout Paragraph
 Surrounding Text Support.
 \end_layout
 
 \begin_layout Standard
 Surrounding text support allows the creation of user-friendly input methods.
- Input methods that do not use surrounding text support are generally less
- user-friendly.
+ Input methods without surrounding text support are difficult to use when
+ editing existing text.
 \end_layout
 
 \begin_layout Standard
@@ -829,9 +812,10 @@ Some applications do not fully support surrounding text.
  The m17n Wijesekera (si-wijesekera) requires surrounding text support,
  however, there is a pre-edit version (si-wijesekera-preedit) that does
  not.
+ The aforementioned input methods are available in the m17n-db package.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 KDE Users
 \end_layout
 
@@ -850,6 +834,17 @@ Note, scim-bridge currently does not have surrounding text support.
 \end_layout
 
 \begin_layout Subsubsection
+Keyboard Layouts
+\end_layout
+
+\begin_layout Standard
+If you are unfamiliar with the Wijesekera keyboard layout, here are some
+ recommended keyboard layouts.
+ If you download any of the m17n keyboard layout files, copy it to the correct
+ location and relogin in-order to use it.
+\end_layout
+
+\begin_layout Paragraph
 m17n Phonetic Static Keyboard Layout
 \end_layout
 
@@ -895,7 +890,7 @@ target "http://cvs.savannah.gnu.org/viewvc/*checkout*/sinhala/keymaps/si-phoneti
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 m17n Phonetic Dynamic Keyboard Layout
 \end_layout
 
@@ -941,7 +936,7 @@ target "http://cvs.savannah.gnu.org/viewvc/*checkout*/sinhala/keymaps/si-phoneti
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 m17n Transliteration Keyboard Layout
 \end_layout
 
@@ -987,7 +982,7 @@ target "http://cvs.savannah.gnu.org/viewvc/*checkout*/sinhala/keymaps/si-trans.m
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 XKB Phonetic Static Keyboard Layout
 \end_layout
 
@@ -1056,10 +1051,11 @@ In the example below I have chosen the SHIFT keys to switch between the
  should toggle between the layouts.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Itemize
 Using the GUI in GNOME:
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
 Run:
 \end_layout
@@ -1166,10 +1162,12 @@ ScrollLock LED shows alternative layout
 .
 \end_layout
 
-\begin_layout Paragraph
+\end_deeper
+\begin_layout Itemize
 Using the command line in X:
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
 In an xterm do:
 \end_layout
@@ -1180,10 +1178,12 @@ setxkbmap -layout "us,lk" -option "grp:shifts_toggle,grp_led:scroll"
 \end_layout
 
 \end_deeper
-\begin_layout Paragraph
+\end_deeper
+\begin_layout Itemize
 Alternately, you can directly modify /etc/X11/xorg.conf:
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
 To add the new lk keyboard layout, look for this line:
 \end_layout
@@ -1226,6 +1226,7 @@ Option "XkbOptions" "grp:shifts_toggle,grp_led:scroll"
 If asked by the window manager, reset keyboard defaults to the X defaults.
 \end_layout
 
+\end_deeper
 \begin_layout Subsubsection
 Character Maps
 \end_layout
@@ -1275,6 +1276,146 @@ SELECT * FROM table1 ORDER BY column1 COLLATE utf8_sinhala_ci;
 \end_layout
 
 \begin_layout Subsubsection
+Locales
+\begin_inset LatexCommand label
+name "Enable-Locales"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Sinhala locale for Sri Lanka is already included in most distributions.
+ If you wish to view the user interface in Sinhala, then you must first
+ enable the si_LK locale.
+\end_layout
+
+\begin_layout Paragraph
+Debian and Ubuntu
+\end_layout
+
+\begin_layout Standard
+The supported locales are listed in the file:
+\end_layout
+
+\begin_layout Code
+/usr/share/i18n/SUPPORTED
+\end_layout
+
+\begin_layout Standard
+The locale definition is available in:
+\end_layout
+
+\begin_layout Code
+/usr/share/i18n/locales/
+\end_layout
+
+\begin_layout Standard
+These files are provided by the 
+\emph on
+locales
+\emph default
+ package.
+\end_layout
+
+\begin_layout Standard
+The locale definitions need to be compiled before they can be used.
+ To compile a particular locale, first edit:
+\end_layout
+
+\begin_layout Code
+/etc/locale.gen
+\end_layout
+
+\begin_layout Standard
+This will involve uncommenting the required locale.
+ e.g.
+\end_layout
+
+\begin_layout Code
+# sid_ET UTF-8
+\end_layout
+
+\begin_layout Code
+si_LK UTF-8
+\end_layout
+
+\begin_layout Code
+# sk_SK ISO-8859-2 
+\end_layout
+
+\begin_layout Standard
+Then run the program:
+\end_layout
+
+\begin_layout Code
+/usr/sbin/locale-gen
+\end_layout
+
+\begin_layout Standard
+Following that step you can then see what a particular program looks like
+ when it is localised:
+\end_layout
+
+\begin_layout Code
+LANG=si_LK.UTF-8 gedit
+\end_layout
+
+\begin_layout Code
+LANG=fr_FR.UTF-8 gedit
+\end_layout
+
+\begin_layout Standard
+The actual translated message strings are stored in:
+\end_layout
+
+\begin_layout Code
+/usr/share/locale/<ISO639 2 character lang code>/LC_MESSAGES/
+\end_layout
+
+\begin_layout Standard
+Each program adds a file containing translated message strings.
+\end_layout
+
+\begin_layout Standard
+The default locale is set in the file:
+\end_layout
+
+\begin_layout Code
+/etc/default/locale
+\end_layout
+
+\begin_layout Paragraph
+Collation
+\end_layout
+
+\begin_layout Standard
+To sort Sinhala words, run:
+\end_layout
+
+\begin_layout Code
+LC_ALL=si_LK.utf8 sort
+\end_layout
+
+\begin_layout Subsubsection
+Open Office
+\begin_inset LatexCommand label
+name "sec:Enable-Open-Office"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By default Open Office chooses the first Sinhala font regardless of its
+ completeness.
+ Therefore, you may have to highlight the Sinhala text and select a complete
+ Unicode Sinhala font such as the LKLUG font.
+\end_layout
+
+\begin_layout Subsubsection
 LaTeX
 \begin_inset LatexCommand label
 name "sec:Enable-LaTeX"
@@ -1287,32 +1428,19 @@ name "sec:Enable-LaTeX"
 \begin_layout Standard
 TeX Live, 2008 release, should contain a version of XeTeX with Unicode Sinhala
  support.
- Otherwise.
- if you want to write Unicode Sinhala LaTeX documents, download:
+\end_layout
+
+\begin_layout Standard
+A less preferable option is to download sintex:
 \end_layout
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
-name "http://www.ucsc.cmb.ac.lk/People/cik/sintex-0.2.0.tar.gz"
 target "http://www.ucsc.cmb.ac.lk/People/cik/sintex-0.2.0.tar.gz"
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsubsection
-Locales
-\begin_inset LatexCommand label
-name "Enable-Locales"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The Sinhala locale for Sri Lanka is already included in most distributions.
 \end_layout
 
 \begin_layout Section
@@ -4238,90 +4366,23 @@ target "http://www.unicode.org/cldr/"
 \end_layout
 
 \begin_layout Subsubsection
-Debian 4.0
+Collation
 \end_layout
 
 \begin_layout Standard
-The supported locales are listed in the file:
+To define a collation order for a script, edit:
 \end_layout
 
 \begin_layout Code
-/usr/share/i18n/SUPPORTED
+/usr/share/i18n/locales/iso14651_t1_common
 \end_layout
 
 \begin_layout Standard
-The locale definition is available in:
+To test the changes, run:
 \end_layout
 
 \begin_layout Code
-/usr/share/i18n/locales/
-\end_layout
-
-\begin_layout Standard
-These files are provided by the 
-\emph on
-locales
-\emph default
- package.
- 
-\end_layout
-
-\begin_layout Standard
-The locale definitions need to be compiled before before they can be used.
- To compile a particular locale, first edit:
-\end_layout
-
-\begin_layout Code
-
-\end_layout
-
-\begin_layout Code
-/etc/locale.gen
-\end_layout
-
-\begin_layout Standard
-Then run the program:
-\end_layout
-
-\begin_layout Code
-/usr/sbin/locale-gen
-\end_layout
-
-\begin_layout Standard
-Following that step you can then see what a particular program looks like
- when it is localised:
-\end_layout
-
-\begin_layout Code
-LANG=si_LK.UTF-8 gedit
-\end_layout
-
-\begin_layout Code
-LANG=fr_FR.UTF-8 gedit
-\end_layout
-
-\begin_layout Standard
-The actual translated message strings are stored in:
-\end_layout
-
-\begin_layout Code
-/usr/share/locale/<ISO639 2 character lang code>/LC_MESSAGES/
-\end_layout
-
-\begin_layout Standard
-Each program adds a file containing translated message strings.
-\end_layout
-
-\begin_layout Standard
-The default locale is set in the file:
-\end_layout
-
-\begin_layout Code
-/etc/default/locale
-\end_layout
-
-\begin_layout Code
-
+LC_ALL=<LOCALE> sort
 \end_layout
 
 \begin_layout Subsection
