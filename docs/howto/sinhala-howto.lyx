@@ -4729,7 +4729,7 @@ Pango
 
 \begin_deeper
 \begin_layout Itemize
-Create and submit Pango patch - don't implicitly create conjuncts
+Created and submitted Pango patch - don't implicitly create conjuncts
 \end_layout
 
 \begin_deeper
@@ -4769,7 +4769,7 @@ target "http://www.mail-archive.com/bengalinux-core@lists.sourceforge.net/msg005
 
 \end_deeper
 \begin_layout Itemize
-Create and submit Pango patch - Enable touching letters in Sinhala rendering
+Created and submitted Pango patch - Enable touching letters in Sinhala rendering
 \end_layout
 
 \begin_deeper
@@ -4785,7 +4785,7 @@ target "http://bugzilla.gnome.org/show_bug.cgi?id=302577"
 
 \end_deeper
 \begin_layout Itemize
-Create and submit Pango patch - Worst case expansion for Sinhala
+Created and submitted Pango patch - Worst case expansion for Sinhala
 \end_layout
 
 \begin_deeper
@@ -4801,7 +4801,7 @@ target "http://bugzilla.gnome.org/show_bug.cgi?id=385321"
 
 \end_deeper
 \begin_layout Itemize
-Create and submit Pango patch - Cursor positioning for Sinhala is broken
+Created and submitted Pango patch - Cursor positioning for Sinhala is broken
 \end_layout
 
 \begin_deeper
@@ -4817,7 +4817,7 @@ target "http://bugzilla.gnome.org/show_bug.cgi?id=451682"
 
 \end_deeper
 \begin_layout Itemize
-Create and submit Pango patch - Remove SF_MPRE_FIXUP from Sinhala script
+Created and submitted Pango patch - Remove SF_MPRE_FIXUP from Sinhala script
  flags
 \end_layout
 
@@ -4840,7 +4840,7 @@ ICU
 
 \begin_deeper
 \begin_layout Itemize
-Provide test files and images for ICU Sinhala support
+Provided test files and images for ICU Sinhala support
 \end_layout
 
 \begin_deeper
@@ -4856,7 +4856,7 @@ target "http://bugs.icu-project.org/trac/ticket/4298"
 
 \end_deeper
 \begin_layout Itemize
-Convince Pango and ICU maintainers to emit ZWJ to the font lookup stage.
+Convinced Pango and ICU maintainers to emit ZWJ to the font lookup stage.
 \end_layout
 
 \begin_deeper
@@ -4888,7 +4888,8 @@ target "http://bugs.icu-project.org/trac/ticket/4711"
 \end_deeper
 \end_deeper
 \begin_layout Itemize
-Find ICU bug - Indic Reordering State Table Allows ZWJ Virama ZWJ
+Created and submitted ICU patch - Indic Reordering State Table Allows ZWJ
+ Virama ZWJ
 \end_layout
 
 \begin_deeper
@@ -4904,7 +4905,7 @@ target "http://bugs.icu-project.org/trac/ticket/5057"
 
 \end_deeper
 \begin_layout Itemize
-Port Pango patches, which add Sinhala support, to ICU for immediate use
+Ported Pango patches, which add Sinhala support, to ICU for immediate use
  in ICU 3.4
 \end_layout
 
@@ -4921,8 +4922,8 @@ target "http://www.redhat.com/archives/fedora-cvs-commits/2006-May/msg00126.html
 
 \end_deeper
 \begin_layout Itemize
-Create and submit ICU patch - SF_MPRE_FIXUP causing conjuncts to be split
- in Sinhala
+Created and submitted ICU patch - SF_MPRE_FIXUP causing conjuncts to be
+ split in Sinhala
 \end_layout
 
 \begin_deeper
@@ -4960,7 +4961,7 @@ target "http://mail.lug.lk/lurker/message/20060410.130454.19cefb01.en.html"
 
 \end_deeper
 \begin_layout Itemize
-Convince Open Office developers to stop filtering ZWJ and ZWNJ - ZWJ: The
+Convinced Open Office developers to stop filtering ZWJ and ZWNJ - ZWJ: The
  zero width joiner shouldn't be filtered out
 \end_layout
 
@@ -4977,8 +4978,8 @@ target "http://qa.openoffice.org/issues/show_bug.cgi?id=68047"
 
 \end_deeper
 \begin_layout Itemize
-Inform of Open Office filtering ZWJ and ZWNJ - Incorrect Bengali rendering
- of ra+japhala
+Reported that Open Office was filtering ZWJ and ZWNJ to Ubuntu - Incorrect
+ Bengali rendering of ra+japhala
 \end_layout
 
 \begin_deeper
@@ -4994,8 +4995,8 @@ target "https://launchpad.net/distros/debian/+source/icu/+bug/35085"
 
 \end_deeper
 \begin_layout Itemize
-Inform Debian of Open Office bug - The zero width joiner shouldn't be filtered
- out 
+Reported Open Office bug to Debian - The zero width joiner shouldn't be
+ filtered out 
 \end_layout
 
 \begin_deeper
@@ -5012,7 +5013,7 @@ target "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=403275"
 \end_deeper
 \end_deeper
 \begin_layout Itemize
-Create and submit Epiphany patch - Add si (Sinhala) to the list of locales
+Created and submitted Epiphany patch - Add si (Sinhala) to the list of locales
  requiring Pango
 \end_layout
 
@@ -5029,8 +5030,8 @@ target "http://bugzilla.gnome.org/show_bug.cgi?id=361538"
 
 \end_deeper
 \begin_layout Itemize
-Create and submit Ubuntu Firefox patch - Add si (Sinhala) to the list of
- locales requiring Pango
+Created and submitted Ubuntu Firefox patch - Add si (Sinhala) to the list
+ of locales requiring Pango
 \end_layout
 
 \begin_deeper
@@ -5052,7 +5053,7 @@ Input Methods
 
 \begin_deeper
 \begin_layout Itemize
-Submit XKB keyboard layout to X Keyboard Configuration Database
+Created and submitted XKB keyboard layout to X Keyboard Configuration Database
 \end_layout
 
 \begin_deeper
@@ -5078,11 +5079,11 @@ target "http://bugs.freedesktop.org/show_bug.cgi?id=11284"
 
 \end_deeper
 \begin_layout Itemize
-Submit vim keyboard layout to Bram
+Created and submitted vim keyboard layout to Bram
 \end_layout
 
 \begin_layout Itemize
-Submit XKB keyboard layout to xorg
+Created and submitted XKB keyboard layout to xorg
 \end_layout
 
 \begin_deeper
@@ -5098,7 +5099,7 @@ target "https://bugs.freedesktop.org/show_bug.cgi?id=1850"
 
 \end_deeper
 \begin_layout Itemize
-Submit XKB keyboard layout to xfree86
+Created and submitted XKB keyboard layout to xfree86
 \end_layout
 
 \begin_deeper
@@ -5114,23 +5115,7 @@ target "http://bugs.xfree86.org/show_bug.cgi?id=1509"
 
 \end_deeper
 \begin_layout Itemize
-Submit phonetic static keyboard layout to m17n
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "http://www.linux.lk/lurker/message/20060906.191738.e7c770f0.en.html"
-target "http://www.linux.lk/lurker/message/20060906.191738.e7c770f0.en.html"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Test and provide feedback on the m17n Wijesekera input method.
+Tested and provided feedback on the m17n Wijesekera input method.
 \end_layout
 
 \begin_deeper
@@ -5166,7 +5151,7 @@ target "http://sourceforge.net/mailarchive/message.php?msg_name=1174588315.5255.
 
 \end_deeper
 \begin_layout Itemize
-Update XKB keyboard layout
+Updated XKB keyboard layout
 \end_layout
 
 \begin_deeper
@@ -5174,22 +5159,6 @@ Update XKB keyboard layout
 \begin_inset LatexCommand htmlurl
 name "https://bugs.freedesktop.org/show_bug.cgi?id=11284"
 target "https://bugs.freedesktop.org/show_bug.cgi?id=11284"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Sync m17n-contrib from Debian to Ubuntu
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset LatexCommand htmlurl
-name "https://bugs.launchpad.net/ubuntu/+bug/129952"
-target "https://bugs.launchpad.net/ubuntu/+bug/129952"
 
 \end_inset
 
@@ -5361,7 +5330,8 @@ Collation
 
 \begin_deeper
 \begin_layout Itemize
-Add Sinhala script (Sri Lanka) collation to MySQL
+Created and submitted MySQL patch - Add Sinhala script (Sri Lanka) collation
+ to MySQL
 \end_layout
 
 \begin_deeper
@@ -5377,7 +5347,7 @@ target "http://bugs.mysql.com/bug.php?id=26474"
 
 \end_deeper
 \begin_layout Itemize
-glibc: Sinhala (si) collation order undefined
+Created and submitted glibc patch - Sinhala (si) collation order undefined
 \end_layout
 
 \begin_deeper
