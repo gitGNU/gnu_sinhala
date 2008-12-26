@@ -98,12 +98,17 @@ matra-segmentation-testcase-correct-oo.png
 matra-segmentation-testcase.txt
 --------------------------------------------------------------------
 13) pango-1.21.0-no-SF_MPRE_FIXUP-for-sinhala.patch
+http://bugzilla.gnome.org/show_bug.cgi?id=536017
 --------------------------------------------------------------------
 14) iso14651_t1_common-glibc.patch
+http://sourceware.org/bugzilla/show_bug.cgi?id=6968
 
 mysql-data-sinhala.txt
 glibc-collation-correct.txt
 
 This patch is based on:
 si_LK-glibc-2.7.patch
+--------------------------------------------------------------------
+15) fontconfig-2.6.0-fix-sinhala-coverage.patch
+http://bugs.freedesktop.org/show_bug.cgi?id=19288
 --------------------------------------------------------------------
