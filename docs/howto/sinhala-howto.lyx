@@ -1413,7 +1413,7 @@ LC_ALL=si_LK.utf8 sort
 \begin_layout Subsubsection
 Open Office
 \begin_inset LatexCommand label
-name "sec:Enable-Open-Office"
+name "Enable-Open-Office"
 
 \end_inset
 
@@ -1430,7 +1430,7 @@ By default Open Office chooses the first Sinhala font regardless of its
 \begin_layout Subsubsection
 LaTeX
 \begin_inset LatexCommand label
-name "sec:Enable-LaTeX"
+name "Enable-LaTeX"
 
 \end_inset
 
@@ -5826,9 +5826,9 @@ target "http://www.jwz.org/xkeycaps/"
 \end_layout
 
 \begin_layout Subsection
-Internationalisation
+Internationalization
 \begin_inset LatexCommand label
-name "Res-Internationalisation"
+name "Res-Internationalization"
 
 \end_inset
 
@@ -5916,9 +5916,9 @@ target "http://www.yudit.org/"
 \end_layout
 
 \begin_layout Subsection
-Localisation
+Localization
 \begin_inset LatexCommand label
-name "Res-Localisation"
+name "Res-Localization"
 
 \end_inset
 
