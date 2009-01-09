@@ -520,7 +520,7 @@ name "Enabling-Sinhala"
 \begin_layout Subsection
 Short Answer
 \begin_inset LatexCommand label
-name "sec:Enabling-Sinhala-Short"
+name "Enabling-Short"
 
 \end_inset
 
@@ -529,6 +529,12 @@ name "sec:Enabling-Sinhala-Short"
 
 \begin_layout Subsubsection
 Debian 5.0 (Lenny) and Above (may work on older versions)
+\begin_inset LatexCommand label
+name "Enabling-Short-Debian"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -560,6 +566,12 @@ Logout and login again.
 
 \begin_layout Subsubsection
 Ubuntu 8.10 (Intrepid) and Above (may work on older versions)
+\begin_inset LatexCommand label
+name "Enabling-Short-Ubuntu"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -630,7 +642,7 @@ To test typing, press Control-space whilst you are running a GNOME application.
 \begin_layout Subsection
 Long Answer
 \begin_inset LatexCommand label
-name "sec:Enabling-Sinhala-Long"
+name "Enabling-Long"
 
 \end_inset
 
@@ -640,7 +652,7 @@ name "sec:Enabling-Sinhala-Long"
 \begin_layout Standard
 Following the instructions in 
 \begin_inset LatexCommand ref
-reference "sec:Enabling-Sinhala-Short"
+reference "Enabling-Short"
 
 \end_inset
 
@@ -5285,6 +5297,21 @@ Repaya
  and added corresponding lookups to LKLUG font.
 \end_layout
 
+\begin_layout Itemize
+Created and submitted fontconfig patch - fontconfig: fix Sinhala coverage
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset LatexCommand htmlurl
+target "http://bugs.freedesktop.org/show_bug.cgi?id=19288"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 Standards
@@ -5572,10 +5599,6 @@ Sorting
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Implement established standards
-\end_layout
-
 \begin_layout Itemize
 String matching - a consonant followed by dependent vowel 'o' should not
  match the same consonant followed by dependent vowel 'oo'.
