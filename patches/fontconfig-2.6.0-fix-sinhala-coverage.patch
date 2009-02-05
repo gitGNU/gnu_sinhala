@@ -1,8 +1,8 @@
 diff --git a/fc-lang/si.orth b/fc-lang/si.orth
-index b6b7c86..f34763e 100644
+index b6b7c86..573bbed 100644
 --- a/fc-lang/si.orth
 +++ b/fc-lang/si.orth
-@@ -23,18 +23,40 @@
+@@ -23,18 +23,50 @@
  #
  # Sinhala (Sinhalese) (SI)
  #
@@ -16,7 +16,6 @@ index b6b7c86..f34763e 100644
  #
 -# Independent vowels
 -0d85-0d96
--# Consonants
 +# To get a copy of this document contact the Sri Lanka Standards Institution
 +# (http://www.slsi.lk/).
 +#
@@ -24,10 +23,10 @@ index b6b7c86..f34763e 100644
 +# describes the base for level 3 compliance.
 +#
 +# Level 1 compliance can be described as level 3 with the exclusion of:
-+# U+0D8F ILUYANNA (independent vowel)
-+# U+0D90 ILUUYANNA (independent vowel)
-+# U+0DDF GAYANUKITTA (dependent vowel)
-+# U+0DF3 DIGA GAYANUKITTA (dependent vowel)
++# U+0D8F ILUYANNA (Independent Vowel)
++# U+0D90 ILUUYANNA (Independent Vowel)
++# U+0DDF GAYANUKITTA (Dependent Vowel)
++# U+0DF3 DIGA GAYANUKITTA (Dependent Vowel)
 +# U+0DF4 KUNDDALIYA (Punctuation)
 +#
 +# If you feel the urge to modify the coverage below, please first contact
@@ -35,14 +34,20 @@ index b6b7c86..f34763e 100644
 +# sinhala-technical at lists.sourceforge.net
 +# ltrl at ucsc.cmb.ac.lk
 +#
++# Semi Consonants
 +0d82-0d83
++# Independent Vowels
 +0d85-0d8e
++# 0d8f ILUYANNA (Level 3)
++# 0d90 ILUUYANNA (Level 3)
 +0d91-0d96
+ # Consonants
  0d9a-0db1
  0db3-0dbb
  0dbd
  0dc0-0dc6
 -# Dependent vowel signs
++# Dependent Vowels
 +0dca
  0dcf-0dd4
  0dd6
@@ -50,4 +55,8 @@ index b6b7c86..f34763e 100644
 -# Additional dependent vowel signs
 -0df2-0df4
 +0dd8-0dde
++# 0ddf GAYANUKITTA (Level 3)
 +0df2
++# 0df3 DIGA GAYANUKITTA (Level 3)
++# Punctuation
++# 0df4 KUNDDALIYA (Level 3)
