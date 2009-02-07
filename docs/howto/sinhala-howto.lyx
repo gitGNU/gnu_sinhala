@@ -889,13 +889,13 @@ The file can be found at:
 \end_layout
 
 \begin_layout Standard
-The latest version of the keyboard layout can be downloaded from CVS:
+The latest version of the keyboard layout can be downloaded from the source repository:
 \end_layout
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "si-phonetic-static.mim"
-target "http://cvs.savannah.gnu.org/viewvc/*checkout*/sinhala/keymaps/si-phonetic-static.mim?root=sinhala"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/keymaps/si-phonetic-static.mim"
 
 \end_inset
 
@@ -935,13 +935,13 @@ The file can be found at:
 \end_layout
 
 \begin_layout Standard
-The latest version of the keyboard layout can be downloaded from CVS:
+The latest version of the keyboard layout can be downloaded from the source repository:
 \end_layout
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "si-phonetic-dynamic.mim"
-target "http://cvs.savannah.gnu.org/viewvc/*checkout*/sinhala/keymaps/si-phonetic-dynamic.mim?root=sinhala"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/keymaps/si-phonetic-dynamic.mim"
 
 \end_inset
 
@@ -981,13 +981,13 @@ The file can be found at:
 \end_layout
 
 \begin_layout Standard
-The latest version of the keyboard layout can be downloaded from CVS:
+The latest version of the keyboard layout can be downloaded from the source repository:
 \end_layout
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "si-trans.mim"
-target "http://cvs.savannah.gnu.org/viewvc/*checkout*/sinhala/keymaps/si-trans.mim?root=sinhala"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/keymaps/si-trans.mim"
 
 \end_inset
 
@@ -1033,13 +1033,13 @@ The file can be found at:
 \end_layout
 
 \begin_layout Standard
-The latest version of the keyboard layout can be downloaded from CVS:
+The latest version of the keyboard layout can be downloaded from the source repository:
 \end_layout
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "lk"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/lk?root=sinhala"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/keymaps/lk"
 
 \end_inset
 
@@ -1503,8 +1503,8 @@ You can use this PHP script to generate Unicode Sinhala letters:
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
-name "http://cvs.savannah.nongnu.org/viewvc/*checkout*/sinhala/utils/gen-unicode-sinhala.php?root=sinhala"
-target "http://cvs.savannah.nongnu.org/viewvc/*checkout*/sinhala/utils/gen-unicode-sinhala.php?root=sinhala"
+name "gen-unicode-sinhala.php"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/utils/gen-unicode-sinhala.php"
 
 \end_inset
 
@@ -1852,8 +1852,8 @@ There was an issue with U+0DDD (dependent vowel diga o) that can cause Open
 
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
-name "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-crash-testcase-dv-oo.txt?root=sinhala"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/icu-crash-testcase-dv-oo.txt?root=sinhala"
+name "icu-crash-testcase-dv-oo.txt"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/patches/icu-crash-testcase-dv-oo.txt"
 
 \end_inset
 
@@ -2978,7 +2978,7 @@ Download the keyboard layout from:
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "sin.xmodmap"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sin.xmodmap?root=sinhala"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/keymaps/sin.xmodmap"
 
 \end_inset
 
@@ -3022,7 +3022,7 @@ Download the keyboard layout and redirector from:
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "sinhala-phonetic_utf-8.vim"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sinhala-phonetic_utf-8.vim?root=sinhala"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/keymaps/sinhala-phonetic_utf-8.vim"
 
 \end_inset
 
@@ -3032,7 +3032,7 @@ target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sinhal
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "sinhala.vim"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/keymaps/sinhala.vim?root=sinhala"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/keymaps/sinhala.vim"
 
 \end_inset
 
@@ -3802,7 +3802,7 @@ Load the data from this file:
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "mysql-data-sinhala.txt"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-data-sinhala.txt?root=sinhala"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/tree/patches/mysql-data-sinhala.txt"
 
 \end_inset
 
@@ -3828,7 +3828,7 @@ Download the output file from:
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "mysql-output-utf8_sinhala_ci.txt"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-output-utf8_sinhala_ci.txt?root=sinhala"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/patches/mysql-output-utf8_sinhala_ci.txt"
 
 \end_inset
 
@@ -4310,7 +4310,7 @@ Patch
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "mysql-dfsg-5.0-5.0.27-sinhala1.patch"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-dfsg-5.0-5.0.27-sinhala1.patch?root=sinhala"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/patches/mysql-dfsg-5.0-5.0.27-sinhala1.patch"
 
 \end_inset
 
@@ -4320,7 +4320,7 @@ target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-
 \begin_layout Itemize
 \begin_inset LatexCommand htmlurl
 name "mysql-dfsg-5.0-5.0.32-sinhala2.patch"
-target "http://cvs.savannah.nongnu.org/viewcvs/*checkout*/sinhala/patches/mysql-dfsg-5.0-5.0.32-sinhala2.patch?root=sinhala"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/tree/patches/mysql-dfsg-5.0-5.0.32-sinhala2.patch"
 
 \end_inset
 
