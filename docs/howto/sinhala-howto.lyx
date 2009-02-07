@@ -538,7 +538,7 @@ name "Enabling-Short-Debian"
 \end_layout
 
 \begin_layout Enumerate
-As root/superuser run,
+As root/superuser run:
 \end_layout
 
 \begin_deeper
@@ -550,7 +550,7 @@ apt-get install ttf-sinhala-lklug scim scim-gtk2-immodule im-switch scim-m17n
 \end_deeper
 \begin_layout Enumerate
 From your user account (i.e.
- not root) run,
+ not root) run:
 \end_layout
 
 \begin_deeper
@@ -561,7 +561,7 @@ im-switch -z all_ALL -s scim-immodule
 \end_deeper
 \begin_layout Enumerate
 Logout and login again.
- Environment variables need to be set/updated (NO NEED TO REBOOT)
+ Environment variables need to be set/updated (NO NEED TO REBOOT).
 \end_layout
 
 \begin_layout Subsubsection
@@ -587,7 +587,7 @@ target "https://wiki.ubuntu.com/AlwaysEnableUniverseMultiverse"
 \end_layout
 
 \begin_layout Enumerate
-As root/superuser run,
+As root/superuser run:
 \end_layout
 
 \begin_deeper
@@ -599,7 +599,7 @@ apt-get install ttf-sinhala-lklug scim scim-gtk2-immodule im-switch scim-m17n
 \end_deeper
 \begin_layout Enumerate
 From your user account (i.e.
- not root) run,
+ not root) run:
 \end_layout
 
 \begin_deeper
@@ -610,7 +610,7 @@ im-switch -z all_ALL -s scim-immodule
 \end_deeper
 \begin_layout Enumerate
 Logout and login again.
- Environment variables need to be set/updated (NO NEED TO REBOOT)
+ Environment variables need to be set/updated (NO NEED TO REBOOT).
 \end_layout
 
 \begin_layout Subsubsection
@@ -834,7 +834,7 @@ KDE Users
 \begin_layout Standard
 Those who predominately use KDE and/or KDE applications may find difficulties
  when using SCIM directly.
- If so, then try using scim-bridge,
+ If so, then try using scim-bridge:
 \end_layout
 
 \begin_layout Code
@@ -889,7 +889,8 @@ The file can be found at:
 \end_layout
 
 \begin_layout Standard
-The latest version of the keyboard layout can be downloaded from the source repository:
+The latest version of the keyboard layout can be downloaded from the source
+ repository:
 \end_layout
 
 \begin_layout Itemize
@@ -935,7 +936,8 @@ The file can be found at:
 \end_layout
 
 \begin_layout Standard
-The latest version of the keyboard layout can be downloaded from the source repository:
+The latest version of the keyboard layout can be downloaded from the source
+ repository:
 \end_layout
 
 \begin_layout Itemize
@@ -981,7 +983,8 @@ The file can be found at:
 \end_layout
 
 \begin_layout Standard
-The latest version of the keyboard layout can be downloaded from the source repository:
+The latest version of the keyboard layout can be downloaded from the source
+ repository:
 \end_layout
 
 \begin_layout Itemize
@@ -1033,7 +1036,8 @@ The file can be found at:
 \end_layout
 
 \begin_layout Standard
-The latest version of the keyboard layout can be downloaded from the source repository:
+The latest version of the keyboard layout can be downloaded from the source
+ repository:
 \end_layout
 
 \begin_layout Itemize
@@ -1140,7 +1144,7 @@ Layout switching
 \end_inset
 
 .
- A list will expand below this text
+ A list will expand below this text.
 \end_layout
 
 \begin_layout Enumerate
@@ -1159,7 +1163,7 @@ Both Shift keys together change layout
 \begin_layout Enumerate
 If you wish to use an LED to indicate the toggling of keyboard layouts,
  click on the text "Use keyboard LED to show alternative layout".
- A list will expand below this text
+ A list will expand below this text.
 \end_layout
 
 \begin_layout Enumerate
@@ -1341,8 +1345,7 @@ The locale definitions need to be compiled before they can be used.
 \end_layout
 
 \begin_layout Standard
-This will involve uncommenting the required locale.
- e.g.
+This will involve uncommenting the required locale, e.g.:
 \end_layout
 
 \begin_layout Code
@@ -2146,7 +2149,7 @@ fi
 
 \begin_layout Standard
 This means that Ubuntu 6.06 users that need Pango enabled in Firefox need
- to set an environment variable
+ to set an environment variable:
 \end_layout
 
 \begin_layout Code
@@ -2583,7 +2586,7 @@ linguistic/source/misc.cxx
 \end_layout
 
 \begin_layout Standard
-two functions, 
+two functions,
 \end_layout
 
 \begin_layout Code
@@ -3049,7 +3052,7 @@ Start gvim
 \end_layout
 
 \begin_layout Enumerate
-Need to disable the menu so that you can use the 'alt' key.
+Need to disable the menu so that you can use the 'alt' key:
 \end_layout
 
 \begin_deeper
@@ -4765,7 +4768,7 @@ target "http://bugzilla.gnome.org/show_bug.cgi?id=145233"
 
 \end_inset
 
-).
+)
 \end_layout
 
 \begin_deeper
@@ -4868,7 +4871,7 @@ target "http://bugs.icu-project.org/trac/ticket/4298"
 
 \end_deeper
 \begin_layout Itemize
-Convinced Pango and ICU maintainers to emit ZWJ to the font lookup stage.
+Convinced Pango and ICU maintainers to emit ZWJ to the font lookup stage
 \end_layout
 
 \begin_deeper
@@ -5127,7 +5130,7 @@ target "http://bugs.xfree86.org/show_bug.cgi?id=1509"
 
 \end_deeper
 \begin_layout Itemize
-Tested and provided feedback on the m17n Wijesekera input method.
+Tested and provided feedback on the m17n Wijesekera input method
 \end_layout
 
 \begin_deeper
@@ -5179,7 +5182,7 @@ target "https://bugs.freedesktop.org/show_bug.cgi?id=11284"
 
 \end_deeper
 \begin_layout Itemize
-Developed Sinhala Phonetic keyboard layouts and a Transliteration scheme.
+Developed Sinhala Phonetic keyboard layouts and a Transliteration scheme
 \end_layout
 
 \begin_deeper
@@ -5215,7 +5218,7 @@ target "http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteratio
 
 \end_deeper
 \begin_layout Itemize
-Implemented phonetic and transliteration input methods for m17n.
+Implemented phonetic and transliteration input methods for m17n
 \end_layout
 
 \begin_deeper
@@ -5282,7 +5285,7 @@ Kunddaliya
 \begin_inset Quotes erd
 \end_inset
 
- to LKLUG font.
+ to LKLUG font
 \end_layout
 
 \begin_layout Itemize
@@ -5294,7 +5297,7 @@ Repaya
 \begin_inset Quotes erd
 \end_inset
 
- and added corresponding lookups to LKLUG font.
+ and added corresponding lookups to LKLUG font
 \end_layout
 
 \begin_layout Itemize
@@ -5319,7 +5322,7 @@ Standards
 
 \begin_deeper
 \begin_layout Itemize
-Amended ISO639 to include 'Sinhala' in the languages list alongside 'Sinhalese'.
+Amended ISO639 to include 'Sinhala' in the languages list alongside 'Sinhalese'
 \end_layout
 
 \begin_deeper
@@ -5536,7 +5539,7 @@ Renderer (Layout Engine)
 
 \begin_deeper
 \begin_layout Itemize
-Support touching letters in QT Renderer.
+Support touching letters in QT Renderer
 \end_layout
 
 \begin_layout Itemize
@@ -5546,7 +5549,7 @@ Pango tries to display a 25CC, which is a dotted circle, when a dependent
 \end_layout
 
 \begin_layout Itemize
-see chapter 9 of TUS Unicode - apparently discusses ZWJ/ZWNJ.
+see chapter 9 of TUS Unicode - apparently discusses ZWJ/ZWNJ
 \end_layout
 
 \begin_layout Itemize
@@ -5564,7 +5567,7 @@ Input Methods
 
 \begin_deeper
 \begin_layout Itemize
-See if XKB can be extended to allow multiple codepoints per keycode.
+See if XKB can be extended to allow multiple codepoints per keycode
 \end_layout
 
 \end_deeper
@@ -5574,7 +5577,7 @@ Fonts
 
 \begin_deeper
 \begin_layout Itemize
-Learn about OT features/order.
+Learn about OT features/order
 \end_layout
 
 \begin_layout Itemize
@@ -5586,11 +5589,11 @@ Discover why the appearance of the Unicode Sinhala fonts deteriorate at
 
 \begin_layout Itemize
 Improve the range and correctness of the Unicode Sinhala section in the
- freefont.
+ freefont
 \end_layout
 
 \begin_layout Itemize
-Develop a standard lookup table for font developers.
+Develop a standard lookup table for font developers
 \end_layout
 
 \end_deeper
@@ -5601,7 +5604,7 @@ Sorting
 \begin_deeper
 \begin_layout Itemize
 String matching - a consonant followed by dependent vowel 'o' should not
- match the same consonant followed by dependent vowel 'oo'.
+ match the same consonant followed by dependent vowel 'oo'
 \end_layout
 
 \begin_layout Itemize
@@ -5609,7 +5612,7 @@ Can the DUCET be updated with the correct Sinhala collation sequence?
 \end_layout
 
 \begin_layout Itemize
-MySQL Sinhala locale needed.
+MySQL Sinhala locale needed
 \end_layout
 
 \end_deeper
@@ -5623,7 +5626,7 @@ Add Sinhala to /usr/include/X11/keysymdef.h
 \end_layout
 
 \begin_layout Itemize
-OTF printing problem.
+OTF printing problem
 \end_layout
 
 \end_deeper
@@ -5633,7 +5636,7 @@ Printing
 
 \begin_deeper
 \begin_layout Itemize
-Firefox & Thunderbird can't print Sinhala.
+Firefox & Thunderbird can't print Sinhala
 \end_layout
 
 \end_deeper
@@ -5645,11 +5648,11 @@ Misc
 \begin_layout Itemize
 Submit corrections to Unicode.
  e.g.
- aae Vs aee.
+ aae Vs aee
 \end_layout
 
 \begin_layout Itemize
-UTF-8 should be declared the standard file encoding.
+UTF-8 should be declared the standard file encoding
 \end_layout
 
 \begin_layout Itemize
