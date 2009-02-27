@@ -2,7 +2,7 @@
 <?php
 
 // gen-unicode-sinhala.php - generate lists of Unicode Sinhala
-// Copyright (C) 2007 Harshula Jayasuriya <harshula@gmail.com>
+// Copyright (C) 2007-2009 Harshula Jayasuriya <harshula@gmail.com>
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-// Last Updated: 2007/07/12
+// Last Updated: 2009/02/28
 
 class sinhala_letters
 {
@@ -58,22 +58,34 @@ class sinhala_letters
 
     public function gen_glyphs()
     {
+        $bases = array();
+        foreach (array_merge(self::$con, self::$conj) as $con)
+        {
+            $bases[] = $con;
+            foreach (self::$rakyan as $suffix)
+            {
+                $bases[] = $con . $suffix;
+            }
+            $bases[] = self::$rep . $con;
+        }
+
         $this->buf = self::$iv;
-        foreach (array_merge(self::$con, self::$conj) as $base)
+        foreach ($bases as $base)
         {
             $this->buf[] = $base;
-            foreach (array_merge(self::$sv, self::$dv, self::$rakyan) as $dia)
+            foreach (array_merge(self::$dv, self::$sv) as $dia)
             {
                 $this->buf[] = "{$base}{$dia}";
             }
-            $this->buf[] = self::$rep . $base;
         }
+        $this->buf = array_merge($this->buf, self::$rakyan);
+        $this->buf[] = self::$rep;
         $this->buf[] = self::$punct;
     }
 
     public function gen_letters()
     {
-        $this->buf = array_merge(self::$iv, self::$sv, self::$con, self::$dv, self::$rakyan, array(self::$rep));
+        $this->buf = array_merge(self::$iv, self::$sv, self::$con, self::$dv);
     }
 
     public function gen_syllables()
@@ -82,7 +94,7 @@ class sinhala_letters
         foreach (self::$con as $con)
         {
             $this->buf[] = $con;
-            foreach (array_merge(self::$sv, self::$dv) as $dia)
+            foreach (array_merge(self::$dv, self::$sv) as $dia)
             {
                 $this->buf[] = "{$con}{$dia}";
             }
