@@ -1,11 +1,11 @@
-#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
 \textclass docbook
 \use_default_options false
 \language english
-\inputencoding auto
+\inputencoding utf8
 \font_roman default
 \font_sans default
 \font_typewriter default
@@ -37,12 +37,13 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
 
 \begin_layout Title
-Enabling Unicode Sinhala in GNU/Linux HOWTO
+Enabling Unicode Sinhala (සිංහල) in GNU/Linux HOWTO
 \end_layout
 
 \begin_layout Standard
@@ -583,7 +584,7 @@ From your user account (i.e.
 
 \begin_deeper
 \begin_layout Code
-im-switch -z all_ALL -s scim-immodule
+rm -f ~/.xinput.d/* ; im-switch -z all_ALL -s scim-immodule
 \end_layout
 
 \end_deeper
@@ -634,7 +635,7 @@ From your user account (i.e.
 
 \begin_deeper
 \begin_layout Code
-im-switch -z all_ALL -s scim-immodule
+rm -f ~/.xinput.d/* ; im-switch -z all_ALL -s scim-immodule
 \end_layout
 
 \end_deeper
@@ -4691,6 +4692,17 @@ target "http://www.debian.org/doc/debian-policy/"
 \begin_layout Itemize
 \begin_inset CommandInset href
 LatexCommand href
+name "The Debian GNU/Linux FAQ"
+target "http://www.debian.org/doc/FAQ/index.en.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
 name "Debian Library Packaging guide"
 target "http://www.netfort.gr.jp/~dancer/column/libpkg-guide/libpkg-guide.html"
 
@@ -5478,6 +5490,22 @@ Created and submitted fontconfig patch - fontconfig: fix Sinhala coverage
 \begin_inset CommandInset href
 LatexCommand href
 target "http://bugs.freedesktop.org/show_bug.cgi?id=19288"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Request to remove incomplete Sinhala glyphs
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://lists.gnu.org/archive/html/freefont-bugs/2009-02/msg00000.html"
 
 \end_inset
 
