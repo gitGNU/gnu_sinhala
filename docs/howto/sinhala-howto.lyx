@@ -1,4 +1,4 @@
-#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.3 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -593,6 +593,38 @@ Logout and login again.
  Environment variables need to be set/updated (NO NEED TO REBOOT).
 \end_layout
 
+\begin_layout Subsubsection
+Fedora 10 (Cambridge) and Above (may work on older versions)
+\begin_inset CommandInset label
+LatexCommand label
+name "Enabling-Short-Fedora"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+As root/superuser run:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+yum groupinstall sinhala-support
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+From your user account (i.e.
+ not root), select and configure the Input Method by running:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+im-chooser
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection
 Ubuntu 8.10 (Intrepid) and Above (may work on older versions)
 \begin_inset CommandInset label
