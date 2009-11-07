@@ -404,7 +404,7 @@ target "http://www.unicode.org/charts/PDF/U0D80.pdf"
 \begin_inset CommandInset href
 LatexCommand href
 name "SLS1134 - Sinhala Character Code for Information Interchange (SCCII)"
-target "http://www.icta.lk/attachments/658_SLS%201134.pdf"
+target "http://www.siyabas.lk/files/Sri_Lanka_Standard_Sinhala_Character_Code_for_Information_Interchange%2c_SLS_1134_-_2004.pdf"
 
 \end_inset
 
@@ -415,7 +415,7 @@ target "http://www.icta.lk/attachments/658_SLS%201134.pdf"
 \begin_inset CommandInset href
 LatexCommand href
 name "SLS1134 - Sinhala Character Code for Information Interchange (SCCII) - Part 1: Collation Sequence"
-target "http://www.icta.lk/attachments/658_SLS%201134-%20Part%201.pdf"
+target "http://www.siyabas.lk/files/SLS_1134%2c_Part_1%2c_Sinhala_Collation_Sequence.pdf"
 
 \end_inset
 
@@ -426,7 +426,7 @@ target "http://www.icta.lk/attachments/658_SLS%201134-%20Part%201.pdf"
 \begin_inset CommandInset href
 LatexCommand href
 name "SLS1134 - Sinhala Character Code for Information Interchange (SCCII) - Part 2 : Requirements and Methods of Test"
-target "http://www.icta.lk/attachments/658_SLS%201134-Part2.pdf"
+target "http://www.siyabas.lk/files/SLS_1134%2c_Part_2%2c_Requirements_and_Methods_of_Test.pdf"
 
 \end_inset
 
