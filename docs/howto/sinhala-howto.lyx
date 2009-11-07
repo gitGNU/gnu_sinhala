@@ -1,4 +1,4 @@
-#LyX 1.6.3 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -401,18 +401,36 @@ target "http://www.unicode.org/charts/PDF/U0D80.pdf"
 \end_layout
 
 \begin_layout Itemize
-SLS1134 - Sinhala Character Code for Information Interchange (SCCII) (not
- available online)
+\begin_inset CommandInset href
+LatexCommand href
+name "SLS1134 - Sinhala Character Code for Information Interchange (SCCII)"
+target "http://www.icta.lk/attachments/658_SLS%201134.pdf"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-SLS1134 - Sinhala Character Code for Information Interchange (SCCII) - Part
- 1: Collation Sequence (not available online)
+\begin_inset CommandInset href
+LatexCommand href
+name "SLS1134 - Sinhala Character Code for Information Interchange (SCCII) - Part 1: Collation Sequence"
+target "http://www.icta.lk/attachments/658_SLS%201134-%20Part%201.pdf"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-SLS1134 - Sinhala Character Code for Information Interchange (SCCII) - Part
- 2 : Requirements and Methods of Test (not available online)
+\begin_inset CommandInset href
+LatexCommand href
+name "SLS1134 - Sinhala Character Code for Information Interchange (SCCII) - Part 2 : Requirements and Methods of Test"
+target "http://www.icta.lk/attachments/658_SLS%201134-Part2.pdf"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -572,8 +590,7 @@ As root/superuser run:
 
 \begin_deeper
 \begin_layout Code
-apt-get install ttf-sinhala-lklug scim scim-gtk2-immodule im-switch scim-m17n
- m17n-db m17n-contrib
+apt-get install ttf-sinhala-lklug ibus im-switch ibus-m17n m17n-db m17n-contrib
 \end_layout
 
 \end_deeper
@@ -584,7 +601,7 @@ From your user account (i.e.
 
 \begin_deeper
 \begin_layout Code
-rm -f ~/.xinput.d/* ; im-switch -z all_ALL -s scim-immodule
+rm -f ~/.xinput.d/* ; im-switch -z all_ALL -s ibus
 \end_layout
 
 \end_deeper
@@ -593,6 +610,17 @@ Logout and login again.
  Environment variables need to be set/updated (NO NEED TO REBOOT).
 \end_layout
 
+\begin_layout Enumerate
+From your user account (i.e.
+ not root) select your keyboard layouts by running:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+ibus-setup
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection
 Fedora 10 (Cambridge) and Above (may work on older versions)
 \begin_inset CommandInset label
@@ -655,8 +683,8 @@ As root/superuser run:
 
 \begin_deeper
 \begin_layout Code
-apt-get install ttf-sinhala-lklug scim scim-gtk2-immodule im-switch scim-m17n
- m17n-db m17n-contrib language-pack-si-base
+apt-get install ttf-sinhala-lklug ibus im-switch ibus-m17n m17n-db m17n-contrib
+ language-pack-si-base
 \end_layout
 
 \end_deeper
@@ -667,7 +695,7 @@ From your user account (i.e.
 
 \begin_deeper
 \begin_layout Code
-rm -f ~/.xinput.d/* ; im-switch -z all_ALL -s scim-immodule
+rm -f ~/.xinput.d/* ; im-switch -z all_ALL -s ibus
 \end_layout
 
 \end_deeper
@@ -676,6 +704,17 @@ Logout and login again.
  Environment variables need to be set/updated (NO NEED TO REBOOT).
 \end_layout
 
+\begin_layout Enumerate
+From your user account (i.e.
+ not root) select your keyboard layouts by running:
+\end_layout
+
+\begin_deeper
+\begin_layout Code
+ibus-setup
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection
 How to test
 \end_layout
@@ -1649,8 +1688,8 @@ Indic
 \begin_layout Itemize
 \begin_inset CommandInset href
 LatexCommand href
-name "http://www.microsoft.com/typography/OpenType%20Dev/indic/intro.mspx"
-target "http://www.microsoft.com/typography/OpenType%20Dev/indic/intro.mspx"
+name "http://www.microsoft.com/typography/SpecificationsOverview.mspx"
+target "http://www.microsoft.com/typography/SpecificationsOverview.mspx"
 
 \end_inset
 
@@ -4633,14 +4672,14 @@ target "http://l10n.kde.org/team-infos.php?teamcode=si"
 \end_layout
 
 \begin_layout Subsubsection
-Ubuntu
+Debian
 \end_layout
 
 \begin_layout Itemize
 \begin_inset CommandInset href
 LatexCommand href
-name "https://translations.launchpad.net/ubuntu/gutsy/+lang/si"
-target "https://translations.launchpad.net/ubuntu/gutsy/+lang/si"
+name "http://www.debian.org/international/l10n/po/si"
+target "http://www.debian.org/international/l10n/po/si"
 
 \end_inset
 
@@ -4648,14 +4687,29 @@ target "https://translations.launchpad.net/ubuntu/gutsy/+lang/si"
 \end_layout
 
 \begin_layout Subsubsection
-Fedora Core
+Fedora
 \end_layout
 
 \begin_layout Itemize
 \begin_inset CommandInset href
 LatexCommand href
-name "http://i18n.redhat.com/cgi-bin/i18n-status"
-target "http://i18n.redhat.com/cgi-bin/i18n-status"
+name "http://fedoraproject.org/wiki/L10N/Teams/Sinhala"
+target "http://fedoraproject.org/wiki/L10N/Teams/Sinhala"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Ubuntu
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "https://translations.launchpad.net/ubuntu/jaunty/+lang/si"
+target "https://translations.launchpad.net/ubuntu/jaunty/+lang/si"
 
 \end_inset
 
