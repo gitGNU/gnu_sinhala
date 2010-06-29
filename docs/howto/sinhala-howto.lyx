@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.6 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -112,6 +112,14 @@ status open
 
 \begin_layout RevisionHistory
 
+\end_layout
+
+\begin_layout Revision
+0.8
+\end_layout
+
+\begin_layout Date
+2009/11/26
 \end_layout
 
 \begin_layout Revision
@@ -574,7 +582,7 @@ name "Enabling-Short"
 \end_layout
 
 \begin_layout Subsubsection
-Debian 5.0 (Lenny) and Above (may work on older versions)
+Debian 6.0 (Squeeze) and Above (may work on older versions)
 \begin_inset CommandInset label
 LatexCommand label
 name "Enabling-Short-Debian"
@@ -654,7 +662,7 @@ im-chooser
 
 \end_deeper
 \begin_layout Subsubsection
-Ubuntu 8.10 (Intrepid) and Above (may work on older versions)
+Ubuntu 9.10 (Karmic) and Above (may work on older versions)
 \begin_inset CommandInset label
 LatexCommand label
 name "Enabling-Short-Ubuntu"
@@ -876,7 +884,7 @@ name "Enable-Input-Methods"
 \begin_layout Standard
 There are a number of different input method infrastructures available on
  GNU/Linux.
- In general, first try m17n/SCIM and as a last resort XKB.
+ In general, first try IBus/m17n and as a last resort XKB.
 \end_layout
 
 \begin_layout Standard
@@ -912,7 +920,7 @@ Generally choose:
 \end_layout
 
 \begin_layout Code
-scim-immodule
+ibus
 \end_layout
 
 \begin_layout Paragraph
@@ -923,34 +931,16 @@ Surrounding Text Support.
 Surrounding text support allows the creation of user-friendly input methods.
  Input methods without surrounding text support are difficult to use when
  editing existing text.
-\end_layout
-
-\begin_layout Standard
-Some applications do not fully support surrounding text.
+ Some applications do not fully support surrounding text.
  In these circumstances you may want use an input method that uses pre-edit.
- e.g.
- The m17n Wijesekera (si-wijesekera) requires surrounding text support,
- however, there is a pre-edit version (si-wijesekera-preedit) that does
- not.
- The aforementioned input methods are available in the m17n-db package.
-\end_layout
-
-\begin_layout Paragraph
-KDE Users
 \end_layout
 
 \begin_layout Standard
-Those who predominately use KDE and/or KDE applications may find difficulties
- when using SCIM directly.
- If so, then try using scim-bridge:
-\end_layout
-
-\begin_layout Code
-im-switch -z all_ALL -s scim-bridge
-\end_layout
-
-\begin_layout Standard
-Note, scim-bridge currently does not have surrounding text support.
+m17n-db 1.5.5 and older contain a Wijesekera (si-wijesekera) layout that requires
+ surrounding text support, however, there is a pre-edit version (si-wijesekera-p
+reedit) that does not.
+ m17n-db 1.6.0 and newer will only contain a pre-edit version of the Wijesekera
+ (si-wijesekera) layout.
 \end_layout
 
 \begin_layout Subsubsection
@@ -965,7 +955,7 @@ If you are unfamiliar with the Wijesekera keyboard layout, here are some
 \end_layout
 
 \begin_layout Paragraph
-m17n Phonetic Static Keyboard Layout
+m17n Transliteration Keyboard Layout
 \end_layout
 
 \begin_layout Standard
@@ -975,8 +965,8 @@ To familiarise yourself with this keyboard layout, read:
 \begin_layout Itemize
 \begin_inset CommandInset href
 LatexCommand href
-name "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
-target "http://www.nongnu.org/sinhala/doc/keymaps/sinhala-keyboard_3.html"
+name "http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html"
+target "http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html"
 
 \end_inset
 
@@ -994,7 +984,7 @@ The file can be found at:
 \end_layout
 
 \begin_layout Code
-/usr/share/m17n/si-phonetic-static.mim
+/usr/share/m17n/si-trans.mim
 \end_layout
 
 \begin_layout Standard
@@ -1005,8 +995,8 @@ The latest version of the keyboard layout can be downloaded from the source
 \begin_layout Itemize
 \begin_inset CommandInset href
 LatexCommand href
-name "si-phonetic-static.mim"
-target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/keymaps/si-phonetic-static.mim"
+name "si-trans.mim"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/keymaps/si-trans.mim"
 
 \end_inset
 
@@ -1056,55 +1046,6 @@ The latest version of the keyboard layout can be downloaded from the source
 LatexCommand href
 name "si-phonetic-dynamic.mim"
 target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/keymaps/si-phonetic-dynamic.mim"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Paragraph
-m17n Transliteration Keyboard Layout
-\end_layout
-
-\begin_layout Standard
-To familiarise yourself with this keyboard layout, read:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset CommandInset href
-LatexCommand href
-name "http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html"
-target "http://www.nongnu.org/sinhala/doc/transliteration/sinhala-transliteration_5.html"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The aforementioned layout is already included in distributions that contain
- the m17n-contrib package.
- It does not require surrounding text support.
-\end_layout
-
-\begin_layout Standard
-The file can be found at:
-\end_layout
-
-\begin_layout Code
-/usr/share/m17n/si-trans.mim
-\end_layout
-
-\begin_layout Standard
-The latest version of the keyboard layout can be downloaded from the source
- repository:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset CommandInset href
-LatexCommand href
-name "si-trans.mim"
-target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/keymaps/si-trans.mim"
 
 \end_inset
 
@@ -2835,23 +2776,16 @@ name "Dev-Input-Methods"
 \end_layout
 
 \begin_layout Standard
-
-\series medium
-The recommended infrastructure for keyboard layouts 
-\series default
-are
-\series medium
- 
-\series default
-XKB, XIM, IIIMF 
+The recommended infrastructures are XKB, for simple one-to-one keyboard
+ layouts, and IBus
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
 \begin_inset CommandInset href
 LatexCommand href
-name "http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=103&page=1"
-target "http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=103&page=1"
+name "http://code.google.com/p/ibus/"
+target "http://code.google.com/p/ibus/"
 
 \end_inset
 
@@ -2860,7 +2794,7 @@ target "http://www.openi18n.org/modules.php?op=modload&name=Sections&file=index&
 
 \end_inset
 
-, m17n 
+/m17n
 \begin_inset Foot
 status open
 
@@ -2877,26 +2811,7 @@ target "http://www.m17n.org/"
 
 \end_inset
 
- and SCIM 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-name "http://www.scim-im.org/"
-target "http://www.scim-im.org/"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-.
- The recommended infrastructures are XKB, for simple one-to-one keyboard
- layouts, and SCIM/m17n for complex keyboard layouts.
+ for complex keyboard layouts.
  XKB is a component of Xorg.
 \end_layout
 
@@ -3084,13 +2999,13 @@ setxkbmap -print | xkbcomp -w 10 -xkb - <outfile>
 \end_layout
 
 \begin_layout Subsubsection
-SCIM
+IBus
 \end_layout
 
 \begin_layout Standard
-SCIM can be used as the frontend, which is exposed to the user, and the
+IBus can be used as the frontend, which is exposed to the user, and the
  backend that maps keycodes to codepoints.
- Or SCIM can be used as a frontend for other backends.
+ Or IBus can be used as a frontend for other backends.
  e.g.
  m17n can be a backend.
 \end_layout
