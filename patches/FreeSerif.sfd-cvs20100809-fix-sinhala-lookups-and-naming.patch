@@ -1,0 +1,5994 @@
+--- /home/harshula/source/freefont.cvs/sfd/FreeSerif.sfd	2010-08-15 21:36:37.366438503 +1000
++++ FreeSerif.sfd	2010-08-16 20:39:56.242936867 +1000
+@@ -280184,7 +280184,7 @@
+ Validated: 32769
+ EndChar
+ 
+-StartChar: NG_sinh
++StartChar: ng_sinh
+ Encoding: 3458 3458 8089
+ Width: 251
+ Flags: HMW
+@@ -280205,7 +280205,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: H_sinh
++StartChar: h2_sinh
+ Encoding: 3459 3459 8090
+ Width: 251
+ Flags: HMW
+@@ -280427,7 +280427,7 @@
+ Validated: 32769
+ EndChar
+ 
+-StartChar: Ru_sinh
++StartChar: ri_sinh
+ Encoding: 3469 3469 8099
+ Width: 990
+ Flags: HMW
+@@ -280485,7 +280485,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Ruu_sinh
++StartChar: rii_sinh
+ Encoding: 3470 3470 8100
+ Width: 1324
+ Flags: HMW
+@@ -280555,7 +280555,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Luu_sinh
++StartChar: luu_sinh
+ Encoding: 3472 3472 8102
+ Width: 1485
+ Flags: HMW
+@@ -280834,7 +280834,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Ka_sinh
++StartChar: kha_sinh
+ Encoding: 3483 3483 8110
+ Width: 717
+ VWidth: 0
+@@ -280909,7 +280909,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Ga_sinh
++StartChar: gha_sinh
+ Encoding: 3485 3485 8112
+ Width: 721
+ VWidth: 0
+@@ -280964,7 +280964,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Z_sinh
++StartChar: ng2_sinh
+ Encoding: 3486 3486 8113
+ Width: 743
+ VWidth: 0
+@@ -281013,7 +281013,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Nga_sinh
++StartChar: nga_sinh
+ Encoding: 3487 3487 8114
+ Width: 836
+ VWidth: 0
+@@ -281184,7 +281184,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Ja_sinh
++StartChar: jha_sinh
+ Encoding: 3491 3491 8118
+ Width: 1321
+ VWidth: 0
+@@ -281247,7 +281247,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: qa_sinh
++StartChar: nya_sinh
+ Encoding: 3492 3492 8119
+ Width: 1027
+ VWidth: 0
+@@ -281313,7 +281313,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: GNa_sinh
++StartChar: jnya_sinh
+ Encoding: 3493 3493 8120
+ Width: 941
+ VWidth: 0
+@@ -281370,7 +281370,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: sanyaka_jayanna_sinh
++StartChar: nja_sinh
+ Encoding: 3494 3494 8121
+ Width: 679
+ VWidth: 0
+@@ -281421,7 +281421,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: ta_sinh
++StartChar: tta_sinh
+ Encoding: 3495 3495 8122
+ Width: 721
+ VWidth: 0
+@@ -281452,7 +281452,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Ta_sinh
++StartChar: ttha_sinh
+ Encoding: 3496 3496 8123
+ Width: 679
+ VWidth: 0
+@@ -281489,7 +281489,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: da_sinh
++StartChar: dda_sinh
+ Encoding: 3497 3497 8124
+ Width: 743
+ VWidth: 0
+@@ -281531,7 +281531,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Da_sinh
++StartChar: ddha_sinh
+ Encoding: 3498 3498 8125
+ Width: 679
+ VWidth: 0
+@@ -281576,7 +281576,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Na_sinh
++StartChar: nna_sinh
+ Encoding: 3499 3499 8126
+ Width: 1141
+ VWidth: 0
+@@ -281648,7 +281648,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Nda_sinh
++StartChar: ndda_sinh
+ Encoding: 3500 3500 8127
+ Width: 743
+ VWidth: 0
+@@ -281734,7 +281734,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Tha_sinh
++StartChar: thha_sinh
+ Encoding: 3502 3502 8129
+ Width: 679
+ VWidth: 0
+@@ -281800,7 +281800,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Dha_sinh
++StartChar: dhha_sinh
+ Encoding: 3504 3504 8131
+ Width: 743
+ VWidth: 0
+@@ -281875,7 +281875,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Ndha_sinh
++StartChar: ndha_sinh
+ Encoding: 3507 3507 8133
+ Width: 466
+ VWidth: 0
+@@ -281951,7 +281951,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Pa_sinh
++StartChar: pha_sinh
+ Encoding: 3509 3509 8135
+ Width: 679
+ VWidth: 0
+@@ -282030,7 +282030,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Ba_sinh
++StartChar: bha_sinh
+ Encoding: 3511 3511 8137
+ Width: 789
+ VWidth: 0
+@@ -282111,7 +282111,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Mba_sinh
++StartChar: mba_sinh
+ Encoding: 3513 3513 8139
+ Width: 721
+ VWidth: 0
+@@ -282337,7 +282337,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: Sha_sinh
++StartChar: ssha_sinh
+ Encoding: 3522 3522 8145
+ Width: 679
+ VWidth: 0
+@@ -282471,7 +282471,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: La_sinh
++StartChar: lla_sinh
+ Encoding: 3525 3525 8148
+ Width: 785
+ VWidth: 0
+@@ -282550,7 +282550,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: al_lakuna_sinh
++StartChar: al_sinh
+ Encoding: 3530 3530 8150
+ Width: 0
+ Flags: MW
+@@ -282574,7 +282574,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: aela_pilla_sinh
++StartChar: aa2_sinh
+ Encoding: 3535 3535 8151
+ Width: 350
+ VWidth: 0
+@@ -282597,7 +282597,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: ketti_aeda_pilla_sinh
++StartChar: ae2_sinh
+ Encoding: 3536 3536 8152
+ Width: 339
+ VWidth: 0
+@@ -282622,7 +282622,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: diga_aeda_pilla_sinh
++StartChar: aee2_sinh
+ Encoding: 3537 3537 8153
+ Width: 339
+ VWidth: 0
+@@ -282655,7 +282655,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: ketti_is_pilla_sinh
++StartChar: i2_sinh
+ Encoding: 3538 3538 8154
+ Width: 0
+ Flags: HMW
+@@ -282679,7 +282679,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: diga_is_pilla_sinh
++StartChar: ii2_sinh
+ Encoding: 3539 3539 8155
+ Width: 0
+ Flags: HMW
+@@ -282707,7 +282707,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: ketti_paa_pilla_sinh
++StartChar: u2_sinh
+ Encoding: 3540 3540 8156
+ Width: 0
+ Flags: MW
+@@ -282734,7 +282734,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: diga_paa_pilla_sinh
++StartChar: uu2_sinh
+ Encoding: 3542 3542 8157
+ Width: 0
+ Flags: HMW
+@@ -282764,7 +282764,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: gaetta_pilla_sinh
++StartChar: ru2_sinh
+ Encoding: 3544 3544 8158
+ Width: 350
+ VWidth: 0
+@@ -282791,7 +282791,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: kombuva_sinh
++StartChar: e2_sinh
+ Encoding: 3545 3545 8159
+ Width: 713
+ VWidth: 0
+@@ -282827,7 +282827,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: diga_kombuva_sinh
++StartChar: ee2_sinh
+ Encoding: 3546 3546 8160
+ Width: 1096
+ Flags: HMW
+@@ -282837,10 +282837,10 @@
+ Refer: 8159 3545 N 1 0 0 1 0 0 2
+ Validated: 32769
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'liga' Standard Ligatures in Sinhala lookup 8 subtable" kombuva_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'liga' Standard Ligatures in Sinhala lookup 8 subtable" e2_sinh al_sinh
+ EndChar
+ 
+-StartChar: kombu_deka_sinh
++StartChar: ai2_sinh
+ Encoding: 3547 3547 8161
+ Width: 1402
+ Flags: HMW
+@@ -282851,7 +282851,7 @@
+ Validated: 32769
+ EndChar
+ 
+-StartChar: o_kombuva_sinh
++StartChar: o2_sinh
+ Encoding: 3548 3548 8162
+ Width: 1298
+ Flags: HMW
+@@ -282861,10 +282861,10 @@
+ Refer: 8159 3545 N 1 0 0 1 0 0 2
+ Validated: 32769
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'liga' Standard Ligatures in Sinhala lookup 8 subtable" kombuva_sinh aela_pilla_sinh
++Ligature2: "LKLUG-'liga' Standard Ligatures in Sinhala lookup 8 subtable" e2_sinh aa2_sinh
+ EndChar
+ 
+-StartChar: oo_kombuva_sinh
++StartChar: oo2_sinh
+ Encoding: 3549 3549 8163
+ Width: 1298
+ Flags: HMW
+@@ -282921,10 +282921,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'liga' Standard Ligatures in Sinhala lookup 8 subtable" o_kombuva_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'liga' Standard Ligatures in Sinhala lookup 8 subtable" o2_sinh al_sinh
+ EndChar
+ 
+-StartChar: au_kombuva_sinh
++StartChar: au2_sinh
+ Encoding: 3550 3550 8164
+ Width: 1310
+ Flags: HMW
+@@ -282934,10 +282934,10 @@
+ Refer: 8165 3551 N 1 0 0 1 831 -37 2
+ Validated: 32769
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'liga' Standard Ligatures in Sinhala lookup 8 subtable" kombuva_sinh gayanukitta_sinh
++Ligature2: "LKLUG-'liga' Standard Ligatures in Sinhala lookup 8 subtable" e2_sinh lu2_sinh
+ EndChar
+ 
+-StartChar: gayanukitta_sinh
++StartChar: lu2_sinh
+ Encoding: 3551 3551 8165
+ Width: 483
+ VWidth: 0
+@@ -282971,7 +282971,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: vocalic_rr_sinh
++StartChar: ruu2_sinh
+ Encoding: 3570 3570 8166
+ Width: 680
+ Flags: HMW
+@@ -282982,7 +282982,7 @@
+ Validated: 32769
+ EndChar
+ 
+-StartChar: vocalic_ll_sinh
++StartChar: llu2_sinh
+ Encoding: 3571 3571 8167
+ Width: 483
+ VWidth: 0
+@@ -283062,7 +283062,7 @@
+ Validated: 3073
+ EndChar
+ 
+-StartChar: muurdhaja_sayanna_sinh.vat.hal
++StartChar: sha_sinh.rak.al
+ Encoding: 61200 -1 8169
+ Width: 714
+ Flags: HMW
+@@ -283129,10 +283129,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" muurdhaja_sayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" sha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: dantaja_sayanna_sinh.vat.hal
++StartChar: ssha_sinh.rak.al
+ Encoding: 61201 -1 8170
+ Width: 676
+ Flags: HMW
+@@ -283210,10 +283210,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" dantaja_sayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ssha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: dantaja_sayanna_sinh.vat.hal
++StartChar: sa_sinh.rak.al
+ Encoding: 61202 -1 8171
+ Width: 718
+ Flags: HMW
+@@ -283288,10 +283288,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" dantaja_sayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" sa_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: hayanna_sinh.vat.hal
++StartChar: ha_sinh.rak.al
+ Encoding: 61203 -1 8172
+ Width: 786
+ Flags: HMW
+@@ -283354,10 +283354,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" hayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: payanna_sinh.vat.hal
++StartChar: fa_sinh.rak.al
+ Encoding: 61204 -1 8173
+ Width: 676
+ Flags: HMW
+@@ -283420,10 +283420,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" payanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" fa_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: dantaja_nayanna_sinh.vat.hal
++StartChar: na_sinh.rak.al
+ Encoding: 61205 -1 8174
+ Width: 939
+ Flags: HMW
+@@ -283492,10 +283492,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" dantaja_nayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" na_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: sanyaka_dayanna_sinh.vat.hal
++StartChar: ndha_sinh.rak.al
+ Encoding: 61206 -1 8175
+ Width: 463
+ Flags: HMW
+@@ -283549,10 +283549,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" sanyaka_dayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ndha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: alpapraana_payanna_sinh.vat.hal
++StartChar: pa_sinh.rak.al
+ Encoding: 61207 -1 8176
+ Width: 676
+ Flags: HMW
+@@ -283616,10 +283616,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" alpapraana_payanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" pa_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_payanna_sinh.vat.hal
++StartChar: pha_sinh.rak.al
+ Encoding: 61208 -1 8177
+ Width: 676
+ Flags: HMW
+@@ -283682,10 +283682,10 @@
+ EndSplineSet
+ Validated: 3617
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mahaapraana_payanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" pha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_bayanna_sinh.vat.hal
++StartChar: ba_sinh.rak.al
+ Encoding: 61209 -1 8178
+ Width: 714
+ Flags: HMW
+@@ -283751,10 +283751,10 @@
+ EndSplineSet
+ Validated: 3617
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mahaapraana_bayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ba_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_bayanna.vat.hal
++StartChar: bha_sinh.rak.al
+ Encoding: 61210 -1 8179
+ Width: 786
+ Flags: HMW
+@@ -283821,10 +283821,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mahaapraana_bayanna.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" bha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: ma_sinh.vat.hal
++StartChar: ma_sinh.rak.al
+ Encoding: 61211 -1 8180
+ Width: 718
+ Flags: HMW
+@@ -283882,10 +283882,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ma_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ma_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: amba_bayanna_sinh.vat.hal
++StartChar: mba_sinh.rak.al
+ Encoding: 61212 -1 8181
+ Width: 718
+ Flags: HMW
+@@ -283961,10 +283961,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" amba_bayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mba_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: yayanna_sinh.vat.hal
++StartChar: ya_sinh.rak.al
+ Encoding: 61213 -1 8182
+ Width: 718
+ Flags: HMW
+@@ -284027,10 +284027,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" yayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ya_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: vayanna_sinh.vat.hal
++StartChar: va_sinh.rak.al
+ Encoding: 61214 -1 8183
+ Width: 718
+ Flags: HMW
+@@ -284081,10 +284081,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" vayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" va_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: alpapraana_ddayanna_sinh.vat.hal
++StartChar: dda_sinh.rak.al
+ Encoding: 61215 -1 8184
+ Width: 740
+ Flags: HMW
+@@ -284151,10 +284151,10 @@
+ EndSplineSet
+ Validated: 3617
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" alpapraana_ddayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" dda_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_ddayanna_sinh.vat.hal
++StartChar: ddha_sinh.rak.al
+ Encoding: 61216 -1 8185
+ Width: 676
+ Flags: HMW
+@@ -284229,10 +284229,10 @@
+ EndSplineSet
+ Validated: 3617
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mahaapraana_ddayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ddha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: muurdhajanayanna_sinh.vat.hal
++StartChar: nna_sinh.rak.al
+ Encoding: 61217 -1 8186
+ Width: 1137
+ Flags: HMW
+@@ -284342,10 +284342,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" muurdhaja_nayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" nna_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: sanyaka_ddayanna_sinh.vat.hal
++StartChar: ndda_sinh.rak.al
+ Encoding: 61218 -1 8187
+ Width: 740
+ Flags: HMW
+@@ -284423,10 +284423,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" sanyaka_ddayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ndda_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: alpapraanatayanna_sinh.vat.hal
++StartChar: tha_sinh.rak.al
+ Encoding: 61219 -1 8188
+ Width: 778
+ Flags: HMW
+@@ -284486,10 +284486,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" alpapraana_tayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" tha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: mahaapraanatayanna_sinh.vat.hal
++StartChar: thha_sinh.rak.al
+ Encoding: 61220 -1 8189
+ Width: 676
+ Flags: HMW
+@@ -284548,10 +284548,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mahaapraana_tayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" thha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: alpapraana_dayanna_sinh.vat.hal
++StartChar: dha_sinh.rak.al
+ Encoding: 61221 -1 8190
+ Width: 463
+ Flags: HMW
+@@ -284600,10 +284600,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" alpapraana_dayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" dha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: mahaapraanadayanna_sinh.vat.hal
++StartChar: dhha_sinh.rak.al
+ Encoding: 61222 -1 8191
+ Width: 740
+ Flags: HMW
+@@ -284664,10 +284664,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mahaapraana_dayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" dhha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: mahaapraanajayanna_sinh.vat.hal
++StartChar: jha_sinh.rak.al
+ Encoding: 61223 -1 8192
+ Width: 1317
+ Flags: HMW
+@@ -284767,10 +284767,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mahaapraana_jayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" jha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: taalujanaasikyaya_sinh.vat.hal
++StartChar: nya_sinh.rak.al
+ Encoding: 61224 -1 8193
+ Width: 1023
+ Flags: HMW
+@@ -284867,10 +284867,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" taaluja_naasikyaya_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" nya_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: taaluja_sanyooga_sinh.vat.hal
++StartChar: jnya_sinh.rak.al
+ Encoding: 61225 -1 8194
+ Width: 937
+ Flags: HMW
+@@ -284955,10 +284955,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" taaluja_sanyooga_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" jnya_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: sanyaka_jayanna_sinh.vat.hal
++StartChar: nja_sinh.rak.al
+ Encoding: 61226 -1 8195
+ Width: 676
+ Flags: HMW
+@@ -285026,10 +285026,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" sanyaka_jayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" nja_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_ttayanna_sinh.vat.hal
++StartChar: ttha_sinh.rak.al
+ Encoding: 61227 -1 8196
+ Width: 676
+ Flags: HMW
+@@ -285094,10 +285094,10 @@
+ EndSplineSet
+ Validated: 3617
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mahaapraana_ttayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ttha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: kantaja_naasikyaya_sinh.vat.hal
++StartChar: ng2_sinh.rak.al
+ Encoding: 61228 -1 8197
+ Width: 740
+ Flags: HMW
+@@ -285171,10 +285171,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" kantaja_naasikyaya_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ng2_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: sanyaka_gayanna_sinh.vat.hal
++StartChar: nga_sinh.rak.al
+ Encoding: 61229 -1 8198
+ Width: 832
+ Flags: HMW
+@@ -285246,10 +285246,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" sanyaka_gayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" nga_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: alpapraana_cayanna_sinh.vat.hal
++StartChar: ca_sinh.rak.al
+ Encoding: 61230 -1 8199
+ Width: 718
+ Flags: HMW
+@@ -285304,10 +285304,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" alpapraana_cayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ca_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_cayanna_sinh.vat.hal
++StartChar: cha_sinh.rak.al
+ Encoding: 61231 -1 8200
+ Width: 676
+ Flags: HMW
+@@ -285388,10 +285388,10 @@
+ EndSplineSet
+ Validated: 3617
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mahaapraana_cayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" cha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_gayanna_sinh.vat.hal
++StartChar: gha_sinh.rak.al
+ Encoding: 61232 -1 8201
+ Width: 718
+ Flags: HMW
+@@ -285473,10 +285473,10 @@
+ EndSplineSet
+ Validated: 3617
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mahaapraana_gayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" gha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_gayanna_sinh.vat.hal
++StartChar: ga_sinh.rak.al
+ Encoding: 61233 -1 8202
+ Width: 714
+ Flags: HMW
+@@ -285523,10 +285523,10 @@
+ EndSplineSet
+ Validated: 3617
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mahaapraana_gayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" ga_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_kayanna_sinh.vat.hal
++StartChar: kha_sinh.rak.al
+ Encoding: 61234 -1 8203
+ Width: 714
+ Flags: HMW
+@@ -285583,10 +285583,10 @@
+ EndSplineSet
+ Validated: 3617
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" mahaapraana_kayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" kha_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: alpapraana_ttayanna_sinh.vat.hal
++StartChar: tta_sinh.rak.al
+ Encoding: 61235 -1 8204
+ Width: 718
+ Flags: HMW
+@@ -285633,10 +285633,10 @@
+ EndSplineSet
+ Validated: 3585
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_ttayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tta_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: alpapranna_kayanna_sinh.vat.hal
++StartChar: ka_sinh.rak.al
+ Encoding: 61236 -1 8205
+ Width: 892
+ Flags: HMW
+@@ -285698,10 +285698,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapranna_kayanna_sinh.vatu al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ka_sinh.rak al_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DAF.akhn
++StartChar: na_dha_sinh.akhn
+ Encoding: 61237 -1 8206
+ Width: 962
+ Flags: HMW
+@@ -285768,10 +285768,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" na_sinh al_lakuna_sinh zerojoin dha_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" na_sinh al_sinh zerojoin dha_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DAF0DCF.akhn
++StartChar: na_dha_sinh.akhn.aa2
+ Encoding: 61238 -1 8207
+ Width: 962
+ Flags: HMW
+@@ -285842,10 +285842,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" uni0DB10DAF.akhn aela_pilla_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" na_dha_sinh.akhn aa2_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DAF0DD2.akhn
++StartChar: na_dha_sinh.akhn.i2
+ Encoding: 61239 -1 8208
+ Width: 962
+ Flags: HMW
+@@ -285922,10 +285922,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" uni0DB10DAF.akhn ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" na_dha_sinh.akhn i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DAF0DD3.akhn
++StartChar: na_dha_sinh.akhn.ii2
+ Encoding: 61240 -1 8209
+ Width: 962
+ Flags: HMW
+@@ -286011,10 +286011,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" uni0DB10DAF.akhn diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" na_dha_sinh.akhn ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DAF0DD4.akhn
++StartChar: na_dha_sinh.akhn.u2
+ Encoding: 61241 -1 8210
+ Width: 962
+ Flags: HMW
+@@ -286087,10 +286087,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" uni0DB10DAF.akhn ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" na_dha_sinh.akhn u2_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DAF0DD6.akhn
++StartChar: na_dha_sinh.akhn.uu2
+ Encoding: 61242 -1 8211
+ Width: 962
+ Flags: HMW
+@@ -286167,10 +286167,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" uni0DB10DAF.akhn diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" na_dha_sinh.akhn uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DAF.vatu
++StartChar: na_dha_sinh.akhn.rak
+ Encoding: 61243 -1 8212
+ Width: 962
+ Flags: HMW
+@@ -286231,10 +286231,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 2 subtable" uni0DB10DAF.akhn al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 2 subtable" na_dha_sinh.akhn al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DAF0DD2.vatu
++StartChar: na_dha_sinh.akhn.rak.i2
+ Encoding: 61244 -1 8213
+ Width: 962
+ Flags: HMW
+@@ -286306,10 +286306,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" uni0DB10DAF.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" na_dha_sinh.akhn.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DAF0DD3.vatu
++StartChar: na_dha_sinh.akhn.rak.ii2
+ Encoding: 61245 -1 8214
+ Width: 962
+ Flags: HMW
+@@ -286389,10 +286389,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" uni0DB10DAF.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 7 subtable" na_dha_sinh.akhn.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9A0DC20DD2.akhn
++StartChar: ka_ssha_sinh.akhn.i2
+ Encoding: 61246 -1 8215
+ Width: 1236
+ Flags: HMW
+@@ -286497,10 +286497,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" uni0D9A0DC2.akhn ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ka_ssha_sinh.akhn i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9A0DC20DD3.akhn
++StartChar: ka_ssha_sinh.akhn.ii2
+ Encoding: 61247 -1 8216
+ Width: 1236
+ Flags: HMW
+@@ -286612,10 +286612,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" uni0D9A0DC2.akhn diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ka_ssha_sinh.akhn ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9A0DC20DD4.akhn
++StartChar: ka_ssha_sinh.akhn.u2
+ Encoding: 61248 -1 8217
+ Width: 1236
+ Flags: HMW
+@@ -286728,10 +286728,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" uni0D9A0DC2.akhn ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ka_ssha_sinh.akhn u2_sinh
+ EndChar
+ 
+-StartChar: uni0D9A0DC20DD6.akhn
++StartChar: ka_ssha_sinh.akhn.uu2
+ Encoding: 61249 -1 8218
+ Width: 1236
+ Flags: HMW
+@@ -286843,10 +286843,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" uni0D9A0DC2.akhn diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ka_ssha_sinh.akhn uu2_sinh
+ EndChar
+ 
+-StartChar: uni0D9A0DC20DCA.akhn
++StartChar: ka_ssha_sinh.akhn.al
+ Encoding: 61250 -1 8219
+ Width: 1236
+ Flags: HMW
+@@ -286955,10 +286955,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" uni0D9A0DC2.akhn al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ka_ssha_sinh.akhn al_sinh
+ EndChar
+ 
+-StartChar: uni0D9A0DC2.akhn
++StartChar: ka_ssha_sinh.akhn
+ Encoding: 61251 -1 8220
+ Width: 1236
+ Flags: HMW
+@@ -287051,10 +287051,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ka_sinh al_lakuna_sinh zerojoin Sha_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ka_sinh al_sinh zerojoin ssha_sinh
+ EndChar
+ 
+-StartChar: yayanna_sinh.yansaya
++StartChar: sinh.yan
+ Encoding: 61252 -1 8221
+ Width: 506
+ Flags: HMW
+@@ -287094,10 +287094,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 2 0 0 
+-Ligature2: "LKLUG-'pres' Pre Base Substitutions in Sinhala lookup 1 subtable" al_lakuna_sinh zerojoin ya_sinh
++Ligature2: "LKLUG-'pres' Pre Base Substitutions in Sinhala lookup 1 subtable" al_sinh zerojoin ya_sinh
+ EndChar
+ 
+-StartChar: uni0DBA0DD2.psts
++StartChar: i2_sinh.yan
+ Encoding: 61253 -1 8222
+ Width: 506
+ Flags: HMW
+@@ -287152,10 +287152,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" yayanna_sinh.yansaya ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sinh.yan i2_sinh
+ EndChar
+ 
+-StartChar: uni0DBA0DD3.psts
++StartChar: ii2_sinh.yan
+ Encoding: 61254 -1 8223
+ Width: 506
+ Flags: HMW
+@@ -287216,10 +287216,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" yayanna_sinh.yansaya diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sinh.yan ii2_sinh
+ EndChar
+ 
+-StartChar: sinhtestpsts
++StartChar: u2_sinh.yan
+ Encoding: 61255 -1 8224
+ Width: 506
+ Flags: HMW
+@@ -287275,10 +287275,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" yayanna_sinh.yansaya ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" sinh.yan u2_sinh
+ EndChar
+ 
+-StartChar: uni0DBA0DD6.psts
++StartChar: uu2_sinh.yan
+ Encoding: 61256 -1 8225
+ Width: 506
+ Flags: HMW
+@@ -287337,10 +287337,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" yayanna_sinh.yansaya diga_paa_pilla_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" sinh.yan uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DC60DD2
++StartChar: fa_i2_sinh
+ Encoding: 61257 -1 8226
+ Width: 676
+ Flags: HMW
+@@ -287392,10 +287392,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" fa_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" fa_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC60DD3
++StartChar: fa_ii2_sinh
+ Encoding: 61258 -1 8227
+ Width: 676
+ Flags: HMW
+@@ -287452,10 +287452,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" fa_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" fa_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DC60DD4
++StartChar: fa_u2_sinh
+ Encoding: 61259 -1 8228
+ Width: 676
+ Flags: HMW
+@@ -287508,10 +287508,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" fa_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" fa_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DC60DD6
++StartChar: fa_uu2_sinh
+ Encoding: 61260 -1 8229
+ Width: 676
+ Flags: HMW
+@@ -287568,10 +287568,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" fa_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" fa_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DC60DCA
++StartChar: fa_al_sinh
+ Encoding: 61261 -1 8230
+ Width: 676
+ Flags: HMW
+@@ -287626,10 +287626,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" fa_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" fa_sinh al_sinh
+ EndChar
+ 
+-StartChar: payanna_sinh.vatu
++StartChar: fa_sinh.rak
+ Encoding: 61262 -1 8231
+ Width: 676
+ Flags: HMW
+@@ -287677,10 +287677,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" fa_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" fa_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DC60DD2.vatu
++StartChar: fa_sinh.rak.i2
+ Encoding: 61263 -1 8232
+ Width: 676
+ Flags: HMW
+@@ -287740,10 +287740,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" payanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" fa_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC60DD3.vatu
++StartChar: fa_sinh.rak.ii2
+ Encoding: 61264 -1 8233
+ Width: 676
+ Flags: HMW
+@@ -287809,10 +287809,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" payanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" fa_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DC50DD2
++StartChar: lla_i2_sinh
+ Encoding: 61265 -1 8234
+ Width: 782
+ Flags: HMW
+@@ -287872,10 +287872,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" La_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" lla_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC50DD3
++StartChar: lla_ii2_sinh
+ Encoding: 61266 -1 8235
+ Width: 782
+ Flags: HMW
+@@ -287942,10 +287942,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" La_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" lla_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DC50DD4
++StartChar: lla_u2_sinh
+ Encoding: 61267 -1 8236
+ Width: 676
+ Flags: HMW
+@@ -287993,10 +287993,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" La_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" lla_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DC50DD6
++StartChar: lla_uu2_sinh
+ Encoding: 61268 -1 8237
+ Width: 1038
+ Flags: HMW
+@@ -288067,10 +288067,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" La_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" lla_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DC50DCA
++StartChar: lla_al_sinh
+ Encoding: 61269 -1 8238
+ Width: 782
+ Flags: HMW
+@@ -288134,10 +288134,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" La_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" lla_sinh al_sinh
+ EndChar
+ 
+-StartChar: uni0DC40DD2
++StartChar: ha_i2_sinh
+ Encoding: 61270 -1 8239
+ Width: 786
+ Flags: HMW
+@@ -288185,10 +288185,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ha_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC40DD3
++StartChar: ha_ii2_sinh
+ Encoding: 61271 -1 8240
+ Width: 786
+ Flags: HMW
+@@ -288242,10 +288242,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ha_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DC40DD4
++StartChar: ha_u2_sinh
+ Encoding: 61272 -1 8241
+ Width: 786
+ Flags: HMW
+@@ -288302,10 +288302,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ha_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DC40DD6
++StartChar: ha_uu2_sinh
+ Encoding: 61273 -1 8242
+ Width: 786
+ Flags: HMW
+@@ -288361,10 +288361,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ha_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DC40DCA
++StartChar: ha_al_sinh
+ Encoding: 61274 -1 8243
+ Width: 786
+ Flags: HMW
+@@ -288417,10 +288417,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ha_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ha_sinh al_sinh
+ EndChar
+ 
+-StartChar: hayanna_sinh.vatu
++StartChar: ha_sinh.rak
+ Encoding: 61275 -1 8244
+ Width: 786
+ Flags: HMW
+@@ -288470,10 +288470,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ha_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DC40DD2.vatu
++StartChar: ha_sinh.rak.i2
+ Encoding: 61276 -1 8245
+ Width: 786
+ Flags: HMW
+@@ -288530,10 +288530,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" hayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC40DD3.vatu
++StartChar: ha_sinh.rak.ii2
+ Encoding: 61277 -1 8246
+ Width: 786
+ Flags: HMW
+@@ -288596,10 +288596,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" hayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DC30DD2
++StartChar: sa_i2_sinh
+ Encoding: 61278 -1 8247
+ Width: 718
+ Flags: HMW
+@@ -288662,10 +288662,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sa_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sa_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC30DD3
++StartChar: sa_ii2_sinh
+ Encoding: 61279 -1 8248
+ Width: 718
+ Flags: HMW
+@@ -288735,10 +288735,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sa_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sa_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DC30DD4
++StartChar: sa_u2_sinh
+ Encoding: 61280 -1 8249
+ Width: 718
+ Flags: HMW
+@@ -288807,10 +288807,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" sa_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" sa_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DC30DD6
++StartChar: sa_uu2_sinh
+ Encoding: 61281 -1 8250
+ Width: 718
+ Flags: HMW
+@@ -288882,10 +288882,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" sa_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" sa_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DC30DCA
++StartChar: sa_al_sinh
+ Encoding: 61282 -1 8251
+ Width: 718
+ Flags: HMW
+@@ -288950,10 +288950,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sa_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sa_sinh al_sinh
+ EndChar
+ 
+-StartChar: dantaja_sayanna_sinh.vatu
++StartChar: sa_sinh.rak
+ Encoding: 61283 -1 8252
+ Width: 718
+ Flags: HMW
+@@ -289015,12 +289015,11 @@
+  603.148 24.2111 551.205 1.18441 503.704 1.18441 c 0
+ EndSplineSet
+ Validated: 3105
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Sha_sinh al_lakuna_sinh zerojoin ra_sinh
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" sa_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" sa_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DC30DD2.vatu
++StartChar: sa_sinh.rak.i2
+ Encoding: 61284 -1 8253
+ Width: 718
+ Flags: HMW
+@@ -289093,10 +289092,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dantaja_sayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sa_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC30DD3.vatu
++StartChar: sa_sinh.rak.ii2
+ Encoding: 61285 -1 8254
+ Width: 718
+ Flags: HMW
+@@ -289176,10 +289175,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dantaja_sayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sa_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DC20DD2
++StartChar: ssha_i2_sinh
+ Encoding: 61286 -1 8255
+ Width: 676
+ Flags: HMW
+@@ -289246,10 +289245,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Sha_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ssha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC20DD3
++StartChar: ssha_ii2_sinh
+ Encoding: 61287 -1 8256
+ Width: 676
+ Flags: HMW
+@@ -289322,10 +289321,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Sha_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ssha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DC20DD4
++StartChar: ssha_u2_sinh
+ Encoding: 61288 -1 8257
+ Width: 676
+ Flags: HMW
+@@ -289399,10 +289398,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Sha_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ssha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DC20DD6
++StartChar: ssha_uu2_sinh
+ Encoding: 61289 -1 8258
+ Width: 676
+ Flags: HMW
+@@ -289475,10 +289474,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Sha_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ssha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DC20DCA
++StartChar: ssha_al_sinh
+ Encoding: 61290 -1 8259
+ Width: 676
+ Flags: HMW
+@@ -289548,10 +289547,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Sha_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ssha_sinh al_sinh
+ EndChar
+ 
+-StartChar: dantaja_sayanna_sinh.vatu
++StartChar: ssha_sinh.rak
+ Encoding: 61291 -1 8260
+ Width: 676
+ Flags: HMW
+@@ -289614,9 +289613,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ssha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DC20DD2.vatu
++StartChar: ssha_sinh.rak.i2
+ Encoding: 61292 -1 8261
+ Width: 676
+ Flags: HMW
+@@ -289690,10 +289690,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dantaja_sayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ssha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC20DD3.vatu
++StartChar: ssha_sinh.rak.ii2
+ Encoding: 61293 -1 8262
+ Width: 676
+ Flags: HMW
+@@ -289773,10 +289773,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dantaja_sayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ssha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: muurdhaja_sayanna_sinh.vatu
++StartChar: sha_sinh.rak
+ Encoding: 61294 -1 8263
+ Width: 714
+ Flags: HMW
+@@ -289828,10 +289828,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" sha_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" sha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DC10DD2.vatu
++StartChar: sha_sinh.rak.i2
+ Encoding: 61295 -1 8264
+ Width: 714
+ Flags: HMW
+@@ -289894,10 +289894,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" muurdhaja_sayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC10DD3.vatu
++StartChar: sha_sinh.rak.ii2
+ Encoding: 61296 -1 8265
+ Width: 714
+ Flags: HMW
+@@ -289965,10 +289965,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" muurdhaja_sayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DC10DD2
++StartChar: sha_i2_sinh
+ Encoding: 61297 -1 8266
+ Width: 714
+ Flags: HMW
+@@ -290019,10 +290019,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sha_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC10DD3
++StartChar: sha_ii2_sinh
+ Encoding: 61298 -1 8267
+ Width: 714
+ Flags: HMW
+@@ -290077,10 +290077,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sha_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DC10DD4
++StartChar: sha_u2_sinh
+ Encoding: 61299 -1 8268
+ Width: 714
+ Flags: HMW
+@@ -290131,10 +290131,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" sha_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" sha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DC10DD6
++StartChar: sha_uu2_sinh
+ Encoding: 61300 -1 8269
+ Width: 714
+ Flags: HMW
+@@ -290188,10 +290188,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" sha_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" sha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DC10DCA
++StartChar: sha_al_sinh
+ Encoding: 61301 -1 8270
+ Width: 714
+ Flags: HMW
+@@ -290247,10 +290247,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sha_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sha_sinh al_sinh
+ EndChar
+ 
+-StartChar: uni0DBD0DD2
++StartChar: la_i2_sinh
+ Encoding: 61302 -1 8271
+ Width: 782
+ Flags: HMW
+@@ -290301,10 +290301,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" la_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" la_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DBD0DD3
++StartChar: la_ii2_sinh
+ Encoding: 61303 -1 8272
+ Width: 782
+ Flags: HMW
+@@ -290363,10 +290363,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" la_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" la_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DBD0DD4
++StartChar: la_u2_sinh
+ Encoding: 61304 -1 8273
+ Width: 782
+ Flags: HMW
+@@ -290421,10 +290421,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" la_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" la_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DBD0DD6
++StartChar: la_uu2_sinh
+ Encoding: 61305 -1 8274
+ Width: 782
+ Flags: HMW
+@@ -290483,10 +290483,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" la_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" la_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DBD0DCA
++StartChar: la_al_sinh
+ Encoding: 61306 -1 8275
+ Width: 782
+ Flags: HMW
+@@ -290541,10 +290541,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" la_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" la_sinh al_sinh
+ EndChar
+ 
+-StartChar: uni0DC00DD2
++StartChar: va_i2_sinh
+ Encoding: 61307 -1 8276
+ Width: 718
+ Flags: HMW
+@@ -290588,10 +290588,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" va_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" va_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC00DD3
++StartChar: va_ii2_sinh
+ Encoding: 61308 -1 8277
+ Width: 718
+ Flags: HMW
+@@ -290643,10 +290643,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" va_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" va_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DC00DD4
++StartChar: va_u2_sinh
+ Encoding: 61309 -1 8278
+ Width: 718
+ Flags: HMW
+@@ -290698,10 +290698,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" va_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" va_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DC00DD6
++StartChar: va_uu2_sinh
+ Encoding: 61310 -1 8279
+ Width: 718
+ Flags: HMW
+@@ -290752,10 +290752,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" va_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" va_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DC00DCA
++StartChar: va_al_sinh
+ Encoding: 61311 -1 8280
+ Width: 718
+ Flags: HMW
+@@ -290797,10 +290797,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" va_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" va_sinh al_sinh
+ EndChar
+ 
+-StartChar: vayanna_sinh.vatu
++StartChar: va_sinh.rak
+ Encoding: 61312 -1 8281
+ Width: 718
+ Flags: HMW
+@@ -290847,10 +290847,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" va_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" va_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DC00DD2.vatu
++StartChar: va_sinh.rak.i2
+ Encoding: 61313 -1 8282
+ Width: 718
+ Flags: HMW
+@@ -290907,10 +290907,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" vayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" va_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DC00DD3.vatu
++StartChar: va_sinh.rak.ii2
+ Encoding: 61314 -1 8283
+ Width: 718
+ Flags: HMW
+@@ -290974,10 +290974,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" vayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" va_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DD0
++StartChar: ra_ae2_sinh
+ Encoding: 61315 -1 8284
+ Width: 769
+ Flags: HMW
+@@ -291027,10 +291027,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" ra_sinh ketti_aeda_pilla_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" ra_sinh ae2_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DD1
++StartChar: ra_aee2_sinh
+ Encoding: 61316 -1 8285
+ Width: 769
+ Flags: HMW
+@@ -291088,10 +291088,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" ra_sinh diga_aeda_pilla_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" ra_sinh aee2_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DD2
++StartChar: ra_i2_sinh
+ Encoding: 61317 -1 8286
+ Width: 603
+ Flags: HMW
+@@ -291140,10 +291140,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ra_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ra_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DD3
++StartChar: ra_ii2_sinh
+ Encoding: 61318 -1 8287
+ Width: 603
+ Flags: HMW
+@@ -291199,10 +291199,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ra_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ra_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DD4
++StartChar: ra_u2_sinh
+ Encoding: 61319 -1 8288
+ Width: 834
+ Flags: HMW
+@@ -291249,10 +291249,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ra_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ra_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DD6
++StartChar: ra_uu2_sinh
+ Encoding: 61320 -1 8289
+ Width: 855
+ Flags: HMW
+@@ -291305,10 +291305,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ra_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ra_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA
++StartChar: ra_al_sinh
+ Encoding: 61321 -1 8290
+ Width: 603
+ Flags: HMW
+@@ -291360,10 +291360,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ra_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ra_sinh al_sinh
+ EndChar
+ 
+-StartChar: uni0DBA0DD2
++StartChar: ya_i2_sinh
+ Encoding: 61322 -1 8291
+ Width: 718
+ Flags: HMW
+@@ -291423,10 +291423,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ya_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ya_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DBA0DD3
++StartChar: ya_ii2_sinh
+ Encoding: 61323 -1 8292
+ Width: 718
+ Flags: HMW
+@@ -291481,10 +291481,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ya_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ya_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DBA0DD4
++StartChar: ya_u2_sinh
+ Encoding: 61324 -1 8293
+ Width: 718
+ Flags: HMW
+@@ -291541,10 +291541,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ya_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ya_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DBA0DD6
++StartChar: ya_uu2_sinh
+ Encoding: 61325 -1 8294
+ Width: 718
+ Flags: HMW
+@@ -291604,10 +291604,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ya_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ya_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DBA0DCA
++StartChar: ya_al_sinh
+ Encoding: 61326 -1 8295
+ Width: 718
+ Flags: HMW
+@@ -291660,10 +291660,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ya_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ya_sinh al_sinh
+ EndChar
+ 
+-StartChar: yayanna_sinh.vatu
++StartChar: ya_sinh.rak
+ Encoding: 61327 -1 8296
+ Width: 718
+ Flags: HMW
+@@ -291714,10 +291714,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ya_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ya_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DBA0DD2.vatu
++StartChar: ya_sinh.rak.i2
+ Encoding: 61328 -1 8297
+ Width: 718
+ Flags: HMW
+@@ -291787,10 +291787,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" yayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ya_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DBA0DD3.vatu
++StartChar: ya_sinh.rak.ii2
+ Encoding: 61329 -1 8298
+ Width: 718
+ Flags: HMW
+@@ -291850,10 +291850,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" yayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ya_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB90DD2
++StartChar: mba_i2_sinh
+ Encoding: 61330 -1 8299
+ Width: 718
+ Flags: HMW
+@@ -291916,10 +291916,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Mba_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mba_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB90DD3
++StartChar: mba_ii2_sinh
+ Encoding: 61331 -1 8300
+ Width: 718
+ Flags: HMW
+@@ -291988,10 +291988,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Mba_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mba_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB90DD4
++StartChar: mba_u2_sinh
+ Encoding: 61332 -1 8301
+ Width: 718
+ Flags: HMW
+@@ -292063,10 +292063,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Mba_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" mba_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DB90DD6
++StartChar: mba_uu2_sinh
+ Encoding: 61333 -1 8302
+ Width: 718
+ Flags: HMW
+@@ -292139,10 +292139,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Mba_sinh ba_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" mba_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DB90DCA
++StartChar: mba_al_sinh
+ Encoding: 61334 -1 8303
+ Width: 718
+ Flags: HMW
+@@ -292208,10 +292208,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Mba_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mba_sinh al_sinh
+ EndChar
+ 
+-StartChar: amba_bayanna_sinh.vatu
++StartChar: mba_sinh.rak
+ Encoding: 61335 -1 8304
+ Width: 718
+ Flags: HMW
+@@ -292280,10 +292280,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Mba_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" mba_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DB90DD2.vatu
++StartChar: mba_sinh.rak.i2
+ Encoding: 61336 -1 8305
+ Width: 718
+ Flags: HMW
+@@ -292362,10 +292362,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" amba_bayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mba_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB90DD3.vatu
++StartChar: mba_sinh.rak.ii2
+ Encoding: 61337 -1 8306
+ Width: 718
+ Flags: HMW
+@@ -292448,10 +292448,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" amba_bayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mba_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB70DD2
++StartChar: bha_i2_sinh
+ Encoding: 61338 -1 8307
+ Width: 786
+ Flags: HMW
+@@ -292507,10 +292507,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ba_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" bha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB70DD3
++StartChar: bha_ii2_sinh
+ Encoding: 61339 -1 8308
+ Width: 786
+ Flags: HMW
+@@ -292572,10 +292572,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ba_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" bha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB70DD4
++StartChar: bha_u2_sinh
+ Encoding: 61340 -1 8309
+ Width: 786
+ Flags: HMW
+@@ -292625,10 +292625,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Ba_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" bha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DB70DD6
++StartChar: bha_uu2_sinh
+ Encoding: 61341 -1 8310
+ Width: 786
+ Flags: HMW
+@@ -292680,10 +292680,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Ba_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" bha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DB70DCA
++StartChar: bha_al_sinh
+ Encoding: 61342 -1 8311
+ Width: 786
+ Flags: HMW
+@@ -292743,10 +292743,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ba_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" bha_sinh al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_bayanna.vatu
++StartChar: bha_sinh.rak
+ Encoding: 61343 -1 8312
+ Width: 786
+ Flags: HMW
+@@ -292795,10 +292795,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Ba_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" bha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DB70DD2.vatu
++StartChar: bha_sinh.rak.i2
+ Encoding: 61344 -1 8313
+ Width: 786
+ Flags: HMW
+@@ -292859,10 +292859,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_bayanna.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" bha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB70DD3.vatu
++StartChar: bha_sinh.rak.ii2
+ Encoding: 61345 -1 8314
+ Width: 786
+ Flags: HMW
+@@ -292929,10 +292929,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_bayanna.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" bha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB80DD2
++StartChar: ma_i2_sinh
+ Encoding: 61346 -1 8315
+ Width: 718
+ Flags: HMW
+@@ -292981,10 +292981,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ma_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ma_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB80DD3
++StartChar: ma_ii2_sinh
+ Encoding: 61347 -1 8316
+ Width: 718
+ Flags: HMW
+@@ -293044,10 +293044,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ma_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ma_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB80DD4
++StartChar: ma_u2_sinh
+ Encoding: 61348 -1 8317
+ Width: 718
+ Flags: HMW
+@@ -293103,10 +293103,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ma_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ma_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DB80DD6
++StartChar: ma_uu2_sinh
+ Encoding: 61349 -1 8318
+ Width: 718
+ Flags: HMW
+@@ -293164,10 +293164,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ma_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ma_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DB80DCA
++StartChar: ma_al_sinh
+ Encoding: 61350 -1 8319
+ Width: 718
+ Flags: HMW
+@@ -293214,10 +293214,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ma_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ma_sinh al_sinh
+ EndChar
+ 
+-StartChar: ma_sinh.vatu
++StartChar: ma_sinh.rak
+ Encoding: 61351 -1 8320
+ Width: 718
+ Flags: HMW
+@@ -293265,10 +293265,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ma_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ma_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DB80DD2.vatu
++StartChar: ma_sinh.rak.i2
+ Encoding: 61352 -1 8321
+ Width: 718
+ Flags: HMW
+@@ -293328,10 +293328,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ma_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ma_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB80DD3.vatu
++StartChar: ma_sinh.rak.ii2
+ Encoding: 61353 -1 8322
+ Width: 718
+ Flags: HMW
+@@ -293403,10 +293403,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ma_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ma_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB30DD2
++StartChar: ndha_i2_sinh
+ Encoding: 61354 -1 8323
+ Width: 463
+ Flags: HMW
+@@ -293450,10 +293450,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ndha_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ndha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB30DD3
++StartChar: ndha_ii2_sinh
+ Encoding: 61355 -1 8324
+ Width: 463
+ Flags: HMW
+@@ -293505,10 +293505,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ndha_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ndha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB30DD4
++StartChar: ndha_u2_sinh
+ Encoding: 61356 -1 8325
+ Width: 463
+ Flags: HMW
+@@ -293555,10 +293555,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Ndha_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ndha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DB30DD6
++StartChar: ndha_uu2_sinh
+ Encoding: 61357 -1 8326
+ Width: 463
+ Flags: HMW
+@@ -293610,10 +293610,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Ndha_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ndha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DB30DCA
++StartChar: ndha_al_sinh
+ Encoding: 61358 -1 8327
+ Width: 463
+ Flags: HMW
+@@ -293659,10 +293659,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ndha_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ndha_sinh al_sinh
+ EndChar
+ 
+-StartChar: sanyaka_dayanna_sinh.vatu
++StartChar: ndha_sinh.rak
+ Encoding: 61359 -1 8328
+ Width: 463
+ Flags: HMW
+@@ -293700,10 +293700,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Ndha_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ndha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DB30DD2.vatu
++StartChar: ndha_sinh.rak.i2
+ Encoding: 61360 -1 8329
+ Width: 463
+ Flags: HMW
+@@ -293754,10 +293754,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sanyaka_dayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ndha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB30DD3.vatu
++StartChar: ndha_sinh.rak.ii2
+ Encoding: 61361 -1 8330
+ Width: 463
+ Flags: HMW
+@@ -293815,10 +293815,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sanyaka_dayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ndha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB40DD2
++StartChar: pa_i2_sinh
+ Encoding: 61362 -1 8331
+ Width: 676
+ Flags: HMW
+@@ -293871,10 +293871,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pa_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pa_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB40DD3
++StartChar: pa_ii2_sinh
+ Encoding: 61363 -1 8332
+ Width: 676
+ Flags: HMW
+@@ -293933,10 +293933,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pa_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pa_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB40DD4
++StartChar: pa_u2_sinh
+ Encoding: 61364 -1 8333
+ Width: 676
+ Flags: HMW
+@@ -293995,10 +293995,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" pa_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" pa_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DB40DD6
++StartChar: pa_uu2_sinh
+ Encoding: 61365 -1 8334
+ Width: 676
+ Flags: HMW
+@@ -294056,10 +294056,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" pa_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" pa_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DB40DCA
++StartChar: pa_al_sinh
+ Encoding: 61366 -1 8335
+ Width: 676
+ Flags: HMW
+@@ -294115,10 +294115,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pa_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pa_sinh al_sinh
+ EndChar
+ 
+-StartChar: alpapraana_payanna_sinh.vatu
++StartChar: pa_sinh.rak
+ Encoding: 61367 -1 8336
+ Width: 676
+ Flags: HMW
+@@ -294167,10 +294167,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" pa_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" pa_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DB40DD2.vatu
++StartChar: pa_sinh.rak.i2
+ Encoding: 61368 -1 8337
+ Width: 676
+ Flags: HMW
+@@ -294231,10 +294231,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_payanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pa_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB40DD3.vatu
++StartChar: pa_sinh.rak.ii2
+ Encoding: 61369 -1 8338
+ Width: 676
+ Flags: HMW
+@@ -294301,10 +294301,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_payanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pa_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB50DD2
++StartChar: pha_i2_sinh
+ Encoding: 61370 -1 8339
+ Width: 676
+ Flags: HMW
+@@ -294367,10 +294367,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Pa_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB50DD3
++StartChar: pha_ii2_sinh
+ Encoding: 61371 -1 8340
+ Width: 676
+ Flags: HMW
+@@ -294433,10 +294433,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Pa_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB50DD4
++StartChar: pha_u2_sinh
+ Encoding: 61372 -1 8341
+ Width: 676
+ Flags: HMW
+@@ -294491,10 +294491,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Pa_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" pha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DB50DD6
++StartChar: pha_uu2_sinh
+ Encoding: 61373 -1 8342
+ Width: 676
+ Flags: HMW
+@@ -294552,10 +294552,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Pa_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" pha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DB50DCA
++StartChar: pha_al_sinh
+ Encoding: 61374 -1 8343
+ Width: 676
+ Flags: HMW
+@@ -294610,10 +294610,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Pa_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pha_sinh al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_payanna_sinh.vatu
++StartChar: pha_sinh.rak
+ Encoding: 61375 -1 8344
+ Width: 676
+ Flags: HMW
+@@ -294663,10 +294663,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Pa_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" pha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DB50DD2.vatu
++StartChar: pha_sinh.rak.i2
+ Encoding: 61376 -1 8345
+ Width: 676
+ Flags: HMW
+@@ -294737,10 +294737,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_payanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB50DD3.vatu
++StartChar: pha_sinh.rak.ii2
+ Encoding: 61377 -1 8346
+ Width: 676
+ Flags: HMW
+@@ -294811,10 +294811,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_payanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" pha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB60DD2
++StartChar: ba_i2_sinh
+ Encoding: 61378 -1 8347
+ Width: 714
+ Flags: HMW
+@@ -294870,10 +294870,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ba_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ba_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB60DD3
++StartChar: ba_ii2_sinh
+ Encoding: 61379 -1 8348
+ Width: 714
+ Flags: HMW
+@@ -294935,10 +294935,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ba_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ba_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB60DD4
++StartChar: ba_u2_sinh
+ Encoding: 61380 -1 8349
+ Width: 714
+ Flags: HMW
+@@ -294997,10 +294997,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ba_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ba_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DB60DD6
++StartChar: ba_uu2_sinh
+ Encoding: 61381 -1 8350
+ Width: 714
+ Flags: HMW
+@@ -295061,10 +295061,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ba_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ba_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DB60DCA
++StartChar: ba_al_sinh
+ Encoding: 61382 -1 8351
+ Width: 714
+ Flags: HMW
+@@ -295114,10 +295114,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ba_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ba_sinh al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_bayanna_sinh.vatu
++StartChar: ba_sinh.rak
+ Encoding: 61383 -1 8352
+ Width: 714
+ Flags: HMW
+@@ -295167,10 +295167,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ba_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ba_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DB60DD2.vatu
++StartChar: ba_sinh.rak.i2
+ Encoding: 61384 -1 8353
+ Width: 714
+ Flags: HMW
+@@ -295237,10 +295237,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_bayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ba_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB60DD3.vatu
++StartChar: ba_sinh.rak.ii2
+ Encoding: 61385 -1 8354
+ Width: 714
+ Flags: HMW
+@@ -295313,10 +295313,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_bayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ba_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_dayanna_sinh.vatu
++StartChar: dhha_sinh.rak
+ Encoding: 61386 -1 8355
+ Width: 740
+ Flags: HMW
+@@ -295360,10 +295360,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Dha_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" dhha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DAF0DD2
++StartChar: dha_i2_sinh
+ Encoding: 61387 -1 8356
+ Width: 463
+ Flags: HMW
+@@ -295408,10 +295408,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dha_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DAF0DD3
++StartChar: dha_ii2_sinh
+ Encoding: 61388 -1 8357
+ Width: 463
+ Flags: HMW
+@@ -295463,10 +295463,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dha_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DAF0DD4
++StartChar: dha_u2_sinh
+ Encoding: 61389 -1 8358
+ Width: 463
+ Flags: HMW
+@@ -295509,10 +295509,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" dha_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" dha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DAF0DD6
++StartChar: dha_uu2_sinh
+ Encoding: 61390 -1 8359
+ Width: 463
+ Flags: HMW
+@@ -295555,10 +295555,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" dha_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" dha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DAF0DCA
++StartChar: dha_al_sinh
+ Encoding: 61391 -1 8360
+ Width: 463
+ Flags: HMW
+@@ -295608,10 +295608,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dha_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dha_sinh al_sinh
+ EndChar
+ 
+-StartChar: alpapraana_dayanna_sinh.vatu
++StartChar: dha_sinh.rak
+ Encoding: 61392 -1 8361
+ Width: 463
+ Flags: HMW
+@@ -295644,10 +295644,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" dha_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" dha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DAF0DD2.vatu
++StartChar: dha_sinh.rak.i2
+ Encoding: 61393 -1 8362
+ Width: 463
+ Flags: HMW
+@@ -295692,10 +295692,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_dayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DAF0DD3.vatu
++StartChar: dha_sinh.rak.ii2
+ Encoding: 61394 -1 8363
+ Width: 463
+ Flags: HMW
+@@ -295747,10 +295747,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_dayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB00DD2
++StartChar: dhha_i2_sinh
+ Encoding: 61395 -1 8364
+ Width: 740
+ Flags: HMW
+@@ -295793,10 +295793,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Dha_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dhha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB00DD3
++StartChar: dhha_ii2_sinh
+ Encoding: 61396 -1 8365
+ Width: 740
+ Flags: HMW
+@@ -295845,10 +295845,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Dha_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dhha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB00DD4
++StartChar: dhha_u2_sinh
+ Encoding: 61397 -1 8366
+ Width: 740
+ Flags: HMW
+@@ -295897,10 +295897,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Dha_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" dhha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DB00DD6
++StartChar: dhha_uu2_sinh
+ Encoding: 61398 -1 8367
+ Width: 740
+ Flags: HMW
+@@ -295952,10 +295952,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Dha_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" dhha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DB00DCA
++StartChar: dhha_al_sinh
+ Encoding: 61399 -1 8368
+ Width: 740
+ Flags: HMW
+@@ -296005,10 +296005,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Dha_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dhha_sinh al_sinh
+ EndChar
+ 
+-StartChar: uni0DB00DD2.vatu
++StartChar: dhha_sinh.rak.i2
+ Encoding: 61400 -1 8369
+ Width: 740
+ Flags: HMW
+@@ -296062,10 +296062,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_dayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dhha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB00DD3.vatu
++StartChar: dhha_sinh.rak.ii2
+ Encoding: 61401 -1 8370
+ Width: 740
+ Flags: HMW
+@@ -296123,10 +296123,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_dayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dhha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DD2
++StartChar: na_i2_sinh
+ Encoding: 61402 -1 8371
+ Width: 939
+ Flags: HMW
+@@ -296180,10 +296180,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" na_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" na_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DD3
++StartChar: na_ii2_sinh
+ Encoding: 61403 -1 8372
+ Width: 939
+ Flags: HMW
+@@ -296247,10 +296247,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" na_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" na_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DD4
++StartChar: na_u2_sinh
+ Encoding: 61404 -1 8373
+ Width: 939
+ Flags: HMW
+@@ -296315,10 +296315,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" na_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" na_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DD6
++StartChar: na_uu2_sinh
+ Encoding: 61405 -1 8374
+ Width: 939
+ Flags: HMW
+@@ -296387,10 +296387,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" na_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" na_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DCA
++StartChar: na_al_sinh
+ Encoding: 61406 -1 8375
+ Width: 939
+ Flags: HMW
+@@ -296451,10 +296451,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" na_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" na_sinh al_sinh
+ EndChar
+ 
+-StartChar: dantaja_nayanna_sinh.vatu
++StartChar: na_sinh.rak
+ Encoding: 61407 -1 8376
+ Width: 939
+ Flags: HMW
+@@ -296508,10 +296508,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" na_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" na_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DD2.vatu
++StartChar: na_sinh.rak.i2
+ Encoding: 61408 -1 8377
+ Width: 939
+ Flags: HMW
+@@ -296573,10 +296573,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dantaja_nayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" na_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DB10DD3.vatu
++StartChar: na_sinh.rak.ii2
+ Encoding: 61409 -1 8378
+ Width: 939
+ Flags: HMW
+@@ -296647,10 +296647,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dantaja_nayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" na_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DAD0DD2
++StartChar: tha_i2_sinh
+ Encoding: 61410 -1 8379
+ Width: 778
+ Flags: HMW
+@@ -296696,10 +296696,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tha_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DAD0DD3
++StartChar: tha_ii2_sinh
+ Encoding: 61411 -1 8380
+ Width: 778
+ Flags: HMW
+@@ -296762,10 +296762,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tha_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DAD0DD4
++StartChar: tha_u2_sinh
+ Encoding: 61412 -1 8381
+ Width: 778
+ Flags: HMW
+@@ -296816,10 +296816,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" tha_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" tha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DAD0DD6
++StartChar: tha_uu2_sinh
+ Encoding: 61413 -1 8382
+ Width: 778
+ Flags: HMW
+@@ -296872,10 +296872,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" tha_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" tha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DAD0DCA
++StartChar: tha_al_sinh
+ Encoding: 61414 -1 8383
+ Width: 778
+ Flags: HMW
+@@ -296935,10 +296935,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tha_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tha_sinh al_sinh
+ EndChar
+ 
+-StartChar: alpapraana_tayanna_sinh.vatu
++StartChar: tha_sinh.rak
+ Encoding: 61415 -1 8384
+ Width: 778
+ Flags: HMW
+@@ -296992,10 +296992,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" tha_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" tha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DAD0DD2.vatu
++StartChar: tha_sinh.rak.i2
+ Encoding: 61416 -1 8385
+ Width: 778
+ Flags: HMW
+@@ -297055,10 +297055,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_tayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DAD0DD3.vatu
++StartChar: tha_sinh.rak.ii2
+ Encoding: 61417 -1 8386
+ Width: 778
+ Flags: HMW
+@@ -297128,10 +297128,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_tayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DAE0DD2
++StartChar: thha_i2_sinh
+ Encoding: 61418 -1 8387
+ Width: 676
+ Flags: HMW
+@@ -297186,10 +297186,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Tha_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" thha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DAE0DD3
++StartChar: thha_ii2_sinh
+ Encoding: 61419 -1 8388
+ Width: 676
+ Flags: HMW
+@@ -297245,10 +297245,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Tha_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" thha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DAE0DD4
++StartChar: thha_u2_sinh
+ Encoding: 61420 -1 8389
+ Width: 676
+ Flags: HMW
+@@ -297297,10 +297297,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Tha_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" thha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DAE0DD6
++StartChar: thha_uu2_sinh
+ Encoding: 61421 -1 8390
+ Width: 676
+ Flags: HMW
+@@ -297352,10 +297352,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Tha_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" thha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DAE0DCA
++StartChar: thha_al_sinh
+ Encoding: 61422 -1 8391
+ Width: 676
+ Flags: HMW
+@@ -297406,10 +297406,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Tha_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" thha_sinh al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_tayanna_sinh.vatu
++StartChar: thha_sinh.rak
+ Encoding: 61423 -1 8392
+ Width: 676
+ Flags: HMW
+@@ -297453,10 +297453,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Tha_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" thha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DAE0DD2.vatu
++StartChar: thha_sinh.rak.i2
+ Encoding: 61424 -1 8393
+ Width: 676
+ Flags: HMW
+@@ -297518,10 +297518,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_tayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" thha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DAE0DD3.vatu
++StartChar: thha_sinh.rak.ii2
+ Encoding: 61425 -1 8394
+ Width: 676
+ Flags: HMW
+@@ -297585,10 +297585,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_tayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" thha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DAC0DD2
++StartChar: ndda_i2_sinh
+ Encoding: 61426 -1 8395
+ Width: 740
+ Flags: HMW
+@@ -297654,10 +297654,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Nda_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ndda_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DAC0DD3
++StartChar: ndda_ii2_sinh
+ Encoding: 61427 -1 8396
+ Width: 740
+ Flags: HMW
+@@ -297730,10 +297730,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Nda_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ndda_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DAC0DD4
++StartChar: ndda_u2_sinh
+ Encoding: 61428 -1 8397
+ Width: 740
+ Flags: HMW
+@@ -297807,10 +297807,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Nda_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ndda_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DAC0DD6
++StartChar: ndda_uu2_sinh
+ Encoding: 61429 -1 8398
+ Width: 740
+ Flags: HMW
+@@ -297884,10 +297884,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Nda_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ndda_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DAC0DCA
++StartChar: ndda_al_sinh
+ Encoding: 61430 -1 8399
+ Width: 740
+ Flags: HMW
+@@ -297954,10 +297954,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Nda_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ndda_sinh al_sinh
+ EndChar
+ 
+-StartChar: sanyaka_ddayanna_sinh.vatu
++StartChar: ndda_sinh.rak
+ Encoding: 61431 -1 8400
+ Width: 740
+ Flags: HMW
+@@ -298023,10 +298023,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Nda_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ndda_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DAC0DD2.vatu
++StartChar: ndda_sinh.rak.i2
+ Encoding: 61432 -1 8401
+ Width: 740
+ Flags: HMW
+@@ -298104,10 +298104,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sanyaka_ddayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ndda_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DAC0DD3.vatu
++StartChar: ndda_sinh.rak.ii2
+ Encoding: 61433 -1 8402
+ Width: 740
+ Flags: HMW
+@@ -298190,10 +298190,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sanyaka_ddayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ndda_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DAB0DD2
++StartChar: nna_i2_sinh
+ Encoding: 61434 -1 8403
+ Width: 1137
+ Flags: HMW
+@@ -298290,10 +298290,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Na_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nna_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DAB0DD3
++StartChar: nna_ii2_sinh
+ Encoding: 61435 -1 8404
+ Width: 1137
+ Flags: HMW
+@@ -298399,10 +298399,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Na_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nna_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DAB0DD4
++StartChar: nna_u2_sinh
+ Encoding: 61436 -1 8405
+ Width: 1137
+ Flags: HMW
+@@ -298507,10 +298507,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Na_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" nna_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DAB0DD6
++StartChar: nna_uu2_sinh
+ Encoding: 61437 -1 8406
+ Width: 1137
+ Flags: HMW
+@@ -298615,10 +298615,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Na_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" nna_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DAB0DCA
++StartChar: nna_al_sinh
+ Encoding: 61438 -1 8407
+ Width: 1137
+ Flags: HMW
+@@ -298721,10 +298721,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Na_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nna_sinh al_sinh
+ EndChar
+ 
+-StartChar: muurdhaja_nayanna_sinh.vatu
++StartChar: nna_sinh.rak
+ Encoding: 61439 -1 8408
+ Width: 1137
+ Flags: HMW
+@@ -298816,10 +298816,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Na_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" nna_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DAB0DD2.vatu
++StartChar: nna_sinh.rak.i2
+ Encoding: 61440 -1 8409
+ Width: 1137
+ Flags: HMW
+@@ -298922,10 +298922,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" muurdhaja_nayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nna_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DAB0DD3.vatu
++StartChar: nna_sinh.rak.ii2
+ Encoding: 61441 -1 8410
+ Width: 1137
+ Flags: HMW
+@@ -299037,10 +299037,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" muurdhaja_nayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nna_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA90DD2
++StartChar: dda_i2_sinh
+ Encoding: 61442 -1 8411
+ Width: 740
+ Flags: HMW
+@@ -299096,10 +299096,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" da_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dda_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA90DD3
++StartChar: dda_ii2_sinh
+ Encoding: 61443 -1 8412
+ Width: 740
+ Flags: HMW
+@@ -299162,10 +299162,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" da_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dda_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA90DD4
++StartChar: dda_u2_sinh
+ Encoding: 61444 -1 8413
+ Width: 740
+ Flags: HMW
+@@ -299229,10 +299229,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" da_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" dda_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DA90DD6
++StartChar: dda_uu2_sinh
+ Encoding: 61445 -1 8414
+ Width: 740
+ Flags: HMW
+@@ -299296,10 +299296,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" da_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" dda_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DA90DCA
++StartChar: dda_al_sinh
+ Encoding: 61446 -1 8415
+ Width: 740
+ Flags: HMW
+@@ -299356,10 +299356,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" da_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dda_sinh al_sinh
+ EndChar
+ 
+-StartChar: alpapraana_ddayanna_sinh.vatu
++StartChar: dda_sinh.rak
+ Encoding: 61447 -1 8416
+ Width: 740
+ Flags: HMW
+@@ -299415,10 +299415,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" da_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" dda_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DA90DD2.vatu
++StartChar: dda_sinh.rak.i2
+ Encoding: 61448 -1 8417
+ Width: 740
+ Flags: HMW
+@@ -299484,10 +299484,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_ddayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dda_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA90DD3.vatu
++StartChar: dda_sinh.rak.ii2
+ Encoding: 61449 -1 8418
+ Width: 740
+ Flags: HMW
+@@ -299559,10 +299559,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_ddayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" dda_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DAA0DD2
++StartChar: ddha_i2_sinh
+ Encoding: 61450 -1 8419
+ Width: 676
+ Flags: HMW
+@@ -299634,10 +299634,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Da_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ddha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DAA0DD3
++StartChar: ddha_ii2_sinh
+ Encoding: 61451 -1 8420
+ Width: 676
+ Flags: HMW
+@@ -299707,10 +299707,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Da_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ddha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DAA0DD4
++StartChar: ddha_u2_sinh
+ Encoding: 61452 -1 8421
+ Width: 676
+ Flags: HMW
+@@ -299776,10 +299776,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Da_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ddha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DAA0DD6
++StartChar: ddha_uu2_sinh
+ Encoding: 61453 -1 8422
+ Width: 676
+ Flags: HMW
+@@ -299848,10 +299848,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Da_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ddha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DAA0DCA
++StartChar: ddha_al_sinh
+ Encoding: 61454 -1 8423
+ Width: 676
+ Flags: HMW
+@@ -299916,10 +299916,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Da_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ddha_sinh al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_ddayanna_sinh.vatu
++StartChar: ddha_sinh.rak
+ Encoding: 61455 -1 8424
+ Width: 676
+ Flags: HMW
+@@ -299978,10 +299978,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Da_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ddha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DAA0DD2.vatu
++StartChar: ddha_sinh.rak.i2
+ Encoding: 61456 -1 8425
+ Width: 676
+ Flags: HMW
+@@ -300060,10 +300060,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_ddayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ddha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DAA0DD3.vatu
++StartChar: ddha_sinh.rak.ii2
+ Encoding: 61457 -1 8426
+ Width: 676
+ Flags: HMW
+@@ -300141,10 +300141,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_ddayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ddha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA70DD2
++StartChar: tta_i2_sinh
+ Encoding: 61458 -1 8427
+ Width: 718
+ Flags: HMW
+@@ -300179,10 +300179,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ta_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tta_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA70DD3
++StartChar: tta_ii2_sinh
+ Encoding: 61459 -1 8428
+ Width: 718
+ Flags: HMW
+@@ -300227,10 +300227,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ta_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tta_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA70DD4
++StartChar: tta_u2_sinh
+ Encoding: 61460 -1 8429
+ Width: 718
+ Flags: HMW
+@@ -300274,10 +300274,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ta_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" tta_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DA70DD6
++StartChar: tta_uu2_sinh
+ Encoding: 61461 -1 8430
+ Width: 718
+ Flags: HMW
+@@ -300323,10 +300323,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ta_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" tta_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DA70DCA
++StartChar: tta_al_sinh
+ Encoding: 61462 -1 8431
+ Width: 718
+ Flags: HMW
+@@ -300363,10 +300363,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ta_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tta_sinh al_sinh
+ EndChar
+ 
+-StartChar: alpapraana_ttayanna_sinh.vatu
++StartChar: tta_sinh.rak
+ Encoding: 61463 -1 8432
+ Width: 718
+ Flags: HMW
+@@ -300403,10 +300403,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ta_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" tta_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DA70DD2.vatu
++StartChar: tta_sinh.rak.i2
+ Encoding: 61464 -1 8433
+ Width: 718
+ Flags: HMW
+@@ -300456,10 +300456,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_ttayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tta_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA70DD3.vatu
++StartChar: tta_sinh.rak.ii2
+ Encoding: 61465 -1 8434
+ Width: 718
+ Flags: HMW
+@@ -300515,10 +300515,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_ttayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" tta_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA80DD2
++StartChar: ttha_i2_sinh
+ Encoding: 61466 -1 8435
+ Width: 676
+ Flags: HMW
+@@ -300579,10 +300579,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ta_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ttha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA80DD3
++StartChar: ttha_ii2_sinh
+ Encoding: 61467 -1 8436
+ Width: 676
+ Flags: HMW
+@@ -300641,10 +300641,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ta_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ttha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA80DD4
++StartChar: ttha_u2_sinh
+ Encoding: 61468 -1 8437
+ Width: 676
+ Flags: HMW
+@@ -300699,10 +300699,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Ta_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ttha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DA80DD6
++StartChar: ttha_uu2_sinh
+ Encoding: 61469 -1 8438
+ Width: 676
+ Flags: HMW
+@@ -300760,10 +300760,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Ta_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ttha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DA80DCA
++StartChar: ttha_al_sinh
+ Encoding: 61470 -1 8439
+ Width: 676
+ Flags: HMW
+@@ -300817,10 +300817,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ta_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ttha_sinh al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_ttayanna_sinh.vatu
++StartChar: ttha_sinh.rak
+ Encoding: 61471 -1 8440
+ Width: 676
+ Flags: HMW
+@@ -300869,10 +300869,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Ta_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ttha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DA80DD2.vatu
++StartChar: ttha_sinh.rak.i2
+ Encoding: 61472 -1 8441
+ Width: 676
+ Flags: HMW
+@@ -300940,10 +300940,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_ttayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ttha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA80DD3.vatu
++StartChar: ttha_sinh.rak.ii2
+ Encoding: 61473 -1 8442
+ Width: 676
+ Flags: HMW
+@@ -301011,10 +301011,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_ttayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ttha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA60DD2
++StartChar: nja_i2_sinh
+ Encoding: 61474 -1 8443
+ Width: 676
+ Flags: HMW
+@@ -301082,10 +301082,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sanyaka_jayanna_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nja_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA60DD3
++StartChar: nja_ii2_sinh
+ Encoding: 61475 -1 8444
+ Width: 676
+ Flags: HMW
+@@ -301161,10 +301161,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sanyaka_jayanna_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nja_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA60DD4
++StartChar: nja_u2_sinh
+ Encoding: 61476 -1 8445
+ Width: 676
+ Flags: HMW
+@@ -301240,10 +301240,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" sanyaka_jayanna_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" nja_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DA60DD6
++StartChar: nja_uu2_sinh
+ Encoding: 61477 -1 8446
+ Width: 676
+ Flags: HMW
+@@ -301318,10 +301318,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" sanyaka_jayanna_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" nja_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DA60DCA
++StartChar: nja_al_sinh
+ Encoding: 61478 -1 8447
+ Width: 676
+ Flags: HMW
+@@ -301397,10 +301397,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sanyaka_jayanna_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nja_sinh al_sinh
+ EndChar
+ 
+-StartChar: sanyaka_jayanna_sinh.vatu
++StartChar: nja_sinh.rak
+ Encoding: 61479 -1 8448
+ Width: 676
+ Flags: HMW
+@@ -301466,10 +301466,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" sanyaka_jayanna_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" nja_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DA60DD2.vatu
++StartChar: nja_sinh.rak.i2
+ Encoding: 61480 -1 8449
+ Width: 676
+ Flags: HMW
+@@ -301546,10 +301546,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sanyaka_jayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nja_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA60DD3.vatu
++StartChar: nja_sinh.rak.ii2
+ Encoding: 61481 -1 8450
+ Width: 676
+ Flags: HMW
+@@ -301634,10 +301634,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sanyaka_jayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nja_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: taaluja_naasikyaya_sinh.vatu
++StartChar: nya_sinh.rak
+ Encoding: 61482 -1 8451
+ Width: 1023
+ Flags: HMW
+@@ -301717,10 +301717,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" qa_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" nya_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DA50DCF
++StartChar: jnya_aa2_sinh
+ Encoding: 61483 -1 8452
+ Width: 937
+ Flags: HMW
+@@ -301794,10 +301794,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" GNa_sinh aela_pilla_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" jnya_sinh aa2_sinh
+ EndChar
+ 
+-StartChar: uni0DA50DD0
++StartChar: jnya_ae2_sinh
+ Encoding: 61484 -1 8453
+ Width: 937
+ Flags: HMW
+@@ -301876,10 +301876,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" GNa_sinh ketti_aeda_pilla_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" jnya_sinh ae2_sinh
+ EndChar
+ 
+-StartChar: uni0DA50DD1
++StartChar: jnya_aee2_sinh
+ Encoding: 61485 -1 8454
+ Width: 937
+ Flags: HMW
+@@ -301968,10 +301968,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" GNa_sinh diga_aeda_pilla_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" jnya_sinh aee2_sinh
+ EndChar
+ 
+-StartChar: uni0DA50DD2
++StartChar: jnya_i2_sinh
+ Encoding: 61486 -1 8455
+ Width: 937
+ Flags: HMW
+@@ -302055,10 +302055,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" GNa_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" jnya_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA50DD3
++StartChar: jnya_ii2_sinh
+ Encoding: 61487 -1 8456
+ Width: 937
+ Flags: HMW
+@@ -302151,10 +302151,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" GNa_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" jnya_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA50DD4
++StartChar: jnya_u2_sinh
+ Encoding: 61488 -1 8457
+ Width: 937
+ Flags: HMW
+@@ -302231,10 +302231,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" GNa_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" jnya_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DA50DD6
++StartChar: jnya_uu2_sinh
+ Encoding: 61489 -1 8458
+ Width: 937
+ Flags: HMW
+@@ -302316,10 +302316,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" GNa_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" jnya_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DA50DD8
++StartChar: jnya_ru2_sinh
+ Encoding: 61490 -1 8459
+ Width: 937
+ Flags: HMW
+@@ -302399,10 +302399,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" GNa_sinh gaetta_pilla_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" jnya_sinh ru2_sinh
+ EndChar
+ 
+-StartChar: uni0DA50DF2
++StartChar: jnya_ruu2_sinh
+ Encoding: 61491 -1 8460
+ Width: 1114
+ Flags: HMW
+@@ -302499,10 +302499,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" GNa_sinh vocalic_rr_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" jnya_sinh ruu2_sinh
+ EndChar
+ 
+-StartChar: uni0DA50DCA
++StartChar: jnya_al_sinh
+ Encoding: 61492 -1 8461
+ Width: 937
+ Flags: HMW
+@@ -302593,10 +302593,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" GNa_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" jnya_sinh al_sinh
+ EndChar
+ 
+-StartChar: taaluja_sanyooga_sinh.vatu
++StartChar: jnya_sinh.rak
+ Encoding: 61493 -1 8462
+ Width: 937
+ Flags: HMW
+@@ -302664,10 +302664,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" GNa_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" jnya_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DA50DD2.vatu
++StartChar: jnya_sinh.rak.i2
+ Encoding: 61494 -1 8463
+ Width: 937
+ Flags: HMW
+@@ -302747,10 +302747,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" taaluja_sanyooga_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" jnya_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA50DD3.vatu
++StartChar: jnya_sinh.rak.ii2
+ Encoding: 61495 -1 8464
+ Width: 937
+ Flags: HMW
+@@ -302840,10 +302840,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" taaluja_sanyooga_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" jnya_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA40DCF
++StartChar: nya_aa2_sinh
+ Encoding: 61496 -1 8465
+ Width: 1023
+ Flags: HMW
+@@ -302929,10 +302929,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" qa_sinh aela_pilla_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" nya_sinh aa2_sinh
+ EndChar
+ 
+-StartChar: uni0DA40DD0
++StartChar: nya_ae2_sinh
+ Encoding: 61497 -1 8466
+ Width: 1023
+ Flags: HMW
+@@ -303020,10 +303020,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" qa_sinh ketti_aeda_pilla_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" nya_sinh ae2_sinh
+ EndChar
+ 
+-StartChar: uni0DA40DD1
++StartChar: nya_aee2_sinh
+ Encoding: 61498 -1 8467
+ Width: 1023
+ Flags: HMW
+@@ -303125,10 +303125,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" qa_sinh diga_aeda_pilla_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" nya_sinh aee2_sinh
+ EndChar
+ 
+-StartChar: uni0DA40DD2
++StartChar: nya_i2_sinh
+ Encoding: 61499 -1 8468
+ Width: 1023
+ Flags: HMW
+@@ -303220,10 +303220,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" qa_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nya_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA40DD3
++StartChar: nya_ii2_sinh
+ Encoding: 61500 -1 8469
+ Width: 1023
+ Flags: HMW
+@@ -303324,10 +303324,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" qa_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nya_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA40DD4
++StartChar: nya_u2_sinh
+ Encoding: 61501 -1 8470
+ Width: 1023
+ Flags: HMW
+@@ -303417,10 +303417,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" qa_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" nya_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DA40DD6
++StartChar: nya_uu2_sinh
+ Encoding: 61502 -1 8471
+ Width: 1023
+ Flags: HMW
+@@ -303515,10 +303515,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" qa_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" nya_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DA40DD8
++StartChar: nya_ru2_sinh
+ Encoding: 61503 -1 8472
+ Width: 1023
+ Flags: HMW
+@@ -303610,10 +303610,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" qa_sinh gaetta_pilla_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" nya_sinh ru2_sinh
+ EndChar
+ 
+-StartChar: uni0DA40DF2
++StartChar: nya_ruu2_sinh
+ Encoding: 61504 -1 8473
+ Width: 1200
+ Flags: HMW
+@@ -303722,10 +303722,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" qa_sinh vocalic_rr_sinh
++Ligature2: "LKLUG-'psts' Post Base Substitutions in Sinhala lookup 4 subtable" nya_sinh ruu2_sinh
+ EndChar
+ 
+-StartChar: uni0DA40DCA
++StartChar: nya_al_sinh
+ Encoding: 61505 -1 8474
+ Width: 1023
+ Flags: HMW
+@@ -303824,10 +303824,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" qa_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nya_sinh al_sinh
+ EndChar
+ 
+-StartChar: uni0DA40DD2.vatu
++StartChar: nya_sinh.rak.i2
+ Encoding: 61506 -1 8475
+ Width: 1023
+ Flags: HMW
+@@ -303917,10 +303917,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" taaluja_naasikyaya_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nya_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA40DD3.vatu
++StartChar: nya_sinh.rak.ii2
+ Encoding: 61507 -1 8476
+ Width: 1023
+ Flags: HMW
+@@ -304020,10 +304020,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" taaluja_naasikyaya_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nya_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA20DD2
++StartChar: ja_i2_sinh
+ Encoding: 61508 -1 8477
+ Width: 676
+ Flags: HMW
+@@ -304087,10 +304087,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ja_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ja_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA20DD3
++StartChar: ja_ii2_sinh
+ Encoding: 61509 -1 8478
+ Width: 676
+ Flags: HMW
+@@ -304162,10 +304162,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ja_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ja_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA20DD4
++StartChar: ja_u2_sinh
+ Encoding: 61510 -1 8479
+ Width: 676
+ Flags: HMW
+@@ -304236,10 +304236,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ja_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ja_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DA20DD6
++StartChar: ja_uu2_sinh
+ Encoding: 61511 -1 8480
+ Width: 676
+ Flags: HMW
+@@ -304309,10 +304309,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ja_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ja_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DA20DCA
++StartChar: ja_al_sinh
+ Encoding: 61512 -1 8481
+ Width: 676
+ Flags: HMW
+@@ -304384,10 +304384,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ja_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ja_sinh al_sinh
+ EndChar
+ 
+-StartChar: alpapraana_jayanna_sinh.vatu
++StartChar: ja_sinh.rak
+ Encoding: 61513 -1 8482
+ Width: 676
+ Flags: HMW
+@@ -304448,10 +304448,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ja_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ja_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DA20DD2.vatu
++StartChar: ja_sinh.rak.i2
+ Encoding: 61514 -1 8483
+ Width: 676
+ Flags: HMW
+@@ -304523,10 +304523,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_jayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ja_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA20DD3.vatu
++StartChar: ja_sinh.rak.ii2
+ Encoding: 61515 -1 8484
+ Width: 676
+ Flags: HMW
+@@ -304606,10 +304606,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_jayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ja_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA30DD2
++StartChar: jha_i2_sinh
+ Encoding: 61516 -1 8485
+ Width: 1317
+ Flags: HMW
+@@ -304688,10 +304688,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ja_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" jha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA30DD3
++StartChar: jha_ii2_sinh
+ Encoding: 61517 -1 8486
+ Width: 1317
+ Flags: HMW
+@@ -304778,10 +304778,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ja_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" jha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA30DD4
++StartChar: jha_u2_sinh
+ Encoding: 61518 -1 8487
+ Width: 1317
+ Flags: HMW
+@@ -304870,10 +304870,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Ja_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" jha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DA30DD6
++StartChar: jha_uu2_sinh
+ Encoding: 61519 -1 8488
+ Width: 1317
+ Flags: HMW
+@@ -304963,10 +304963,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Ja_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" jha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DA30DCA
++StartChar: jha_al_sinh
+ Encoding: 61520 -1 8489
+ Width: 1317
+ Flags: HMW
+@@ -305055,10 +305055,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ja_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" jha_sinh al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_jayanna_sinh.vatu
++StartChar: jha_sinh.rak
+ Encoding: 61521 -1 8490
+ Width: 1315
+ Flags: HMW
+@@ -305138,10 +305138,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Ja_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" jha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DA30DD2.vatu
++StartChar: jha_sinh.rak.i2
+ Encoding: 61522 -1 8491
+ Width: 1317
+ Flags: HMW
+@@ -305230,10 +305230,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_jayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" jha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA30DD3.vatu
++StartChar: jha_sinh.rak.ii2
+ Encoding: 61523 -1 8492
+ Width: 1317
+ Flags: HMW
+@@ -305331,10 +305331,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_jayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" jha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA10DCA
++StartChar: cha_al_sinh
+ Encoding: 61524 -1 8493
+ Width: 676
+ Flags: HMW
+@@ -305406,10 +305406,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" cha_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" cha_sinh al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_cayanna_sinh.vatu
++StartChar: cha_sinh.rak
+ Encoding: 61525 -1 8494
+ Width: 676
+ Flags: HMW
+@@ -305473,10 +305473,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" cha_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" cha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DA10DD2
++StartChar: cha_i2_sinh
+ Encoding: 61526 -1 8495
+ Width: 676
+ Flags: HMW
+@@ -305541,10 +305541,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" cha_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" cha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA10DD3
++StartChar: cha_ii2_sinh
+ Encoding: 61527 -1 8496
+ Width: 676
+ Flags: HMW
+@@ -305621,10 +305621,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" cha_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" cha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA10DD4
++StartChar: cha_u2_sinh
+ Encoding: 61528 -1 8497
+ Width: 676
+ Flags: HMW
+@@ -305696,10 +305696,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" cha_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" cha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DA10DD6
++StartChar: cha_uu2_sinh
+ Encoding: 61529 -1 8498
+ Width: 676
+ Flags: HMW
+@@ -305772,10 +305772,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" cha_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" cha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DA10DD2.vatu
++StartChar: cha_sinh.rak.i2
+ Encoding: 61530 -1 8499
+ Width: 676
+ Flags: HMW
+@@ -305849,10 +305849,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_cayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" cha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA10DD3.vatu
++StartChar: cha_sinh.rak.ii2
+ Encoding: 61531 -1 8500
+ Width: 676
+ Flags: HMW
+@@ -305938,10 +305938,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_cayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" cha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: alpapraana_cayanna_sinh.vatu
++StartChar: ca_sinh.rak
+ Encoding: 61532 -1 8501
+ Width: 718
+ Flags: HMW
+@@ -305988,10 +305988,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ca_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ca_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0DA00DD2
++StartChar: ca_i2_sinh
+ Encoding: 61533 -1 8502
+ Width: 718
+ Flags: HMW
+@@ -306038,10 +306038,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ca_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ca_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA00DD3
++StartChar: ca_ii2_sinh
+ Encoding: 61534 -1 8503
+ Width: 718
+ Flags: HMW
+@@ -306097,10 +306097,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ca_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ca_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0DA00DD4
++StartChar: ca_u2_sinh
+ Encoding: 61535 -1 8504
+ Width: 718
+ Flags: HMW
+@@ -306156,10 +306156,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ca_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ca_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0DA00DD6
++StartChar: ca_uu2_sinh
+ Encoding: 61536 -1 8505
+ Width: 718
+ Flags: HMW
+@@ -306214,10 +306214,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ca_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ca_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DA00DCA
++StartChar: ca_al_sinh
+ Encoding: 61537 -1 8506
+ Width: 718
+ Flags: HMW
+@@ -306263,10 +306263,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ca_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ca_sinh al_sinh
+ EndChar
+ 
+-StartChar: uni0DA00DD2.vatu
++StartChar: ca_sinh.rak.i2
+ Encoding: 61538 -1 8507
+ Width: 718
+ Flags: HMW
+@@ -306321,10 +306321,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_cayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ca_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0DA00DD3.vatu
++StartChar: ca_sinh.rak.ii2
+ Encoding: 61539 -1 8508
+ Width: 718
+ Flags: HMW
+@@ -306389,10 +306389,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapraana_cayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ca_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9F0DD2
++StartChar: nga_i2_sinh
+ Encoding: 61540 -1 8509
+ Width: 833
+ Flags: HMW
+@@ -306450,10 +306450,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Nga_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nga_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9F0DD3
++StartChar: nga_ii2_sinh
+ Encoding: 61541 -1 8510
+ Width: 833
+ Flags: HMW
+@@ -306517,10 +306517,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Nga_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nga_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9F0DD4
++StartChar: nga_u2_sinh
+ Encoding: 61542 -1 8511
+ Width: 833
+ Flags: HMW
+@@ -306572,10 +306572,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Nga_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" nga_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0D9F0DD6
++StartChar: nga_uu2_sinh
+ Encoding: 61543 -1 8512
+ Width: 833
+ Flags: HMW
+@@ -306632,10 +306632,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Nga_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" nga_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0D9F0DCA
++StartChar: nga_al_sinh
+ Encoding: 61544 -1 8513
+ Width: 833
+ Flags: HMW
+@@ -306696,10 +306696,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Nga_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nga_sinh al_sinh
+ EndChar
+ 
+-StartChar: sanyaka_gayanna_sinh.vatu
++StartChar: nga_sinh.rak
+ Encoding: 61545 -1 8514
+ Width: 833
+ Flags: HMW
+@@ -306755,10 +306755,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Nga_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" nga_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0D9F0DD2.vatu
++StartChar: nga_sinh.rak.i2
+ Encoding: 61546 -1 8515
+ Width: 833
+ Flags: HMW
+@@ -306826,10 +306826,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sanyaka_gayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nga_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9F0DD3.vatu
++StartChar: nga_sinh.rak.ii2
+ Encoding: 61547 -1 8516
+ Width: 833
+ Flags: HMW
+@@ -306903,10 +306903,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" sanyaka_gayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" nga_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9E0DD2
++StartChar: ng2_i2_sinh
+ Encoding: 61548 -1 8517
+ Width: 740
+ Flags: HMW
+@@ -306968,10 +306968,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Z_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ng2_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9E0DD3
++StartChar: ng2_ii2_sinh
+ Encoding: 61549 -1 8518
+ Width: 740
+ Flags: HMW
+@@ -307038,10 +307038,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Z_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ng2_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9E0DD4
++StartChar: ng2_u2_sinh
+ Encoding: 61550 -1 8519
+ Width: 740
+ Flags: HMW
+@@ -307111,10 +307111,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Z_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ng2_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0D9E0DD6
++StartChar: ng2_uu2_sinh
+ Encoding: 61551 -1 8520
+ Width: 740
+ Flags: HMW
+@@ -307185,10 +307185,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Z_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ng2_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0D9E0DCA
++StartChar: ng2_al_sinh
+ Encoding: 61552 -1 8521
+ Width: 740
+ Flags: HMW
+@@ -307252,10 +307252,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Z_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ng2_sinh al_sinh
+ EndChar
+ 
+-StartChar: kantaja_naasikyaya_sinh.vatu
++StartChar: ng2_sinh.rak
+ Encoding: 61553 -1 8522
+ Width: 740
+ Flags: HMW
+@@ -307320,10 +307320,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Z_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ng2_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0D9E0DD2.vatu
++StartChar: ng2_sinh.rak.i2
+ Encoding: 61554 -1 8523
+ Width: 740
+ Flags: HMW
+@@ -307395,10 +307395,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" kantaja_naasikyaya_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ng2_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9E0DD3.vatu
++StartChar: ng2_sinh.rak.ii2
+ Encoding: 61555 -1 8524
+ Width: 740
+ Flags: HMW
+@@ -307477,10 +307477,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" kantaja_naasikyaya_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ng2_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9D0DD2
++StartChar: gha_i2_sinh
+ Encoding: 61556 -1 8525
+ Width: 718
+ Flags: HMW
+@@ -307552,10 +307552,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ga_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" gha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9D0DD3
++StartChar: gha_ii2_sinh
+ Encoding: 61557 -1 8526
+ Width: 718
+ Flags: HMW
+@@ -307634,10 +307634,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ga_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" gha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9D0DD4
++StartChar: gha_u2_sinh
+ Encoding: 61558 -1 8527
+ Width: 718
+ Flags: HMW
+@@ -307714,10 +307714,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Ga_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" gha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0D9D0DD6
++StartChar: gha_uu2_sinh
+ Encoding: 61559 -1 8528
+ Width: 718
+ Flags: HMW
+@@ -307797,10 +307797,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Ga_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" gha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0D9D0DCA
++StartChar: gha_al_sinh
+ Encoding: 61560 -1 8529
+ Width: 718
+ Flags: HMW
+@@ -307874,10 +307874,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ga_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" gha_sinh al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_gayanna_sinh.vatu
++StartChar: gha_sinh.rak
+ Encoding: 61561 -1 8530
+ Width: 718
+ Flags: HMW
+@@ -307946,12 +307946,11 @@
+  230.702 354 224.499 354.455 216.268 354.455 c 0
+ EndSplineSet
+ Validated: 3105
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ga_sinh al_lakuna_sinh zerojoin ra_sinh
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Ga_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" gha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0D9D0DD2.vatu
++StartChar: gha_sinh.rak.i2
+ Encoding: 61562 -1 8531
+ Width: 718
+ Flags: HMW
+@@ -308032,10 +308031,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_gayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" gha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9D0DD3.vatu
++StartChar: gha_sinh.rak.ii2
+ Encoding: 61563 -1 8532
+ Width: 718
+ Flags: HMW
+@@ -308123,10 +308122,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_gayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" gha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9C0DD2
++StartChar: ga_i2_sinh
+ Encoding: 61564 -1 8533
+ Width: 714
+ Flags: HMW
+@@ -308174,10 +308173,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ga_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ga_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9C0DD3
++StartChar: ga_ii2_sinh
+ Encoding: 61565 -1 8534
+ Width: 714
+ Flags: HMW
+@@ -308227,10 +308226,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ga_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ga_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9C0DD4
++StartChar: ga_u2_sinh
+ Encoding: 61566 -1 8535
+ Width: 714
+ Flags: HMW
+@@ -308271,10 +308270,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ga_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ga_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0D9C0DD6
++StartChar: ga_uu2_sinh
+ Encoding: 61567 -1 8536
+ Width: 714
+ Flags: HMW
+@@ -308317,10 +308316,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ga_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ga_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0D9C0DCA
++StartChar: ga_al_sinh
+ Encoding: 61568 -1 8537
+ Width: 714
+ Flags: HMW
+@@ -308371,10 +308370,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ga_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ga_sinh al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_gayanna_sinh.vatu
++StartChar: ga_sinh.rak
+ Encoding: 61569 -1 8538
+ Width: 714
+ Flags: HMW
+@@ -308419,9 +308418,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ga_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0D9C0DD2.vatu
++StartChar: ga_sinh.rak.i2
+ Encoding: 61570 -1 8539
+ Width: 714
+ Flags: HMW
+@@ -308474,10 +308474,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_gayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ga_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9C0DD3.vatu
++StartChar: ga_sinh.rak.ii2
+ Encoding: 61571 -1 8540
+ Width: 714
+ Flags: HMW
+@@ -308534,10 +308534,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_gayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ga_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9B0DD2
++StartChar: kha_i2_sinh
+ Encoding: 61572 -1 8541
+ Width: 714
+ Flags: HMW
+@@ -308589,10 +308589,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ka_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" kha_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9B0DD3
++StartChar: kha_ii2_sinh
+ Encoding: 61573 -1 8542
+ Width: 714
+ Flags: HMW
+@@ -308652,10 +308652,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ka_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" kha_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9B0DD4
++StartChar: kha_u2_sinh
+ Encoding: 61574 -1 8543
+ Width: 714
+ Flags: HMW
+@@ -308715,10 +308715,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Ka_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" kha_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0D9B0DD6
++StartChar: kha_uu2_sinh
+ Encoding: 61575 -1 8544
+ Width: 714
+ Flags: HMW
+@@ -308781,10 +308781,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" Ka_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" kha_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0D9B0DCA
++StartChar: kha_al_sinh
+ Encoding: 61576 -1 8545
+ Width: 714
+ Flags: HMW
+@@ -308845,10 +308845,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" Ka_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" kha_sinh al_sinh
+ EndChar
+ 
+-StartChar: mahaapraana_kayanna_sinh.vatu
++StartChar: kha_sinh.rak
+ Encoding: 61577 -1 8546
+ Width: 714
+ Flags: HMW
+@@ -308900,10 +308900,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" Ka_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" kha_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0D9B0DD2.vatu
++StartChar: kha_sinh.rak.i2
+ Encoding: 61578 -1 8547
+ Width: 714
+ Flags: HMW
+@@ -308970,10 +308970,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_kayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" kha_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9B0DD3.vatu
++StartChar: kha_sinh.rak.ii2
+ Encoding: 61579 -1 8548
+ Width: 714
+ Flags: HMW
+@@ -309045,10 +309045,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" mahaapraana_kayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" kha_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9A0DD2.vatu
++StartChar: ka_sinh.rak.i2
+ Encoding: 61580 -1 8549
+ Width: 891
+ Flags: HMW
+@@ -309120,10 +309120,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapranna_kayanna_sinh.vatu ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ka_sinh.rak i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9A0DD3.vatu
++StartChar: ka_sinh.rak.ii2
+ Encoding: 61581 -1 8550
+ Width: 892
+ Flags: HMW
+@@ -309204,10 +309204,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" alpapranna_kayanna_sinh.vatu diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ka_sinh.rak ii2_sinh
+ EndChar
+ 
+-StartChar: alpapranna_kayanna_sinh.vatu
++StartChar: ka_sinh.rak
+ Encoding: 61582 -1 8551
+ Width: 892
+ Flags: HMW
+@@ -309271,10 +309271,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ka_sinh al_lakuna_sinh zerojoin ra_sinh
++Ligature2: "LKLUG-'vatu' Vattu Variants in Sinhala lookup 0 subtable" ka_sinh al_sinh zerojoin ra_sinh
+ EndChar
+ 
+-StartChar: uni0D9A0DCA
++StartChar: ka_al_sinh
+ Encoding: 61583 -1 8552
+ Width: 892
+ Flags: HMW
+@@ -309345,10 +309345,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ka_sinh al_lakuna_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ka_sinh al_sinh
+ EndChar
+ 
+-StartChar: uni0D9A0DD2
++StartChar: ka_i2_sinh
+ Encoding: 61584 -1 8553
+ Width: 892
+ Flags: HMW
+@@ -309412,10 +309412,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ka_sinh ketti_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ka_sinh i2_sinh
+ EndChar
+ 
+-StartChar: uni0D9A0DD3
++StartChar: ka_ii2_sinh
+ Encoding: 61585 -1 8554
+ Width: 892
+ Flags: HMW
+@@ -309489,10 +309489,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ka_sinh diga_is_pilla_sinh
++Ligature2: "LKLUG-'abvs' Above Base Substitutions in Sinhala lookup 6 subtable" ka_sinh ii2_sinh
+ EndChar
+ 
+-StartChar: uni0D9A0DD4
++StartChar: ka_u2_sinh
+ Encoding: 61586 -1 8555
+ Width: 892
+ Flags: HMW
+@@ -309555,10 +309555,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ka_sinh ketti_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ka_sinh u2_sinh
+ EndChar
+ 
+-StartChar: uni0D9ADD6
++StartChar: ka_uu2_sinh
+ Encoding: 61587 -1 8556
+ Width: 892
+ Flags: HMW
+@@ -309623,10 +309623,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 1 0 
+-Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ka_sinh diga_paa_pilla_sinh
++Ligature2: "LKLUG-'blws' Below Base Substitutions in Sinhala lookup 3 subtable" ka_sinh uu2_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0D9A
++StartChar: ka_sinh.rep
+ Encoding: 61588 -1 8557
+ Width: 892
+ Flags: HMW
+@@ -309702,10 +309702,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin ka_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ka_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0D9B
++StartChar: kha_sinh.rep
+ Encoding: 61589 -1 8558
+ Width: 714
+ Flags: HMW
+@@ -309789,10 +309789,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Ka_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin kha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0D9C
++StartChar: ga_sinh.rep
+ Encoding: 61590 -1 8559
+ Width: 714
+ Flags: HMW
+@@ -309849,10 +309849,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin ga_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ga_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0D9D
++StartChar: gha_sinh.rep
+ Encoding: 61591 -1 8560
+ Width: 718
+ Flags: HMW
+@@ -309934,10 +309934,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Ga_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin gha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0D9E
++StartChar: ng2_sinh.rep
+ Encoding: 61592 -1 8561
+ Width: 740
+ Flags: HMW
+@@ -310031,10 +310031,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Z_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ng2_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0D9F
++StartChar: nga_sinh.rep
+ Encoding: 61593 -1 8562
+ Width: 833
+ Flags: HMW
+@@ -310098,10 +310098,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Nga_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin nga_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DA0
++StartChar: ca_sinh.rep
+ Encoding: 61594 -1 8563
+ Width: 718
+ Flags: HMW
+@@ -310177,10 +310177,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin ca_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ca_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DA1
++StartChar: cha_sinh.rep
+ Encoding: 61595 -1 8564
+ Width: 676
+ Flags: HMW
+@@ -310255,10 +310255,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin cha_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin cha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DA2
++StartChar: ja_sinh.rep
+ Encoding: 61596 -1 8565
+ Width: 676
+ Flags: HMW
+@@ -310328,10 +310328,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin ja_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ja_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DA3
++StartChar: jha_sinh.rep
+ Encoding: 61597 -1 8566
+ Width: 1317
+ Flags: HMW
+@@ -310442,10 +310442,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Ja_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin jha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DA4
++StartChar: nya_sinh.rep
+ Encoding: 61598 -1 8567
+ Width: 1023
+ Flags: HMW
+@@ -310545,10 +310545,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin qa_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin nya_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DA5
++StartChar: jnya_sinh.rep
+ Encoding: 61599 -1 8568
+ Width: 937
+ Flags: HMW
+@@ -310642,10 +310642,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin GNa_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin jnya_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DA6
++StartChar: nja_sinh.rep
+ Encoding: 61600 -1 8569
+ Width: 676
+ Flags: HMW
+@@ -310719,10 +310719,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin sanyaka_jayanna_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin nja_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DA7
++StartChar: tta_sinh.rep
+ Encoding: 61601 -1 8570
+ Width: 718
+ Flags: HMW
+@@ -310787,10 +310787,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin ta_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin tta_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DA8
++StartChar: ttha_sinh.rep
+ Encoding: 61602 -1 8571
+ Width: 676
+ Flags: HMW
+@@ -310844,10 +310844,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Ta_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ttha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DA9
++StartChar: dda_sinh.rep
+ Encoding: 61603 -1 8572
+ Width: 740
+ Flags: HMW
+@@ -310934,10 +310934,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin da_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin dda_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DAA
++StartChar: ddha_sinh.rep
+ Encoding: 61604 -1 8573
+ Width: 676
+ Flags: HMW
+@@ -311002,10 +311002,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Da_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ddha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DAB
++StartChar: nna_sinh.rep
+ Encoding: 61605 -1 8574
+ Width: 1137
+ Flags: HMW
+@@ -311120,10 +311120,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Na_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin nna_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DAC
++StartChar: ndda_sinh.rep
+ Encoding: 61606 -1 8575
+ Width: 740
+ Flags: HMW
+@@ -311220,10 +311220,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Nda_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ndda_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DAD
++StartChar: tha_sinh.rep
+ Encoding: 61607 -1 8576
+ Width: 778
+ Flags: HMW
+@@ -311288,10 +311288,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin tha_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin tha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DAE
++StartChar: thha_sinh.rep
+ Encoding: 61608 -1 8577
+ Width: 676
+ Flags: HMW
+@@ -311340,10 +311340,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Tha_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin thha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DAF
++StartChar: dha_sinh.rep
+ Encoding: 61609 -1 8578
+ Width: 463
+ Flags: HMW
+@@ -311398,10 +311398,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin dha_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin dha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DB0
++StartChar: dhha_sinh.rep
+ Encoding: 61610 -1 8579
+ Width: 740
+ Flags: HMW
+@@ -311474,10 +311474,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Dha_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin dhha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DB1
++StartChar: na_sinh.rep
+ Encoding: 61611 -1 8580
+ Width: 939
+ Flags: HMW
+@@ -311543,10 +311543,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin na_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin na_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DB3
++StartChar: ndha_sinh.rep
+ Encoding: 61612 -1 8581
+ Width: 463
+ Flags: HMW
+@@ -311606,10 +311606,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Ndha_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ndha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DB4
++StartChar: pa_sinh.rep
+ Encoding: 61613 -1 8582
+ Width: 676
+ Flags: HMW
+@@ -311670,10 +311670,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin pa_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin pa_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DB5
++StartChar: pha_sinh.rep
+ Encoding: 61614 -1 8583
+ Width: 676
+ Flags: HMW
+@@ -311728,10 +311728,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Pa_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin pha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DB6
++StartChar: ba_sinh.rep
+ Encoding: 61615 -1 8584
+ Width: 714
+ Flags: HMW
+@@ -311812,10 +311812,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin ba_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ba_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DB7
++StartChar: bha_sinh.rep
+ Encoding: 61616 -1 8585
+ Width: 786
+ Flags: HMW
+@@ -311881,10 +311881,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Ba_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin bha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DB8
++StartChar: ma_sinh.rep
+ Encoding: 61617 -1 8586
+ Width: 718
+ Flags: HMW
+@@ -311962,10 +311962,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin ma_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ma_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DB9
++StartChar: mba_sinh.rep
+ Encoding: 61618 -1 8587
+ Width: 718
+ Flags: HMW
+@@ -312059,10 +312059,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Mba_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin mba_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DBA
++StartChar: ya_sinh.rep
+ Encoding: 61619 -1 8588
+ Width: 718
+ Flags: HMW
+@@ -312123,10 +312123,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin ya_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ya_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DBD
++StartChar: la_sinh.rep
+ Encoding: 61620 -1 8589
+ Width: 782
+ Flags: HMW
+@@ -312186,10 +312186,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin la_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin la_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DC0
++StartChar: va_sinh.rep
+ Encoding: 61621 -1 8590
+ Width: 718
+ Flags: HMW
+@@ -312261,10 +312261,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin va_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin va_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DC1
++StartChar: sha_sinh.rep
+ Encoding: 61622 -1 8591
+ Width: 714
+ Flags: HMW
+@@ -312328,10 +312328,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin sha_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin sha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DC2
++StartChar: ssha_sinh.rep
+ Encoding: 61623 -1 8592
+ Width: 676
+ Flags: HMW
+@@ -312406,10 +312406,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin Sha_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ssha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DC3
++StartChar: sa_sinh.rep
+ Encoding: 61624 -1 8593
+ Width: 718
+ Flags: HMW
+@@ -312482,10 +312482,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin sa_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin sa_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DC4
++StartChar: ha_sinh.rep
+ Encoding: 61625 -1 8594
+ Width: 786
+ Flags: HMW
+@@ -312545,10 +312545,10 @@
+ EndSplineSet
+ Validated: 3073
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin ha_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin ha_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DC5
++StartChar: lla_sinh.rep
+ Encoding: 61626 -1 8595
+ Width: 782
+ Flags: HMW
+@@ -312615,10 +312615,10 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin La_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin lla_sinh
+ EndChar
+ 
+-StartChar: uni0DBB0DCA200D0DC6
++StartChar: fa_sinh.rep
+ Encoding: 61627 -1 8596
+ Width: 676
+ Flags: HMW
+@@ -312677,7 +312677,7 @@
+ EndSplineSet
+ Validated: 3105
+ LCarets2: 3 0 0 0 
+-Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_lakuna_sinh zerojoin fa_sinh
++Ligature2: "LKLUG-'akhn' Akhand in Sinhala lookup 5 subtable" ra_sinh al_sinh zerojoin fa_sinh
+ EndChar
+ 
+ StartChar: Lat_Myslite_glag
