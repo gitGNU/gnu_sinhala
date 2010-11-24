@@ -1,0 +1,18 @@
+Index: ta-lk-renganathan.mim
+===================================================================
+RCS file: /cvs/m17n/m17n-db/MIM/ta-lk-renganathan.mim,v
+retrieving revision 1.2
+diff -u -r1.2 ta-lk-renganathan.mim
+--- ta-lk-renganathan.mim	21 Oct 2009 08:15:52 -0000	1.2
++++ ta-lk-renganathan.mim	23 Oct 2010 16:41:24 -0000
+@@ -586,7 +586,9 @@
+   (aa "ா" (commit))			; 0BBE
+   (e  "ெ" (shift e-state))		; 0BC6
+   (ee "ே" (shift ee-state))		; 0BC7
+-  (ai "ை" (shift ai-state)))		; 0BC8
++  (ai "ை" (shift ai-state))		; 0BC8
++  (nil
++   (unhandle)))
+ 
+  (c-state
+   (sign (shift c-s-state))
