@@ -1,6 +1,20 @@
---- keysymdef.h.orig	2010-08-16 22:28:54.854441775 +1000
-+++ keysymdef.h	2010-08-16 23:35:49.250941556 +1000
-@@ -2387,3 +2387,91 @@
+diff --git a/keysym.h b/keysym.h
+index 641b25b..4f58488 100644
+--- a/keysym.h
++++ b/keysym.h
+@@ -68,6 +68,7 @@ SOFTWARE.
+ #define XK_CURRENCY
+ #define XK_MATHEMATICAL
+ #define XK_BRAILLE
++#define XK_SINHALA
+ 
+ #include <X11/keysymdef.h>
+ 
+diff --git a/keysymdef.h b/keysymdef.h
+index ec125a6..a4a760d 100644
+--- a/keysymdef.h
++++ b/keysymdef.h
+@@ -2387,3 +2387,91 @@ SOFTWARE.
  #define XK_braille_dots_2345678       0x10028fe  /* U+28fe BRAILLE PATTERN DOTS-2345678 */
  #define XK_braille_dots_12345678      0x10028ff  /* U+28ff BRAILLE PATTERN DOTS-12345678 */
  #endif /* XK_BRAILLE */
