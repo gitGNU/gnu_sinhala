@@ -116,4 +116,5 @@ http://bugs.freedesktop.org/show_bug.cgi?id=19288
 --------------------------------------------------------------------
 17) x11proto-keysymdef.h-add-sinhala.patch
     libx11-define-XK_SINHALA.patch
+    xkeyboard-config-fix-lk-layout-space-behaviour.patch
 --------------------------------------------------------------------

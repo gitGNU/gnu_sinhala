@@ -1,0 +1,44 @@
+diff --git a/symbols/lk b/symbols/lk
+index 197e44d..1fe10bb 100644
+--- a/symbols/lk
++++ b/symbols/lk
+@@ -72,7 +72,7 @@ xkb_symbols "sin_phonetic" {
+   key <AB10> { [ any, any, 0x0100200d, NoSymbol ] };
+ 
+   // Space
+-  include "nbsp(zwnj2nb3s)"
++  include "nbsp(nb2zwnj3s)"
+ 
+   include "level3(ralt_switch)"
+ };
+diff --git a/symbols/nbsp b/symbols/nbsp
+index ece2c9b..77b40df 100644
+--- a/symbols/nbsp
++++ b/symbols/nbsp
+@@ -145,9 +145,7 @@ xkb_symbols "zwnj2nb3" {
+ 
+ 
+ // ZWNJ on level 2
+-// ZWJ on level 3
+-// NBSP on level 4
+-// Used by lk(sin_phonetic)
++// NBSP on level 3
+ partial
+ xkb_symbols "zwnj2nb3s" {
+   key <SPCE> {
+@@ -192,3 +190,15 @@ xkb_symbols "zwnj3zwj4" {
+     symbols[Group1]= [ space, space, 0x100200c, 0x100200d ]
+   };
+ };
++
++
++// NBSP on level 2
++// ZWNJ on level 3
++// Used by lk(sin_phonetic)
++partial
++xkb_symbols "nb2zwnj3s" {
++  key <SPCE> {
++    type[Group1]="FOUR_LEVEL",
++    symbols[Group1]= [ space, nobreakspace, 0x100200c, NoSymbol ]
++  };
++};
