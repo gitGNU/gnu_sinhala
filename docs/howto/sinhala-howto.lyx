@@ -1,21 +1,29 @@
-#LyX 1.6.6 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass docbook
 \use_default_options false
-\language english
+\maintain_unincluded_children false
+\language british
+\language_package default
 \inputencoding utf8
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
 
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -23,9 +31,18 @@
 \use_geometry false
 \use_amsmath 1
 \use_esint 0
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
@@ -36,8 +53,9 @@
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -115,7 +133,15 @@ status open
 \end_layout
 
 \begin_layout Revision
-0.8
+9
+\end_layout
+
+\begin_layout Date
+2011/08/29
+\end_layout
+
+\begin_layout Revision
+8
 \end_layout
 
 \begin_layout Date
@@ -123,7 +149,7 @@ status open
 \end_layout
 
 \begin_layout Revision
-0.7
+7
 \end_layout
 
 \begin_layout Date
@@ -131,7 +157,7 @@ status open
 \end_layout
 
 \begin_layout Revision
-0.6
+6
 \end_layout
 
 \begin_layout Date
@@ -139,7 +165,7 @@ status open
 \end_layout
 
 \begin_layout Revision
-0.5
+5
 \end_layout
 
 \begin_layout Date
@@ -147,7 +173,7 @@ status open
 \end_layout
 
 \begin_layout Revision
-0.4
+4
 \end_layout
 
 \begin_layout Date
@@ -155,7 +181,7 @@ status open
 \end_layout
 
 \begin_layout Revision
-0.3
+3
 \end_layout
 
 \begin_layout Date
@@ -163,7 +189,7 @@ status open
 \end_layout
 
 \begin_layout Revision
-0.2
+2
 \end_layout
 
 \begin_layout Date
@@ -171,7 +197,7 @@ status open
 \end_layout
 
 \begin_layout Revision
-0.1
+1
 \end_layout
 
 \begin_layout Date
@@ -548,6 +574,10 @@ Chamath Keppitiyagama
 \end_layout
 
 \begin_layout Itemize
+Danishka Navin
+\end_layout
+
+\begin_layout Itemize
 Anuradha Ratnaweera
 \end_layout
 
@@ -557,6 +587,14 @@ Harsha Senanayake
 
 \begin_layout Itemize
 Naoto Takahashi
+\end_layout
+
+\begin_layout Itemize
+Daiki Ueno
+\end_layout
+
+\begin_layout Itemize
+Steven White
 \end_layout
 
 \begin_layout Section
@@ -598,6 +636,7 @@ As root/superuser run:
 
 \begin_deeper
 \begin_layout Code
+
 apt-get install ttf-sinhala-lklug ibus im-switch ibus-m17n m17n-db m17n-contrib
 \end_layout
 
@@ -609,6 +648,7 @@ From your user account (i.e.
 
 \begin_deeper
 \begin_layout Code
+
 rm -f ~/.xinput.d/* ; im-switch -z all_ALL -s ibus
 \end_layout
 
@@ -625,10 +665,17 @@ From your user account (i.e.
 
 \begin_deeper
 \begin_layout Code
+
 ibus-setup
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+In Debian Wheezy IBus may depend on im-config.
+ im-config conflicts with im-switch, so you will need to run im-config instead
+ of im-switch.
+\end_layout
+
 \begin_layout Subsubsection
 Fedora 10 (Cambridge) and Above (may work on older versions)
 \begin_inset CommandInset label
@@ -646,6 +693,7 @@ As root/superuser run:
 
 \begin_deeper
 \begin_layout Code
+
 yum groupinstall sinhala-support
 \end_layout
 
@@ -657,6 +705,7 @@ From your user account (i.e.
 
 \begin_deeper
 \begin_layout Code
+
 im-chooser
 \end_layout
 
@@ -691,6 +740,7 @@ As root/superuser run:
 
 \begin_deeper
 \begin_layout Code
+
 apt-get install ttf-sinhala-lklug ibus im-switch ibus-m17n m17n-db m17n-contrib
  language-pack-si-base
 \end_layout
@@ -703,6 +753,7 @@ From your user account (i.e.
 
 \begin_deeper
 \begin_layout Code
+
 rm -f ~/.xinput.d/* ; im-switch -z all_ALL -s ibus
 \end_layout
 
@@ -719,6 +770,7 @@ From your user account (i.e.
 
 \begin_deeper
 \begin_layout Code
+
 ibus-setup
 \end_layout
 
@@ -762,7 +814,7 @@ name "Enabling-Long"
 \end_layout
 
 \begin_layout Standard
-Following the instructions in 
+The instructions in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "Enabling-Short"
@@ -807,6 +859,7 @@ If you are using a modern GNU/Linux version and it has fontconfig installed,
 \end_layout
 
 \begin_layout Code
+
 mkdir ~/.fonts
 \end_layout
 
@@ -820,6 +873,7 @@ If you want to make the font available to all users of the system, become
 \end_layout
 
 \begin_layout Code
+
 /usr/share/fonts
 \end_layout
 
@@ -828,6 +882,7 @@ In both the above cases, run:
 \end_layout
 
 \begin_layout Code
+
 fc-cache -fv
 \end_layout
 
@@ -836,6 +891,7 @@ To check which font file provides the Sinhala support, run:
 \end_layout
 
 \begin_layout Code
+
 fc-list :lang=si file
 \end_layout
 
@@ -845,7 +901,7 @@ Immediately you'll be able to read Unicode Sinhala in these programs (You
 \end_layout
 
 \begin_layout Itemize
-Anything gtk2 based
+Anything gtk2/gtk3 based
 \end_layout
 
 \begin_deeper
@@ -868,6 +924,8 @@ Firefox/Mozilla (built with gtk2, FreeType2 and Pango support)
 \end_deeper
 \begin_layout Standard
 If you have Pango 1.8.2 and greater, you will have full SLS1134 Sinhala support.
+ Harfbuzz does not support Sinhala nor Indic scripts well at the moment
+ (29/08/2011).
 \end_layout
 
 \begin_layout Subsubsection
@@ -890,10 +948,11 @@ There are a number of different input method infrastructures available on
 \begin_layout Standard
 
 \series medium
-To test multi-lingual input methods in gtk2 based programs, run:
+To test multi-lingual input methods in gtk2/gtk3 based programs, run:
 \end_layout
 
 \begin_layout Code
+
 gedit
 \end_layout
 
@@ -904,6 +963,7 @@ To check which input method systems are available, run:
 \end_layout
 
 \begin_layout Code
+
 im-switch  -l
 \end_layout
 
@@ -912,6 +972,7 @@ To switch between input method systems, run:
 \end_layout
 
 \begin_layout Code
+
 im-switch -z all_ALL -c
 \end_layout
 
@@ -920,11 +981,12 @@ Generally choose:
 \end_layout
 
 \begin_layout Code
+
 ibus
 \end_layout
 
 \begin_layout Paragraph
-Surrounding Text Support.
+Surrounding Text Support (STS)
 \end_layout
 
 \begin_layout Standard
@@ -932,15 +994,21 @@ Surrounding text support allows the creation of user-friendly input methods.
  Input methods without surrounding text support are difficult to use when
  editing existing text.
  Some applications do not fully support surrounding text.
- In these circumstances you may want use an input method that uses pre-edit.
+ In these circumstances you may want to use an input method that can fallback
+ to pre-edit.
 \end_layout
 
 \begin_layout Standard
 m17n-db 1.5.5 and older contain a Wijesekera (si-wijesekera) layout that requires
- surrounding text support, however, there is a pre-edit version (si-wijesekera-p
-reedit) that does not.
- m17n-db 1.6.0 and newer will only contain a pre-edit version of the Wijesekera
- (si-wijesekera) layout.
+ surrounding text support, however, there is also a pre-edit version (si-wijesek
+era-preedit) that does not.
+ m17n-db 1.6.0, and newer, merged the pre-edit and surrounding text support
+ into one Wijesekera (si-wijesekera) version.
+ It defaults to the pre-edit but the surrounding text support can be enabled
+ via ibus-setup-m17n.
+ Once enabled, it will automatically detect if the application supports
+ surrounding text support.
+ If not supported, it will fallback to pre-edit.
 \end_layout
 
 \begin_layout Subsubsection
@@ -984,6 +1052,7 @@ The file can be found at:
 \end_layout
 
 \begin_layout Code
+
 /usr/share/m17n/si-trans.mim
 \end_layout
 
@@ -1033,6 +1102,7 @@ The file can be found at:
 \end_layout
 
 \begin_layout Code
+
 /usr/share/m17n/si-phonetic-dynamic.mim
 \end_layout
 
@@ -1088,6 +1158,7 @@ The file can be found at:
 \end_layout
 
 \begin_layout Code
+
 /usr/share/X11/xkb/symbols/lk
 \end_layout
 
@@ -1135,6 +1206,7 @@ Run:
 
 \begin_deeper
 \begin_layout Code
+
 gnome-keyboard-properties
 \end_layout
 
@@ -1247,6 +1319,7 @@ In an xterm do:
 
 \begin_deeper
 \begin_layout Code
+
 setxkbmap -layout "us,lk" -option "grp:shifts_toggle,grp_led:scroll"
 \end_layout
 
@@ -1263,6 +1336,7 @@ To add the new lk keyboard layout, look for this line:
 
 \begin_deeper
 \begin_layout Code
+
 Section "InputDevice"
 \end_layout
 
@@ -1280,6 +1354,7 @@ Then add 'lk' to a line that looks like:
 
 \begin_deeper
 \begin_layout Code
+
 Option "XkbLayout" "us,lk"
 \end_layout
 
@@ -1291,6 +1366,7 @@ Also add a mechanism to switch between 'us' and 'lk' and indicate which
 
 \begin_deeper
 \begin_layout Code
+
 Option "XkbOptions" "grp:shifts_toggle,grp_led:scroll"
 \end_layout
 
@@ -1338,6 +1414,7 @@ Instead of running this query:
 \end_layout
 
 \begin_layout Code
+
 SELECT * FROM table1 ORDER BY column1;
 \end_layout
 
@@ -1346,6 +1423,7 @@ run a slightly modified query that looks like:
 \end_layout
 
 \begin_layout Code
+
 SELECT * FROM table1 ORDER BY column1 COLLATE utf8_sinhala_ci;
 \end_layout
 
@@ -1375,6 +1453,7 @@ The supported locales are listed in the file:
 \end_layout
 
 \begin_layout Code
+
 /usr/share/i18n/SUPPORTED
 \end_layout
 
@@ -1383,6 +1462,7 @@ The locale definition is available in:
 \end_layout
 
 \begin_layout Code
+
 /usr/share/i18n/locales/
 \end_layout
 
@@ -1400,6 +1480,7 @@ The locale definitions need to be compiled before they can be used.
 \end_layout
 
 \begin_layout Code
+
 /etc/locale.gen
 \end_layout
 
@@ -1408,14 +1489,17 @@ This will involve uncommenting the required locale, e.g.:
 \end_layout
 
 \begin_layout Code
+
 # sid_ET UTF-8
 \end_layout
 
 \begin_layout Code
+
 si_LK UTF-8
 \end_layout
 
 \begin_layout Code
+
 # sk_SK ISO-8859-2 
 \end_layout
 
@@ -1424,6 +1508,7 @@ Then run the program:
 \end_layout
 
 \begin_layout Code
+
 /usr/sbin/locale-gen
 \end_layout
 
@@ -1433,10 +1518,12 @@ Following that step you can then see what a particular program looks like
 \end_layout
 
 \begin_layout Code
+
 LANG=si_LK.UTF-8 gedit
 \end_layout
 
 \begin_layout Code
+
 LANG=fr_FR.UTF-8 gedit
 \end_layout
 
@@ -1445,6 +1532,7 @@ The actual translated message strings are stored in:
 \end_layout
 
 \begin_layout Code
+
 /usr/share/locale/<ISO639 2 character lang code>/LC_MESSAGES/
 \end_layout
 
@@ -1457,6 +1545,7 @@ The default locale is set in the file:
 \end_layout
 
 \begin_layout Code
+
 /etc/default/locale
 \end_layout
 
@@ -1469,6 +1558,7 @@ To sort Sinhala words, run:
 \end_layout
 
 \begin_layout Code
+
 LC_ALL=si_LK.utf8 sort
 \end_layout
 
@@ -1502,7 +1592,7 @@ name "Enable-LaTeX"
 \end_layout
 
 \begin_layout Standard
-TeX Live, 2008 release, should contain a version of XeTeX with Unicode Sinhala
+TeX Live, 2009 release, should contain a version of XeTeX with Unicode Sinhala
  support.
 \end_layout
 
@@ -1567,7 +1657,7 @@ name "Dev-Open-Type-Fonts"
 \end_layout
 
 \begin_layout Standard
-You can use this PHP script to generate Unicode Sinhala letters:
+You can use these PHP and Python scripts to generate Unicode Sinhala letters:
 \end_layout
 
 \begin_layout Itemize
@@ -1575,6 +1665,17 @@ You can use this PHP script to generate Unicode Sinhala letters:
 LatexCommand href
 name "gen-unicode-sinhala.php"
 target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/utils/gen-unicode-sinhala.php"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "gen-unicode-sinhala.py"
+target "http://git.savannah.gnu.org/cgit/sinhala.git/plain/utils/gen-unicode-sinhala.py"
 
 \end_inset
 
@@ -1660,7 +1761,7 @@ target "http://unicode.org/~emuller/iwg/"
 \end_layout
 
 \begin_layout Subsubsection
-How Freefont obtained Sinhala glyphs
+How GNU FreeFont obtained Sinhala glyphs
 \end_layout
 
 \begin_layout Itemize
@@ -1701,6 +1802,26 @@ target "http://mail.gnu.org/archive/html/freefont-bugs/2003-05/msg00005.html"
 LatexCommand href
 name "http://mail.gnu.org/archive/html/freefont-bugs/2003-08/msg00002.html"
 target "http://mail.gnu.org/archive/html/freefont-bugs/2003-08/msg00002.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://lists.gnu.org/archive/html/freefont-bugs/2009-02/msg00000.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://savannah.gnu.org/forum/forum.php?forum_id=6518"
 
 \end_inset
 
@@ -1825,6 +1946,7 @@ The Pango code for Sinhala and Indic rendering is common and can be found
 \end_layout
 
 \begin_layout Code
+
 modules/indic/
 \end_layout
 
@@ -1833,6 +1955,7 @@ One of the most important files to understand is:
 \end_layout
 
 \begin_layout Code
+
 modules/indic/indic-ot-class-tables.c
 \end_layout
 
@@ -1841,6 +1964,7 @@ Particularly how the function:
 \end_layout
 
 \begin_layout Code
+
 indic_ot_find_syllable()
 \end_layout
 
@@ -1853,6 +1977,7 @@ Next have a look at the file:
 \end_layout
 
 \begin_layout Code
+
 modules/indic/indic-ot.c
 \end_layout
 
@@ -1861,6 +1986,7 @@ and the function:
 \end_layout
 
 \begin_layout Code
+
 indic_ot_reorder()
 \end_layout
 
@@ -2084,6 +2210,17 @@ engine->getGlyphPositions(fStyleRunInfo[run].positions, layoutStatus);
 engine->getCharIndices(&fGlyphToCharMap[glyphBase], runStart, layoutStatus);
 \end_layout
 
+\begin_layout Subsubsection
+Harfbuzz
+\end_layout
+
+\begin_layout Standard
+Harfbuzz does not support Sinhala nor Indic scripts well at the moment (29/08/20
+11).
+ The Indic module (hb-ot-shape-complex-indic.cc) needs a lot more work to
+ be useful.
+\end_layout
+
 \begin_layout Subsection
 Firefox/Mozilla
 \begin_inset CommandInset label
@@ -2122,6 +2259,7 @@ Ubuntu 5.10 enabled Pango by default.
 \end_layout
 
 \begin_layout Code
+
 /usr/bin/mozilla-firefox 
 \end_layout
 
@@ -2130,22 +2268,27 @@ which contains the code:
 \end_layout
 
 \begin_layout Code
+
 ##
 \end_layout
 
 \begin_layout Code
+
 ## Set MOZ_ENABLE_PANGO
 \end_layout
 
 \begin_layout Code
+
 ##
 \end_layout
 
 \begin_layout Code
+
 MOZ_ENABLE_PANGO=1
 \end_layout
 
 \begin_layout Code
+
 export MOZ_ENABLE_PANGO
 \end_layout
 
@@ -2179,6 +2322,7 @@ Have a look at:
 \end_layout
 
 \begin_layout Code
+
 /usr/bin/mozilla-firefox 
 \end_layout
 
@@ -2187,52 +2331,64 @@ which contains the code:
 \end_layout
 
 \begin_layout Code
+
 if [ "x${MOZ_DISABLE_PANGO}" = x ]; then
 \end_layout
 
 \begin_layout Code
+
     if egrep '^(bn|gu|hi|kn|ml|mr|ne|pa|ta|te)_' 
 \backslash
 
 \end_layout
 
 \begin_layout Code
+
         /var/lib/locales/supported.d/*[^~] >/dev/null 2>&1; then
 \end_layout
 
 \begin_layout Code
+
         MOZ_DISABLE_PANGO=0
 \end_layout
 
 \begin_layout Code
+
     else
 \end_layout
 
 \begin_layout Code
+
         MOZ_DISABLE_PANGO=1
 \end_layout
 
 \begin_layout Code
+
     fi
 \end_layout
 
 \begin_layout Code
+
     export MOZ_DISABLE_PANGO
 \end_layout
 
 \begin_layout Code
+
 fi
 \end_layout
 
 \begin_layout Code
+
 if [ "x${MOZ_DISABLE_PANGO}" = x0 ]; then
 \end_layout
 
 \begin_layout Code
+
     unset MOZ_DISABLE_PANGO
 \end_layout
 
 \begin_layout Code
+
 fi
 \end_layout
 
@@ -2242,6 +2398,7 @@ This means that Ubuntu 6.06 users that need Pango enabled in Firefox need
 \end_layout
 
 \begin_layout Code
+
 MOZ_DISABLE_PANGO=0
 \end_layout
 
@@ -2250,6 +2407,7 @@ You can see the difference by running Firefox at the command line like so:
 \end_layout
 
 \begin_layout Code
+
 # MOZ_DISABLE_PANGO=0 mozilla-firefox
 \end_layout
 
@@ -2262,6 +2420,7 @@ Ubuntu 6.10 users can enable Pango in Firefox by setting an environment variable
 \end_layout
 
 \begin_layout Code
+
 MOZ_DISABLE_PANGO=0
 \end_layout
 
@@ -2270,6 +2429,7 @@ Or by simply installing the Ubuntu package:
 \end_layout
 
 \begin_layout Code
+
 language-pack-si-base
 \end_layout
 
@@ -2284,6 +2444,7 @@ Since Fedora Core 4, Pango is enabled in Firefox by default.
 \end_layout
 
 \begin_layout Code
+
 MOZ_DISABLE_PANGO=1
 \end_layout
 
@@ -2292,6 +2453,7 @@ You can see the difference by running Firefox at the command line like so:
 \end_layout
 
 \begin_layout Code
+
 # MOZ_DISABLE_PANGO=1 firefox
 \end_layout
 
@@ -2300,6 +2462,7 @@ Have a look at:
 \end_layout
 
 \begin_layout Code
+
 /usr/bin/firefox 
 \end_layout
 
@@ -2362,26 +2525,32 @@ target "http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firef
 \end_layout
 
 \begin_layout Code
+
 ##
 \end_layout
 
 \begin_layout Code
+
 ## Set MOZ_ENABLE_PANGO is no longer used because Pango is enabled by default
 \end_layout
 
 \begin_layout Code
+
 ## you may use MOZ_DISABLE_PANGO=1 to force disabling of pango
 \end_layout
 
 \begin_layout Code
+
 ##
 \end_layout
 
 \begin_layout Code
+
 #MOZ_DISABLE_PANGO=1
 \end_layout
 
 \begin_layout Code
+
 #export MOZ_DISABLE_PANGO
 \end_layout
 
@@ -2407,54 +2576,66 @@ target "http://cvs.fedora.redhat.com/viewcvs/*checkout*/rpms/firefox/devel/firef
 \end_layout
 
 \begin_layout Code
+
 ##
 \end_layout
 
 \begin_layout Code
+
 ## In order to better support certain scripts (such as Indic and some CJK
  
 \end_layout
 
 \begin_layout Code
+
 ## scripts), Fedora builds its Firefox, with permission from the Mozilla
  
 \end_layout
 
 \begin_layout Code
+
 ## Corporation, with the Pango system as its text renderer.
   This change 
 \end_layout
 
 \begin_layout Code
+
 ## is known to break rendering of MathML, and may negatively impact 
 \end_layout
 
 \begin_layout Code
+
 ## performance on some pages.
   To disable the use of Pango, set 
 \end_layout
 
 \begin_layout Code
+
 ## MOZ_DISABLE_PANGO=1 in your environment before launching Firefox.
 \end_layout
 
 \begin_layout Code
+
 ##
 \end_layout
 
 \begin_layout Code
+
 #
 \end_layout
 
 \begin_layout Code
+
 # MOZ_DISABLE_PANGO=1
 \end_layout
 
 \begin_layout Code
+
 # export MOZ_DISABLE_PANGO
 \end_layout
 
 \begin_layout Code
+
 #
 \end_layout
 
@@ -2467,18 +2648,22 @@ Changelog:
 \end_layout
 
 \begin_layout Code
+
 2006-01-27  Christian Persch  <chpe at cvs dot gnome dot org>
 \end_layout
 
 \begin_layout Code
+
         * src/ephy-main.c: (main):
 \end_layout
 
 \begin_layout Code
+
         Disable pango rendering by default, unless MOZ_ENABLE_PANGO env
 \end_layout
 
 \begin_layout Code
+
         var is set.
  Bug #328844.
 \end_layout
@@ -2492,37 +2677,45 @@ src/ephy-main.c:
 \end_layout
 
 \begin_layout Code
+
         /* Work around bug #328844, and avoid the gecko+pango performance
  problem */
 \end_layout
 
 \begin_layout Code
+
         env = g_getenv ("MOZ_ENABLE_PANGO");
 \end_layout
 
 \begin_layout Code
+
         enable_pango = env != NULL &&
 \end_layout
 
 \begin_layout Code
+
                        env[0] != '
 \backslash
 0' &&
 \end_layout
 
 \begin_layout Code
+
                        g_ascii_strtoull (env, NULL, 10) != 0;
 \end_layout
 
 \begin_layout Code
+
         if (eel_gconf_get_boolean (CONF_GECKO_ENABLE_PANGO))
 \end_layout
 
 \begin_layout Code
+
         {
 \end_layout
 
 \begin_layout Code
+
                 g_print ("NOTE: Enabling gecko pango renderer; this may
  cause performance degradation.
 \backslash
@@ -2530,6 +2723,7 @@ n"
 \end_layout
 
 \begin_layout Code
+
                          "You can set " CONF_GECKO_ENABLE_PANGO " to 
 \backslash
 "false
@@ -2540,22 +2734,27 @@ n");
 \end_layout
 
 \begin_layout Code
+
         }
 \end_layout
 
 \begin_layout Code
+
         else if (!enable_pango)
 \end_layout
 
 \begin_layout Code
+
         {
 \end_layout
 
 \begin_layout Code
+
                 g_setenv ("MOZ_DISABLE_PANGO", "1", TRUE);
 \end_layout
 
 \begin_layout Code
+
         }
 \end_layout
 
@@ -2658,6 +2857,7 @@ The source file:
 \end_layout
 
 \begin_layout Code
+
 vcl/source/gdi/sallayout.cxx
 \end_layout
 
@@ -2666,6 +2866,7 @@ contains a function:
 \end_layout
 
 \begin_layout Code
+
 inline bool IsControlChar( sal_Unicode cChar )
 \end_layout
 
@@ -2679,6 +2880,7 @@ In the source file:
 \end_layout
 
 \begin_layout Code
+
 linguistic/source/misc.cxx
 \end_layout
 
@@ -2687,6 +2889,7 @@ two functions,
 \end_layout
 
 \begin_layout Code
+
 static INT16 GetOrigWordPos( const OUString &rOrigWord, INT16 nPos )
 \end_layout
 
@@ -2695,6 +2898,7 @@ and
 \end_layout
 
 \begin_layout Code
+
 INT32 GetPosInWordToCheck( const OUString &rTxt, INT32 nPos )
 \end_layout
 
@@ -2703,6 +2907,7 @@ call
 \end_layout
 
 \begin_layout Code
+
 inline bool IsControlChar( sal_Unicode cChar )
 \end_layout
 
@@ -2716,6 +2921,7 @@ In the source file:
 \end_layout
 
 \begin_layout Code
+
 vcl/source/gdi/sallayout.cxx
 \end_layout
 
@@ -2724,6 +2930,7 @@ there is a function:
 \end_layout
 
 \begin_layout Code
+
 void ImplLayoutArgs::AddRun( int nCharPos0, int nCharPos1, bool bRTL )
 \end_layout
 
@@ -2732,6 +2939,7 @@ which calls the function:
 \end_layout
 
 \begin_layout Code
+
 inline bool IsControlChar( sal_Unicode cChar )
 \end_layout
 
@@ -2740,6 +2948,7 @@ it's purpose is to:
 \end_layout
 
 \begin_layout Code
+
 // add a run after splitting it up to get rid of control chars
 \end_layout
 
@@ -2906,6 +3115,7 @@ Look in the linux source:
 \end_layout
 
 \begin_layout Code
+
 drivers/char/keyboard.c
 \end_layout
 
@@ -2914,6 +3124,7 @@ Look for the function:
 \end_layout
 
 \begin_layout Code
+
 getkeycode()
 \end_layout
 
@@ -2927,6 +3138,7 @@ All you need to do is just copy the keyboard layout file into the correct
 \end_layout
 
 \begin_layout Code
+
 /etc/X11/xkb/symbols/
 \end_layout
 
@@ -2935,6 +3147,7 @@ or
 \end_layout
 
 \begin_layout Code
+
 /etc/X11/xkb/symbols/pc/
 \end_layout
 
@@ -2943,6 +3156,7 @@ or
 \end_layout
 
 \begin_layout Code
+
 /usr/share/X11/xkb/symbols
 \end_layout
 
@@ -2951,6 +3165,7 @@ However, for completeness some files in these directories:
 \end_layout
 
 \begin_layout Code
+
 /etc/X11/
 \end_layout
 
@@ -2959,6 +3174,7 @@ or
 \end_layout
 
 \begin_layout Code
+
 /usr/X11R6/lib/X11/
 \end_layout
 
@@ -2967,6 +3183,7 @@ or
 \end_layout
 
 \begin_layout Code
+
 /usr/share/X11/
 \end_layout
 
@@ -2975,18 +3192,22 @@ need to be modified, namely these files:
 \end_layout
 
 \begin_layout Code
+
 xkb/rules/{xorg,xfree86}
 \end_layout
 
 \begin_layout Code
+
 xkb/rules/{xorg,xfree86}.lst
 \end_layout
 
 \begin_layout Code
+
 xkb/rules/{xorg,xfree86}.xml
 \end_layout
 
 \begin_layout Code
+
 xkb/symbols.dir
 \end_layout
 
@@ -2995,6 +3216,7 @@ To test a loaded keyboard layout:
 \end_layout
 
 \begin_layout Code
+
 setxkbmap -print | xkbcomp -w 10 -xkb - <outfile>
 \end_layout
 
@@ -3007,7 +3229,11 @@ IBus can be used as the frontend, which is exposed to the user, and the
  backend that maps keycodes to codepoints.
  Or IBus can be used as a frontend for other backends.
  e.g.
- m17n can be a backend.
+ m17n can be a backend via the ibus-m17n engine.
+\end_layout
+
+\begin_layout Standard
+ibus 1.3.99.20110817 and ibus-m17n 1.3.3 support Surrounding Text Support (STS).
 \end_layout
 
 \begin_layout Subsubsection
@@ -3074,6 +3300,7 @@ Then run xmodmap:
 
 \begin_deeper
 \begin_layout Code
+
 xmodmap sin.xmodmap
 \end_layout
 
@@ -3139,6 +3366,7 @@ Need to disable the menu so that you can use the 'alt' key:
 
 \begin_deeper
 \begin_layout Code
+
 set guioptions-=m
 \end_layout
 
@@ -3149,6 +3377,7 @@ Select the new keyboard layout, using the redirector, by typing:
 
 \begin_deeper
 \begin_layout Code
+
 set keymap=sinhala
 \end_layout
 
@@ -3157,6 +3386,7 @@ or select the new keyboard layout directly by typing:
 \end_layout
 
 \begin_layout Code
+
 set keymap=sinhala-phonetic_utf-8
 \end_layout
 
@@ -3285,38 +3515,47 @@ target "http://lists.mysql.com/internals/34303"
 \end_layout
 
 \begin_layout Code
+
 /*
 \end_layout
 
 \begin_layout Code
+
   SCCII Part 1 : Collation Sequence (SLS1134)
 \end_layout
 
 \begin_layout Code
+
   2006/11/24
 \end_layout
 
 \begin_layout Code
+
   Harshula Jayasuriya <harshula at gmail dot com>
 \end_layout
 
 \begin_layout Code
+
   Language Technology Research Lab, University of Colombo / ICTA
 \end_layout
 
 \begin_layout Code
+
 */
 \end_layout
 
 \begin_layout Code
+
 #if 1
 \end_layout
 
 \begin_layout Code
+
 static const char sinhala[]=
 \end_layout
 
 \begin_layout Code
+
     "& 
 \backslash
 
@@ -3333,6 +3572,7 @@ u0D83"
 \end_layout
 
 \begin_layout Code
+
     "& 
 \backslash
 
@@ -3345,6 +3585,7 @@ u0DA4"
 \end_layout
 
 \begin_layout Code
+
     "& 
 \backslash
 
@@ -3365,6 +3606,7 @@ u0DF3"
 \end_layout
 
 \begin_layout Code
+
     "& 
 \backslash
 
@@ -3377,14 +3619,17 @@ u0DCA";
 \end_layout
 
 \begin_layout Code
+
 #else
 \end_layout
 
 \begin_layout Code
+
 static const char sinhala[]=
 \end_layout
 
 \begin_layout Code
+
     "& 
 \backslash
 
@@ -3417,6 +3662,7 @@ u0D9D"
 \end_layout
 
 \begin_layout Code
+
               "< 
 \backslash
 
@@ -3445,6 +3691,7 @@ u0DA3"
 \end_layout
 
 \begin_layout Code
+
               "< 
 \backslash
 
@@ -3461,6 +3708,7 @@ u0DA6"
 \end_layout
 
 \begin_layout Code
+
               "< 
 \backslash
 
@@ -3489,6 +3737,7 @@ u0DAC"
 \end_layout
 
 \begin_layout Code
+
               "< 
 \backslash
 
@@ -3513,6 +3762,7 @@ u0DB1"
 \end_layout
 
 \begin_layout Code
+
               "< 
 \backslash
 
@@ -3541,6 +3791,7 @@ u0DB8"
 \end_layout
 
 \begin_layout Code
+
               "< 
 \backslash
 
@@ -3569,6 +3820,7 @@ u0DC1"
 \end_layout
 
 \begin_layout Code
+
               "< 
 \backslash
 
@@ -3593,6 +3845,7 @@ u0DC6"
 \end_layout
 
 \begin_layout Code
+
               "< 
 \backslash
 
@@ -3601,6 +3854,7 @@ u0DCF"
 \end_layout
 
 \begin_layout Code
+
               "< 
 \backslash
 
@@ -3629,6 +3883,7 @@ u0DD6"
 \end_layout
 
 \begin_layout Code
+
               "< 
 \backslash
 
@@ -3657,6 +3912,7 @@ u0DDA"
 \end_layout
 
 \begin_layout Code
+
               "< 
 \backslash
 
@@ -3681,6 +3937,7 @@ u0DCA";
 \end_layout
 
 \begin_layout Code
+
 #endif
 \end_layout
 
@@ -3829,18 +4086,22 @@ target "http://en.wikipedia.org/wiki/Swedish_alphabet"
 \end_layout
 
 \begin_layout Code
+
 CREATE TABLE t1 (
 \end_layout
 
 \begin_layout Code
+
         id SERIAL PRIMARY KEY,
 \end_layout
 
 \begin_layout Code
+
         letter VARCHAR(10) NOT NULL
 \end_layout
 
 \begin_layout Code
+
 ) CHARACTER SET utf8;
 \end_layout
 
@@ -3849,6 +4110,7 @@ Running this collation handler:
 \end_layout
 
 \begin_layout Code
+
 SELECT * FROM t1 ORDER BY letter COLLATE utf8_swedish_ci;
 \end_layout
 
@@ -3875,18 +4137,22 @@ target "http://en.wikipedia.org/wiki/Sinhala_alphabet"
 \end_layout
 
 \begin_layout Code
+
 CREATE TABLE t2 (
 \end_layout
 
 \begin_layout Code
+
         id SERIAL PRIMARY KEY,
 \end_layout
 
 \begin_layout Code
+
         letter VARCHAR(10) NOT NULL
 \end_layout
 
 \begin_layout Code
+
 ) CHARACTER SET utf8;
 \end_layout
 
@@ -3910,6 +4176,7 @@ Running this collation handler:
 \end_layout
 
 \begin_layout Code
+
 SELECT * FROM t2 ORDER BY letter COLLATE utf8_sinhala_ci;
 \end_layout
 
@@ -3942,133 +4209,165 @@ mysql/strings/ctype-uca.c
 \end_layout
 
 \begin_layout Code
+
 /*
 \end_layout
 
 \begin_layout Code
+
   Collation language is implemented according to
 \end_layout
 
 \begin_layout Code
+
   subset of ICU Collation Customization (tailorings):
 \end_layout
 
 \begin_layout Code
+
   http://www.icu-project.org/userguide/Collate_Customization.html
 \end_layout
 
 \begin_layout Code
+
   
 \end_layout
 
 \begin_layout Code
+
   Collation language elements:
 \end_layout
 
 \begin_layout Code
+
   Delimiters:
 \end_layout
 
 \begin_layout Code
+
     space   - skipped
 \end_layout
 
 \begin_layout Code
+
   
 \end_layout
 
 \begin_layout Code
+
   <char> :=  A-Z | a-z | 
 \backslash
 uXXXX
 \end_layout
 
 \begin_layout Code
+
   
 \end_layout
 
 \begin_layout Code
+
   Shift command:
 \end_layout
 
 \begin_layout Code
+
     <shift>  := &       - reset at this letter.
  
 \end_layout
 
 \begin_layout Code
+
   
 \end_layout
 
 \begin_layout Code
+
   Diff command:
 \end_layout
 
 \begin_layout Code
+
     <d1> :=  <     - Identifies a primary difference.
 \end_layout
 
 \begin_layout Code
+
     <d2> :=  <<    - Identifies a secondary difference.
 \end_layout
 
 \begin_layout Code
+
     <d3> := <<<    - Idenfifies a tertiary difference.
 \end_layout
 
 \begin_layout Code
+
   
 \end_layout
 
 \begin_layout Code
+
   
 \end_layout
 
 \begin_layout Code
+
   Collation rules:
 \end_layout
 
 \begin_layout Code
+
     <ruleset> :=  <rule>  { <ruleset> }
 \end_layout
 
 \begin_layout Code
+
     
 \end_layout
 
 \begin_layout Code
+
     <rule> :=   <d1>    <string>
 \end_layout
 
 \begin_layout Code
+
               | <d2>    <string>
 \end_layout
 
 \begin_layout Code
+
               | <d3>    <string>
 \end_layout
 
 \begin_layout Code
+
               | <shift> <char>
 \end_layout
 
 \begin_layout Code
+
     
 \end_layout
 
 \begin_layout Code
+
     <string> := <char> [ <string> ]
 \end_layout
 
 \begin_layout Code
+
   An example, Polish collation:
 \end_layout
 
 \begin_layout Code
+
   
 \end_layout
 
 \begin_layout Code
+
     &A < 
 \backslash
 u0105 <<< 
@@ -4077,6 +4376,7 @@ u0104
 \end_layout
 
 \begin_layout Code
+
     &C < 
 \backslash
 u0107 <<< 
@@ -4085,6 +4385,7 @@ u0106
 \end_layout
 
 \begin_layout Code
+
     &E < 
 \backslash
 u0119 <<< 
@@ -4093,6 +4394,7 @@ u0118
 \end_layout
 
 \begin_layout Code
+
     &L < 
 \backslash
 u0142 <<< 
@@ -4101,6 +4403,7 @@ u0141
 \end_layout
 
 \begin_layout Code
+
     &N < 
 \backslash
 u0144 <<< 
@@ -4109,6 +4412,7 @@ u0143
 \end_layout
 
 \begin_layout Code
+
     &O < 
 \backslash
 u00F3 <<< 
@@ -4117,6 +4421,7 @@ u00D3
 \end_layout
 
 \begin_layout Code
+
     &S < 
 \backslash
 u015B <<< 
@@ -4125,6 +4430,7 @@ u015A
 \end_layout
 
 \begin_layout Code
+
     &Z < 
 \backslash
 u017A <<< 
@@ -4133,6 +4439,7 @@ u017B
 \end_layout
 
 \begin_layout Code
+
 */
 \end_layout
 
@@ -4141,142 +4448,177 @@ mysql/include/m_ctype.h
 \end_layout
 
 \begin_layout Code
+
 typedef struct charset_info_st
 \end_layout
 
 \begin_layout Code
+
 {
 \end_layout
 
 \begin_layout Code
+
   uint      number;
 \end_layout
 
 \begin_layout Code
+
   uint      primary_number;
 \end_layout
 
 \begin_layout Code
+
   uint      binary_number;
 \end_layout
 
 \begin_layout Code
+
   uint      state;
 \end_layout
 
 \begin_layout Code
+
   const char *csname;
 \end_layout
 
 \begin_layout Code
+
   const char *name;
 \end_layout
 
 \begin_layout Code
+
   const char *comment;
 \end_layout
 
 \begin_layout Code
+
   const char *tailoring;
 \end_layout
 
 \begin_layout Code
+
   uchar    *ctype;
 \end_layout
 
 \begin_layout Code
+
   uchar    *to_lower;
 \end_layout
 
 \begin_layout Code
+
   uchar    *to_upper;
 \end_layout
 
 \begin_layout Code
+
   uchar    *sort_order;
 \end_layout
 
 \begin_layout Code
+
   uint16   *contractions;
 \end_layout
 
 \begin_layout Code
+
   uint16   **sort_order_big;
 \end_layout
 
 \begin_layout Code
+
   uint16      *tab_to_uni;
 \end_layout
 
 \begin_layout Code
+
   MY_UNI_IDX  *tab_from_uni;
 \end_layout
 
 \begin_layout Code
+
   MY_UNICASE_INFO **caseinfo;
 \end_layout
 
 \begin_layout Code
+
   uchar     *state_map;
 \end_layout
 
 \begin_layout Code
+
   uchar     *ident_map;
 \end_layout
 
 \begin_layout Code
+
   uint      strxfrm_multiply;
 \end_layout
 
 \begin_layout Code
+
   uchar     caseup_multiply;
 \end_layout
 
 \begin_layout Code
+
   uchar     casedn_multiply;
 \end_layout
 
 \begin_layout Code
+
   uint      mbminlen;
 \end_layout
 
 \begin_layout Code
+
   uint      mbmaxlen;
 \end_layout
 
 \begin_layout Code
+
   uint16    min_sort_char;
 \end_layout
 
 \begin_layout Code
+
   uint16    max_sort_char; /* For LIKE optimization */
 \end_layout
 
 \begin_layout Code
+
   uchar     pad_char;
 \end_layout
 
 \begin_layout Code
+
   my_bool   escape_with_backslash_is_dangerous;
 \end_layout
 
 \begin_layout Code
+
   
 \end_layout
 
 \begin_layout Code
+
   MY_CHARSET_HANDLER *cset;
 \end_layout
 
 \begin_layout Code
+
   MY_COLLATION_HANDLER *coll;
 \end_layout
 
 \begin_layout Code
+
   
 \end_layout
 
 \begin_layout Code
+
 } CHARSET_INFO;
 \end_layout
 
@@ -4426,6 +4768,17 @@ target "http://git.savannah.gnu.org/cgit/sinhala.git/tree/patches/mysql-dfsg-5.0
 
 \end_layout
 
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Patches are included in MySQL 5.5"
+target "http://dev.mysql.com/downloads/mysql/5.5.html"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Locales
 \begin_inset CommandInset label
@@ -4490,6 +4843,7 @@ To define a collation order for a script, edit:
 \end_layout
 
 \begin_layout Code
+
 /usr/share/i18n/locales/iso14651_t1_common
 \end_layout
 
@@ -4498,6 +4852,7 @@ To test the changes, run:
 \end_layout
 
 \begin_layout Code
+
 LC_ALL=<LOCALE> sort
 \end_layout
 
@@ -4758,6 +5113,7 @@ DESTDIR
 
 \begin_deeper
 \begin_layout Code
+
 $(MAKE) DESTDIR=$(CURDIR)/debian/tmp install
 \end_layout
 
@@ -4779,6 +5135,7 @@ To extract the content of a .deb file:
 
 \begin_deeper
 \begin_layout Code
+
 ar -x <name>.deb
 \end_layout
 
@@ -4789,6 +5146,7 @@ To create a Debianized source tree from a Debian source package:
 
 \begin_deeper
 \begin_layout Code
+
 dpkg-source -x <name>.dsc
 \end_layout
 
@@ -4799,6 +5157,7 @@ To generate a .deb from within a Debianized source tree:
 
 \begin_deeper
 \begin_layout Code
+
 dpkg-buildpackage -b -uc -us
 \end_layout
 
@@ -4809,6 +5168,7 @@ To generate the .dsc and the .diff.gz run:
 
 \begin_deeper
 \begin_layout Code
+
 dpkg-source -b <dir>
 \end_layout
 
@@ -4825,6 +5185,7 @@ Don't forget to sign the source package:
 
 \begin_deeper
 \begin_layout Code
+
 debsign -m<maintainer> <name>.dsc
 \end_layout
 
@@ -5434,6 +5795,58 @@ target "http://cvs.m17n.org/viewcvs/m17n/m17n-contrib/im/si-trans.mim?view=log"
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Ensured surrounding text support was added to IBus
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "https://bugzilla.redhat.com/show_bug.cgi?id=435880"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Add Sinhala to /usr/include/X11/keysymdef.h
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://cgit.freedesktop.org/xorg/proto/x11proto/commit/?id=423f5faddbb1023d0c1cf55b9d1da4397aa1aa26"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://cgit.freedesktop.org/xorg/lib/libX11/commit/?id=25eb76b3d2726f2f1de759901971ae53b2539dc4"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "https://bugs.freedesktop.org/show_bug.cgi?id=35530"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 Fonts
@@ -5507,6 +5920,23 @@ Request to remove incomplete Sinhala glyphs
 \begin_inset CommandInset href
 LatexCommand href
 target "http://lists.gnu.org/archive/html/freefont-bugs/2009-02/msg00000.html"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Improved the range and correctness of the Unicode Sinhala section in the
+ FreeFont
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "https://savannah.gnu.org/forum/forum.php?forum_id=6518"
 
 \end_inset
 
@@ -5697,6 +6127,33 @@ target "http://www.constitution.gov.lk/downloads/Chapter%20IV%20-%20Language.pdf
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+Sinhala
+\begin_inset Quotes erd
+\end_inset
+
+ is the preferred word for the script as per ISO 15924:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.unicode.org/iso15924/iso15924-codes.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+Sinh 348 Sinhala singhalais Sinhala 2004-05-01
+\end_layout
+
+\end_deeper
+\begin_layout Standard
 Furthermore, if it is FOSS project, you can refer to the GNOME and KDE projects
  as an example where the word "Sinhala" is used: 
 \end_layout
@@ -5747,25 +6204,24 @@ Renderer (Layout Engine)
 
 \begin_deeper
 \begin_layout Itemize
+ccmp feature for Indic Languages...
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "http://bugs.icu-project.org/trac/ticket/7601"
+target "http://bugs.icu-project.org/trac/ticket/7601"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 Support touching letters in QT Renderer
-\end_layout
-
-\begin_layout Itemize
-Pango tries to display a 25CC, which is a dotted circle, when a dependent
- vowel is displayed without a consonant.
- However the glyph for 25CC does not appear.
-\end_layout
-
-\begin_layout Itemize
-see chapter 9 of TUS Unicode - apparently discusses ZWJ/ZWNJ
-\end_layout
-
-\begin_layout Itemize
-What does Thunderbird use for rendering?
-\end_layout
-
-\begin_layout Itemize
-Is Firefox 3 filtering ZWJ?
 \end_layout
 
 \end_deeper
@@ -5786,18 +6242,6 @@ Fonts
 \begin_deeper
 \begin_layout Itemize
 Learn about OT features/order
-\end_layout
-
-\begin_layout Itemize
-Discover why the appearance of the Unicode Sinhala fonts deteriorate at
- smaller sizes.
- Is it a smoothing or hinting issue in the font.
- Or an issue with the renderers.
-\end_layout
-
-\begin_layout Itemize
-Improve the range and correctness of the Unicode Sinhala section in the
- freefont
 \end_layout
 
 \begin_layout Itemize
@@ -5829,10 +6273,6 @@ Other GNU/Linux Infrastructure
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Add Sinhala to /usr/include/X11/keysymdef.h
-\end_layout
-
 \begin_layout Itemize
 OTF printing problem
 \end_layout
@@ -6231,8 +6671,8 @@ target "http://www.nongnu.org/sinhala/"
 \begin_layout Itemize
 \begin_inset CommandInset href
 LatexCommand href
-name "UCSC: Language Technology Research Lab"
-target "http://www.ucsc.cmb.ac.lk/ltrl/"
+name "http://sinhala.sourceforge.net"
+target "http://sinhala.sourceforge.net"
 
 \end_inset
 
@@ -6242,8 +6682,19 @@ target "http://www.ucsc.cmb.ac.lk/ltrl/"
 \begin_layout Itemize
 \begin_inset CommandInset href
 LatexCommand href
-name "http://sinhala.sourceforge.net"
-target "http://sinhala.sourceforge.net"
+name "Subasa"
+target "http://subasa.lk/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "UCSC: Language Technology Research Lab"
+target "http://www.ucsc.cmb.ac.lk/ltrl/"
 
 \end_inset
 
