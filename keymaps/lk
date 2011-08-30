@@ -32,8 +32,7 @@ partial default alphanumeric_keys
 xkb_symbols "sin_phonetic" {
 
   include "us"
-// it is default - no details in the name
-  name[Group1] = "Sinhala";
+  name[Group1] = "Sinhala (phonetic)";
   key.type[Group1] = "FOUR_LEVEL";
 
   // q - p
