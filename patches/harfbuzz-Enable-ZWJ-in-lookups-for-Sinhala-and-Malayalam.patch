@@ -1,0 +1,45 @@
+From 7ffe3330483b9314f0edc8394bd7defc647fabfe Mon Sep 17 00:00:00 2001
+From: Harshula Jayasuriya <harshula@redhat.com>
+Date: Mon, 23 Jan 2012 21:59:19 +1100
+Subject: [PATCH] Enable ZWJ in lookups for Sinhala and Malayalam
+
+Many years ago, enabling ZWJ in lookups was added to Pango and ICU to
+handle the requirements of Sinhala (SLS 1134). This patch adds the same
+feature to HarfBuzz.
+---
+ src/hb-ot-shape-complex-indic.cc |   12 +++++++++++-
+ 1 files changed, 11 insertions(+), 1 deletions(-)
+
+diff --git a/src/hb-ot-shape-complex-indic.cc b/src/hb-ot-shape-complex-indic.cc
+index 9f50ef2..26a4526 100644
+--- a/src/hb-ot-shape-complex-indic.cc
++++ b/src/hb-ot-shape-complex-indic.cc
+@@ -646,14 +646,24 @@ remove_joiners (hb_buffer_t *buffer)
+   /* For now we remove joiners.  However, Uniscbire seems to keep them
+    * and output a zero-width space glyph for them.  It is not clear to
+    * me how that is supposed to interact with GSUB. */
++  hb_script_t script = buffer->props.script;
+ 
+   buffer->clear_output ();
+   unsigned int count = buffer->len;
+   for (buffer->idx = 0; buffer->idx < count;)
+-    if (unlikely (is_joiner (buffer->info[buffer->idx])))
++  {
++    bool joiner = buffer->info[buffer->idx].indic_category() == OT_ZWJ;
++    bool non_joiner = buffer->info[buffer->idx].indic_category() == OT_ZWNJ;
++
++    /* Mimic Pango & ICU - 20120123 */
++    if (unlikely (joiner && (script == HB_SCRIPT_SINHALA
++                          || script == HB_SCRIPT_MALAYALAM)))
++      buffer->next_glyph ();
++    else if (unlikely(joiner || non_joiner))
+       buffer->skip_glyph ();
+     else
+       buffer->next_glyph ();
++  }
+ 
+   buffer->swap_buffers ();
+ }
+-- 
+1.7.8.3
+

@@ -120,3 +120,10 @@ http://bugs.freedesktop.org/show_bug.cgi?id=19288
 https://bugs.freedesktop.org/show_bug.cgi?id=35530
 https://bugs.freedesktop.org/show_bug.cgi?id=35533
 --------------------------------------------------------------------
+18) harfbuzz-Enable-ZWJ-in-lookups-for-Sinhala-and-Malayalam.patch
+https://bugs.freedesktop.org/show_bug.cgi?id=45114
+
+harfbuzz-zwj-testcase.txt
+harfbuzz-zwj-incorrect.png
+harfbuzz-zwj-correct.png
+--------------------------------------------------------------------
