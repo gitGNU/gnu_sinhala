@@ -127,3 +127,5 @@ harfbuzz-zwj-testcase.txt
 harfbuzz-zwj-incorrect.png
 harfbuzz-zwj-correct.png
 --------------------------------------------------------------------
+19) harfbuzz-hb-old-the-allocated-scratch-memory-contains-non-zero-values.patch
+--------------------------------------------------------------------

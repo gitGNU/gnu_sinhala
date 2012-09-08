@@ -1,0 +1,103 @@
+From: Harshula Jayasuriya <harshula@redhat.com>
+Date: Fri, 7 Sep 2012 04:04:03 +1000
+Subject: [PATCH] hb-old: the allocated scratch memory contains non-zero values that end up interpolated with real offset values
+
+Reproducer string: ක්‍යෝ
+Reproducer font: FreeSerif.ttf.
+
+In _hb_old_shape(), after HB_ShapeItem() has completed, variable item's
+allocated arrays contain the following values for i < num_glyphs:
+
+Bug
+---
+scratch_size = 640
+non-zero int32_t values in scratch (address:index,value): (0x1ecf228:78,36321)
+
+------------------------------------------------------------
+i = 0 , glyphs = 2485, attributes = 16 , advances = 707 , x = 0 (0x1ecf220), y = 0 (0x1ecf224)
+i = 1 , glyphs = 2435, attributes = 0 , advances = 915 , x = 36321 (0x1ecf228), y = 0 (0x1ecf22c)
+i = 2 , glyphs = 9500, attributes = 0 , advances = 508 , x = 0 (0x1ecf230), y = 0 (0x1ecf234)
+i = 3 , glyphs = 2477, attributes = 0 , advances = 336 , x = 0 (0x1ecf238), y = 0 (0x1ecf23c)
+i = 4 , glyphs = 2476, attributes = 0 , advances = 0 , x = 0 (0x1ecf240), y = 0 (0x1ecf244)
+------------------------------------------------------------
+=> For i = 1, item.offsets[i].x = 36321.
+
+Working
+-------
+=> Add a memset(scratch, 0, scratch_size);
+
+scratch_size = 640
+non-zero int32_t values in scratch (address:index,value): (0xd6b228:78,36321)
+
+------------------------------------------------------------
+i = 0 , glyphs = 2485, attributes = 16 , advances = 707 , x = 0 (0xd6b220), y = 0 (0xd6b224)
+i = 1 , glyphs = 2435, attributes = 0 , advances = 915 , x = 0 (0xd6b228), y = 0 (0xd6b22c)
+i = 2 , glyphs = 9500, attributes = 0 , advances = 508 , x = 0 (0xd6b230), y = 0 (0xd6b234)
+i = 3 , glyphs = 2477, attributes = 0 , advances = 336 , x = 0 (0xd6b238), y = 0 (0xd6b23c)
+i = 4 , glyphs = 2476, attributes = 0 , advances = 0 , x = 0 (0xd6b240), y = 0 (0xd6b244)
+------------------------------------------------------------
+=> For 0 <= i < num_glyphs, item.offsets[i].x and item.offsets[i].y are
+zero.
+
+Explanation
+-----------
+
+The bug seems to have been inadvertently introduced by commit
+91e721ea8693205f4f738bca97a5055ee75cf463. In particular the following
+change:
+------------------------------------------------------------
++  ALLOCATE_ARRAY (unsigned short, item.log_clusters, chars_len + 2);
+
+-  ALLOCATE_ARRAY (unsigned short, item.log_clusters, num_glyphs);
+------------------------------------------------------------
+
+The change exposed a non-zero value at a critical memory location.
+Without the aforementioned change, the picture looks like:
+
+scratch_size = 640
+non-zero int32_t values in scratch (address:index,value): (0xd45228:78,36321)
+
+------------------------------------------------------------
+i = 0 , glyphs = 2485, attributes = 16 , advances = 707 , x = 0 (0xd4524a), y = 0 (0xd4524e)
+i = 1 , glyphs = 2435, attributes = 0 , advances = 915 , x = 0 (0xd45252), y = 0 (0xd45256)
+i = 2 , glyphs = 9500, attributes = 0 , advances = 508 , x = 0 (0xd4525a), y = 0 (0xd4525e)
+i = 3 , glyphs = 2477, attributes = 0 , advances = 336 , x = 0 (0xd45262), y = 0 (0xd45266)
+i = 4 , glyphs = 2476, attributes = 0 , advances = 0 , x = 0 (0xd4526a), y = 0 (0xd4526e)
+------------------------------------------------------------
+
+=> For 0 <= i < num_glyphs, item.offsets[i].x and item.offsets[i].y are
+zero.
+
+=> The non-zero value is at address 0xd45228, but item.offsets array
+starts only at 0xd4524a.
+
+=> The value of num_glyphs before HB_ShapeItem() is not equal to
+num_glyphs afterwards. In this example num_glyphs before HB_ShapeItem()
+is 28 and thus the length of the item.offsets array is 28. However,
+since the real number of glyphs is 5, the code only cares about the
+first 5 elements of the 28 element array.
+
+=> The memset() is added to src/hb-old.cc to avoid it being added to
+get_scratch_buffer() in src/hb-buffer.cc because this bug may be
+isolated to only the old shaper.
+
+Signed-off-by: Harshula Jayasuriya <harshula@redhat.com>
+---
+ src/hb-old.cc |    1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/hb-old.cc b/src/hb-old.cc
+index 197e620..3410e3b 100644
+--- a/src/hb-old.cc
++++ b/src/hb-old.cc
+@@ -285,6 +285,7 @@ retry:
+ 
+   unsigned int scratch_size;
+   char *scratch = (char *) buffer->get_scratch_buffer (&scratch_size);
++  memset(scratch, 0, scratch_size);
+ 
+ #define utf16_index() var1.u32
+   HB_UChar16 *pchars = (HB_UChar16 *) scratch;
+-- 
+1.7.10.4
+
